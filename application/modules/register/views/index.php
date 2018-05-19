@@ -45,22 +45,26 @@
 <article class="card-body">
 
 <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Sign in</h4>
-	 <form method="post">
+	 <form method="post" role="form" data-toggle="validator">
      <div class="form-group">
-        <input name="fullname" class="form-control" placeholder="Full Name" type="text" required>
+        <input name="fullname" id="fullname" class="form-control" placeholder="Full Name" type="text">
+        <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input name="email" class="form-control" placeholder="example@mail.com" type="text" required>
+        <input name="email" id="email" class="form-control" placeholder="example@mail.com" type="text" data-error="Bruh, that email address is invalid" required>
+        <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input name="mobile" class="form-control" placeholder="Mobile" type="text" required>
+        <input name="phone" id="phone" class="form-control" placeholder="Mobile" type="text" required>
+        <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input class="form-control" name="password" placeholder="******" type="password" required>
+        <input class="form-control" id="password" name="password" placeholder="******" type="password" required>
+        <div class="help-block with-errors"></div>
     </div> <!-- form-group// --> 
     <div class="form-group"> 
     <div class="checkbox">
-      <label> <input type="checkbox"> Remember Me </label>
+      <label> <input type="checkbox" id="remember_me" name="remember_me"> Remember Me </label>
       	<a class="float-right" href="#">Forgot Password?</a>
     </div> <!-- checkbox .// -->
     </div> <!-- form-group// -->  
@@ -84,3 +88,4 @@
 </body>
 
 <?php echo $script;?>
+<script src="<?php echo base_url('cityook/assets/js/validator.js');?>"></script>
