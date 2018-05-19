@@ -79,330 +79,6 @@ section .section-title{
 }
 	</style>
 
-<script src="<?php echo base_url('js/jquery-1.11.2.min1.js');?>"></script>
-<script type="text/javascript">
-	//Load date and time selection
-	var enabledStartDate = "";
-	var enabledDates = [];
-	var forbiddenDates = ['01-05-2017'];
-	var availableDatesAndSlots = [];
-	var currentDate = "";
-	var destroyDatepicker = false;
-
-	function loadAvailableDates(categoryID)
-	{
-		enabledDates = [];
-		enabledStartDate = "";
-		availableDatesAndSlots = [];
-		currentDate = "";
-
-		$.ajax({
-			url		: '/api/bookingSlotsHandler.php',
-			data	: 'categoryID=' + categoryID,
-			type    : 'POST',
-			beforeSend: function(){
-				$("#schedule-dialog .modal-content > div").css('visibility', 'hidden');
-				$("#schedule-dialog .modal-content").addClass("loadingDatepicker");
-				$("#datepicker").hide();
-
-				// $("#schedule-dialog .dateLoader").show();
-
-			},
-			complete: function(){
-				$("#schedule-dialog .modal-content").removeClass("loadingDatepicker");
-				$("#schedule-dialog .modal-content > div").css('visibility', 'visible');
-				// $("#schedule-dialog .dateLoader").hide();
-				$("#datepicker").show();
-
-			},
-			success : function(response)
-			{
-				var data = jQuery.parseJSON(response);
-				if(data.status == "successful")
-				{
-					availableDatesAndSlots = data.dates;
-
-					for(var i = 0; i < data.dates.length; i++)
-					{
-						enabledDates.push(data.dates[i].actualDate);
-					}
-
-					//Check if datepicker has been loaded once, destroy it and reinitialize
-					if(destroyDatepicker)
-					{
-						$('#datepicker').datepicker('update', '');
-					}
-
-					$('#datepicker').datepicker({
-						format				: 'dd-mm-yyyy',
-						autoclose			: false,
-						disableTouchKeyboard : true,
-						beforeShowDay: function (dt) {
-							var y = dt.getFullYear();
-							var m = ((dt.getMonth() + 1) + "").length < 2 ? ('0' + (dt.getMonth() + 1)) : (dt.getMonth() + 1);
-							var d = (dt.getDate() + "").length < 2 ? ('0' + dt.getDate()) : dt.getDate();
-							currentDate = y + '-' + m + '-' + d;
-							if(enabledDates.indexOf(currentDate) != -1)
-							{
-								if(enabledStartDate == "")
-								{
-									enabledStartDate = d + '-' + m + '-' + y;
-								}
-							}
-
-							return (enabledDates.indexOf(currentDate) != -1);
-						}
-					});
-
-					//On Datepicker Loaded
-					$("#enabledStartDate").val(enabledStartDate);
-					$('#datepicker').datepicker('setDate', enabledStartDate);
-					destroyDatepicker = true;
-
-					var selectedDate = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
-					loadAvailableSlots(selectedDate);
-
-					//Set default date / time selections
-					$("select[name='timeFixedSlot']").each(function(){
-						if($(this).hasClass("visibleTimeslotDropdown") == true)
-							visibleDropdown = $(this).attr("id");
-					});
-					var formattedDate = $("#datepicker").data('datepicker').getFormattedDate('dd-mm-yyyy');
-					var formattedTime = $("#" + visibleDropdown + " option:selected").html();
-
-					$("#serviceDateTime").html(formattedDate + " (" + formattedTime + ")");
-				}
-			}
-		});
-	}
-
-	function loadAvailableSlots(selectedDate)
-	{
-		$("#timeFixedSlot").html("");
-
-		for(var i = 0; i < availableDatesAndSlots.length; i++)
-		{
-			if(availableDatesAndSlots[i].actualDate == selectedDate)
-			{
-				for(var j = 0; j < availableDatesAndSlots[i].slots.length; j++)
-				{
-					$("#timeFixedSlot").append("<option value='" + availableDatesAndSlots[i].slots[j].actualFixedTime + "'>" + availableDatesAndSlots[i].slots[j].formattedSlot + "</option>");
-				}
-			}
-		}
-	}
-
-	$(document).ready(function() {
-		//On Change Date
-		$('#datepicker').on('changeDate', function () {
-			var selectedDate = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
-			loadAvailableSlots(selectedDate);
-		});
-	});
-
-</script>
-<script type="text/javascript">
-	    var paint_type = null;
-	    var paintable_area = null;
-	    var paint_brand = null;
-	    var paint_city = null;
-	    var paint_product = null;
-	    var paint_rate = null;
-
-	    $("#calculatenow").click(function () {
-	        paint_type = $('input[name=painttype]:checked').val();
-	        paintable_area = $("#pe-modal-paintable-area").html();
-	        paint_brand = $("#paintbrand").val();
-	        paint_product = $("#paintproduct").val();
-	        categoryID = $("#categoryID").val();
-
-			$.ajax
-		        ({
-		            type: "POST",
-		            url: "/api/getPaintRate.php",
-		            dataType: 'json',
-		            async: true,
-		            data: {
-		                "categoryID":categoryID,
-		                "productName":paint_product,
-		                "brandName":paint_brand,
-		            },
-		            success: function (response) {
-
-		            	   if(response.status=="successful"){
-
-			                  	 paint_rate = response.paint_rate;
-								  calculateRate(paint_rate);
-
-			                }else{
-			                    alert("Unable to calculate the estimate, please try again later!");
-			                    $("#calculatenow").removeClass("disabled");
-			                }
-		            }
-		        });
-
-		    function calculateRate(paint_rate)
-		    {
-
-		        var final_price = paint_rate * paintable_area;
-		        $("#calculatenow").addClass("disabled");
-		        var myDate=new Date();
-		        myDate.setDate(myDate.getDate()+1);
-		        var dt = myDate.getFullYear() + '-' + ("0" + (myDate.getMonth() + 1)).slice(-2) + '-' + myDate.getDate();
-		        var flg = 0;
-		        var mobile_number = $("#pe-mobile-number").val();
-
-		        if(mobile_number == "" && flg == 0){
-		        	alert("Please provide a mobile number");
-					flg = 1;
-					$("#calculatenow").removeClass("disabled");
-		        }
-
-		        if(mobile_number.length < 10 && flg == 0)
-				{
-					alert("Please provide a valid mobile number");
-					flg = 1;
-					$("#calculatenow").removeClass("disabled");
-				}
-
-		        if(flg == 0){
-			        $.ajax
-			        ({
-			            type: "POST",
-			            url: "/api/addLead.php",
-			            dataType: 'json',
-			            async: true,
-			            data: {
-			                "userMobileNumber":$("#pe-mobile-number").val(),
-			                "userEmailAddress":"default",
-			                "userFullName":"default",
-			                "cityID":getCookie("timesaverzUserCity"),
-			                "variableID":$("#variables option:selected").attr("data-variableid"),
-			                "areaID":1,
-			                "pinCode":400014,
-			                "totalCost":final_price,
-			                "jobDate":dt,
-			                "jobTime":"2",
-			                "jobAddress":"default",
-			                "jobPaymentType":"pending",
-			                "jobBookedFrom":"web",
-			                "followupDate":"",
-			                "jobQuantity":"1",
-			                "jobStatus":"pending",
-			                "utm_source":"painting-estimator",
-			                "utm_medium":getCookie("timesaverz_utm_medium"),
-			                "utm_term":getCookie("timesaverz_utm_term"),
-			                "utm_campaign":getCookie("timesaverz_utm_campaign"),
-			                "gclID":getCookie("timesaverz_gclID"),
-			                "remarks":""
-			            },
-			            success: function (response) {
-			                if(response.status=="successful"){
-			                    $("#pe-modal-count-price").html(final_price);
-			                    $(".pe-modal-result").fadeIn();
-			                    setTimeout(showResults, 500);
-			                    $("#calculatenow").removeClass("disabled");
-			                }else{
-			                    alert("Unable to calculate the estimate, please try again later!");
-			                    $("#calculatenow").removeClass("disabled");
-			                }
-			            }
-			        });
-
-		        }
-
-
-		   }
-		});
-
-
-	    function showResults() {
-	        $(".result-loader").hide();
-	        $(".final").show();
-	        increaseCount();
-	        $('#paint-estimator').data('bs.modal').handleUpdate();
-	    }
-	    function increaseCount() {
-	        $('#pe-modal-count-price').each(function () {
-	            $(this).prop('Counter', 0).animate({
-	                Counter: $(this).text()
-	            }, {
-	                duration: 1000,
-	                easing: 'swing',
-	                step: function (now) {
-	                    $(this).text(Math.ceil(now));
-	                }
-	            });
-	        });
-	    }
-
-	    var min = 0;
-	    var max = 3500;
-	    var prices_arr = [0];
-	    for (var x = 0; x <= max; x++) {
-	        if (x % 10 == 0) {
-	            prices_arr.push(x);
-	        }
-
-	    }
-	    $(function () {
-	        $(".slider").slider(
-	                {
-	                    value: 100,
-	                    animate: "slow",
-	                    orientation: "horizontal",
-	                    min: min,
-	                    max: (max / 10),
-	                    slide: imSliding
-	                }
-	        );
-	    });
-
-	    function imSliding(event, ui) {
-	        //update the amount by fetching the value in the value_array at index ui.value
-	        $('#pe-modal-area').val(prices_arr[ui.value]);
-	        $('#pe-modal-paintable-area').html((prices_arr[ui.value] * 1.5));
-	    }
-
-	    $("#pe-modal-area").val("1000");
-	    $('#pe-modal-paintable-area').html("1500");
-
-	    $('#pe-modal-area').on('input', function() {
-	        if($('#pe-modal-area').val()<=3500){
-	            $(".slider").slider('value',$('#pe-modal-area').val()/10);
-	            $('#pe-modal-paintable-area').html(($('#pe-modal-area').val() * 1.5));
-	        }else{
-	            alert("Area cannot be greater than 3500 sqft.");
-	        }
-
-	    });
-
-
-
-	    $(document).ready(function(){
-	        $("#paintbrand").dropdown();
-	        $("#paintproduct").dropdown();
-	    })
-</script>
-<!--Footer Section-->
-
-<!--Footer Section-->
-<script src="<?php echo base_url('assets/cityook/js/jquery-1.11.2.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/bootstrap.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/material.min-1.1.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/ripples.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/main-1.2.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/owl.carousel.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/jquery.dropdown.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/jquery-ui.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/bootstrap-datepicker.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/jquery.slimscroll.min.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/snackbar.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/jquery.li-scroller.1.0.js');?>"></script>
-<script src="<?php echo base_url('assets/cityook/js/perfect-scrollbar.js');?>"></script>
-
-
-<!-- Scripts end -->
 <script type="text/javascript">
     $(document).ready(function () {
         $("#owl-banner").owlCarousel({
@@ -410,8 +86,6 @@ section .section-title{
             autoPlay: true,
             navigation: false
         });
-
-
         $("#owl-testmonials").owlCarousel({
             navigation: true, // Show next and prev buttons
             slideSpeed: 300,
@@ -421,8 +95,6 @@ section .section-title{
             loop: true,
             stopOnHover: true
         });
-
-
         $("#serviceTestimonials").owlCarousel({
             navigation: true, // Show next and prev buttons
             slideSpeed: 300,
@@ -711,12 +383,20 @@ section .section-title{
 	}
 
 </script>
-
-<script type="text/javascript">
-    $(function () {
-        $("ul#areasServed").liScroll();
-    });
-</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url('assets/cityook/js/material.min-1.1.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/ripples.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/main-1.2.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/owl.carousel.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/jquery.dropdown.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/jquery-ui.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/bootstrap-datepicker.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/jquery.slimscroll.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/snackbar.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/jquery.li-scroller.1.0.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/perfect-scrollbar.js');?>"></script>
 
 <script src="<?php echo base_url('assets/cityook/js/classie.js');?>"></script>
 <script src="<?php echo base_url('assets/cityook/js/dialogFx.js');?>"></script>
@@ -724,7 +404,7 @@ section .section-title{
 <script src="<?php echo base_url('assets/cityook/js/modalEffects.js');?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/cityook/js/feedbackSlide.min.js');?>"></script>
 <script src="<?php echo base_url('assets/cityook/js/ouibounce.js');?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/cityook/js/conversion.js');?>">
+
 </script>
 <noscript>
     <div style="display:inline;">
@@ -732,7 +412,6 @@ section .section-title{
              src="#"/>
     </div>
 </noscript>
-
 <style type="text/css">
     iframe[name='google_conversion_frame'] {
         height: 0 !important;
@@ -743,51 +422,9 @@ section .section-title{
         float: left;
     }
 </style>
-
-<img id="imgConversion" height="1" width="1" style="border-style:none;display:none;" alt=""
-     src=""/>
-<!-- End of Google Code for remarketing -->
-		<!------- End Common Scripts -------->
-
-
-		<script src="<?php echo base_url('assets/cityook/js/serviceMenu-1.3.min.js');?>"></script>
-		<script src="<?php echo base_url('assets/cityook/js/animateFunction-1.6.min.js');?>"></script>
-		<!------ Page Specific Scripts ------>
-		<script type="text/javascript">
-			//CleverTap events
-			clevertap.event.push("Visited Screen", {
-			  "Screen Name": "Supercategory Listing",
-			  "User ID": getCookie("timesaverzUserID") != "" ? getCookie("timesaverzUserID") : "0"
-			});
-
-			$(".imgBanners").on("click", function()
-			{
-				clevertap.event.push("Banner Clicked", {
-				  "Banner Name": $(this).attr("data-bannerName"),
-				  "User ID": getCookie("timesaverzUserID") != "" ? getCookie("timesaverzUserID") : "0"
-				});
-			});
-
-			$(".buttonSupercategory").on("click", function()
-			{
-				clevertap.event.push("Supercategory Selected", {
-				  "Supercategory Name": $(this).attr("data-supercategoryName"),
-				  "User ID": getCookie("timesaverzUserID") != "" ? getCookie("timesaverzUserID") : "0"
-				});
-			});
-		</script>
-		<script>
-				$('ul.nav li.dropdown').hover(function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-		}, function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-		});
-		</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+<script src="<?php echo base_url('assets/cityook/js/serviceMenu-1.3.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/animateFunction-1.6.min.js');?>"></script>
+<script src="<?php echo base_url('assets/cityook/js/validator.js');?>"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script> -->
 	</body>
 </html>
-
-		<!--http://html.tonatheme.com/2017/plumber-aventex/ -->
-		
-		<!-- https://bootsnipp.com/snippets/e3Oe3  bootstrap drop down menu-->

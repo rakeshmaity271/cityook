@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
  
 /* load the MX_Router class */
 require APPPATH . "third_party/MX/Controller.php";
- echo APPPATH . "third_party/MX/Controller.php";
+// echo APPPATH . "third_party/MX/Controller.php";
 /**
  * Description of my_controller
  *

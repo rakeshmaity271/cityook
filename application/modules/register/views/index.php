@@ -45,9 +45,9 @@
 <article class="card-body">
 
 <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Sign in</h4>
-	 <form method="post" role="form" data-toggle="validator">
+	 <form method="post" role="form" id="contact-form" novalidate>
      <div class="form-group">
-        <input name="fullname" id="fullname" class="form-control" placeholder="Full Name" type="text">
+        <input name="fullname" id="fullname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." type="text">
         <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
@@ -55,11 +55,11 @@
         <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input name="phone" id="phone" class="form-control" placeholder="Mobile" type="text" required>
+        <input name="phone" id="phone" class="form-control" placeholder="Mobile" type="text" required="required" data-error="Firstname is required.">
         <div class="help-block with-errors"></div>
     </div> <!-- form-group// -->
     <div class="form-group">
-        <input class="form-control" id="password" name="password" placeholder="******" type="password" required>
+        <input class="form-control" id="password" name="password" placeholder="******" type="password" required="required" data-error="Firstname is required.">
         <div class="help-block with-errors"></div>
     </div> <!-- form-group// --> 
     <div class="form-group"> 
@@ -69,7 +69,7 @@
     </div> <!-- checkbox .// -->
     </div> <!-- form-group// -->  
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block" name="login">Register</button>
+        <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="submit" id="registerButton" class="btn btn-primary btn-block" name="login">Register</button>
     </div> <!-- form-group// -->                                                           
 </form>
 </article>
@@ -88,4 +88,43 @@
 </body>
 
 <?php echo $script;?>
-<script src="<?php echo base_url('cityook/assets/js/validator.js');?>"></script>
+
+<script>
+$(document).ready(function() {
+    console.log( "ready!" );
+
+$('#contact-form').validator();
+// when the form is submitted
+    $('#contact-form').on('submit', function (e) {
+        // if the validator does not prevent form submit
+        if (!e.isDefaultPrevented()) {
+            //var url = "contact.php";
+
+            // POST values in the background the the script URL
+            // $.ajax({
+            //     type: "POST",
+            //     url: url,
+            //     data: $(this).serialize(),
+            //     success: function (data)
+            //     {
+                    
+            //         var messageAlert = 'alert-' + data.type;
+            //         var messageText = data.message;
+
+            //         var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                   
+            //         if (messageAlert && messageText) {
+            //             // inject the alert to .messages div in our form
+            //             $('#contact-form').find('.messages').html(alertBox);
+            //             // empty the form
+            //             $('#contact-form')[0].reset();
+            //         }
+            //     }
+            // });
+            return false;
+        }
+    });
+    
+});
+
+</script>
