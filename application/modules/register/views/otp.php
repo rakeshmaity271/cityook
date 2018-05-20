@@ -36,7 +36,7 @@
     <div class="row">
           <div class="col-lg-6">
               
-              <img src="assets/cityook/images/login.png" class="logimg"/>
+              <img src="<?php echo base_url('assets/cityook/images/login.png');?>" class="logimg"/>
           </div>
           <div class="col-lg-1"></div>
           <div class="col-lg-5">
@@ -44,17 +44,35 @@
 <div class="card">
 <article class="card-body">
 
-<h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Registrer</h4>
-	 <form method="post">
+
+	 <form method="post" role="form" id="contact-form">
      <div class="form-group">
-        <input name="fullname" class="form-control" placeholder="Enter Otp" type="text" required>
-    </div> <!-- form-group// -->
-    <div class="form-group"> 
-    <div class="checkbox">
-      <label> <input type="checkbox"> Remember Me </label>
-      	<a class="float-right" href="#">Forgot Password?</a>
-    </div> <!-- checkbox .// -->
-    </div> <!-- form-group// -->  
+        <input name="firstname" id="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." type="text">
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <input name="lastname" id="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Last Name is required." type="text">
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <input name="email" id="email" class="form-control" placeholder="example@mail.com" type="text" data-error="Bruh, that email address is invalid" required>
+        <div class="help-block with-errors"></div>
+    </div> 
+    <div class="form-group">
+        <input class="form-control" id="password" name="password" placeholder="******" type="password" required="required" data-error="Password is required.">
+        <div class="help-block with-errors"></div>
+    </div> 
+    <div class="form-group">
+        <input name="otp" id="otp" class="form-control" placeholder="Please enter your OTP *" required="required" data-error="Otp is required." type="text">
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <div class="checkbox">
+            <label> <input type="checkbox" id="remember_me" name="remember_me"> Remember Me </label>
+            <a class="float-right" href="#">Forgot Password?</a>
+        </div> 
+    </div> 
+  
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block" name="login">Register</button>
     </div> <!-- form-group// -->                                                           
@@ -75,3 +93,10 @@
 </body>
 
 <?php echo $script;?>
+<script>
+$(document).ready(function() {
+    console.log( "ready!" );
+    $('#contact-form').validator();
+});
+
+</script>

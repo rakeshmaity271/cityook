@@ -57,7 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['default_controller'] = 'site';
 $route['about-us'] = 'about_us';
-
+// $route['register/generate-otp'] = 'register/generateOtp';
 // $route['somename'] 'module/folder/controller/function';
 // $route['somename/edit/(:any)'] 'module/folder/controller/function/$1';
 // $route['somename/edit/(:any)/(:any)'] 'module/folder/controller/function/$1/$2';
