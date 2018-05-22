@@ -489,6 +489,40 @@ class Ion_auth
 
 		return $this->in_group($admin_group, $id);
 	}
+	public function isAdmin() {
+		$userType = $this->getUserType();
+		if($userType === '1') {
+			return true;
+		}
+		return false;
+	}
+	public function isCustomer() {
+		$userType = $this->getUserType();
+		if($userType === '3') {
+			return true;
+		}
+		return false;
+	}
+	public function isEmployee() {
+		$userType = $this->getUserType();
+		if($userType === '2') {
+			return true;
+		}
+		return false;
+	}
+	public function getUserType()
+	{
+		$user_type = $this->session->userdata('user_type');
+		if (!empty($user_type))
+		{
+			return $user_type;
+		}
+		return NULL;
+	}
+	public function is_customer($id = FALSE)
+	{
+		
+	}
 
 	/**
 	 * @param int|string|array $check_group group(s) to check

@@ -6,6 +6,7 @@ class Header extends MX_Controller {
 	
 	public function index()
 	{
+		//print_r($_SESSION);
 		return $this->load->view('app-layout/header');
 	}
 }

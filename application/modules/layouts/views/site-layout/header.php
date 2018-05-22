@@ -12,7 +12,7 @@
 						<span class="cartItemsCount" style="background-color: blue;color:#fff;padding:0px 3px 0px 2px;border-radius:5px 5px;">0</span>
 					</a>
 				</div>
-				<a class="navbar-brand material_navbar_brand" href=""><img src="assets/cityook/images/tsz_logo.png" alt="Logo" /></a>
+				<a class="navbar-brand material_navbar_brand" href=""><img src="<?php echo base_url('assets/cityook/images/tsz_logo.png');?>" alt="Logo" /></a>
 			</div>
 			<div class="navbar-collapse collapse navbar-warning-collapse">
 				<ul class="nav navbar-nav navbar-right material_navbar_nav">
@@ -54,7 +54,7 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><!--<i class="material-icons">person</i>--><span class="hidden-xs hidden-sm hideName"> | &nbsp; My Account</span><span class="caret"></span></a>
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
-							<li><a href="<?php echo base_url();?>auth/login" class="material_dropdown_menu_link"> Login </a></li>
+							<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
 							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>
 						</ul>
 					</li>
