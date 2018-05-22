@@ -54,8 +54,14 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><!--<i class="material-icons">person</i>--><span class="hidden-xs hidden-sm hideName"> | &nbsp; My Account</span><span class="caret"></span></a>
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
-							<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
+							<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { ?>
+							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
+							<li><a href="<?php echo base_url();?>my-account" class="material_dropdown_menu_link"> My Account </a></li>
+							<?php } else { ?>
+							<li><a href="<?php echo base_url();?>logoin" class="material_dropdown_menu_link"> Login </a></li>
 							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>
+							<?php } ?>
+							
 						</ul>
 					</li>
 					<li><a href="#" class="material_navbar_nav_item callButtonHelplineHeader">| <i class="fa fa-phone"></i><span class="hidden-xs hidden-sm hideName">  &nbsp; 900000000</span></a></li>

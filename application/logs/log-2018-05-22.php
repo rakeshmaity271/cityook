@@ -12478,3 +12478,2603 @@ INFO - 2018-05-22 11:20:39 --> Controller Class Initialized
 INFO - 2018-05-22 11:20:39 --> Controller Class Initialized
 ERROR - 2018-05-22 11:20:39 --> 404 Page Not Found: /index
 ERROR - 2018-05-22 11:20:39 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:39:49 --> Config Class Initialized
+INFO - 2018-05-22 11:39:49 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:39:49 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:49 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:49 --> URI Class Initialized
+INFO - 2018-05-22 11:39:49 --> Router Class Initialized
+INFO - 2018-05-22 11:39:49 --> Output Class Initialized
+INFO - 2018-05-22 11:39:49 --> Security Class Initialized
+DEBUG - 2018-05-22 11:39:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:49 --> Input Class Initialized
+INFO - 2018-05-22 11:39:49 --> Language Class Initialized
+INFO - 2018-05-22 11:39:49 --> Language Class Initialized
+INFO - 2018-05-22 11:39:49 --> Config Class Initialized
+INFO - 2018-05-22 11:39:49 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:49 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:49 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:49 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:39:49 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:39:50 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:39:50 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:39:50 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:39:50 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:39:50 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:39:50 --> Final output sent to browser
+DEBUG - 2018-05-22 11:39:50 --> Total execution time: 0.9561
+INFO - 2018-05-22 11:39:50 --> Config Class Initialized
+INFO - 2018-05-22 11:39:50 --> Hooks Class Initialized
+INFO - 2018-05-22 11:39:50 --> Config Class Initialized
+INFO - 2018-05-22 11:39:50 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:39:50 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:50 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:39:50 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:50 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:50 --> URI Class Initialized
+INFO - 2018-05-22 11:39:50 --> URI Class Initialized
+INFO - 2018-05-22 11:39:50 --> Router Class Initialized
+INFO - 2018-05-22 11:39:50 --> Output Class Initialized
+INFO - 2018-05-22 11:39:50 --> Router Class Initialized
+INFO - 2018-05-22 11:39:50 --> Security Class Initialized
+INFO - 2018-05-22 11:39:50 --> Output Class Initialized
+INFO - 2018-05-22 11:39:50 --> Security Class Initialized
+DEBUG - 2018-05-22 11:39:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:51 --> Input Class Initialized
+DEBUG - 2018-05-22 11:39:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:51 --> Input Class Initialized
+INFO - 2018-05-22 11:39:51 --> Language Class Initialized
+INFO - 2018-05-22 11:39:51 --> Language Class Initialized
+INFO - 2018-05-22 11:39:51 --> Language Class Initialized
+INFO - 2018-05-22 11:39:51 --> Config Class Initialized
+INFO - 2018-05-22 11:39:51 --> Language Class Initialized
+INFO - 2018-05-22 11:39:51 --> Config Class Initialized
+INFO - 2018-05-22 11:39:51 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:51 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:51 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:51 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:51 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:51 --> Controller Class Initialized
+INFO - 2018-05-22 11:39:51 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:51 --> Controller Class Initialized
+ERROR - 2018-05-22 11:39:51 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:39:51 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:39:52 --> Config Class Initialized
+INFO - 2018-05-22 11:39:52 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:39:52 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:52 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:52 --> URI Class Initialized
+INFO - 2018-05-22 11:39:52 --> Router Class Initialized
+INFO - 2018-05-22 11:39:52 --> Output Class Initialized
+INFO - 2018-05-22 11:39:52 --> Security Class Initialized
+DEBUG - 2018-05-22 11:39:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:52 --> Input Class Initialized
+INFO - 2018-05-22 11:39:52 --> Language Class Initialized
+INFO - 2018-05-22 11:39:52 --> Language Class Initialized
+INFO - 2018-05-22 11:39:52 --> Config Class Initialized
+INFO - 2018-05-22 11:39:53 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:53 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:53 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:53 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:39:53 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:39:53 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:39:53 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:39:53 --> Email Class Initialized
+INFO - 2018-05-22 11:39:53 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:39:53 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:39:53 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:39:53 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:39:53 --> Model Class Initialized
+INFO - 2018-05-22 11:39:53 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:39:53 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:39:53 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:39:53 --> Form Validation Class Initialized
+INFO - 2018-05-22 11:39:53 --> Config Class Initialized
+INFO - 2018-05-22 11:39:53 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:39:53 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:53 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:53 --> URI Class Initialized
+INFO - 2018-05-22 11:39:53 --> Router Class Initialized
+INFO - 2018-05-22 11:39:53 --> Output Class Initialized
+INFO - 2018-05-22 11:39:53 --> Security Class Initialized
+DEBUG - 2018-05-22 11:39:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:54 --> Input Class Initialized
+INFO - 2018-05-22 11:39:54 --> Language Class Initialized
+INFO - 2018-05-22 11:39:54 --> Language Class Initialized
+INFO - 2018-05-22 11:39:54 --> Config Class Initialized
+INFO - 2018-05-22 11:39:54 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:54 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:54 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:54 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:39:54 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:39:54 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:39:54 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:39:54 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:39:54 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:39:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:39:54 --> Final output sent to browser
+DEBUG - 2018-05-22 11:39:54 --> Total execution time: 0.9191
+INFO - 2018-05-22 11:39:54 --> Config Class Initialized
+INFO - 2018-05-22 11:39:54 --> Config Class Initialized
+INFO - 2018-05-22 11:39:54 --> Hooks Class Initialized
+INFO - 2018-05-22 11:39:54 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:39:55 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:39:55 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:39:55 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:55 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:39:55 --> URI Class Initialized
+INFO - 2018-05-22 11:39:55 --> URI Class Initialized
+INFO - 2018-05-22 11:39:55 --> Router Class Initialized
+INFO - 2018-05-22 11:39:55 --> Router Class Initialized
+INFO - 2018-05-22 11:39:55 --> Output Class Initialized
+INFO - 2018-05-22 11:39:55 --> Output Class Initialized
+INFO - 2018-05-22 11:39:55 --> Security Class Initialized
+INFO - 2018-05-22 11:39:55 --> Security Class Initialized
+DEBUG - 2018-05-22 11:39:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:39:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:39:55 --> Input Class Initialized
+INFO - 2018-05-22 11:39:55 --> Input Class Initialized
+INFO - 2018-05-22 11:39:55 --> Language Class Initialized
+INFO - 2018-05-22 11:39:55 --> Language Class Initialized
+INFO - 2018-05-22 11:39:55 --> Language Class Initialized
+INFO - 2018-05-22 11:39:55 --> Language Class Initialized
+INFO - 2018-05-22 11:39:55 --> Config Class Initialized
+INFO - 2018-05-22 11:39:55 --> Config Class Initialized
+INFO - 2018-05-22 11:39:55 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:55 --> Loader Class Initialized
+INFO - 2018-05-22 11:39:55 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:55 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:39:55 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:55 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:39:55 --> Controller Class Initialized
+INFO - 2018-05-22 11:39:55 --> Controller Class Initialized
+ERROR - 2018-05-22 11:39:55 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:39:55 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:41:44 --> Config Class Initialized
+INFO - 2018-05-22 11:41:44 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:41:44 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:41:44 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:41:44 --> URI Class Initialized
+INFO - 2018-05-22 11:41:44 --> Router Class Initialized
+INFO - 2018-05-22 11:41:44 --> Output Class Initialized
+INFO - 2018-05-22 11:41:44 --> Security Class Initialized
+DEBUG - 2018-05-22 11:41:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:41:45 --> Input Class Initialized
+INFO - 2018-05-22 11:41:45 --> Language Class Initialized
+INFO - 2018-05-22 11:41:45 --> Language Class Initialized
+INFO - 2018-05-22 11:41:45 --> Config Class Initialized
+INFO - 2018-05-22 11:41:45 --> Loader Class Initialized
+INFO - 2018-05-22 11:41:45 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:41:45 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:41:45 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:41:45 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:41:45 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:41:45 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:41:45 --> Email Class Initialized
+INFO - 2018-05-22 11:41:45 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:41:45 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:41:45 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:41:45 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:41:45 --> Model Class Initialized
+INFO - 2018-05-22 11:41:45 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:41:45 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:41:45 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:41:45 --> Form Validation Class Initialized
+INFO - 2018-05-22 11:41:45 --> Config Class Initialized
+INFO - 2018-05-22 11:41:45 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:41:45 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:41:46 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:41:46 --> URI Class Initialized
+INFO - 2018-05-22 11:41:46 --> Router Class Initialized
+INFO - 2018-05-22 11:41:46 --> Output Class Initialized
+INFO - 2018-05-22 11:41:46 --> Security Class Initialized
+DEBUG - 2018-05-22 11:41:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:41:46 --> Input Class Initialized
+INFO - 2018-05-22 11:41:46 --> Language Class Initialized
+INFO - 2018-05-22 11:41:46 --> Language Class Initialized
+INFO - 2018-05-22 11:41:46 --> Config Class Initialized
+INFO - 2018-05-22 11:41:46 --> Loader Class Initialized
+INFO - 2018-05-22 11:41:46 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:41:46 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:41:46 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:41:46 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:41:46 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:41:46 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:41:46 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:41:46 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:41:46 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:41:46 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:41:46 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:42:36 --> Config Class Initialized
+INFO - 2018-05-22 11:42:36 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:42:36 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:42:36 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:36 --> URI Class Initialized
+INFO - 2018-05-22 11:42:36 --> Router Class Initialized
+INFO - 2018-05-22 11:42:36 --> Output Class Initialized
+INFO - 2018-05-22 11:42:36 --> Security Class Initialized
+DEBUG - 2018-05-22 11:42:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:42:36 --> Input Class Initialized
+INFO - 2018-05-22 11:42:36 --> Language Class Initialized
+INFO - 2018-05-22 11:42:36 --> Language Class Initialized
+INFO - 2018-05-22 11:42:36 --> Config Class Initialized
+INFO - 2018-05-22 11:42:36 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:36 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:36 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:36 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:42:36 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:36 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:42:36 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:36 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:42:36 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:42:36 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:36 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:42:36 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:42:37 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:42:37 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:42:37 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:42:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:42:37 --> Final output sent to browser
+DEBUG - 2018-05-22 11:42:37 --> Total execution time: 0.9481
+INFO - 2018-05-22 11:42:37 --> Config Class Initialized
+INFO - 2018-05-22 11:42:37 --> Config Class Initialized
+INFO - 2018-05-22 11:42:37 --> Hooks Class Initialized
+INFO - 2018-05-22 11:42:37 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:42:37 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:42:37 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:42:37 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:37 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:37 --> URI Class Initialized
+INFO - 2018-05-22 11:42:37 --> URI Class Initialized
+INFO - 2018-05-22 11:42:37 --> Router Class Initialized
+INFO - 2018-05-22 11:42:37 --> Output Class Initialized
+INFO - 2018-05-22 11:42:37 --> Router Class Initialized
+INFO - 2018-05-22 11:42:37 --> Security Class Initialized
+INFO - 2018-05-22 11:42:37 --> Output Class Initialized
+INFO - 2018-05-22 11:42:37 --> Security Class Initialized
+DEBUG - 2018-05-22 11:42:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:42:37 --> Input Class Initialized
+DEBUG - 2018-05-22 11:42:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:42:37 --> Input Class Initialized
+INFO - 2018-05-22 11:42:37 --> Language Class Initialized
+INFO - 2018-05-22 11:42:37 --> Language Class Initialized
+INFO - 2018-05-22 11:42:37 --> Language Class Initialized
+INFO - 2018-05-22 11:42:37 --> Config Class Initialized
+INFO - 2018-05-22 11:42:37 --> Language Class Initialized
+INFO - 2018-05-22 11:42:37 --> Config Class Initialized
+INFO - 2018-05-22 11:42:37 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:37 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:37 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:38 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:38 --> Controller Class Initialized
+INFO - 2018-05-22 11:42:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:38 --> Controller Class Initialized
+ERROR - 2018-05-22 11:42:38 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:42:38 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:42:38 --> Config Class Initialized
+INFO - 2018-05-22 11:42:38 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:42:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:42:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:39 --> URI Class Initialized
+INFO - 2018-05-22 11:42:39 --> Router Class Initialized
+INFO - 2018-05-22 11:42:39 --> Output Class Initialized
+INFO - 2018-05-22 11:42:39 --> Security Class Initialized
+DEBUG - 2018-05-22 11:42:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:42:39 --> Input Class Initialized
+INFO - 2018-05-22 11:42:39 --> Language Class Initialized
+INFO - 2018-05-22 11:42:39 --> Language Class Initialized
+INFO - 2018-05-22 11:42:39 --> Config Class Initialized
+INFO - 2018-05-22 11:42:39 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:39 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:39 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:39 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:42:39 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:42:39 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:42:39 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:42:39 --> Email Class Initialized
+INFO - 2018-05-22 11:42:39 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:42:39 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:42:39 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:42:39 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:42:39 --> Model Class Initialized
+INFO - 2018-05-22 11:42:39 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:42:39 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:42:39 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:42:39 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:42:39 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:42:39 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:39 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:42:40 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:42:40 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:42:40 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:42:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:42:40 --> Final output sent to browser
+DEBUG - 2018-05-22 11:42:40 --> Total execution time: 1.3701
+INFO - 2018-05-22 11:42:40 --> Config Class Initialized
+INFO - 2018-05-22 11:42:40 --> Config Class Initialized
+INFO - 2018-05-22 11:42:40 --> Hooks Class Initialized
+INFO - 2018-05-22 11:42:40 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:42:40 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:42:40 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:42:40 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:40 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:42:40 --> URI Class Initialized
+INFO - 2018-05-22 11:42:40 --> URI Class Initialized
+INFO - 2018-05-22 11:42:40 --> Router Class Initialized
+INFO - 2018-05-22 11:42:40 --> Router Class Initialized
+INFO - 2018-05-22 11:42:40 --> Output Class Initialized
+INFO - 2018-05-22 11:42:40 --> Output Class Initialized
+INFO - 2018-05-22 11:42:40 --> Security Class Initialized
+INFO - 2018-05-22 11:42:40 --> Security Class Initialized
+DEBUG - 2018-05-22 11:42:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:42:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:42:40 --> Input Class Initialized
+INFO - 2018-05-22 11:42:40 --> Input Class Initialized
+INFO - 2018-05-22 11:42:40 --> Language Class Initialized
+INFO - 2018-05-22 11:42:40 --> Language Class Initialized
+INFO - 2018-05-22 11:42:40 --> Language Class Initialized
+INFO - 2018-05-22 11:42:40 --> Language Class Initialized
+INFO - 2018-05-22 11:42:40 --> Config Class Initialized
+INFO - 2018-05-22 11:42:40 --> Config Class Initialized
+INFO - 2018-05-22 11:42:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:42:41 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:41 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:42:41 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:41 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:42:41 --> Controller Class Initialized
+ERROR - 2018-05-22 11:42:41 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:42:41 --> Controller Class Initialized
+ERROR - 2018-05-22 11:42:41 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:44:37 --> Config Class Initialized
+INFO - 2018-05-22 11:44:37 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:37 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:37 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:37 --> URI Class Initialized
+INFO - 2018-05-22 11:44:37 --> Router Class Initialized
+INFO - 2018-05-22 11:44:37 --> Output Class Initialized
+INFO - 2018-05-22 11:44:37 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:38 --> Input Class Initialized
+INFO - 2018-05-22 11:44:38 --> Language Class Initialized
+INFO - 2018-05-22 11:44:38 --> Language Class Initialized
+INFO - 2018-05-22 11:44:38 --> Config Class Initialized
+INFO - 2018-05-22 11:44:38 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:38 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:38 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:44:38 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:44:38 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:44:38 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:44:38 --> Email Class Initialized
+INFO - 2018-05-22 11:44:38 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:44:38 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:44:38 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:44:38 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:44:38 --> Model Class Initialized
+INFO - 2018-05-22 11:44:38 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:44:38 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:44:38 --> Config Class Initialized
+INFO - 2018-05-22 11:44:38 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:38 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:38 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:38 --> URI Class Initialized
+INFO - 2018-05-22 11:44:38 --> Router Class Initialized
+INFO - 2018-05-22 11:44:38 --> Output Class Initialized
+INFO - 2018-05-22 11:44:38 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:38 --> Input Class Initialized
+INFO - 2018-05-22 11:44:39 --> Language Class Initialized
+INFO - 2018-05-22 11:44:39 --> Language Class Initialized
+INFO - 2018-05-22 11:44:39 --> Config Class Initialized
+INFO - 2018-05-22 11:44:39 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:39 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:39 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:39 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:44:39 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:44:39 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:44:39 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:44:39 --> Email Class Initialized
+INFO - 2018-05-22 11:44:39 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:44:39 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:44:39 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:44:39 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:44:39 --> Model Class Initialized
+INFO - 2018-05-22 11:44:39 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:44:39 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:44:39 --> Config Class Initialized
+INFO - 2018-05-22 11:44:39 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:39 --> URI Class Initialized
+INFO - 2018-05-22 11:44:39 --> Router Class Initialized
+INFO - 2018-05-22 11:44:39 --> Output Class Initialized
+INFO - 2018-05-22 11:44:40 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:40 --> Input Class Initialized
+INFO - 2018-05-22 11:44:40 --> Language Class Initialized
+INFO - 2018-05-22 11:44:40 --> Language Class Initialized
+INFO - 2018-05-22 11:44:40 --> Config Class Initialized
+INFO - 2018-05-22 11:44:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:40 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:40 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:40 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:44:40 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:44:40 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:44:40 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:44:40 --> Email Class Initialized
+INFO - 2018-05-22 11:44:40 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:44:40 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:44:40 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:44:40 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:44:40 --> Model Class Initialized
+INFO - 2018-05-22 11:44:40 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:44:40 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:44:40 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:44:40 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:44:40 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:44:40 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:44:40 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:44:41 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:44:41 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:44:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:44:41 --> Final output sent to browser
+DEBUG - 2018-05-22 11:44:41 --> Total execution time: 1.3471
+INFO - 2018-05-22 11:44:41 --> Config Class Initialized
+INFO - 2018-05-22 11:44:41 --> Config Class Initialized
+INFO - 2018-05-22 11:44:41 --> Hooks Class Initialized
+INFO - 2018-05-22 11:44:41 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:41 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:44:41 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:41 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:41 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:41 --> URI Class Initialized
+INFO - 2018-05-22 11:44:41 --> Router Class Initialized
+INFO - 2018-05-22 11:44:41 --> Output Class Initialized
+INFO - 2018-05-22 11:44:41 --> URI Class Initialized
+INFO - 2018-05-22 11:44:41 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:41 --> Router Class Initialized
+INFO - 2018-05-22 11:44:41 --> Input Class Initialized
+INFO - 2018-05-22 11:44:41 --> Output Class Initialized
+INFO - 2018-05-22 11:44:41 --> Language Class Initialized
+INFO - 2018-05-22 11:44:41 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:41 --> Language Class Initialized
+INFO - 2018-05-22 11:44:41 --> Input Class Initialized
+INFO - 2018-05-22 11:44:41 --> Config Class Initialized
+INFO - 2018-05-22 11:44:41 --> Language Class Initialized
+INFO - 2018-05-22 11:44:41 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:41 --> Language Class Initialized
+INFO - 2018-05-22 11:44:41 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:41 --> Config Class Initialized
+INFO - 2018-05-22 11:44:41 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:41 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:41 --> Controller Class Initialized
+INFO - 2018-05-22 11:44:41 --> Helper loaded: url_helper
+ERROR - 2018-05-22 11:44:42 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:44:42 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:42 --> Controller Class Initialized
+ERROR - 2018-05-22 11:44:42 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:44:52 --> Config Class Initialized
+INFO - 2018-05-22 11:44:52 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:52 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:52 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:52 --> URI Class Initialized
+INFO - 2018-05-22 11:44:52 --> Router Class Initialized
+INFO - 2018-05-22 11:44:52 --> Output Class Initialized
+INFO - 2018-05-22 11:44:52 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:52 --> Input Class Initialized
+INFO - 2018-05-22 11:44:52 --> Language Class Initialized
+INFO - 2018-05-22 11:44:52 --> Language Class Initialized
+INFO - 2018-05-22 11:44:52 --> Config Class Initialized
+INFO - 2018-05-22 11:44:52 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:52 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:53 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:53 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:44:53 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:44:53 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:44:53 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:44:53 --> Email Class Initialized
+INFO - 2018-05-22 11:44:53 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:44:53 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:44:53 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:44:53 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:44:53 --> Model Class Initialized
+INFO - 2018-05-22 11:44:53 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:44:53 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:44:53 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:44:53 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:44:53 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:44:53 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:53 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:44:53 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:44:53 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:53 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:44:53 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:44:53 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:44:53 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:44:53 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:44:54 --> Config Class Initialized
+INFO - 2018-05-22 11:44:54 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:54 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:54 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:54 --> URI Class Initialized
+INFO - 2018-05-22 11:44:54 --> Router Class Initialized
+INFO - 2018-05-22 11:44:54 --> Output Class Initialized
+INFO - 2018-05-22 11:44:54 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:54 --> Input Class Initialized
+INFO - 2018-05-22 11:44:54 --> Language Class Initialized
+INFO - 2018-05-22 11:44:54 --> Language Class Initialized
+INFO - 2018-05-22 11:44:54 --> Config Class Initialized
+INFO - 2018-05-22 11:44:54 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:54 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:54 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:54 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:44:54 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:44:54 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:44:54 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:44:54 --> Email Class Initialized
+INFO - 2018-05-22 11:44:54 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:44:54 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:44:54 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:44:54 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:44:54 --> Model Class Initialized
+INFO - 2018-05-22 11:44:54 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:44:54 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:44:55 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:44:55 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:44:55 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:44:55 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:44:55 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:44:55 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:44:55 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:44:55 --> Final output sent to browser
+DEBUG - 2018-05-22 11:44:55 --> Total execution time: 1.3321
+INFO - 2018-05-22 11:44:55 --> Config Class Initialized
+INFO - 2018-05-22 11:44:55 --> Config Class Initialized
+INFO - 2018-05-22 11:44:55 --> Hooks Class Initialized
+INFO - 2018-05-22 11:44:55 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:44:55 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:44:55 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:44:55 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:55 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:44:55 --> URI Class Initialized
+INFO - 2018-05-22 11:44:55 --> URI Class Initialized
+INFO - 2018-05-22 11:44:55 --> Router Class Initialized
+INFO - 2018-05-22 11:44:55 --> Router Class Initialized
+INFO - 2018-05-22 11:44:55 --> Output Class Initialized
+INFO - 2018-05-22 11:44:55 --> Output Class Initialized
+INFO - 2018-05-22 11:44:56 --> Security Class Initialized
+INFO - 2018-05-22 11:44:56 --> Security Class Initialized
+DEBUG - 2018-05-22 11:44:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:44:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:44:56 --> Input Class Initialized
+INFO - 2018-05-22 11:44:56 --> Input Class Initialized
+INFO - 2018-05-22 11:44:56 --> Language Class Initialized
+INFO - 2018-05-22 11:44:56 --> Language Class Initialized
+INFO - 2018-05-22 11:44:56 --> Language Class Initialized
+INFO - 2018-05-22 11:44:56 --> Language Class Initialized
+INFO - 2018-05-22 11:44:56 --> Config Class Initialized
+INFO - 2018-05-22 11:44:56 --> Config Class Initialized
+INFO - 2018-05-22 11:44:56 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:56 --> Loader Class Initialized
+INFO - 2018-05-22 11:44:56 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:56 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:56 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:44:56 --> Controller Class Initialized
+INFO - 2018-05-22 11:44:56 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:44:56 --> Controller Class Initialized
+ERROR - 2018-05-22 11:44:56 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:44:56 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:45:06 --> Config Class Initialized
+INFO - 2018-05-22 11:45:06 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:45:06 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:06 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:06 --> URI Class Initialized
+INFO - 2018-05-22 11:45:06 --> Router Class Initialized
+INFO - 2018-05-22 11:45:06 --> Output Class Initialized
+INFO - 2018-05-22 11:45:06 --> Security Class Initialized
+DEBUG - 2018-05-22 11:45:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:06 --> Input Class Initialized
+INFO - 2018-05-22 11:45:06 --> Language Class Initialized
+INFO - 2018-05-22 11:45:06 --> Language Class Initialized
+INFO - 2018-05-22 11:45:06 --> Config Class Initialized
+INFO - 2018-05-22 11:45:06 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:06 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:06 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:06 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:45:06 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:45:06 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:45:06 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:45:06 --> Email Class Initialized
+INFO - 2018-05-22 11:45:06 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:45:06 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:45:06 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:45:06 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:45:06 --> Model Class Initialized
+INFO - 2018-05-22 11:45:06 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:45:06 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:45:06 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:45:06 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:45:06 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:45:07 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:07 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:45:07 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:45:07 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:07 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:45:07 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:45:07 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:45:07 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:45:07 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:45:07 --> Config Class Initialized
+INFO - 2018-05-22 11:45:07 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:45:07 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:07 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:07 --> URI Class Initialized
+INFO - 2018-05-22 11:45:07 --> Router Class Initialized
+INFO - 2018-05-22 11:45:07 --> Output Class Initialized
+INFO - 2018-05-22 11:45:07 --> Security Class Initialized
+DEBUG - 2018-05-22 11:45:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:08 --> Input Class Initialized
+INFO - 2018-05-22 11:45:08 --> Language Class Initialized
+INFO - 2018-05-22 11:45:08 --> Language Class Initialized
+INFO - 2018-05-22 11:45:08 --> Config Class Initialized
+INFO - 2018-05-22 11:45:08 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:08 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:08 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:08 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:45:08 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:45:08 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:45:08 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:45:08 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:45:08 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:45:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:45:08 --> Final output sent to browser
+DEBUG - 2018-05-22 11:45:08 --> Total execution time: 0.9731
+INFO - 2018-05-22 11:45:08 --> Config Class Initialized
+INFO - 2018-05-22 11:45:08 --> Config Class Initialized
+INFO - 2018-05-22 11:45:08 --> Hooks Class Initialized
+INFO - 2018-05-22 11:45:09 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:45:09 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:09 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:45:09 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:09 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:09 --> URI Class Initialized
+INFO - 2018-05-22 11:45:09 --> URI Class Initialized
+INFO - 2018-05-22 11:45:09 --> Router Class Initialized
+INFO - 2018-05-22 11:45:09 --> Output Class Initialized
+INFO - 2018-05-22 11:45:09 --> Router Class Initialized
+INFO - 2018-05-22 11:45:09 --> Security Class Initialized
+INFO - 2018-05-22 11:45:09 --> Output Class Initialized
+INFO - 2018-05-22 11:45:09 --> Security Class Initialized
+DEBUG - 2018-05-22 11:45:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:09 --> Input Class Initialized
+DEBUG - 2018-05-22 11:45:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:09 --> Input Class Initialized
+INFO - 2018-05-22 11:45:09 --> Language Class Initialized
+INFO - 2018-05-22 11:45:09 --> Language Class Initialized
+INFO - 2018-05-22 11:45:09 --> Language Class Initialized
+INFO - 2018-05-22 11:45:09 --> Config Class Initialized
+INFO - 2018-05-22 11:45:09 --> Language Class Initialized
+INFO - 2018-05-22 11:45:09 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:09 --> Config Class Initialized
+INFO - 2018-05-22 11:45:09 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:09 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:09 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:09 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:09 --> Controller Class Initialized
+INFO - 2018-05-22 11:45:09 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:09 --> Controller Class Initialized
+ERROR - 2018-05-22 11:45:09 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:45:09 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:45:12 --> Config Class Initialized
+INFO - 2018-05-22 11:45:12 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:45:12 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:12 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:12 --> URI Class Initialized
+INFO - 2018-05-22 11:45:12 --> Router Class Initialized
+INFO - 2018-05-22 11:45:12 --> Output Class Initialized
+INFO - 2018-05-22 11:45:12 --> Security Class Initialized
+DEBUG - 2018-05-22 11:45:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:12 --> Input Class Initialized
+INFO - 2018-05-22 11:45:12 --> Language Class Initialized
+INFO - 2018-05-22 11:45:12 --> Language Class Initialized
+INFO - 2018-05-22 11:45:12 --> Config Class Initialized
+INFO - 2018-05-22 11:45:12 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:12 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:12 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:12 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:45:12 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:45:12 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:45:12 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:45:12 --> Email Class Initialized
+INFO - 2018-05-22 11:45:13 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:45:13 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:45:13 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:45:13 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:45:13 --> Model Class Initialized
+INFO - 2018-05-22 11:45:13 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:45:13 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:45:13 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:45:13 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:45:13 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:45:13 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:45:13 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:45:13 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:45:13 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:45:13 --> Final output sent to browser
+DEBUG - 2018-05-22 11:45:13 --> Total execution time: 1.3691
+INFO - 2018-05-22 11:45:13 --> Config Class Initialized
+INFO - 2018-05-22 11:45:13 --> Config Class Initialized
+INFO - 2018-05-22 11:45:14 --> Hooks Class Initialized
+INFO - 2018-05-22 11:45:14 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:45:14 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:45:14 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:45:14 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:14 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:45:14 --> URI Class Initialized
+INFO - 2018-05-22 11:45:14 --> URI Class Initialized
+INFO - 2018-05-22 11:45:14 --> Router Class Initialized
+INFO - 2018-05-22 11:45:14 --> Router Class Initialized
+INFO - 2018-05-22 11:45:14 --> Output Class Initialized
+INFO - 2018-05-22 11:45:14 --> Output Class Initialized
+INFO - 2018-05-22 11:45:14 --> Security Class Initialized
+INFO - 2018-05-22 11:45:14 --> Security Class Initialized
+DEBUG - 2018-05-22 11:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:45:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:45:14 --> Input Class Initialized
+INFO - 2018-05-22 11:45:14 --> Language Class Initialized
+INFO - 2018-05-22 11:45:14 --> Input Class Initialized
+INFO - 2018-05-22 11:45:14 --> Language Class Initialized
+INFO - 2018-05-22 11:45:14 --> Language Class Initialized
+INFO - 2018-05-22 11:45:14 --> Config Class Initialized
+INFO - 2018-05-22 11:45:14 --> Language Class Initialized
+INFO - 2018-05-22 11:45:14 --> Config Class Initialized
+INFO - 2018-05-22 11:45:14 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:14 --> Loader Class Initialized
+INFO - 2018-05-22 11:45:14 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:14 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:45:14 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:14 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:45:14 --> Controller Class Initialized
+INFO - 2018-05-22 11:45:14 --> Controller Class Initialized
+ERROR - 2018-05-22 11:45:14 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:45:14 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:46:39 --> Config Class Initialized
+INFO - 2018-05-22 11:46:39 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:46:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:46:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:46:39 --> URI Class Initialized
+INFO - 2018-05-22 11:46:39 --> Router Class Initialized
+INFO - 2018-05-22 11:46:39 --> Output Class Initialized
+INFO - 2018-05-22 11:46:39 --> Security Class Initialized
+DEBUG - 2018-05-22 11:46:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:46:39 --> Input Class Initialized
+INFO - 2018-05-22 11:46:39 --> Language Class Initialized
+INFO - 2018-05-22 11:46:39 --> Language Class Initialized
+INFO - 2018-05-22 11:46:39 --> Config Class Initialized
+INFO - 2018-05-22 11:46:39 --> Loader Class Initialized
+INFO - 2018-05-22 11:46:39 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:46:39 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:46:39 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:46:39 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:46:39 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:46:39 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:46:39 --> Email Class Initialized
+INFO - 2018-05-22 11:46:39 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:46:39 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:46:39 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:46:39 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:46:39 --> Model Class Initialized
+INFO - 2018-05-22 11:46:40 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:46:40 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:46:40 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:46:40 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:46:40 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:46:40 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:46:40 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:46:40 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:46:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:46:40 --> Final output sent to browser
+DEBUG - 2018-05-22 11:46:40 --> Total execution time: 1.4091
+INFO - 2018-05-22 11:46:40 --> Config Class Initialized
+INFO - 2018-05-22 11:46:40 --> Config Class Initialized
+INFO - 2018-05-22 11:46:40 --> Hooks Class Initialized
+INFO - 2018-05-22 11:46:40 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:46:40 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:46:40 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:46:40 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:46:40 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:46:40 --> URI Class Initialized
+INFO - 2018-05-22 11:46:40 --> URI Class Initialized
+INFO - 2018-05-22 11:46:40 --> Router Class Initialized
+INFO - 2018-05-22 11:46:40 --> Router Class Initialized
+INFO - 2018-05-22 11:46:41 --> Output Class Initialized
+INFO - 2018-05-22 11:46:41 --> Output Class Initialized
+INFO - 2018-05-22 11:46:41 --> Security Class Initialized
+INFO - 2018-05-22 11:46:41 --> Security Class Initialized
+DEBUG - 2018-05-22 11:46:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:46:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:46:41 --> Input Class Initialized
+INFO - 2018-05-22 11:46:41 --> Input Class Initialized
+INFO - 2018-05-22 11:46:41 --> Language Class Initialized
+INFO - 2018-05-22 11:46:41 --> Language Class Initialized
+INFO - 2018-05-22 11:46:41 --> Language Class Initialized
+INFO - 2018-05-22 11:46:41 --> Language Class Initialized
+INFO - 2018-05-22 11:46:41 --> Config Class Initialized
+INFO - 2018-05-22 11:46:41 --> Config Class Initialized
+INFO - 2018-05-22 11:46:41 --> Loader Class Initialized
+INFO - 2018-05-22 11:46:41 --> Loader Class Initialized
+INFO - 2018-05-22 11:46:41 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:46:41 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:46:41 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:46:41 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:46:41 --> Controller Class Initialized
+INFO - 2018-05-22 11:46:41 --> Controller Class Initialized
+ERROR - 2018-05-22 11:46:41 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:46:41 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:46:59 --> Config Class Initialized
+INFO - 2018-05-22 11:46:59 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:46:59 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:46:59 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:46:59 --> URI Class Initialized
+INFO - 2018-05-22 11:46:59 --> Router Class Initialized
+INFO - 2018-05-22 11:46:59 --> Output Class Initialized
+INFO - 2018-05-22 11:46:59 --> Security Class Initialized
+DEBUG - 2018-05-22 11:46:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:46:59 --> Input Class Initialized
+INFO - 2018-05-22 11:46:59 --> Language Class Initialized
+INFO - 2018-05-22 11:46:59 --> Language Class Initialized
+INFO - 2018-05-22 11:46:59 --> Config Class Initialized
+INFO - 2018-05-22 11:46:59 --> Loader Class Initialized
+INFO - 2018-05-22 11:46:59 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:46:59 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:46:59 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:47:00 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:47:00 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:47:00 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:47:00 --> Email Class Initialized
+INFO - 2018-05-22 11:47:00 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:47:00 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:47:00 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:47:00 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:47:00 --> Model Class Initialized
+INFO - 2018-05-22 11:47:00 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:47:00 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:47:00 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:47:00 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:47:00 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:47:00 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:47:00 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:47:00 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:47:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:47:00 --> Final output sent to browser
+DEBUG - 2018-05-22 11:47:00 --> Total execution time: 1.4161
+INFO - 2018-05-22 11:47:01 --> Config Class Initialized
+INFO - 2018-05-22 11:47:01 --> Config Class Initialized
+INFO - 2018-05-22 11:47:01 --> Hooks Class Initialized
+INFO - 2018-05-22 11:47:01 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:47:01 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:47:01 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:47:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:47:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:47:01 --> URI Class Initialized
+INFO - 2018-05-22 11:47:01 --> URI Class Initialized
+INFO - 2018-05-22 11:47:01 --> Router Class Initialized
+INFO - 2018-05-22 11:47:01 --> Router Class Initialized
+INFO - 2018-05-22 11:47:01 --> Output Class Initialized
+INFO - 2018-05-22 11:47:01 --> Output Class Initialized
+INFO - 2018-05-22 11:47:01 --> Security Class Initialized
+INFO - 2018-05-22 11:47:01 --> Security Class Initialized
+DEBUG - 2018-05-22 11:47:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:47:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:47:01 --> Input Class Initialized
+INFO - 2018-05-22 11:47:01 --> Input Class Initialized
+INFO - 2018-05-22 11:47:01 --> Language Class Initialized
+INFO - 2018-05-22 11:47:01 --> Language Class Initialized
+INFO - 2018-05-22 11:47:01 --> Language Class Initialized
+INFO - 2018-05-22 11:47:01 --> Language Class Initialized
+INFO - 2018-05-22 11:47:01 --> Config Class Initialized
+INFO - 2018-05-22 11:47:01 --> Config Class Initialized
+INFO - 2018-05-22 11:47:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:47:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:47:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:47:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:47:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:47:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:47:01 --> Controller Class Initialized
+INFO - 2018-05-22 11:47:01 --> Controller Class Initialized
+ERROR - 2018-05-22 11:47:01 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:47:01 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:48:09 --> Config Class Initialized
+INFO - 2018-05-22 11:48:09 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:48:09 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:09 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:48:09 --> URI Class Initialized
+INFO - 2018-05-22 11:48:09 --> Router Class Initialized
+INFO - 2018-05-22 11:48:09 --> Output Class Initialized
+INFO - 2018-05-22 11:48:09 --> Security Class Initialized
+DEBUG - 2018-05-22 11:48:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:09 --> Input Class Initialized
+INFO - 2018-05-22 11:48:09 --> Language Class Initialized
+INFO - 2018-05-22 11:48:09 --> Language Class Initialized
+INFO - 2018-05-22 11:48:09 --> Config Class Initialized
+INFO - 2018-05-22 11:48:09 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:09 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:09 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:48:10 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:48:10 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:48:10 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:48:10 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:48:10 --> Email Class Initialized
+INFO - 2018-05-22 11:48:10 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:48:10 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:48:10 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:48:10 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:48:10 --> Model Class Initialized
+INFO - 2018-05-22 11:48:10 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:48:10 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:48:10 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:48:10 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:48:10 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:48:10 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:48:10 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:48:10 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:48:10 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:48:10 --> Final output sent to browser
+DEBUG - 2018-05-22 11:48:11 --> Total execution time: 1.4371
+INFO - 2018-05-22 11:48:11 --> Config Class Initialized
+INFO - 2018-05-22 11:48:11 --> Hooks Class Initialized
+INFO - 2018-05-22 11:48:11 --> Config Class Initialized
+INFO - 2018-05-22 11:48:11 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:48:11 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:11 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:48:11 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:11 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:48:11 --> URI Class Initialized
+INFO - 2018-05-22 11:48:11 --> URI Class Initialized
+INFO - 2018-05-22 11:48:11 --> Router Class Initialized
+INFO - 2018-05-22 11:48:11 --> Output Class Initialized
+INFO - 2018-05-22 11:48:11 --> Router Class Initialized
+INFO - 2018-05-22 11:48:11 --> Security Class Initialized
+INFO - 2018-05-22 11:48:11 --> Output Class Initialized
+INFO - 2018-05-22 11:48:11 --> Security Class Initialized
+DEBUG - 2018-05-22 11:48:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:11 --> Input Class Initialized
+DEBUG - 2018-05-22 11:48:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:11 --> Input Class Initialized
+INFO - 2018-05-22 11:48:11 --> Language Class Initialized
+INFO - 2018-05-22 11:48:11 --> Language Class Initialized
+INFO - 2018-05-22 11:48:11 --> Language Class Initialized
+INFO - 2018-05-22 11:48:11 --> Config Class Initialized
+INFO - 2018-05-22 11:48:11 --> Language Class Initialized
+INFO - 2018-05-22 11:48:11 --> Config Class Initialized
+INFO - 2018-05-22 11:48:11 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:11 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:11 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:11 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:11 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:48:11 --> Controller Class Initialized
+INFO - 2018-05-22 11:48:11 --> Helper loaded: html_helper
+ERROR - 2018-05-22 11:48:11 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:48:11 --> Controller Class Initialized
+ERROR - 2018-05-22 11:48:11 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:48:28 --> Config Class Initialized
+INFO - 2018-05-22 11:48:28 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:48:28 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:28 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:48:28 --> URI Class Initialized
+INFO - 2018-05-22 11:48:28 --> Router Class Initialized
+INFO - 2018-05-22 11:48:28 --> Output Class Initialized
+INFO - 2018-05-22 11:48:28 --> Security Class Initialized
+DEBUG - 2018-05-22 11:48:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:28 --> Input Class Initialized
+INFO - 2018-05-22 11:48:28 --> Language Class Initialized
+INFO - 2018-05-22 11:48:28 --> Language Class Initialized
+INFO - 2018-05-22 11:48:28 --> Config Class Initialized
+INFO - 2018-05-22 11:48:28 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:28 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:28 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:48:28 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:48:28 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:48:28 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:48:28 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:48:29 --> Email Class Initialized
+INFO - 2018-05-22 11:48:29 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:48:29 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:48:29 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:48:29 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:48:29 --> Model Class Initialized
+INFO - 2018-05-22 11:48:29 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:48:29 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:48:29 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:48:29 --> Form Validation Class Initialized
+INFO - 2018-05-22 11:48:29 --> Config Class Initialized
+INFO - 2018-05-22 11:48:29 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:48:29 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:29 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:48:29 --> URI Class Initialized
+INFO - 2018-05-22 11:48:29 --> Router Class Initialized
+INFO - 2018-05-22 11:48:29 --> Output Class Initialized
+INFO - 2018-05-22 11:48:29 --> Security Class Initialized
+DEBUG - 2018-05-22 11:48:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:29 --> Input Class Initialized
+INFO - 2018-05-22 11:48:29 --> Language Class Initialized
+INFO - 2018-05-22 11:48:29 --> Language Class Initialized
+INFO - 2018-05-22 11:48:29 --> Config Class Initialized
+INFO - 2018-05-22 11:48:29 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:30 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:30 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:48:30 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:48:30 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:30 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:48:30 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:30 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:48:30 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:48:30 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:48:30 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:48:30 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:48:38 --> Config Class Initialized
+INFO - 2018-05-22 11:48:38 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:48:38 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:48:38 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:48:38 --> URI Class Initialized
+INFO - 2018-05-22 11:48:38 --> Router Class Initialized
+INFO - 2018-05-22 11:48:38 --> Output Class Initialized
+INFO - 2018-05-22 11:48:38 --> Security Class Initialized
+DEBUG - 2018-05-22 11:48:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:48:38 --> Input Class Initialized
+INFO - 2018-05-22 11:48:38 --> Language Class Initialized
+INFO - 2018-05-22 11:48:38 --> Language Class Initialized
+INFO - 2018-05-22 11:48:38 --> Config Class Initialized
+INFO - 2018-05-22 11:48:38 --> Loader Class Initialized
+INFO - 2018-05-22 11:48:38 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:48:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:48:38 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:48:39 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:39 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:48:39 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:48:39 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:48:39 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:48:39 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:48:39 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:48:39 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:49:03 --> Config Class Initialized
+INFO - 2018-05-22 11:49:03 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:49:03 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:49:03 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:49:03 --> URI Class Initialized
+DEBUG - 2018-05-22 11:49:03 --> No URI present. Default controller set.
+INFO - 2018-05-22 11:49:03 --> Router Class Initialized
+INFO - 2018-05-22 11:49:03 --> Output Class Initialized
+INFO - 2018-05-22 11:49:03 --> Security Class Initialized
+DEBUG - 2018-05-22 11:49:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:49:03 --> Input Class Initialized
+INFO - 2018-05-22 11:49:03 --> Language Class Initialized
+INFO - 2018-05-22 11:49:03 --> Language Class Initialized
+INFO - 2018-05-22 11:49:03 --> Config Class Initialized
+INFO - 2018-05-22 11:49:03 --> Loader Class Initialized
+INFO - 2018-05-22 11:49:03 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:49:04 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:49:04 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:49:04 --> Site MX_Controller Initialized
+DEBUG - 2018-05-22 11:49:04 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:49:04 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:49:04 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:49:04 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:49:04 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:49:04 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:49:04 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:49:35 --> Config Class Initialized
+INFO - 2018-05-22 11:49:35 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:49:35 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:49:35 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:49:35 --> URI Class Initialized
+DEBUG - 2018-05-22 11:49:35 --> No URI present. Default controller set.
+INFO - 2018-05-22 11:49:35 --> Router Class Initialized
+INFO - 2018-05-22 11:49:35 --> Output Class Initialized
+INFO - 2018-05-22 11:49:35 --> Security Class Initialized
+DEBUG - 2018-05-22 11:49:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:49:35 --> Input Class Initialized
+INFO - 2018-05-22 11:49:35 --> Language Class Initialized
+INFO - 2018-05-22 11:49:35 --> Language Class Initialized
+INFO - 2018-05-22 11:49:35 --> Config Class Initialized
+INFO - 2018-05-22 11:49:36 --> Loader Class Initialized
+INFO - 2018-05-22 11:49:36 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:49:36 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:49:36 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:49:36 --> Site MX_Controller Initialized
+DEBUG - 2018-05-22 11:49:36 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:49:36 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:49:36 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:49:36 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:49:36 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:49:36 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:49:36 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:49:46 --> Config Class Initialized
+INFO - 2018-05-22 11:49:46 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:49:46 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:49:46 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:49:46 --> URI Class Initialized
+INFO - 2018-05-22 11:49:46 --> Router Class Initialized
+INFO - 2018-05-22 11:49:46 --> Output Class Initialized
+INFO - 2018-05-22 11:49:47 --> Security Class Initialized
+DEBUG - 2018-05-22 11:49:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:49:47 --> Input Class Initialized
+INFO - 2018-05-22 11:49:47 --> Language Class Initialized
+INFO - 2018-05-22 11:49:47 --> Language Class Initialized
+INFO - 2018-05-22 11:49:47 --> Config Class Initialized
+INFO - 2018-05-22 11:49:47 --> Loader Class Initialized
+INFO - 2018-05-22 11:49:47 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:49:47 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:49:47 --> Controller Class Initialized
+ERROR - 2018-05-22 11:49:47 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:50:08 --> Config Class Initialized
+INFO - 2018-05-22 11:50:08 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:08 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:08 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:08 --> URI Class Initialized
+INFO - 2018-05-22 11:50:08 --> Router Class Initialized
+INFO - 2018-05-22 11:50:08 --> Output Class Initialized
+INFO - 2018-05-22 11:50:08 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:08 --> Input Class Initialized
+INFO - 2018-05-22 11:50:08 --> Language Class Initialized
+INFO - 2018-05-22 11:50:08 --> Language Class Initialized
+INFO - 2018-05-22 11:50:08 --> Config Class Initialized
+INFO - 2018-05-22 11:50:08 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:08 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:08 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:08 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:50:08 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:50:08 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:08 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:50:08 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:50:08 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:50:08 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:50:08 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:50:39 --> Config Class Initialized
+INFO - 2018-05-22 11:50:39 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:39 --> URI Class Initialized
+INFO - 2018-05-22 11:50:39 --> Router Class Initialized
+INFO - 2018-05-22 11:50:40 --> Output Class Initialized
+INFO - 2018-05-22 11:50:40 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:40 --> Input Class Initialized
+INFO - 2018-05-22 11:50:40 --> Language Class Initialized
+INFO - 2018-05-22 11:50:40 --> Language Class Initialized
+INFO - 2018-05-22 11:50:40 --> Config Class Initialized
+INFO - 2018-05-22 11:50:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:40 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:40 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:40 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:50:40 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:50:40 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:40 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:50:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+INFO - 2018-05-22 11:50:40 --> Controller Class Initialized
+ERROR - 2018-05-22 11:50:40 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Loader.php 304
+ERROR - 2018-05-22 11:50:40 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:50:45 --> Config Class Initialized
+INFO - 2018-05-22 11:50:45 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:45 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:45 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:45 --> URI Class Initialized
+INFO - 2018-05-22 11:50:45 --> Router Class Initialized
+INFO - 2018-05-22 11:50:45 --> Output Class Initialized
+INFO - 2018-05-22 11:50:45 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:45 --> Input Class Initialized
+INFO - 2018-05-22 11:50:45 --> Language Class Initialized
+INFO - 2018-05-22 11:50:45 --> Language Class Initialized
+INFO - 2018-05-22 11:50:45 --> Config Class Initialized
+INFO - 2018-05-22 11:50:45 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:45 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:45 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:45 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:50:46 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:46 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:50:46 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:46 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:50:46 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:50:46 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:50:46 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:50:46 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:50:55 --> Config Class Initialized
+INFO - 2018-05-22 11:50:55 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:55 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:55 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:55 --> URI Class Initialized
+INFO - 2018-05-22 11:50:55 --> Router Class Initialized
+INFO - 2018-05-22 11:50:55 --> Output Class Initialized
+INFO - 2018-05-22 11:50:55 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:55 --> Input Class Initialized
+INFO - 2018-05-22 11:50:55 --> Language Class Initialized
+INFO - 2018-05-22 11:50:55 --> Language Class Initialized
+INFO - 2018-05-22 11:50:55 --> Config Class Initialized
+INFO - 2018-05-22 11:50:55 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:55 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:55 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:56 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:50:56 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:50:56 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:50:56 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:50:56 --> Email Class Initialized
+INFO - 2018-05-22 11:50:56 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:50:56 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:50:56 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:50:56 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:50:56 --> Model Class Initialized
+INFO - 2018-05-22 11:50:56 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:50:56 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:50:56 --> Config Class Initialized
+INFO - 2018-05-22 11:50:56 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:56 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:56 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:56 --> URI Class Initialized
+INFO - 2018-05-22 11:50:56 --> Router Class Initialized
+INFO - 2018-05-22 11:50:56 --> Output Class Initialized
+INFO - 2018-05-22 11:50:56 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:56 --> Input Class Initialized
+INFO - 2018-05-22 11:50:57 --> Language Class Initialized
+INFO - 2018-05-22 11:50:57 --> Language Class Initialized
+INFO - 2018-05-22 11:50:57 --> Config Class Initialized
+INFO - 2018-05-22 11:50:57 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:57 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:57 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:57 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:50:57 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:50:57 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:50:57 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:50:57 --> Email Class Initialized
+INFO - 2018-05-22 11:50:57 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:50:57 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:50:57 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:50:57 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:50:57 --> Model Class Initialized
+INFO - 2018-05-22 11:50:57 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:50:57 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:50:57 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:50:57 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:50:57 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:50:57 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:50:57 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:50:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:50:57 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:50:58 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:50:58 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:50:58 --> Final output sent to browser
+DEBUG - 2018-05-22 11:50:58 --> Total execution time: 1.3971
+INFO - 2018-05-22 11:50:58 --> Config Class Initialized
+INFO - 2018-05-22 11:50:58 --> Config Class Initialized
+INFO - 2018-05-22 11:50:58 --> Hooks Class Initialized
+INFO - 2018-05-22 11:50:58 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:50:58 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:58 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:50:58 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:50:58 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:50:58 --> URI Class Initialized
+INFO - 2018-05-22 11:50:58 --> URI Class Initialized
+INFO - 2018-05-22 11:50:58 --> Router Class Initialized
+INFO - 2018-05-22 11:50:58 --> Output Class Initialized
+INFO - 2018-05-22 11:50:58 --> Router Class Initialized
+INFO - 2018-05-22 11:50:58 --> Output Class Initialized
+INFO - 2018-05-22 11:50:58 --> Security Class Initialized
+INFO - 2018-05-22 11:50:58 --> Security Class Initialized
+DEBUG - 2018-05-22 11:50:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:50:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:50:58 --> Input Class Initialized
+INFO - 2018-05-22 11:50:58 --> Input Class Initialized
+INFO - 2018-05-22 11:50:58 --> Language Class Initialized
+INFO - 2018-05-22 11:50:58 --> Language Class Initialized
+INFO - 2018-05-22 11:50:58 --> Language Class Initialized
+INFO - 2018-05-22 11:50:58 --> Language Class Initialized
+INFO - 2018-05-22 11:50:58 --> Config Class Initialized
+INFO - 2018-05-22 11:50:58 --> Config Class Initialized
+INFO - 2018-05-22 11:50:58 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:58 --> Loader Class Initialized
+INFO - 2018-05-22 11:50:58 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:58 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:50:58 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:58 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:50:58 --> Controller Class Initialized
+INFO - 2018-05-22 11:50:58 --> Controller Class Initialized
+ERROR - 2018-05-22 11:50:58 --> 404 Page Not Found: /index
+ERROR - 2018-05-22 11:50:58 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:51:08 --> Config Class Initialized
+INFO - 2018-05-22 11:51:08 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:51:08 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:51:08 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:51:08 --> URI Class Initialized
+INFO - 2018-05-22 11:51:08 --> Router Class Initialized
+INFO - 2018-05-22 11:51:08 --> Output Class Initialized
+INFO - 2018-05-22 11:51:08 --> Security Class Initialized
+DEBUG - 2018-05-22 11:51:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:51:08 --> Input Class Initialized
+INFO - 2018-05-22 11:51:08 --> Language Class Initialized
+INFO - 2018-05-22 11:51:08 --> Language Class Initialized
+INFO - 2018-05-22 11:51:08 --> Config Class Initialized
+INFO - 2018-05-22 11:51:08 --> Loader Class Initialized
+INFO - 2018-05-22 11:51:08 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:51:08 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:51:08 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:51:08 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:51:09 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:51:09 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:51:09 --> Email Class Initialized
+INFO - 2018-05-22 11:51:09 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:51:09 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:51:09 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:51:09 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:51:09 --> Model Class Initialized
+INFO - 2018-05-22 11:51:09 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:51:09 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:51:09 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:51:09 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:51:09 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:51:09 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:09 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:51:09 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:51:09 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:09 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:51:09 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:51:09 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:51:09 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:51:09 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:51:10 --> Config Class Initialized
+INFO - 2018-05-22 11:51:10 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:51:10 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:51:10 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:51:10 --> URI Class Initialized
+INFO - 2018-05-22 11:51:10 --> Router Class Initialized
+INFO - 2018-05-22 11:51:10 --> Output Class Initialized
+INFO - 2018-05-22 11:51:10 --> Security Class Initialized
+DEBUG - 2018-05-22 11:51:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:51:10 --> Input Class Initialized
+INFO - 2018-05-22 11:51:10 --> Language Class Initialized
+INFO - 2018-05-22 11:51:10 --> Language Class Initialized
+INFO - 2018-05-22 11:51:10 --> Config Class Initialized
+INFO - 2018-05-22 11:51:10 --> Loader Class Initialized
+INFO - 2018-05-22 11:51:10 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:51:10 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:51:10 --> Controller Class Initialized
+ERROR - 2018-05-22 11:51:10 --> 404 Page Not Found: ../modules/customer/controllers//index
+INFO - 2018-05-22 11:51:14 --> Config Class Initialized
+INFO - 2018-05-22 11:51:14 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:51:14 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:51:14 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:51:14 --> URI Class Initialized
+INFO - 2018-05-22 11:51:14 --> Router Class Initialized
+INFO - 2018-05-22 11:51:14 --> Output Class Initialized
+INFO - 2018-05-22 11:51:14 --> Security Class Initialized
+DEBUG - 2018-05-22 11:51:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:51:14 --> Input Class Initialized
+INFO - 2018-05-22 11:51:14 --> Language Class Initialized
+INFO - 2018-05-22 11:51:14 --> Language Class Initialized
+INFO - 2018-05-22 11:51:14 --> Config Class Initialized
+INFO - 2018-05-22 11:51:14 --> Loader Class Initialized
+INFO - 2018-05-22 11:51:14 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:51:14 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:51:14 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:51:14 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:51:15 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:15 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:51:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:51:15 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:51:15 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:51:15 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:51:41 --> Config Class Initialized
+INFO - 2018-05-22 11:51:41 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:51:41 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:51:41 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:51:41 --> URI Class Initialized
+INFO - 2018-05-22 11:51:41 --> Router Class Initialized
+INFO - 2018-05-22 11:51:41 --> Output Class Initialized
+INFO - 2018-05-22 11:51:41 --> Security Class Initialized
+DEBUG - 2018-05-22 11:51:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:51:42 --> Input Class Initialized
+INFO - 2018-05-22 11:51:42 --> Language Class Initialized
+INFO - 2018-05-22 11:51:42 --> Language Class Initialized
+INFO - 2018-05-22 11:51:42 --> Config Class Initialized
+INFO - 2018-05-22 11:51:42 --> Loader Class Initialized
+INFO - 2018-05-22 11:51:42 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:51:42 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:51:42 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:51:42 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:42 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:51:42 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:51:42 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:51:42 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:51:42 --> Header MX_Controller Initialized
+ERROR - 2018-05-22 11:51:42 --> Severity: Notice --> Undefined property: CI::$session D:\xampp\htdocs\cityook\application\third_party\MX\Controller.php 59
+ERROR - 2018-05-22 11:51:42 --> Severity: Error --> Call to a member function userdata() on null D:\xampp\htdocs\cityook\application\modules\layouts\views\site-layout\header.php 57
+INFO - 2018-05-22 11:52:59 --> Config Class Initialized
+INFO - 2018-05-22 11:52:59 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:52:59 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:52:59 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:52:59 --> URI Class Initialized
+INFO - 2018-05-22 11:52:59 --> Router Class Initialized
+INFO - 2018-05-22 11:52:59 --> Output Class Initialized
+INFO - 2018-05-22 11:52:59 --> Security Class Initialized
+DEBUG - 2018-05-22 11:52:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:52:59 --> Input Class Initialized
+INFO - 2018-05-22 11:53:00 --> Language Class Initialized
+INFO - 2018-05-22 11:53:00 --> Language Class Initialized
+INFO - 2018-05-22 11:53:00 --> Config Class Initialized
+INFO - 2018-05-22 11:53:00 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:00 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:00 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:00 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:00 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:53:00 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:53:00 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:53:00 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:53:00 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:53:00 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:53:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:53:00 --> Final output sent to browser
+DEBUG - 2018-05-22 11:53:00 --> Total execution time: 1.0851
+INFO - 2018-05-22 11:53:01 --> Config Class Initialized
+INFO - 2018-05-22 11:53:01 --> Config Class Initialized
+INFO - 2018-05-22 11:53:01 --> Hooks Class Initialized
+INFO - 2018-05-22 11:53:01 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:01 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:53:01 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:01 --> URI Class Initialized
+INFO - 2018-05-22 11:53:01 --> URI Class Initialized
+INFO - 2018-05-22 11:53:01 --> Router Class Initialized
+INFO - 2018-05-22 11:53:01 --> Router Class Initialized
+INFO - 2018-05-22 11:53:01 --> Output Class Initialized
+INFO - 2018-05-22 11:53:01 --> Output Class Initialized
+INFO - 2018-05-22 11:53:01 --> Security Class Initialized
+INFO - 2018-05-22 11:53:01 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:53:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:01 --> Input Class Initialized
+INFO - 2018-05-22 11:53:01 --> Input Class Initialized
+INFO - 2018-05-22 11:53:01 --> Language Class Initialized
+INFO - 2018-05-22 11:53:01 --> Language Class Initialized
+INFO - 2018-05-22 11:53:01 --> Language Class Initialized
+INFO - 2018-05-22 11:53:01 --> Language Class Initialized
+INFO - 2018-05-22 11:53:01 --> Config Class Initialized
+INFO - 2018-05-22 11:53:01 --> Config Class Initialized
+INFO - 2018-05-22 11:53:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:01 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:01 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:01 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:01 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:01 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:01 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:36 --> Config Class Initialized
+INFO - 2018-05-22 11:53:36 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:36 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:36 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:36 --> URI Class Initialized
+INFO - 2018-05-22 11:53:36 --> Router Class Initialized
+INFO - 2018-05-22 11:53:36 --> Output Class Initialized
+INFO - 2018-05-22 11:53:36 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:36 --> Input Class Initialized
+INFO - 2018-05-22 11:53:36 --> Language Class Initialized
+INFO - 2018-05-22 11:53:37 --> Language Class Initialized
+INFO - 2018-05-22 11:53:37 --> Config Class Initialized
+INFO - 2018-05-22 11:53:37 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:37 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:37 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:37 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:37 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:53:37 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:53:37 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:53:37 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:53:37 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:53:37 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:53:37 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:53:37 --> Final output sent to browser
+DEBUG - 2018-05-22 11:53:37 --> Total execution time: 1.0611
+INFO - 2018-05-22 11:53:37 --> Config Class Initialized
+INFO - 2018-05-22 11:53:37 --> Config Class Initialized
+INFO - 2018-05-22 11:53:38 --> Hooks Class Initialized
+INFO - 2018-05-22 11:53:38 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:38 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:53:38 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:38 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:38 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:38 --> URI Class Initialized
+INFO - 2018-05-22 11:53:38 --> URI Class Initialized
+INFO - 2018-05-22 11:53:38 --> Router Class Initialized
+INFO - 2018-05-22 11:53:38 --> Output Class Initialized
+INFO - 2018-05-22 11:53:38 --> Router Class Initialized
+INFO - 2018-05-22 11:53:38 --> Security Class Initialized
+INFO - 2018-05-22 11:53:38 --> Output Class Initialized
+INFO - 2018-05-22 11:53:38 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:38 --> Input Class Initialized
+DEBUG - 2018-05-22 11:53:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:38 --> Input Class Initialized
+INFO - 2018-05-22 11:53:38 --> Language Class Initialized
+INFO - 2018-05-22 11:53:38 --> Language Class Initialized
+INFO - 2018-05-22 11:53:38 --> Language Class Initialized
+INFO - 2018-05-22 11:53:38 --> Config Class Initialized
+INFO - 2018-05-22 11:53:38 --> Language Class Initialized
+INFO - 2018-05-22 11:53:38 --> Config Class Initialized
+INFO - 2018-05-22 11:53:38 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:38 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:38 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:38 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:38 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:38 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:38 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:38 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:38 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:38 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:38 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:39 --> Config Class Initialized
+INFO - 2018-05-22 11:53:39 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:39 --> URI Class Initialized
+INFO - 2018-05-22 11:53:39 --> Router Class Initialized
+INFO - 2018-05-22 11:53:39 --> Output Class Initialized
+INFO - 2018-05-22 11:53:39 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:39 --> Input Class Initialized
+INFO - 2018-05-22 11:53:39 --> Language Class Initialized
+INFO - 2018-05-22 11:53:39 --> Language Class Initialized
+INFO - 2018-05-22 11:53:40 --> Config Class Initialized
+INFO - 2018-05-22 11:53:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:40 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:40 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:40 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:40 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:40 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:53 --> Config Class Initialized
+INFO - 2018-05-22 11:53:53 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:53 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:53 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:53 --> URI Class Initialized
+INFO - 2018-05-22 11:53:53 --> Router Class Initialized
+INFO - 2018-05-22 11:53:53 --> Output Class Initialized
+INFO - 2018-05-22 11:53:53 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:53 --> Input Class Initialized
+INFO - 2018-05-22 11:53:53 --> Language Class Initialized
+INFO - 2018-05-22 11:53:53 --> Language Class Initialized
+INFO - 2018-05-22 11:53:53 --> Config Class Initialized
+INFO - 2018-05-22 11:53:53 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:53 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:53 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:53 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:53 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:53:53 --> Customer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:53 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:53:54 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:53:54 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:53:54 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:53:54 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:53:54 --> File loaded: D:\xampp\htdocs\cityook\application\modules/customer/views/customer/account.php
+INFO - 2018-05-22 11:53:54 --> Final output sent to browser
+DEBUG - 2018-05-22 11:53:54 --> Total execution time: 1.0711
+INFO - 2018-05-22 11:53:54 --> Config Class Initialized
+INFO - 2018-05-22 11:53:54 --> Config Class Initialized
+INFO - 2018-05-22 11:53:54 --> Hooks Class Initialized
+INFO - 2018-05-22 11:53:54 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:54 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:54 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:53:54 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:54 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:54 --> URI Class Initialized
+INFO - 2018-05-22 11:53:54 --> URI Class Initialized
+INFO - 2018-05-22 11:53:54 --> Router Class Initialized
+INFO - 2018-05-22 11:53:54 --> Output Class Initialized
+INFO - 2018-05-22 11:53:54 --> Router Class Initialized
+INFO - 2018-05-22 11:53:54 --> Security Class Initialized
+INFO - 2018-05-22 11:53:54 --> Output Class Initialized
+DEBUG - 2018-05-22 11:53:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:54 --> Security Class Initialized
+INFO - 2018-05-22 11:53:54 --> Input Class Initialized
+INFO - 2018-05-22 11:53:55 --> Language Class Initialized
+INFO - 2018-05-22 11:53:55 --> Language Class Initialized
+DEBUG - 2018-05-22 11:53:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:55 --> Config Class Initialized
+INFO - 2018-05-22 11:53:55 --> Input Class Initialized
+INFO - 2018-05-22 11:53:55 --> Loader Class Initialized
+INFO - 2018-05-22 11:53:55 --> Language Class Initialized
+INFO - 2018-05-22 11:53:55 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:55 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:55 --> Language Class Initialized
+INFO - 2018-05-22 11:53:55 --> Config Class Initialized
+INFO - 2018-05-22 11:53:55 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:55 --> Controller Class Initialized
+INFO - 2018-05-22 11:53:55 --> Loader Class Initialized
+ERROR - 2018-05-22 11:53:55 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:55 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:53:55 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:53:55 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:53:55 --> Controller Class Initialized
+ERROR - 2018-05-22 11:53:55 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:53:59 --> Config Class Initialized
+INFO - 2018-05-22 11:53:59 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:53:59 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:53:59 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:53:59 --> URI Class Initialized
+INFO - 2018-05-22 11:53:59 --> Router Class Initialized
+INFO - 2018-05-22 11:53:59 --> Output Class Initialized
+INFO - 2018-05-22 11:53:59 --> Security Class Initialized
+DEBUG - 2018-05-22 11:53:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:53:59 --> Input Class Initialized
+INFO - 2018-05-22 11:53:59 --> Language Class Initialized
+INFO - 2018-05-22 11:53:59 --> Language Class Initialized
+INFO - 2018-05-22 11:54:00 --> Config Class Initialized
+INFO - 2018-05-22 11:54:00 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:00 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:00 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:00 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:00 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:00 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:54:00 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:00 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:00 --> Email Class Initialized
+INFO - 2018-05-22 11:54:00 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:00 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:00 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:00 --> Model Class Initialized
+INFO - 2018-05-22 11:54:00 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:00 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:00 --> Config Class Initialized
+INFO - 2018-05-22 11:54:00 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:00 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:00 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:00 --> URI Class Initialized
+INFO - 2018-05-22 11:54:00 --> Router Class Initialized
+INFO - 2018-05-22 11:54:00 --> Output Class Initialized
+INFO - 2018-05-22 11:54:01 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:01 --> Input Class Initialized
+INFO - 2018-05-22 11:54:01 --> Language Class Initialized
+INFO - 2018-05-22 11:54:01 --> Language Class Initialized
+INFO - 2018-05-22 11:54:01 --> Config Class Initialized
+INFO - 2018-05-22 11:54:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:01 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:01 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:01 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:01 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:01 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:01 --> Email Class Initialized
+INFO - 2018-05-22 11:54:01 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:01 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:01 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:01 --> Model Class Initialized
+INFO - 2018-05-22 11:54:01 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:01 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:01 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:01 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:01 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:54:01 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:01 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:54:01 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:54:01 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:01 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:54:01 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:54:01 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:02 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:54:02 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:54:02 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:02 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:54:02 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:54:02 --> Final output sent to browser
+DEBUG - 2018-05-22 11:54:02 --> Total execution time: 1.4181
+INFO - 2018-05-22 11:54:02 --> Config Class Initialized
+INFO - 2018-05-22 11:54:02 --> Config Class Initialized
+INFO - 2018-05-22 11:54:02 --> Hooks Class Initialized
+INFO - 2018-05-22 11:54:02 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:02 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:54:02 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:02 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:02 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:02 --> URI Class Initialized
+INFO - 2018-05-22 11:54:02 --> URI Class Initialized
+INFO - 2018-05-22 11:54:02 --> Router Class Initialized
+INFO - 2018-05-22 11:54:02 --> Router Class Initialized
+INFO - 2018-05-22 11:54:02 --> Output Class Initialized
+INFO - 2018-05-22 11:54:02 --> Output Class Initialized
+INFO - 2018-05-22 11:54:02 --> Security Class Initialized
+INFO - 2018-05-22 11:54:02 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:54:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:02 --> Input Class Initialized
+INFO - 2018-05-22 11:54:02 --> Input Class Initialized
+INFO - 2018-05-22 11:54:02 --> Language Class Initialized
+INFO - 2018-05-22 11:54:02 --> Language Class Initialized
+INFO - 2018-05-22 11:54:02 --> Language Class Initialized
+INFO - 2018-05-22 11:54:02 --> Language Class Initialized
+INFO - 2018-05-22 11:54:02 --> Config Class Initialized
+INFO - 2018-05-22 11:54:02 --> Config Class Initialized
+INFO - 2018-05-22 11:54:02 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:02 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:02 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:02 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:03 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:03 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:03 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:03 --> Controller Class Initialized
+ERROR - 2018-05-22 11:54:03 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:03 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:03 --> Controller Class Initialized
+ERROR - 2018-05-22 11:54:03 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:13 --> Config Class Initialized
+INFO - 2018-05-22 11:54:13 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:13 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:13 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:13 --> URI Class Initialized
+INFO - 2018-05-22 11:54:13 --> Router Class Initialized
+INFO - 2018-05-22 11:54:13 --> Output Class Initialized
+INFO - 2018-05-22 11:54:13 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:13 --> Input Class Initialized
+INFO - 2018-05-22 11:54:13 --> Language Class Initialized
+INFO - 2018-05-22 11:54:13 --> Language Class Initialized
+INFO - 2018-05-22 11:54:13 --> Config Class Initialized
+INFO - 2018-05-22 11:54:13 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:13 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:13 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:13 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:13 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:13 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:13 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:13 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:13 --> Email Class Initialized
+INFO - 2018-05-22 11:54:13 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:13 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:13 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:13 --> Model Class Initialized
+INFO - 2018-05-22 11:54:13 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:13 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:13 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:14 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:14 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:54:14 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:14 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:54:14 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:54:14 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:14 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:54:14 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:54:14 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:54:14 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:54:14 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:54:14 --> Config Class Initialized
+INFO - 2018-05-22 11:54:14 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:14 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:14 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:14 --> URI Class Initialized
+INFO - 2018-05-22 11:54:14 --> Router Class Initialized
+INFO - 2018-05-22 11:54:14 --> Output Class Initialized
+INFO - 2018-05-22 11:54:14 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:14 --> Input Class Initialized
+INFO - 2018-05-22 11:54:14 --> Language Class Initialized
+INFO - 2018-05-22 11:54:15 --> Language Class Initialized
+INFO - 2018-05-22 11:54:15 --> Config Class Initialized
+INFO - 2018-05-22 11:54:15 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:15 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:15 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:15 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:15 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:15 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:15 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:15 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:15 --> Email Class Initialized
+INFO - 2018-05-22 11:54:15 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:15 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:15 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:15 --> Model Class Initialized
+INFO - 2018-05-22 11:54:15 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:15 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:15 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:15 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:54:15 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:54:15 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:54:15 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:54:15 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:54:15 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:16 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:54:16 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:54:16 --> Final output sent to browser
+DEBUG - 2018-05-22 11:54:16 --> Total execution time: 1.4131
+INFO - 2018-05-22 11:54:16 --> Config Class Initialized
+INFO - 2018-05-22 11:54:16 --> Config Class Initialized
+INFO - 2018-05-22 11:54:16 --> Hooks Class Initialized
+INFO - 2018-05-22 11:54:16 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:16 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:54:16 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:16 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:16 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:16 --> URI Class Initialized
+INFO - 2018-05-22 11:54:16 --> URI Class Initialized
+INFO - 2018-05-22 11:54:16 --> Router Class Initialized
+INFO - 2018-05-22 11:54:16 --> Router Class Initialized
+INFO - 2018-05-22 11:54:16 --> Output Class Initialized
+INFO - 2018-05-22 11:54:16 --> Output Class Initialized
+INFO - 2018-05-22 11:54:16 --> Security Class Initialized
+INFO - 2018-05-22 11:54:16 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:54:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:16 --> Input Class Initialized
+INFO - 2018-05-22 11:54:16 --> Language Class Initialized
+INFO - 2018-05-22 11:54:16 --> Input Class Initialized
+INFO - 2018-05-22 11:54:16 --> Language Class Initialized
+INFO - 2018-05-22 11:54:16 --> Config Class Initialized
+INFO - 2018-05-22 11:54:16 --> Language Class Initialized
+INFO - 2018-05-22 11:54:16 --> Language Class Initialized
+INFO - 2018-05-22 11:54:16 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:16 --> Config Class Initialized
+INFO - 2018-05-22 11:54:16 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:16 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:16 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:16 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:16 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:16 --> Controller Class Initialized
+INFO - 2018-05-22 11:54:16 --> Helper loaded: html_helper
+ERROR - 2018-05-22 11:54:17 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:17 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:17 --> Controller Class Initialized
+ERROR - 2018-05-22 11:54:17 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:24 --> Config Class Initialized
+INFO - 2018-05-22 11:54:24 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:24 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:24 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:24 --> URI Class Initialized
+INFO - 2018-05-22 11:54:24 --> Router Class Initialized
+INFO - 2018-05-22 11:54:24 --> Output Class Initialized
+INFO - 2018-05-22 11:54:24 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:25 --> Input Class Initialized
+INFO - 2018-05-22 11:54:25 --> Language Class Initialized
+INFO - 2018-05-22 11:54:25 --> Language Class Initialized
+INFO - 2018-05-22 11:54:25 --> Config Class Initialized
+INFO - 2018-05-22 11:54:25 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:25 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:25 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:25 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:25 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:25 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:25 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:25 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:25 --> Email Class Initialized
+INFO - 2018-05-22 11:54:25 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:25 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:25 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:25 --> Model Class Initialized
+INFO - 2018-05-22 11:54:25 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:25 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:25 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:25 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:25 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:54:25 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:25 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:54:25 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:54:25 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:25 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:54:25 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:54:26 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:54:26 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:54:26 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:54:26 --> Config Class Initialized
+INFO - 2018-05-22 11:54:26 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:26 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:26 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:26 --> URI Class Initialized
+INFO - 2018-05-22 11:54:26 --> Router Class Initialized
+INFO - 2018-05-22 11:54:26 --> Output Class Initialized
+INFO - 2018-05-22 11:54:26 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:26 --> Input Class Initialized
+INFO - 2018-05-22 11:54:26 --> Language Class Initialized
+INFO - 2018-05-22 11:54:26 --> Language Class Initialized
+INFO - 2018-05-22 11:54:26 --> Config Class Initialized
+INFO - 2018-05-22 11:54:26 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:26 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:26 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:26 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:26 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:27 --> Dashboard MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:54:27 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Header.php
+DEBUG - 2018-05-22 11:54:27 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/header.php
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Sidebar.php
+DEBUG - 2018-05-22 11:54:27 --> Sidebar MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/sidebar.php
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:54:27 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Footer.php
+DEBUG - 2018-05-22 11:54:27 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/footer.php
+DEBUG - 2018-05-22 11:54:27 --> File loaded: D:\xampp\htdocs\cityook\application\modules/admin/views/dashboard/index.php
+INFO - 2018-05-22 11:54:27 --> Final output sent to browser
+DEBUG - 2018-05-22 11:54:27 --> Total execution time: 1.1301
+INFO - 2018-05-22 11:54:33 --> Config Class Initialized
+INFO - 2018-05-22 11:54:33 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:33 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:33 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:33 --> URI Class Initialized
+INFO - 2018-05-22 11:54:33 --> Router Class Initialized
+INFO - 2018-05-22 11:54:33 --> Output Class Initialized
+INFO - 2018-05-22 11:54:33 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:33 --> Input Class Initialized
+INFO - 2018-05-22 11:54:33 --> Language Class Initialized
+INFO - 2018-05-22 11:54:33 --> Language Class Initialized
+INFO - 2018-05-22 11:54:33 --> Config Class Initialized
+INFO - 2018-05-22 11:54:33 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:33 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:33 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:33 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:34 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:34 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:54:34 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:34 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:34 --> Email Class Initialized
+INFO - 2018-05-22 11:54:34 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:34 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:34 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:34 --> Model Class Initialized
+INFO - 2018-05-22 11:54:34 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:34 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:34 --> Config Class Initialized
+INFO - 2018-05-22 11:54:34 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:34 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:34 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:34 --> URI Class Initialized
+INFO - 2018-05-22 11:54:34 --> Router Class Initialized
+INFO - 2018-05-22 11:54:34 --> Output Class Initialized
+INFO - 2018-05-22 11:54:34 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:34 --> Input Class Initialized
+INFO - 2018-05-22 11:54:34 --> Language Class Initialized
+INFO - 2018-05-22 11:54:34 --> Language Class Initialized
+INFO - 2018-05-22 11:54:34 --> Config Class Initialized
+INFO - 2018-05-22 11:54:35 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:35 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:35 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:35 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:35 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:35 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:35 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:35 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:35 --> Email Class Initialized
+INFO - 2018-05-22 11:54:35 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:35 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:35 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:35 --> Model Class Initialized
+INFO - 2018-05-22 11:54:35 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:35 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:35 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:35 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:54:35 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:54:35 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:54:35 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:54:35 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:54:35 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:54:35 --> Final output sent to browser
+DEBUG - 2018-05-22 11:54:36 --> Total execution time: 1.3931
+INFO - 2018-05-22 11:54:36 --> Config Class Initialized
+INFO - 2018-05-22 11:54:36 --> Config Class Initialized
+INFO - 2018-05-22 11:54:36 --> Hooks Class Initialized
+INFO - 2018-05-22 11:54:36 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:36 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:54:36 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:36 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:36 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:36 --> URI Class Initialized
+INFO - 2018-05-22 11:54:36 --> URI Class Initialized
+INFO - 2018-05-22 11:54:36 --> Router Class Initialized
+INFO - 2018-05-22 11:54:36 --> Router Class Initialized
+INFO - 2018-05-22 11:54:36 --> Output Class Initialized
+INFO - 2018-05-22 11:54:36 --> Output Class Initialized
+INFO - 2018-05-22 11:54:36 --> Security Class Initialized
+INFO - 2018-05-22 11:54:36 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:54:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:36 --> Input Class Initialized
+INFO - 2018-05-22 11:54:36 --> Input Class Initialized
+INFO - 2018-05-22 11:54:36 --> Language Class Initialized
+INFO - 2018-05-22 11:54:36 --> Language Class Initialized
+INFO - 2018-05-22 11:54:36 --> Language Class Initialized
+INFO - 2018-05-22 11:54:36 --> Language Class Initialized
+INFO - 2018-05-22 11:54:36 --> Config Class Initialized
+INFO - 2018-05-22 11:54:36 --> Config Class Initialized
+INFO - 2018-05-22 11:54:36 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:36 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:36 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:36 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:36 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:36 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:36 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:36 --> Controller Class Initialized
+ERROR - 2018-05-22 11:54:36 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:36 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:36 --> Controller Class Initialized
+ERROR - 2018-05-22 11:54:36 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:54:44 --> Config Class Initialized
+INFO - 2018-05-22 11:54:44 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:44 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:44 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:44 --> URI Class Initialized
+INFO - 2018-05-22 11:54:44 --> Router Class Initialized
+INFO - 2018-05-22 11:54:44 --> Output Class Initialized
+INFO - 2018-05-22 11:54:44 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:44 --> Input Class Initialized
+INFO - 2018-05-22 11:54:44 --> Language Class Initialized
+INFO - 2018-05-22 11:54:45 --> Language Class Initialized
+INFO - 2018-05-22 11:54:45 --> Config Class Initialized
+INFO - 2018-05-22 11:54:45 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:45 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:45 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:45 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:45 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:45 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:54:45 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:45 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:45 --> Email Class Initialized
+INFO - 2018-05-22 11:54:45 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:45 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:45 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:45 --> Model Class Initialized
+INFO - 2018-05-22 11:54:45 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:45 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:45 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:54:45 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:54:45 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:54:45 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:45 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:54:45 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:54:45 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:45 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+ERROR - 2018-05-22 11:54:45 --> Could not find the language line "login_heading"
+ERROR - 2018-05-22 11:54:45 --> Could not find the language line "login_identity_label"
+ERROR - 2018-05-22 11:54:45 --> Could not find the language line "login_password_label"
+INFO - 2018-05-22 11:54:45 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-05-22 11:54:47 --> Config Class Initialized
+INFO - 2018-05-22 11:54:47 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:47 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:48 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:48 --> URI Class Initialized
+INFO - 2018-05-22 11:54:48 --> Router Class Initialized
+INFO - 2018-05-22 11:54:48 --> Output Class Initialized
+INFO - 2018-05-22 11:54:48 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:48 --> Input Class Initialized
+INFO - 2018-05-22 11:54:48 --> Language Class Initialized
+INFO - 2018-05-22 11:54:48 --> Language Class Initialized
+INFO - 2018-05-22 11:54:48 --> Config Class Initialized
+INFO - 2018-05-22 11:54:48 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:48 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:48 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:48 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:48 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:48 --> Employee MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Head.php
+DEBUG - 2018-05-22 11:54:48 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/head.php
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Header.php
+DEBUG - 2018-05-22 11:54:48 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/header.php
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Sidebar.php
+DEBUG - 2018-05-22 11:54:48 --> Sidebar MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/sidebar.php
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Script.php
+DEBUG - 2018-05-22 11:54:48 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/script.php
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/app-layout/Footer.php
+DEBUG - 2018-05-22 11:54:48 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:54:48 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/app-layout/footer.php
+DEBUG - 2018-05-22 11:54:49 --> File loaded: D:\xampp\htdocs\cityook\application\modules/employee/views/employee/profile.php
+INFO - 2018-05-22 11:54:49 --> Final output sent to browser
+DEBUG - 2018-05-22 11:54:49 --> Total execution time: 1.3021
+INFO - 2018-05-22 11:54:58 --> Config Class Initialized
+INFO - 2018-05-22 11:54:58 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:58 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:58 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:58 --> URI Class Initialized
+INFO - 2018-05-22 11:54:58 --> Router Class Initialized
+INFO - 2018-05-22 11:54:58 --> Output Class Initialized
+INFO - 2018-05-22 11:54:58 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:58 --> Input Class Initialized
+INFO - 2018-05-22 11:54:58 --> Language Class Initialized
+INFO - 2018-05-22 11:54:58 --> Language Class Initialized
+INFO - 2018-05-22 11:54:58 --> Config Class Initialized
+INFO - 2018-05-22 11:54:58 --> Loader Class Initialized
+INFO - 2018-05-22 11:54:59 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:54:59 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:54:59 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:54:59 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:54:59 --> Logout MX_Controller Initialized
+INFO - 2018-05-22 11:54:59 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:54:59 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:54:59 --> Email Class Initialized
+INFO - 2018-05-22 11:54:59 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:54:59 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:54:59 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:54:59 --> Model Class Initialized
+INFO - 2018-05-22 11:54:59 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:54:59 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:54:59 --> Config Class Initialized
+INFO - 2018-05-22 11:54:59 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:54:59 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:54:59 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:54:59 --> URI Class Initialized
+INFO - 2018-05-22 11:54:59 --> Router Class Initialized
+INFO - 2018-05-22 11:54:59 --> Output Class Initialized
+INFO - 2018-05-22 11:54:59 --> Security Class Initialized
+DEBUG - 2018-05-22 11:54:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:54:59 --> Input Class Initialized
+INFO - 2018-05-22 11:55:00 --> Language Class Initialized
+INFO - 2018-05-22 11:55:00 --> Language Class Initialized
+INFO - 2018-05-22 11:55:00 --> Config Class Initialized
+INFO - 2018-05-22 11:55:00 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:00 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:00 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:00 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:00 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:55:00 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:55:00 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:55:00 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:55:00 --> Email Class Initialized
+INFO - 2018-05-22 11:55:00 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:55:00 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:55:00 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:55:00 --> Model Class Initialized
+INFO - 2018-05-22 11:55:00 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:55:00 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:55:00 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:55:00 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:55:00 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:55:00 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:55:00 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:00 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:55:01 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:55:01 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:01 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:55:01 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:55:01 --> Final output sent to browser
+DEBUG - 2018-05-22 11:55:01 --> Total execution time: 1.4351
+INFO - 2018-05-22 11:55:01 --> Config Class Initialized
+INFO - 2018-05-22 11:55:01 --> Config Class Initialized
+INFO - 2018-05-22 11:55:01 --> Hooks Class Initialized
+INFO - 2018-05-22 11:55:01 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:01 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:55:01 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:01 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:01 --> URI Class Initialized
+INFO - 2018-05-22 11:55:01 --> URI Class Initialized
+INFO - 2018-05-22 11:55:01 --> Router Class Initialized
+INFO - 2018-05-22 11:55:01 --> Router Class Initialized
+INFO - 2018-05-22 11:55:01 --> Output Class Initialized
+INFO - 2018-05-22 11:55:01 --> Output Class Initialized
+INFO - 2018-05-22 11:55:01 --> Security Class Initialized
+INFO - 2018-05-22 11:55:01 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:55:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:01 --> Input Class Initialized
+INFO - 2018-05-22 11:55:01 --> Input Class Initialized
+INFO - 2018-05-22 11:55:01 --> Language Class Initialized
+INFO - 2018-05-22 11:55:01 --> Language Class Initialized
+INFO - 2018-05-22 11:55:01 --> Language Class Initialized
+INFO - 2018-05-22 11:55:01 --> Config Class Initialized
+INFO - 2018-05-22 11:55:01 --> Language Class Initialized
+INFO - 2018-05-22 11:55:01 --> Config Class Initialized
+INFO - 2018-05-22 11:55:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:01 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:01 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:01 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:01 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:02 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:02 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:02 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:02 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:02 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:25 --> Config Class Initialized
+INFO - 2018-05-22 11:55:25 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:25 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:25 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:25 --> URI Class Initialized
+INFO - 2018-05-22 11:55:25 --> Router Class Initialized
+INFO - 2018-05-22 11:55:25 --> Output Class Initialized
+INFO - 2018-05-22 11:55:25 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:25 --> Input Class Initialized
+INFO - 2018-05-22 11:55:25 --> Language Class Initialized
+INFO - 2018-05-22 11:55:25 --> Language Class Initialized
+INFO - 2018-05-22 11:55:25 --> Config Class Initialized
+INFO - 2018-05-22 11:55:25 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:25 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:25 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:25 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:25 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:55:25 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:55:25 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:55:25 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:55:25 --> Email Class Initialized
+INFO - 2018-05-22 11:55:25 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:55:25 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:55:25 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:55:26 --> Model Class Initialized
+INFO - 2018-05-22 11:55:26 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:55:26 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:55:26 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:55:26 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:55:26 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:55:26 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:55:26 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:55:26 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:55:26 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:55:26 --> Final output sent to browser
+DEBUG - 2018-05-22 11:55:26 --> Total execution time: 1.5161
+INFO - 2018-05-22 11:55:26 --> Config Class Initialized
+INFO - 2018-05-22 11:55:26 --> Config Class Initialized
+INFO - 2018-05-22 11:55:27 --> Hooks Class Initialized
+INFO - 2018-05-22 11:55:27 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:27 --> UTF-8 Support Enabled
+DEBUG - 2018-05-22 11:55:27 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:27 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:27 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:27 --> URI Class Initialized
+INFO - 2018-05-22 11:55:27 --> URI Class Initialized
+INFO - 2018-05-22 11:55:27 --> Router Class Initialized
+INFO - 2018-05-22 11:55:27 --> Router Class Initialized
+INFO - 2018-05-22 11:55:27 --> Output Class Initialized
+INFO - 2018-05-22 11:55:27 --> Output Class Initialized
+INFO - 2018-05-22 11:55:27 --> Security Class Initialized
+INFO - 2018-05-22 11:55:27 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-22 11:55:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:27 --> Input Class Initialized
+INFO - 2018-05-22 11:55:27 --> Input Class Initialized
+INFO - 2018-05-22 11:55:27 --> Language Class Initialized
+INFO - 2018-05-22 11:55:27 --> Language Class Initialized
+INFO - 2018-05-22 11:55:27 --> Language Class Initialized
+INFO - 2018-05-22 11:55:27 --> Language Class Initialized
+INFO - 2018-05-22 11:55:27 --> Config Class Initialized
+INFO - 2018-05-22 11:55:27 --> Config Class Initialized
+INFO - 2018-05-22 11:55:27 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:27 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:27 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:27 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:27 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:27 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:27 --> Controller Class Initialized
+INFO - 2018-05-22 11:55:27 --> Helper loaded: html_helper
+ERROR - 2018-05-22 11:55:27 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:27 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:27 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:27 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:39 --> Config Class Initialized
+INFO - 2018-05-22 11:55:39 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:39 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:39 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:40 --> URI Class Initialized
+INFO - 2018-05-22 11:55:40 --> Router Class Initialized
+INFO - 2018-05-22 11:55:40 --> Output Class Initialized
+INFO - 2018-05-22 11:55:40 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:40 --> Input Class Initialized
+INFO - 2018-05-22 11:55:40 --> Language Class Initialized
+INFO - 2018-05-22 11:55:40 --> Language Class Initialized
+INFO - 2018-05-22 11:55:40 --> Config Class Initialized
+INFO - 2018-05-22 11:55:40 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:40 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:40 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:40 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:40 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:55:40 --> Login MX_Controller Initialized
+INFO - 2018-05-22 11:55:40 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:55:40 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:55:40 --> Email Class Initialized
+INFO - 2018-05-22 11:55:40 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:55:40 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:55:40 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:55:40 --> Model Class Initialized
+INFO - 2018-05-22 11:55:40 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:55:40 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:55:40 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:55:40 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:55:40 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:55:41 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:55:41 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:55:41 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:55:41 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:55:41 --> File loaded: D:\xampp\htdocs\cityook\application\modules/login/views/index.php
+INFO - 2018-05-22 11:55:41 --> Final output sent to browser
+DEBUG - 2018-05-22 11:55:41 --> Total execution time: 1.5391
+INFO - 2018-05-22 11:55:41 --> Config Class Initialized
+INFO - 2018-05-22 11:55:41 --> Config Class Initialized
+INFO - 2018-05-22 11:55:41 --> Hooks Class Initialized
+INFO - 2018-05-22 11:55:41 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:41 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:41 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:55:41 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:41 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:41 --> URI Class Initialized
+INFO - 2018-05-22 11:55:41 --> URI Class Initialized
+INFO - 2018-05-22 11:55:41 --> Router Class Initialized
+INFO - 2018-05-22 11:55:41 --> Output Class Initialized
+INFO - 2018-05-22 11:55:41 --> Router Class Initialized
+INFO - 2018-05-22 11:55:41 --> Output Class Initialized
+INFO - 2018-05-22 11:55:41 --> Security Class Initialized
+INFO - 2018-05-22 11:55:41 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:41 --> Input Class Initialized
+DEBUG - 2018-05-22 11:55:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:42 --> Input Class Initialized
+INFO - 2018-05-22 11:55:42 --> Language Class Initialized
+INFO - 2018-05-22 11:55:42 --> Language Class Initialized
+INFO - 2018-05-22 11:55:42 --> Language Class Initialized
+INFO - 2018-05-22 11:55:42 --> Config Class Initialized
+INFO - 2018-05-22 11:55:42 --> Language Class Initialized
+INFO - 2018-05-22 11:55:42 --> Config Class Initialized
+INFO - 2018-05-22 11:55:42 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:42 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:42 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:42 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:42 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:42 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:42 --> Controller Class Initialized
+INFO - 2018-05-22 11:55:42 --> Helper loaded: html_helper
+ERROR - 2018-05-22 11:55:42 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:42 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:42 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:42 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:51 --> Config Class Initialized
+INFO - 2018-05-22 11:55:51 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:51 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:51 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:51 --> URI Class Initialized
+INFO - 2018-05-22 11:55:51 --> Router Class Initialized
+INFO - 2018-05-22 11:55:51 --> Output Class Initialized
+INFO - 2018-05-22 11:55:51 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:51 --> Input Class Initialized
+INFO - 2018-05-22 11:55:51 --> Language Class Initialized
+INFO - 2018-05-22 11:55:51 --> Language Class Initialized
+INFO - 2018-05-22 11:55:51 --> Config Class Initialized
+INFO - 2018-05-22 11:55:51 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:52 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:52 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:52 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:52 --> Controller Class Initialized
+DEBUG - 2018-05-22 11:55:52 --> Register MX_Controller Initialized
+INFO - 2018-05-22 11:55:52 --> Database Driver Class Initialized
+DEBUG - 2018-05-22 11:55:52 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-22 11:55:52 --> Email Class Initialized
+INFO - 2018-05-22 11:55:52 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-22 11:55:52 --> Helper loaded: cookie_helper
+INFO - 2018-05-22 11:55:52 --> Helper loaded: language_helper
+INFO - 2018-05-22 11:55:52 --> Model Class Initialized
+INFO - 2018-05-22 11:55:52 --> Helper loaded: date_helper
+INFO - 2018-05-22 11:55:52 --> Database Driver Class Initialized
+INFO - 2018-05-22 11:55:52 --> Helper loaded: form_helper
+INFO - 2018-05-22 11:55:52 --> Form Validation Class Initialized
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-22 11:55:52 --> Head MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-22 11:55:52 --> Header MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-22 11:55:52 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-22 11:55:52 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-22 11:55:53 --> Script MX_Controller Initialized
+DEBUG - 2018-05-22 11:55:53 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-22 11:55:53 --> File loaded: D:\xampp\htdocs\cityook\application\modules/register/views/index.php
+INFO - 2018-05-22 11:55:53 --> Final output sent to browser
+DEBUG - 2018-05-22 11:55:53 --> Total execution time: 1.5711
+INFO - 2018-05-22 11:55:53 --> Config Class Initialized
+INFO - 2018-05-22 11:55:53 --> Config Class Initialized
+INFO - 2018-05-22 11:55:53 --> Hooks Class Initialized
+INFO - 2018-05-22 11:55:53 --> Hooks Class Initialized
+DEBUG - 2018-05-22 11:55:53 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:53 --> Utf8 Class Initialized
+DEBUG - 2018-05-22 11:55:53 --> UTF-8 Support Enabled
+INFO - 2018-05-22 11:55:53 --> Utf8 Class Initialized
+INFO - 2018-05-22 11:55:53 --> URI Class Initialized
+INFO - 2018-05-22 11:55:53 --> URI Class Initialized
+INFO - 2018-05-22 11:55:53 --> Router Class Initialized
+INFO - 2018-05-22 11:55:53 --> Output Class Initialized
+INFO - 2018-05-22 11:55:53 --> Router Class Initialized
+INFO - 2018-05-22 11:55:53 --> Security Class Initialized
+INFO - 2018-05-22 11:55:53 --> Output Class Initialized
+INFO - 2018-05-22 11:55:53 --> Security Class Initialized
+DEBUG - 2018-05-22 11:55:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:53 --> Input Class Initialized
+DEBUG - 2018-05-22 11:55:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-22 11:55:53 --> Input Class Initialized
+INFO - 2018-05-22 11:55:53 --> Language Class Initialized
+INFO - 2018-05-22 11:55:53 --> Language Class Initialized
+INFO - 2018-05-22 11:55:53 --> Language Class Initialized
+INFO - 2018-05-22 11:55:53 --> Config Class Initialized
+INFO - 2018-05-22 11:55:53 --> Language Class Initialized
+INFO - 2018-05-22 11:55:53 --> Config Class Initialized
+INFO - 2018-05-22 11:55:53 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:53 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:53 --> Loader Class Initialized
+INFO - 2018-05-22 11:55:53 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:53 --> Helper loaded: url_helper
+INFO - 2018-05-22 11:55:53 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:53 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:54 --> 404 Page Not Found: /index
+INFO - 2018-05-22 11:55:54 --> Helper loaded: html_helper
+INFO - 2018-05-22 11:55:54 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-22 11:55:54 --> Controller Class Initialized
+ERROR - 2018-05-22 11:55:54 --> 404 Page Not Found: /index

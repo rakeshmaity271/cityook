@@ -322,9 +322,9 @@
                 <!-- <a class="dropdown-item" href="email-application.html"><i class="ft-mail"></i> My Inbox</a>
                 <a class="dropdown-item" href="user-cards.html"><i class="ft-check-square"></i> Task</a>
                 <a class="dropdown-item" href="chat-application.html"><i class="ft-message-square"></i> Chats</a> -->
-                <a class="dropdown-item" href="<?php echo base_url();?>/login"><i class="ft-power"></i> Login</a>
+                <!-- <a class="dropdown-item" href="<?php echo base_url();?>/login"><i class="ft-power"></i> Login</a> -->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?php echo base_url();?>/logout"><i class="ft-power"></i> Logout</a>
+                <a class="dropdown-item" href="<?php echo base_url();?>logout"><i class="ft-power"></i> Logout</a>
               </div>
             </li>
           </ul>

@@ -14,17 +14,17 @@ class Login extends MX_Controller {
 
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
-		//$redirect = '/';
+		
 		if (!$this->ion_auth->logged_in())
 		{
-			//redirect('/login', 'refresh');
+			
 		} else {
 			if($this->ion_auth->isAdmin()) {
 				redirect('/admin/dashboard', 'refresh');
 			}elseif($this->ion_auth->isEmployee()) {
 				redirect('/employee/profile/'. $this->ion_auth->get_user_id(), 'refresh');
 			} else {
-				redirect('/customer/my-account/'. $this->ion_auth->get_user_id(), 'refresh');
+				redirect('/my-account', 'refresh');
 			}
 		}
 				
@@ -32,7 +32,7 @@ class Login extends MX_Controller {
 	
 	public function index()
 	{
-		
+		//print_r($_SESSION);
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$data['header'] 		= Modules::run('layouts/site-layout/header/index');
 		$data['footer'] 		= Modules::run('layouts/site-layout/footer/index');
@@ -69,7 +69,7 @@ class Login extends MX_Controller {
 				}elseif($userType === '2') {
 					redirect('/employee/profile/'. $this->ion_auth->get_user_id(), 'refresh');
 				} else {
-					redirect('/customer/my-account/'. $this->ion_auth->get_user_id(), 'refresh');
+					redirect('/my-account', 'refresh');
 				}
 				//redirect('/employees', 'refresh');
 			}

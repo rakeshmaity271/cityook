@@ -66,4 +66,4 @@ $route['admin/users'] = 'admin/user/user';
 $route['admin/dashboard'] = 'admin/dashboard/dashboard';
 $route['employee/list'] = 'employee/employee/employee';
 $route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
-$route['customer/my-account/(:num)'] = 'customer/customer/customer/account/$1';
+$route['my-account'] = 'customer/customer/customer/account';

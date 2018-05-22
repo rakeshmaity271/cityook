@@ -6,6 +6,7 @@ class Header extends MX_Controller {
 	
 	public function index()
 	{
+		
 		return $this->load->view('site-layout/header');
 	}
 }
