@@ -13396,3 +13396,117 @@ INFO - 2018-05-20 14:05:28 --> Controller Class Initialized
 INFO - 2018-05-20 14:05:28 --> Controller Class Initialized
 ERROR - 2018-05-20 14:05:28 --> 404 Page Not Found: /index
 ERROR - 2018-05-20 14:05:28 --> 404 Page Not Found: /index
+INFO - 2018-05-20 14:11:56 --> Config Class Initialized
+INFO - 2018-05-20 14:11:56 --> Hooks Class Initialized
+DEBUG - 2018-05-20 14:11:56 --> UTF-8 Support Enabled
+INFO - 2018-05-20 14:11:56 --> Utf8 Class Initialized
+INFO - 2018-05-20 14:11:56 --> URI Class Initialized
+INFO - 2018-05-20 14:11:56 --> Router Class Initialized
+INFO - 2018-05-20 14:11:56 --> Output Class Initialized
+INFO - 2018-05-20 14:11:56 --> Security Class Initialized
+DEBUG - 2018-05-20 14:11:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-20 14:11:56 --> Input Class Initialized
+INFO - 2018-05-20 14:11:56 --> Language Class Initialized
+INFO - 2018-05-20 14:11:56 --> Language Class Initialized
+INFO - 2018-05-20 14:11:56 --> Config Class Initialized
+INFO - 2018-05-20 14:11:56 --> Loader Class Initialized
+INFO - 2018-05-20 14:11:56 --> Helper loaded: url_helper
+INFO - 2018-05-20 14:11:56 --> Helper loaded: html_helper
+INFO - 2018-05-20 14:11:56 --> Controller Class Initialized
+DEBUG - 2018-05-20 14:11:57 --> Register MX_Controller Initialized
+INFO - 2018-05-20 14:11:57 --> Database Driver Class Initialized
+DEBUG - 2018-05-20 14:11:57 --> Config file loaded: D:\xampp\htdocs\cityook\application\third_party/ion_auth/config/ion_auth.php
+INFO - 2018-05-20 14:11:57 --> Email Class Initialized
+INFO - 2018-05-20 14:11:57 --> Language file loaded: language/english/ion_auth_lang.php
+INFO - 2018-05-20 14:11:57 --> Helper loaded: cookie_helper
+INFO - 2018-05-20 14:11:57 --> Helper loaded: language_helper
+INFO - 2018-05-20 14:11:57 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-20 14:11:57 --> Model Class Initialized
+INFO - 2018-05-20 14:11:57 --> Helper loaded: date_helper
+INFO - 2018-05-20 14:11:57 --> Database Driver Class Initialized
+INFO - 2018-05-20 14:11:57 --> Helper loaded: form_helper
+INFO - 2018-05-20 14:11:57 --> Form Validation Class Initialized
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Head.php
+DEBUG - 2018-05-20 14:11:57 --> Head MX_Controller Initialized
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/head.php
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Header.php
+DEBUG - 2018-05-20 14:11:57 --> Header MX_Controller Initialized
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/header.php
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Footer.php
+DEBUG - 2018-05-20 14:11:57 --> Footer MX_Controller Initialized
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/footer.php
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\controllers/../modules/layouts/controllers/site-layout/Script.php
+DEBUG - 2018-05-20 14:11:57 --> Script MX_Controller Initialized
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/layouts/views/site-layout/script.php
+DEBUG - 2018-05-20 14:11:57 --> File loaded: D:\xampp\htdocs\cityook\application\modules/register/views/otp.php
+INFO - 2018-05-20 14:11:57 --> Final output sent to browser
+DEBUG - 2018-05-20 14:11:57 --> Total execution time: 1.4371
+INFO - 2018-05-20 14:11:57 --> Config Class Initialized
+INFO - 2018-05-20 14:11:57 --> Hooks Class Initialized
+DEBUG - 2018-05-20 14:11:58 --> UTF-8 Support Enabled
+INFO - 2018-05-20 14:11:58 --> Utf8 Class Initialized
+INFO - 2018-05-20 14:11:58 --> URI Class Initialized
+INFO - 2018-05-20 14:11:58 --> Router Class Initialized
+INFO - 2018-05-20 14:11:58 --> Output Class Initialized
+INFO - 2018-05-20 14:11:58 --> Config Class Initialized
+INFO - 2018-05-20 14:11:58 --> Security Class Initialized
+INFO - 2018-05-20 14:11:58 --> Hooks Class Initialized
+INFO - 2018-05-20 14:11:58 --> Config Class Initialized
+DEBUG - 2018-05-20 14:11:58 --> UTF-8 Support Enabled
+INFO - 2018-05-20 14:11:58 --> Hooks Class Initialized
+DEBUG - 2018-05-20 14:11:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-20 14:11:58 --> Utf8 Class Initialized
+INFO - 2018-05-20 14:11:58 --> Input Class Initialized
+DEBUG - 2018-05-20 14:11:58 --> UTF-8 Support Enabled
+INFO - 2018-05-20 14:11:58 --> Utf8 Class Initialized
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+INFO - 2018-05-20 14:11:58 --> URI Class Initialized
+INFO - 2018-05-20 14:11:58 --> URI Class Initialized
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+INFO - 2018-05-20 14:11:58 --> Router Class Initialized
+INFO - 2018-05-20 14:11:58 --> Config Class Initialized
+INFO - 2018-05-20 14:11:58 --> Output Class Initialized
+INFO - 2018-05-20 14:11:58 --> Router Class Initialized
+INFO - 2018-05-20 14:11:58 --> Security Class Initialized
+INFO - 2018-05-20 14:11:58 --> Output Class Initialized
+INFO - 2018-05-20 14:11:58 --> Loader Class Initialized
+INFO - 2018-05-20 14:11:58 --> Security Class Initialized
+DEBUG - 2018-05-20 14:11:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-20 14:11:58 --> Helper loaded: url_helper
+INFO - 2018-05-20 14:11:58 --> Input Class Initialized
+INFO - 2018-05-20 14:11:58 --> Helper loaded: html_helper
+DEBUG - 2018-05-20 14:11:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-20 14:11:58 --> Input Class Initialized
+INFO - 2018-05-20 14:11:58 --> Controller Class Initialized
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+ERROR - 2018-05-20 14:11:58 --> 404 Page Not Found: ../modules/register/controllers/Register/assets
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+INFO - 2018-05-20 14:11:58 --> Config Class Initialized
+INFO - 2018-05-20 14:11:58 --> Language Class Initialized
+INFO - 2018-05-20 14:11:58 --> Config Class Initialized
+INFO - 2018-05-20 14:11:58 --> Loader Class Initialized
+INFO - 2018-05-20 14:11:58 --> Helper loaded: url_helper
+INFO - 2018-05-20 14:11:58 --> Loader Class Initialized
+INFO - 2018-05-20 14:11:58 --> Helper loaded: html_helper
+INFO - 2018-05-20 14:11:58 --> Helper loaded: url_helper
+INFO - 2018-05-20 14:11:58 --> Controller Class Initialized
+INFO - 2018-05-20 14:11:58 --> Helper loaded: html_helper
+INFO - 2018-05-20 14:11:58 --> Controller Class Initialized
+ERROR - 2018-05-20 14:11:58 --> 404 Page Not Found: /index
+ERROR - 2018-05-20 14:11:58 --> 404 Page Not Found: /index
+INFO - 2018-05-20 14:12:54 --> Config Class Initialized
+INFO - 2018-05-20 14:12:54 --> Hooks Class Initialized
+DEBUG - 2018-05-20 14:12:54 --> UTF-8 Support Enabled
+INFO - 2018-05-20 14:12:54 --> Utf8 Class Initialized
+INFO - 2018-05-20 14:12:54 --> URI Class Initialized
+DEBUG - 2018-05-20 14:12:54 --> No URI present. Default controller set.
+INFO - 2018-05-20 14:12:54 --> Router Class Initialized
+INFO - 2018-05-20 14:12:54 --> Output Class Initialized
+INFO - 2018-05-20 14:12:54 --> Security Class Initialized
+DEBUG - 2018-05-20 14:12:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-20 14:12:54 --> Input Class Initialized
+INFO - 2018-05-20 14:12:54 --> Language Class Initialized
+INFO - 2018-05-20 14:12:54 --> Language Class Initialized
+INFO - 2018-05-20 14:12:54 --> Config Class Initialized
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

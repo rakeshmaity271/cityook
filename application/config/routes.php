@@ -61,3 +61,9 @@ $route['about-us'] = 'about_us';
 // $route['somename'] 'module/folder/controller/function';
 // $route['somename/edit/(:any)'] 'module/folder/controller/function/$1';
 // $route['somename/edit/(:any)/(:any)'] 'module/folder/controller/function/$1/$2';
+
+$route['admin/users'] = 'admin/user/user';
+$route['admin/dashboard'] = 'admin/dashboard/dashboard';
+$route['employee/list'] = 'employee/employee/employee';
+$route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
+$route['my-account'] = 'customer/customer/customer/account';

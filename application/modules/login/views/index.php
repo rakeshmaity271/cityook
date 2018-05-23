@@ -45,16 +45,21 @@
 <article class="card-body">
 
 <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Sign in</h4>
-	 <form method="post">
+<?php  if(!empty($this->session->flashdata('message'))) { ?>
+                    <div id="infoMessage" class="alert alert-danger mb-2" role="alert">
+                      <?php echo $this->session->flashdata('message');?>
+                    </div>
+                  <?php } ?>
+	 <form action="<?php echo base_url();?>login/submit" method="post">
     <div class="form-group">
-        <input name="mobile" class="form-control" placeholder="Enter Mobile No./ Email Id" type="text" required>
+        <input name="identity" class="form-control" placeholder="Enter Mobile No" type="text" required>
     </div> <!-- form-group// -->
     <div class="form-group">
         <input class="form-control" name="password" placeholder="******************" type="password" required>
     </div> <!-- form-group// --> 
     <div class="form-group"> 
     <div class="checkbox">
-      <label> <input type="checkbox"> Remember Me </label>
+      <label>  <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>Remember Me </label>
       	<a class="float-right" href="#">Forgot Password?</a>
     </div> <!-- checkbox .// -->
     </div> <!-- form-group// -->  

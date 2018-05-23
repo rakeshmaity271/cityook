@@ -40,7 +40,7 @@ $lang['deactivate_current_user_unsuccessful']= 'You cannot De-Activate your self
 
 // Login / Logout
 $lang['login_successful']                    = 'Logged In Successfully';
-$lang['login_unsuccessful']                  = 'Incorrect Login';
+$lang['login_unsuccessful']                  = 'Incorrect Credentials! Please Enter Correct Credentials';
 $lang['login_unsuccessful_not_active']       = 'Account is inactive';
 $lang['login_timeout']                       = 'Temporarily Locked Out.  Try again later.';
 $lang['logout_successful']                   = 'Logged Out Successfully';
