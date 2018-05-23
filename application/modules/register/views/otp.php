@@ -47,29 +47,29 @@
 
 	 <form method="post" role="form" id="contact-form">
      <div class="form-group">
-        <input name="firstname" id="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." type="text">
+        <input name="firstname" id="firstname" class="form-control" placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required." type="text">
         <div class="help-block with-errors"></div>
     </div>
-    <div class="form-group">
-        <input name="lastname" id="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Last Name is required." type="text">
+   <!-- <div class="form-group">
+        <input name="lastname" id="lastname" class="form-control" placeholder="Please enter Email id*" required="required" data-error="Last Name is required." type="text">
         <div class="help-block with-errors"></div>
-    </div>
+    </div>-->
     <div class="form-group">
-        <input name="email" id="email" class="form-control" placeholder="example@mail.com" type="text" data-error="Bruh, that email address is invalid" required>
+        <input name="email" id="email" class="form-control" placeholder="Please enter Email id*" type="text" data-error="that email address is invalid" required>
         <div class="help-block with-errors"></div>
     </div> 
     <div class="form-group">
-        <input class="form-control" id="password" name="password" placeholder="******" type="password" required="required" data-error="Password is required.">
+        <input class="form-control" id="password" name="password" placeholder="Choose Password (******)" type="password" required="required" data-error="Password is required.">
         <div class="help-block with-errors"></div>
     </div> 
     <div class="form-group">
-        <input name="otp" id="otp" class="form-control" placeholder="Please enter your OTP *" required="required" data-error="Otp is required." type="text">
+        <input name="otp" id="otp" class="form-control" placeholder="Please enter OTP *" required="required" data-error="Otp is required." type="text">
         <div class="help-block with-errors"></div>
     </div>
     <div class="form-group">
         <div class="checkbox">
-            <label> <input type="checkbox" id="remember_me" name="remember_me"> Remember Me </label>
-            <a class="float-right" href="#">Forgot Password?</a>
+            <label><!-- <input type="checkbox" id="remember_me" name="remember_me"> --><b>Note: Wait For 1 minute to receive the OTP </b></label>
+            <a class="float-right" href="#">Resend Otp</a>
         </div> 
     </div> 
   

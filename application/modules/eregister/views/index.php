@@ -42,7 +42,7 @@
             <div class="col-lg-5">
                 <div class="card">
                     <article class="card-body">
-                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New User</h4>
+                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New Employee</h4>
                         <form method="post" role="form" id="contact-form">
 
                             <div id="first">
