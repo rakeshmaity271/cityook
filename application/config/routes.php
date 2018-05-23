@@ -67,3 +67,8 @@ $route['admin/dashboard'] = 'admin/dashboard/dashboard';
 $route['employee/list'] = 'employee/employee/employee';
 $route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
 $route['my-account'] = 'customer/customer/customer/account';
+$route['employee/register/step-1'] = 'employee/register/register';
+$route['employee/register/step-2'] = 'employee/register/register/registerForm';
+
+// Service Category
+$route['admin/service/category/create'] = 'admin/category/category/create';

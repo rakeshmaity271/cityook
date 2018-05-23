@@ -1,4 +1,4 @@
-﻿<?php echo $head;?>
+<?php echo $head;?>
 
 <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">-->
 <style>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-lg-6">
                 
-                <img src="assets/cityook/images/login.png" class="logimg"/>
+                <img src="<?php echo base_url('assets/cityook/images/login.png');?>" class="logimg"/>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
@@ -65,7 +65,7 @@
                                 <div class="help-block with-errors"></div>
                             </div> -->
                             <div class="form-group">
-                                <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="button" id="registerButton" class="btn btn-primary btn-block" name="login">Send Otp</button>
+                            <button type="submit" class="btn btn-primary btn-block" name="login">Sent Otp</button>
                             </div>
                </form>
                                                   
