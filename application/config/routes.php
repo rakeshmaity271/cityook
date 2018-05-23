@@ -72,3 +72,8 @@ $route['employee/register/step-2'] = 'employee/register/register/registerForm';
 
 // Service Category
 $route['admin/service/category/create'] = 'admin/category/category/create';
+$route['admin/service/category/store'] = 'admin/category/category/store';
+$route['admin/service/category/edit/(:num)'] = 'admin/category/category/edit/$1';
+$route['admin/service/category/update/(:num)'] = 'admin/category/category/update/$1';
+$route['admin/service/category/delete/(:num)'] = 'admin/category/category/delete/$1';
+$route['admin/service/categories'] = 'admin/category/category';

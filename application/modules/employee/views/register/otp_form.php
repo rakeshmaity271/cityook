@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 $('#contact-form').validator();
 // when the form is submitted
-    $('#registerButton').on('click', function (e) {
+    $('#contact-form').on('submit', function (e) {
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
            console.log('submit');
@@ -106,7 +106,7 @@ $('#contact-form').validator();
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "http://control.msg91.com/api/sendotp.php?authkey=216288ASYJlfmw0mp5b00e267&message=Your verification code is 1234&sender=OTPSMS&mobile=91"+mobile+"&otp=1234&otp_expiry=10",
+              "url": "https://www.smsgatewayhub.com/api/mt/SendSMS?APIKey=bw8J5jdu9kO8noWz8VETJw&senderid=TESTIN&channel=2&DCS=0&flashsms=0&number=919073090507&text=test message&route=clickhere",
               "method": "POST",
               "headers": {
                 
