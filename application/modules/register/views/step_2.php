@@ -47,13 +47,18 @@
 
 	 <form method="post" role="form" id="contact-form">
      <div class="form-group">
-        <input name="firstname" id="firstname" class="form-control" placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required." type="text">
+        <input name="mobile" id="mobile" class="form-control" placeholder="Please enter Mobile *" required="required" data-error="Mobile is required." type="text">
+        <div class="help-block with-errors"></div>
+    </div>
+     <div class="form-group">
+        <input name="fullname" id="fullname" class="form-control" placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required." type="text">
         <div class="help-block with-errors"></div>
     </div>
    <!-- <div class="form-group">
         <input name="lastname" id="lastname" class="form-control" placeholder="Please enter Email id*" required="required" data-error="Last Name is required." type="text">
         <div class="help-block with-errors"></div>
     </div>-->
+   
     <div class="form-group">
         <input name="email" id="email" class="form-control" placeholder="Please enter Email id*" type="text" data-error="that email address is invalid" required>
         <div class="help-block with-errors"></div>
@@ -63,7 +68,7 @@
         <div class="help-block with-errors"></div>
     </div> 
     <div class="form-group">
-        <input name="otp" id="otp" class="form-control" placeholder="Please enter OTP *" required="required" data-error="Otp is required." type="text">
+        <input name="verificationCode" id="verificationCode" class="form-control" placeholder="Please enter Verification code *" required="required" data-error="Verification code is required." type="text">
         <div class="help-block with-errors"></div>
     </div>
     <div class="form-group">
@@ -74,7 +79,7 @@
     </div> 
   
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block" name="login">Register</button>
+        <button type="submit" id="registerButton" class="btn btn-primary btn-block" name="login">Register</button>
     </div> <!-- form-group// -->                                                           
 </form>
 </article>
@@ -97,6 +102,43 @@
 $(document).ready(function() {
     console.log( "ready!" );
     $('#contact-form').validator();
+    $('#contact-form').on('submit', function (e) {
+        // if the validator does not prevent form submit
+        if (!e.isDefaultPrevented()) {
+            //console.log($('#contact-form').serialize());
+            var url = "<?php echo base_url();?>register/submit";
+
+            // POST values in the background the the script URL
+           // var mobile = $('#phone').val();
+            //console.log(mobile);
+            var settings = {
+              "async": true,
+              "crossDomain": true,
+              "url": url,
+              "data" : $('#contact-form').serialize(),
+              "method": "POST",
+              "headers": {
+                
+              }
+            }
+
+            $.ajax(settings).done(function (data) {
+                console.log(data);
+              if(data.error === false && data.type === 'success') {
+                swal(data.message)
+                    .then((value) => {
+                        window.location.href = 'http://localhost/cityook/login';
+                    });
+              } 
+              swal(data.message)
+                    .then((value) => {
+                        return false;
+                    });
+             // return false;
+            });
+            return false;
+        }
+    });
 });
 
 </script>

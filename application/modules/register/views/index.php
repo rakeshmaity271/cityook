@@ -43,7 +43,7 @@
                 <div class="card">
                     <article class="card-body">
                         <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New User</h4>
-                        <form method="post" role="form" id="contact-form">
+                        <form method="post" role="form" id="contact-form" >
 
                             <div id="first">
                                
@@ -52,7 +52,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon">+91</span>
-									<input type="text" class="form-control" name="code" id="code"  placeholder="Enter your Mobile" required="required" data-error="Code is required."/>
+									<input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter your Mobile" required="required" data-error="Code is required."/>
 								</div>
 							</div>
 							</div>
@@ -65,7 +65,7 @@
                                 <div class="help-block with-errors"></div>
                             </div> -->
                             <div class="form-group">
-                                <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="button" id="registerButton" class="btn btn-primary btn-block" name="login">Send Otp</button>
+                                <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="submit" id="registerButton" class="btn btn-primary btn-block" name="login">Send Otp</button>
                             </div>
                </form>
                                                   
@@ -93,29 +93,36 @@ $(document).ready(function() {
 
 $('#contact-form').validator();
 // when the form is submitted
-    $('#registerButton').on('click', function (e) {
+    $('#contact-form').on('submit', function (e) {
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
-           console.log('submit');
-            var url = "<?php echo base_url();?>register/receive-otp";
+            //console.log($('#contact-form').serialize());
+            var url = "<?php echo base_url();?>register/sendOtp";
 
             // POST values in the background the the script URL
-            var mobile = $('#phone').val();
-            var otp = 1234;
-            console.log(mobile);
+           // var mobile = $('#phone').val();
+            //console.log(mobile);
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "http://control.msg91.com/api/sendotp.php?authkey=216288ASYJlfmw0mp5b00e267&message=Your verification code is 1234&sender=OTPSMS&mobile=91"+mobile+"&otp=1234&otp_expiry=10",
+              "url": url,
+              "data" : $('#contact-form').serialize(),
               "method": "POST",
               "headers": {
                 
               }
             }
 
-            $.ajax(settings).done(function (response) {
-              console.log(response);
-              window.location.href = url;
+            $.ajax(settings).done(function (data) {
+              console.log(data);
+              if(data.error === false) {
+                swal("Verification code successfully send your mobile")
+                    .then((value) => {
+                        window.location.href = 'http://localhost/cityook/register/step-2';
+                    });
+              } 
+              return false;
+              
             });
             return false;
         }
