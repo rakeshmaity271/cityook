@@ -131,21 +131,22 @@ $(document).ready(function() {
                     icon: "success",
                 });
                 window.location.href = '<?php echo base_url("/login");?>';
-              } else if(data.error === true && data.type === 'expired'){
+              } else if(data.error === true && data.type === 'expired') {
                 swal({
-                    title: "Error",
+                    title: "Expired",
                     text: data.message,
                     icon: "error",
                 });
                 window.location.href = '<?php echo base_url("/register");?>';
-              }
-              else {
-                   swal({
-                    title: "Error",
-                    text: data.message,
-                    icon: "error",
-                });
-                return false;
+              } else {
+                if(data.error === true && data.type === 'error') {
+                    swal({
+                        title: "Error",
+                        text: data.message,
+                        icon: "error",
+                    });
+                   // return false;
+                }
               }
             });
             return false;
