@@ -115,14 +115,22 @@ $('#contact-form').validator();
 
             $.ajax(settings).done(function (data) {
               console.log(data);
-              if(data.error === false) {
-                swal("Verification code successfully send your mobile")
-                    .then((value) => {
-                        window.location.href = 'http://localhost/cityook/register/step-2';
-                    });
-              } 
-              return false;
-              
+              if(data.error === false && data.type === 'success') {
+                swal({
+                    title: "Success",
+                    text: data.message,
+                    icon: "success",
+                });
+                window.location.href = '<?php echo base_url("/register/step-2");?>';
+              } else {
+                   swal({
+                    title: "Error",
+                    text: data.message,
+                    icon: "error",
+                });
+                return false;
+              }
+             
             });
             return false;
         }

@@ -47,8 +47,8 @@
 
 	 <form method="post" role="form" id="contact-form">
      <div class="form-group">
-        <input name="mobile" id="mobile" class="form-control" placeholder="Please enter Mobile *" required="required" data-error="Mobile is required." type="text">
-        <div class="help-block with-errors"></div>
+        <input name="mobile" disabled id="mobile" value="<?php echo ($mobile) ? $mobile : '';?>" class="form-control"  type="text">
+        <!-- <div class="help-block with-errors"></div> -->
     </div>
      <div class="form-group">
         <input name="fullname" id="fullname" class="form-control" placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required." type="text">
@@ -74,7 +74,7 @@
     <div class="form-group">
         <div class="checkbox">
             <label><!-- <input type="checkbox" id="remember_me" name="remember_me"> --><b>Note: Wait For 1 minute to receive the OTP </b></label>
-            <a class="float-right" href="#">Resend Otp</a>
+            <a class="float-right" href="<?php echo base_url('/register');?>">Resend Otp</a>
         </div> 
     </div> 
   
@@ -125,16 +125,28 @@ $(document).ready(function() {
             $.ajax(settings).done(function (data) {
                 console.log(data);
               if(data.error === false && data.type === 'success') {
-                swal(data.message)
-                    .then((value) => {
-                        window.location.href = 'http://localhost/cityook/login';
-                    });
-              } 
-              swal(data.message)
-                    .then((value) => {
-                        return false;
-                    });
-             // return false;
+                swal({
+                    title: "Success",
+                    text: data.message,
+                    icon: "success",
+                });
+                window.location.href = '<?php echo base_url("/login");?>';
+              } else if(data.error === true && data.type === 'expired'){
+                swal({
+                    title: "Error",
+                    text: data.message,
+                    icon: "error",
+                });
+                window.location.href = '<?php echo base_url("/register");?>';
+              }
+              else {
+                   swal({
+                    title: "Error",
+                    text: data.message,
+                    icon: "error",
+                });
+                return false;
+              }
             });
             return false;
         }
