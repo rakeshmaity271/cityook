@@ -30896,3 +30896,41 @@ ERROR - 2018-05-24 19:06:10 --> 404 Page Not Found: /index
 INFO - 2018-05-24 19:06:10 --> Session: Class initialized using 'files' driver.
 INFO - 2018-05-24 19:06:10 --> Controller Class Initialized
 ERROR - 2018-05-24 19:06:10 --> 404 Page Not Found: /index
+INFO - 2018-05-24 19:33:11 --> Config Class Initialized
+INFO - 2018-05-24 19:33:11 --> Config Class Initialized
+INFO - 2018-05-24 19:33:11 --> Hooks Class Initialized
+INFO - 2018-05-24 19:33:11 --> Hooks Class Initialized
+DEBUG - 2018-05-24 19:33:11 --> UTF-8 Support Enabled
+DEBUG - 2018-05-24 19:33:11 --> UTF-8 Support Enabled
+INFO - 2018-05-24 19:33:11 --> Utf8 Class Initialized
+INFO - 2018-05-24 19:33:11 --> Utf8 Class Initialized
+INFO - 2018-05-24 19:33:11 --> URI Class Initialized
+INFO - 2018-05-24 19:33:11 --> URI Class Initialized
+INFO - 2018-05-24 19:33:12 --> Router Class Initialized
+INFO - 2018-05-24 19:33:12 --> Router Class Initialized
+INFO - 2018-05-24 19:33:12 --> Output Class Initialized
+INFO - 2018-05-24 19:33:12 --> Output Class Initialized
+INFO - 2018-05-24 19:33:12 --> Security Class Initialized
+INFO - 2018-05-24 19:33:12 --> Security Class Initialized
+DEBUG - 2018-05-24 19:33:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-05-24 19:33:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-05-24 19:33:12 --> Input Class Initialized
+INFO - 2018-05-24 19:33:12 --> Input Class Initialized
+INFO - 2018-05-24 19:33:12 --> Language Class Initialized
+INFO - 2018-05-24 19:33:12 --> Language Class Initialized
+INFO - 2018-05-24 19:33:12 --> Language Class Initialized
+INFO - 2018-05-24 19:33:12 --> Language Class Initialized
+INFO - 2018-05-24 19:33:12 --> Config Class Initialized
+INFO - 2018-05-24 19:33:12 --> Config Class Initialized
+INFO - 2018-05-24 19:33:12 --> Loader Class Initialized
+INFO - 2018-05-24 19:33:12 --> Loader Class Initialized
+INFO - 2018-05-24 19:33:12 --> Helper loaded: url_helper
+INFO - 2018-05-24 19:33:12 --> Helper loaded: url_helper
+INFO - 2018-05-24 19:33:12 --> Helper loaded: html_helper
+INFO - 2018-05-24 19:33:12 --> Helper loaded: html_helper
+INFO - 2018-05-24 19:33:12 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-24 19:33:12 --> Session: Class initialized using 'files' driver.
+INFO - 2018-05-24 19:33:12 --> Controller Class Initialized
+INFO - 2018-05-24 19:33:12 --> Controller Class Initialized
+ERROR - 2018-05-24 19:33:12 --> 404 Page Not Found: /index
+ERROR - 2018-05-24 19:33:12 --> 404 Page Not Found: /index
