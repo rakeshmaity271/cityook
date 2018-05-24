@@ -1,4 +1,4 @@
-﻿<?php echo $head;?>
+<?php echo $head;?>
 
 <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">-->
 <style>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-lg-6">
                 
-                <img src="assets/cityook/images/login.png" class="logimg"/>
+                <img src="<?php echo base_url('assets/cityook/images/login.png');?>" class="logimg"/>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
@@ -65,7 +65,7 @@
                                 <div class="help-block with-errors"></div>
                             </div> -->
                             <div class="form-group">
-                                <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="button" id="registerButton" class="btn btn-primary btn-block" name="login">Send Otp</button>
+                            <button type="submit" class="btn btn-primary btn-block" name="login">Sent Otp</button>
                             </div>
                </form>
                                                   
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 $('#contact-form').validator();
 // when the form is submitted
-    $('#registerButton').on('click', function (e) {
+    $('#contact-form').on('submit', function (e) {
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
            console.log('submit');
@@ -106,7 +106,7 @@ $('#contact-form').validator();
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "http://control.msg91.com/api/sendotp.php?authkey=216288ASYJlfmw0mp5b00e267&message=Your verification code is 1234&sender=OTPSMS&mobile=91"+mobile+"&otp=1234&otp_expiry=10",
+              "url": "https://www.smsgatewayhub.com/api/mt/SendSMS?APIKey=bw8J5jdu9kO8noWz8VETJw&senderid=TESTIN&channel=2&DCS=0&flashsms=0&number=919073090507&text=test message&route=clickhere",
               "method": "POST",
               "headers": {
                 

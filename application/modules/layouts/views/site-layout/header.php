@@ -16,7 +16,7 @@
 			</div>
 			<div class="navbar-collapse collapse navbar-warning-collapse">
 				<ul class="nav navbar-nav navbar-right material_navbar_nav">
-				<li><a href="" class="material_navbar_nav_item" >
+				<li><a href="<?php echo base_url();?>" class="material_navbar_nav_item" >
 							<span class="hidden-xs hidden-sm hideName">&nbsp; Home</span></a></li>
 					
 					

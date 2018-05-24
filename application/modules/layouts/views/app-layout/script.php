@@ -35,8 +35,16 @@
   <script src="<?php echo base_url('assets/vendors/js/tables/buttons.html5.min.js');?>" type="text/javascript"></script>
   <script src="<?php echo base_url('assets/vendors/js/tables/buttons.print.min.js');?>" type="text/javascript"></script>
   <script src="<?php echo base_url('assets/js/scripts/tables/datatables/datatable-advanced.js');?>"  type="text/javascript"></script>
-
+<script src="<?php echo base_url('assets/vendors/js/forms/validation/jqBootstrapValidation.js');?>"
+  type="text/javascript"></script>
    <script src="<?php echo base_url('assets/js/scripts/forms/validation/form-validation.js');?>"
   type="text/javascript"></script>
-  <script src="<?php echo base_url('assets/vendors/js/forms/validation/jqBootstrapValidation.js');?>"
+  <script src="<?php echo base_url('assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js');?>"
   type="text/javascript"></script>
+  <script src="<?php echo base_url('assets/vendors/js/forms/toggle/switchery.min.js');?>" type="text/javascript"></script>
+  <script src="<?php echo base_url('assets/js/scripts/forms/switch.min.js');?>" type="text/javascript"></script>
+
+   <!-- <script src="{{ url('theme/stack') }}/js/sweetalert.min.js"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  

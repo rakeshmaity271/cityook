@@ -32,4 +32,7 @@
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendors/css/tables/datatable/datatables.min.css');?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/plugins/forms/validation/form-validation.css');?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendors/css/forms/toggle/switchery.min.css');?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/plugins/forms/switch.min.css');?>">
+  <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert.css');?>"> -->
 </head>
