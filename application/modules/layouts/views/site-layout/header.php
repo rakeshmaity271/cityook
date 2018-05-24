@@ -1,3 +1,4 @@
+
 <nav class="navbar material_navbar material_navbar_danger" id="header">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -12,7 +13,7 @@
 						<span class="cartItemsCount" style="background-color: blue;color:#fff;padding:0px 3px 0px 2px;border-radius:5px 5px;">0</span>
 					</a>
 				</div>
-				<a class="navbar-brand material_navbar_brand" href=""><img src="<?php echo base_url('assets/cityook/images/tsz_logo.png');?>" alt="Logo" /></a>
+				<a class="navbar-brand material_navbar_brand" href="<?php echo base_url();?>"><img src="<?php echo base_url('assets/cityook/images/tsz_logo.png');?>" alt="Logo" /></a>
 			</div>
 			<div class="navbar-collapse collapse navbar-warning-collapse">
 				<ul class="nav navbar-nav navbar-right material_navbar_nav">
@@ -58,8 +59,9 @@
 							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
 							<li><a href="<?php echo base_url();?>my-account" class="material_dropdown_menu_link"> My Account </a></li>
 							<?php } else { ?>
-							<li><a href="<?php echo base_url();?>logoin" class="material_dropdown_menu_link"> Login </a></li>
+							<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
 							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>
+							<li><a href="<?php echo base_url();?>employee/register/register/" class="material_dropdown_menu_link"> Become A Partner </a></li>
 							<?php } ?>
 							
 						</ul>
@@ -72,3 +74,6 @@
 			</div>
 		</div>
 	</nav>
+	
+	
+	
