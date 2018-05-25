@@ -16,9 +16,15 @@ class Register extends MX_Controller {
 		$this->load->model('Ion_auth_model');
 		//$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
+		
 	}
 	public function index()
 	{
+		if(count($this->SMSGETWAYHUB->all()) > 0) {
+			redirect('/register/step-2');
+		} else {
+			//redirect('/register');
+		}
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
 		$data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
@@ -28,6 +34,18 @@ class Register extends MX_Controller {
 	}
 	public function sendOtp() {
 		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+		$user = $this->Register_model->getUserByMobile($mobile);
+		//print_r($user);
+		if(count($user) > 0) {
+			return $this->output
+						->set_content_type('application/json')
+						->set_status_header(200)
+						->set_output(json_encode(array(
+								'error' => true,
+								'status' => 200,
+								'message' => 'User already exists!'
+						))); 
+		}
 		$this->data = $this->SMSGETWAYHUB->sendOtp($this->config->item('SMSGETWAYHUB_URL'),$this->config->item('SMSGETWAYHUB_APIKEY'), false, false, $mobile, '', true);
 		return $this->output
 						->set_content_type('application/json')
@@ -36,10 +54,21 @@ class Register extends MX_Controller {
 								'error' => false,
 								'status' => 200,
 								'mobile' => $mobile,
-								'data' => $this->data
+								'data' => $this->data,
+								'type' => 'success',
+								'message' => 'Verification code has been send in your phone'
 						))); 
 	}
 	public function stepTwo() {
+		$d = $this->SMSGETWAYHUB->all();
+		//print_r($d);
+		//exit();
+		if(count($d) > 0) {
+			//redirect('/register/step-2');
+			$data['mobile'] = $d[0]->mobile;
+		} else {
+			redirect('/register');
+		}
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
 		$data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
@@ -53,18 +82,7 @@ class Register extends MX_Controller {
 		$email = ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
 		$password = ($this->input->post('password')) ? $this->input->post('password') : '';
 
-		$user = $this->Register_model->getUserByMobile($mobile);
-		//print_r($user);
-		if(count($user) > 0) {
-			return $this->output
-						->set_content_type('application/json')
-						->set_status_header(200)
-						->set_output(json_encode(array(
-								'error' => true,
-								'status' => 200,
-								'message' => 'User already exists!'
-						))); 
-		}
+		
 		$verificationDetails = $this->SMSGETWAYHUB->getVerificationDetailsMobile($mobile);
 		
 		$userInputVerificationCode = ($this->input->post('verificationCode')) ? $this->input->post('verificationCode') : '';
@@ -72,11 +90,12 @@ class Register extends MX_Controller {
 		$expiredTime = 600;
 	
 		$this->data = array(
-			'fullname' => $fullname,
-			'email' => $email,
-			'mobile' => $mobile,
-			'password' => $this->Ion_auth_model->hash_password($password),
-			'user_type' => '3'
+			'fullname' 		=> $fullname,
+			'email' 		=> $email,
+			'mobile' 		=> $mobile,
+			'password' 		=> $this->Ion_auth_model->hash_password($password),
+			'user_type' 	=> '3',
+			'active'		=>	1
 		);
 		if($verificationDetails) {
 			if((time() - $verificationDetails->expired_time) > $expiredTime) {
@@ -87,7 +106,8 @@ class Register extends MX_Controller {
 						->set_output(json_encode(array(
 								'error' => true,
 								'status' => 200,
-								'message' => 'Verification code is expired!'
+								'message' => 'Verification code is expired!',
+								'type' => 'expired'
 						))); 
 			} else {
 				if($userInputVerificationCode == $verificationDetails->code) {

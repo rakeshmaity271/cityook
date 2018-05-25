@@ -111,4 +111,8 @@ class SMSGETWAYHUB_lib {
             return false;
         }
     }
+    public function All() {
+        $query = $this->CI->db->get($this->table);
+        return $query->result();
+    }
 }
