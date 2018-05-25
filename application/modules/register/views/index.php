@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-lg-6">
                 
-                <img src="assets/cityook/images/login.png" class="logimg"/>
+                <img src="assets/cityook/images/register3.png" class="logimg"/>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
