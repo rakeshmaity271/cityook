@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+header('Access-Control-Allow-Origin: *');
 class Register extends MX_Controller {
 
 	public $data;
@@ -10,9 +10,11 @@ class Register extends MX_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->library(array('ion_auth','render', 'form_validation'));
+		$this->load->library('SMSGETWAYHUB_lib', null, 'SMSGETWAYHUB');
 		$this->load->helper(array('url', 'language'));
-
-		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
+		$this->load->model('Register_model');
+		$this->load->model('Ion_auth_model');
+		//$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
 	}
 	public function index()
@@ -25,52 +27,136 @@ class Register extends MX_Controller {
 		$this->load->view('index', $data);
 	}
 	public function sendOtp() {
-
+		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+		$this->data = $this->SMSGETWAYHUB->sendOtp($this->config->item('SMSGETWAYHUB_URL'),$this->config->item('SMSGETWAYHUB_APIKEY'), false, false, $mobile, '', true);
+		return $this->output
+						->set_content_type('application/json')
+						->set_status_header(200)
+						->set_output(json_encode(array(
+								'error' => false,
+								'status' => 200,
+								'mobile' => $mobile,
+								'data' => $this->data
+						))); 
 	}
-	public function receive() {
+	public function stepTwo() {
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
 		$data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
 		$data['script'] 	= Modules::run('layouts/site-layout/script/index');
-		$this->load->view('otp', $data);
+		$this->load->view('step_2', $data);
+	}
+
+	public function submit() {
+		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+		$fullname = ($this->input->post('fullname')) ? $this->input->post('fullname') : '';
+		$email = ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
+		$password = ($this->input->post('password')) ? $this->input->post('password') : '';
+
+		$user = $this->Register_model->getUserByMobile($mobile);
+		//print_r($user);
+		if(count($user) > 0) {
+			return $this->output
+						->set_content_type('application/json')
+						->set_status_header(200)
+						->set_output(json_encode(array(
+								'error' => true,
+								'status' => 200,
+								'message' => 'User already exists!'
+						))); 
+		}
+		$verificationDetails = $this->SMSGETWAYHUB->getVerificationDetailsMobile($mobile);
+		
+		$userInputVerificationCode = ($this->input->post('verificationCode')) ? $this->input->post('verificationCode') : '';
+		$currentTime = time();
+		$expiredTime = 600;
+	
+		$this->data = array(
+			'fullname' => $fullname,
+			'email' => $email,
+			'mobile' => $mobile,
+			'password' => $this->Ion_auth_model->hash_password($password),
+			'user_type' => '3'
+		);
+		if($verificationDetails) {
+			if((time() - $verificationDetails->expired_time) > $expiredTime) {
+				$this->SMSGETWAYHUB->destroyExpiredCode($mobile);
+				return $this->output
+						->set_content_type('application/json')
+						->set_status_header(200)
+						->set_output(json_encode(array(
+								'error' => true,
+								'status' => 200,
+								'message' => 'Verification code is expired!'
+						))); 
+			} else {
+				if($userInputVerificationCode == $verificationDetails->code) {
+
+					if($this->Register_model->customerRegister($this->data)) {
+						$this->SMSGETWAYHUB->destroyExpiredCode($mobile);
+						return $this->output
+									->set_content_type('application/json')
+									->set_status_header(200)
+									->set_output(json_encode(array(
+											'error' => false,
+											'status' => 200,
+											'message' => 'Successfully Registration',
+											'type' => 'success'
+									))); 
+					} else {
+						return $this->output
+									->set_content_type('application/json')
+									->set_status_header(200)
+									->set_output(json_encode(array(
+											'error' => true,
+											'status' => 200,
+											'message' => 'Error'
+									))); 
+					}
+					
+					
+				}
+			}
+		}
+		
 	}
 	
 
-	public function generateOtp() {
-		$email 				= ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
-		$identity_column 	= $this->config->item('identity', 'ion_auth');
-		$identity 			= ($identity_column === 'email') ? $email : $this->input->post('identity');
-		$password 			= $this->input->post('password');
+	// public function generateOtp() {
+	// 	$email 				= ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
+	// 	$identity_column 	= $this->config->item('identity', 'ion_auth');
+	// 	$identity 			= ($identity_column === 'email') ? $email : $this->input->post('identity');
+	// 	$password 			= $this->input->post('password');
 
-		$additional_data = array(
-				'fullname' => $this->input->post('fullname'),
-				'phone' => $this->input->post('phone'),
-			);
+	// 	$additional_data = array(
+	// 			'fullname' => $this->input->post('fullname'),
+	// 			'phone' => $this->input->post('phone'),
+	// 		);
 
-		if($this->ion_auth->register($identity, $password, $email, $additional_data)) {
+	// 	if($this->ion_auth->register($identity, $password, $email, $additional_data)) {
 
-			return $this->output
-	            ->set_content_type('application/json')
-	            ->set_status_header(200)
-	            ->set_output(json_encode(array(
-	                    'text' => '200',
-	                    'type' => 'danger',
-	                    'error' => false,
-	                    'message' => 'success'
-	            )));
+	// 		return $this->output
+	//             ->set_content_type('application/json')
+	//             ->set_status_header(200)
+	//             ->set_output(json_encode(array(
+	//                     'text' => '200',
+	//                     'type' => 'danger',
+	//                     'error' => false,
+	//                     'message' => 'success'
+	//             )));
 
-		} else {
-			return $this->output
-	            ->set_content_type('application/json')
-	            ->set_status_header(500)
-	            ->set_output(json_encode(array(
-	                    'text' => '500',
-	                    'type' => 'danger',
-	                    'error' => false,
-	                    'message' => 'success'
-	            )));
-		}
-	}
+	// 	} else {
+	// 		return $this->output
+	//             ->set_content_type('application/json')
+	//             ->set_status_header(500)
+	//             ->set_output(json_encode(array(
+	//                     'text' => '500',
+	//                     'type' => 'danger',
+	//                     'error' => false,
+	//                     'message' => 'success'
+	//             )));
+	// 	}
+	// }
 	// public function register()
 	// {
 	// 	$this->data['title'] = $this->lang->line('create_user_heading');

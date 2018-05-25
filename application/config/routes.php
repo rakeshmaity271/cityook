@@ -70,6 +70,9 @@ $route['my-account'] = 'customer/customer/customer/account';
 $route['employee/register/step-1'] = 'employee/register/register';
 $route['employee/register/step-2'] = 'employee/register/register/registerForm';
 
+$route['register'] = 'register/index';
+$route['register/step-2'] = 'register/stepTwo';
+$route['register/submit'] = 'register/submit';
 // Service Category
 $route['admin/service/category/create'] = 'admin/category/category/create';
 $route['admin/service/category/store'] = 'admin/category/category/store';

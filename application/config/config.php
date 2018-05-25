@@ -502,3 +502,9 @@ $config['proxy_ips'] = '';
 $config['modules_locations'] = array(
     APPPATH . 'modules/' => '../modules/',
 );
+
+/**
+ * @description SMSGETWAYHUB API KEY
+ */
+$config['SMSGETWAYHUB_APIKEY'] = 'bw8J5jdu9kO8noWz8VETJw';
+$config['SMSGETWAYHUB_URL'] = 'www.smsgatewayhub.com/api/mt/SendSMS';
