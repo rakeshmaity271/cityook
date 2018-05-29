@@ -168,3 +168,5 @@ $route['admin/service/category/update/(:num)'] = 'admin/category/category/update
 $route['admin/service/category/delete/(:num)'] = 'admin/category/category/delete/$1';
 
 $route['admin/service/categories'] = 'admin/category/category';
+
+$route['unauthorized'] = 'unauthorized';
