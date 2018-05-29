@@ -1,4 +1,4 @@
-﻿<?php echo $head;?>
+<?php echo $head;?>
 
 <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">-->
 
@@ -70,7 +70,7 @@
 
     <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
 
               
 
@@ -80,7 +80,7 @@
 
           <div class="col-lg-1"></div>
 
-          <div class="col-lg-5">
+          <div class="col-lg-7">
 
 
 
@@ -92,43 +92,39 @@
 
 
 
-	 <form method="post" role="form" id="contact-form">
+	 <form method="post" role="form" id="contact-form" enctype="multipart/form-data" accept-charset="utf-8">
 
-     <div class="form-group">
+	 <div class="row">
 
-        <input name="mobile" id="mobile"  class="form-control"  type="text">
-
-        <!-- <div class="help-block with-errors"></div> -->
-
-    </div>
-
-     <div class="form-group">
-
-        <input name="fullname" id="fullname" class="form-control" placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required." type="text">
-
-        <div class="help-block with-errors"></div>
-
-    </div>
-
-   <!-- <div class="form-group">
-
-        <input name="lastname" id="lastname" class="form-control" placeholder="Please enter Email id*" required="required" data-error="Last Name is required." type="text">
-
-        <div class="help-block with-errors"></div>
-
-    </div>-->
-
-   
+	 <div class="col-lg-6">
 
     <div class="form-group">
 
-        <input name="email" id="email" class="form-control" placeholder="Please enter Email id*" type="text" data-error="that email address is invalid" required>
+        <input class="form-control" id="fullname" name="fullname" placeholder="Please enter your Full Name " type="text" required="required" data-error="Fullname is required.">
 
         <div class="help-block with-errors"></div>
 
     </div> 
 
-    <div class="form-group">
+	</div>
+
+	 <div class="col-lg-6">
+
+	<div class="form-group">
+
+        <input class="form-control" id="email" name="email" placeholder="Please enter Email id" type="email" required="required" data-error="Email is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	</div>
+
+	</div>
+
+	<div class="row">
+
+	<div class="form-group col-lg-6">
 
         <input class="form-control" id="password" name="password" placeholder="Choose Password (******)" type="password" required="required" data-error="Password is required.">
 
@@ -136,9 +132,85 @@
 
     </div> 
 
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="address" name="address" placeholder="Address" type="text" required="required" data-error="Address is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	</div>
+
+	<div class="row">
+
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="city" name="city" placeholder="City" type="text" required="required" data-error="City is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="state" name="state" placeholder="State" type="text" required="required" data-error="State is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	</div>
+
+	<div class="row">
+
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="pincode" name="pincode" placeholder="Pincode" type="text" required="required" data-error="Pincode is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="adhar_no" name="adhar_no" placeholder="Adhar No" type="text" required="required" data-error="Adhar Number is required.">
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	</div>
+
+	<div class="row">
+
+	<div class="form-group col-lg-6">
+
+        <label><strong>Upload Document(Adhar/Voter/Pan Card)</strong></label>
+
+        <div class="help-block with-errors"></div>
+
+    </div> 
+
+	<div class="form-group col-lg-6">
+
+        <input class="form-control" id="file" name="file" placeholder="" type="file" required="required" data-error="File is required.">
+
+        <!-- <div class="help-block with-errors"></div> -->
+
+    </div> 
+
+	</div>
     <div class="form-group">
 
-        <input name="verificationCode" id="verificationCode" class="form-control" placeholder="Please enter Verification code *" required="required" data-error="Verification code is required." type="text">
+        <input name="mobile" id="mobile" class="form-control" placeholder="Please enter mobile *" required="required" data-error="Mobile is required." type="text">
+
+        <div class="help-block with-errors"></div>
+
+    </div>
+    <div class="form-group">
+
+        <input name="verificationCode" id="verificationCode" class="form-control" placeholder="Please enter verification code *" required="required" data-error="Verification code is required." type="text">
 
         <div class="help-block with-errors"></div>
 
@@ -150,7 +222,7 @@
 
             <label><!-- <input type="checkbox" id="remember_me" name="remember_me"> --><b>Note: Wait For 1 minute to receive the OTP </b></label>
 
-            <a class="float-right" href="<?php echo base_url('/register');?>">Resend Otp</a>
+            <a class="float-right" href="<?php echo base_url();?>employee/register">Resend Otp</a>
 
         </div> 
 
@@ -160,7 +232,7 @@
 
     <div class="form-group">
 
-        <button type="submit" id="registerButton" class="btn btn-primary btn-block" name="login">Register</button>
+        <button type="submit" class="btn btn-primary btn-block" name="login">Register</button>
 
     </div> <!-- form-group// -->                                                           
 
@@ -214,7 +286,7 @@ $(document).ready(function() {
 
             //console.log($('#contact-form').serialize());
 
-            var url = "<?php echo base_url();?>register/submit";
+            var url = "<?php echo base_url();?>/employee/register/submit";
 
 
 
@@ -223,7 +295,7 @@ $(document).ready(function() {
            // var mobile = $('#phone').val();
 
             //console.log(mobile);
-
+            
             var settings = {
 
               "async": true,
@@ -232,7 +304,10 @@ $(document).ready(function() {
 
               "url": url,
 
-              "data" : $('#contact-form').serialize(),
+              "data" : new FormData(this),
+              "processData": false,
+              "contentType": false,
+              'cache' : false,
 
               "method": "POST",
 
@@ -276,7 +351,7 @@ $(document).ready(function() {
 
                 });
 
-                window.location.href = '<?php echo base_url("/register");?>';
+                window.location.href = '<?php echo base_url("/employee/register");?>';
 
               } else {
 

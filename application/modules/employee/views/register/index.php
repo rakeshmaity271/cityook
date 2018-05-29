@@ -1,4 +1,4 @@
-﻿<?php echo $head;?>
+<?php echo $head;?>
 
 
 
@@ -74,7 +74,7 @@
 
                 
 
-                <img src="assets/cityook/images/register3.png" class="logimg"/>
+                <img src="<?php echo base_url('assets/cityook/images/login.png');?>" class="logimg"/>
 
             </div>
 
@@ -86,9 +86,9 @@
 
                     <article class="card-body">
 
-                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New User</h4>
+                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New Employee</h4>
 
-                        <form method="post" role="form" id="contact-form" >
+                        <form method="post" role="form" id="contact-form">
 
 
 
@@ -106,7 +106,7 @@
 
 									<span class="input-group-addon">+91</span>
 
-									<input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter your Mobile" required="required" data-error="Code is required."/>
+									<input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Enter your Mobile" required="required" data-error="Code is required."/>
 
 								</div>
 
@@ -132,7 +132,7 @@
 
                             <div class="form-group">
 
-                                <button data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="submit" id="registerButton" class="btn btn-primary btn-block" name="login">Send Otp</button>
+                            <button type="submit" class="btn btn-primary btn-block" name="login">Sent Otp</button>
 
                             </div>
 
@@ -196,7 +196,7 @@ $('#contact-form').validator();
 
             //console.log($('#contact-form').serialize());
 
-            var url = "<?php echo base_url();?>register/sendOtp";
+            var url = "<?php echo base_url();?>employee/register/otp";
 
 
 
@@ -244,7 +244,7 @@ $('#contact-form').validator();
 
                 });
 
-                window.location.href = '<?php echo base_url("/register/step-2");?>';
+                window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
 
               } else if(data.error === true && data.type === 'exists_otp') {
                 swal({
@@ -257,7 +257,7 @@ $('#contact-form').validator();
 
                     });
 
-                    window.location.href = '<?php echo base_url("/register/step-2");?>';
+                    window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
               }
               
               else {
@@ -271,7 +271,7 @@ $('#contact-form').validator();
                     icon: "error",
 
                 });
-                window.location.href = '<?php echo base_url("/register");?>';
+                window.location.href = '<?php echo base_url("/employee/register");?>';
                 return false;
 
               }

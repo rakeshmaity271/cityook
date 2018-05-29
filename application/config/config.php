@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://cityook.com';
+$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/cityook';
 
 /*
 |--------------------------------------------------------------------------
@@ -508,3 +508,40 @@ $config['modules_locations'] = array(
  */
 $config['SMSGETWAYHUB_APIKEY'] = 'bw8J5jdu9kO8noWz8VETJw';
 $config['SMSGETWAYHUB_URL'] = 'www.smsgatewayhub.com/api/mt/SendSMS';
+
+/**
+ * Image upload configuration
+ */
+$image_path = realpath(APPPATH . '../uploads/');
+$thumb_path = realpath(APPPATH . '../uploads/thumbs/');
+$config['file'] = [ 
+    'original' => [
+        'upload_path'       => $image_path,
+        'allowed_types'     => array('gif','png' ,'jpg', 'jpeg', 'pdf'),
+        'max_size'          => '2048',
+        'encrypt_name'      => TRUE,
+        'image_library'     => "gd2",
+        'source_image'      => $image_path
+    ],
+    'resize' => [
+        'upload_path'       => $thumb_path,
+        'allowed_types'     => array('gif','png' ,'jpg', 'jpeg', 'pdf'),
+        'max_size'          => '2048',
+        'encrypt_name'      => TRUE,
+        'image_library'     => "gd2",
+        'source_image'      => $thumb_path,
+        'thumb_path'        => $thumb_path ,
+        'remove_spaces'     => TRUE,
+        'width'             => 75,
+        'height'            =>  150
+    ]
+];
+
+// $config['image_library'] = 'gd2';
+// $config['source_image'] = $image_path;
+// $config['create_thumb'] = TRUE;
+// $config['allowed_types'] = 'gif|jpg|png';
+// $config['encrypt_name']      = TRUE;
+// $config['maintain_ratio'] = TRUE;
+// $config['width']         = 75;
+// $config['height']       = 50;
