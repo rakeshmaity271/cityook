@@ -61,10 +61,8 @@ class Register extends MX_Controller {
 	}
 	public function stepTwo() {
 		$d = $this->SMSGETWAYHUB->all();
-		//print_r($d);
-		//exit();
+		
 		if(count($d) > 0) {
-			//redirect('/register/step-2');
 			$data['mobile'] = $d[0]->mobile;
 		} else {
 			redirect('/register');
@@ -77,17 +75,23 @@ class Register extends MX_Controller {
 	}
 
 	public function submit() {
-		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+		$firstFetch = $this->SMSGETWAYHUB->all();
+		
+		if(count($firstFetch) > 0) {
+			$mobile = $firstFetch[0]->mobile;
+		}
+
+		//$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
 		$fullname = ($this->input->post('fullname')) ? $this->input->post('fullname') : '';
 		$email = ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
 		$password = ($this->input->post('password')) ? $this->input->post('password') : '';
 
 		
 		$verificationDetails = $this->SMSGETWAYHUB->getVerificationDetailsMobile($mobile);
-		
+		//print_r($verificationDetails);
 		$userInputVerificationCode = ($this->input->post('verificationCode')) ? $this->input->post('verificationCode') : '';
 		$currentTime = time();
-		$expiredTime = 600;
+		$expiredTime = 60;
 	
 		$this->data = array(
 			'fullname' 		=> $fullname,
@@ -113,7 +117,9 @@ class Register extends MX_Controller {
 				if($userInputVerificationCode == $verificationDetails->code) {
 
 					if($this->Register_model->customerRegister($this->data)) {
+
 						$this->SMSGETWAYHUB->destroyExpiredCode($mobile);
+
 						return $this->output
 									->set_content_type('application/json')
 									->set_status_header(200)
@@ -130,13 +136,34 @@ class Register extends MX_Controller {
 									->set_output(json_encode(array(
 											'error' => true,
 											'status' => 200,
-											'message' => 'Error'
+											'message' => 'Somethings went to wrong!',
+											'type' => 'error'
 									))); 
 					}
 					
 					
+				} else {
+					return $this->output
+									->set_content_type('application/json')
+									->set_status_header(200)
+									->set_output(json_encode(array(
+											'error' => true,
+											'status' => 200,
+											'message' => 'Verification code does not match!',
+											'type' => 'error'
+									))); 
 				}
 			}
+		}else {
+			return $this->output
+							->set_content_type('application/json')
+							->set_status_header(200)
+							->set_output(json_encode(array(
+									'error' => true,
+									'status' => 200,
+									'message' => 'Data not availabe',
+									'type' => 'error'
+							))); 
 		}
 		
 	}
