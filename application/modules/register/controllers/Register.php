@@ -70,7 +70,7 @@ class Register extends MX_Controller {
 	public function sendOtp() {
 
 		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
-		if(!is_numeric($mobile)) {
+		if(!is_numeric($mobile) && strlen($mobile) !== 10) {
 			return $this->output
 						->set_content_type('application/json')
 						->set_status_header(200)
@@ -206,7 +206,7 @@ class Register extends MX_Controller {
 					$email = ($this->input->post('email')) ? strtolower($this->input->post('email')) : '';
 					$password = ($this->input->post('password')) ? $this->input->post('password') : '';
 					$userInputVerificationCode = ($this->input->post('verificationCode')) ? $this->input->post('verificationCode') : '';
-					if(strlen($password) >= 10) {
+					if(strlen($password) >= 8) {
 						$this->data = array(
 							'fullname' 		=> $fullname,
 							'email' 		=> $email,
