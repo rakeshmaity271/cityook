@@ -52,7 +52,7 @@ class SMSGETWAYHUB_lib {
 
 
 
-    public function sendOtp($url, $apiKey, $setCountryCode = false, $countryCode = null, $number, $options = array(), $database = false) {
+    public function sendOtp($url, $apiKey, $setCountryCode = false, $countryCode = null, $number, $options = array(), $database = false, $formField = array()) {
 
         $this->verificationCode = $this->generateOtp();
 
@@ -172,7 +172,8 @@ class SMSGETWAYHUB_lib {
 
                 'expired_time' => time(),
 
-                'code' => $this->verificationCode
+                'code' => $this->verificationCode,
+                'form_name' => $formField['form_name']
 
             ));
 

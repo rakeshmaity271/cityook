@@ -96,7 +96,7 @@
 
      <div class="form-group">
 
-        <input name="mobile" id="mobile"  class="form-control"  type="text">
+        <input name="mobile" value="<?php echo ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';?>" id="mobile"  class="form-control"  type="text">
 
         <!-- <div class="help-block with-errors"></div> -->
 
@@ -237,10 +237,11 @@ $(document).ready(function() {
               "method": "POST",
 
               "headers": {
-
-                
-
-              }
+              },
+              beforeSend: function() {
+                // Show full page LoadingOverlay
+                $.LoadingOverlay("show");
+            }
 
             }
 
@@ -252,47 +253,70 @@ $(document).ready(function() {
 
               if(data.error === false && data.type === 'success') {
 
-                swal({
+                setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
-                    title: "Success",
+                    title: "success",
 
                     text: data.message,
 
                     icon: "success",
+                    buttons: true,
 
-                });
-
-                window.location.href = '<?php echo base_url("/login");?>';
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/login");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+                   
+                }, 3000)
 
               } else if(data.error === true && data.type === 'expired') {
 
-                swal({
+                setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
                     title: "Expired",
 
                     text: data.message,
 
-                    icon: "error",
+                    icon: "Error",
+                    buttons: true,
 
-                });
-
-                window.location.href = '<?php echo base_url("/register");?>';
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/register");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+                   
+                }, 3000);
 
               } else {
 
                 if(data.error === true && data.type === 'error') {
 
+                    setTimeout(function() {
+                    $.LoadingOverlay("hide");
                     swal({
 
-                        title: "Error",
+                    title: "Error",
 
-                        text: data.message,
+                    text: data.message,
 
-                        icon: "error",
-
+                    icon: "error",
                     });
-
-                   // return false;
+                   
+                }, 3000);
+                   
+                    return false;
 
                 }
 

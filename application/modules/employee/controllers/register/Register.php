@@ -35,14 +35,24 @@ class Register extends MX_Controller {
 
 
 		
-
+		// foreach(array_keys($this->session->userdata) as $key) {
+		// 	if($key === 'register') {
+		// 		$this->session->unset_userdata($key);
+		// 	} else {
+				
+		// 	}
+		// }
 	}
 
 	public function index()
 
 	{
-
-
+		$mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
+		$form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
+	
+		if($mobile !== "" && $form === 2) {
+			redirect('/employee/register/step-2');
+		} 
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
 		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
@@ -60,6 +70,19 @@ class Register extends MX_Controller {
 	public function sendOtp() {
 
 		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+
+		if(!is_numeric($mobile)) {
+			return $this->output
+						->set_content_type('application/json')
+						->set_status_header(200)
+						->set_output(json_encode(array(
+								'error' => true,
+								'status' => 200,
+								'message' => $mobile.' this is not a numaric value, enter 10 digit valid mobile number',
+								'type' => 'error'
+
+						))); 
+		}
 		/**
 		 * mobile no verificaiton from otp table
 		 */
@@ -95,17 +118,23 @@ class Register extends MX_Controller {
 		}
 		$user = $this->Register_model->getUserByMobile($mobile);
 				if(count($user) > 0) {
+					//$this->session->set_session('mobile', $mobile);
 					return $this->output
 								->set_content_type('application/json')
 								->set_status_header(200)
 								->set_output(json_encode(array(
 										'error' => true,
 										'status' => 200,
-										'message' => 'User already exists!'
+										'message' => 'User already exists!',
+										'type' => 'error'
 							))); 
 				}
-					$this->data = $this->SMSGETWAYHUB->sendOtp($this->config->item('SMSGETWAYHUB_URL'),$this->config->item('SMSGETWAYHUB_APIKEY'), false, false, $mobile, '', true);
-
+					$formData = array(
+						'form_name' => 2
+					);
+					$this->data = $this->SMSGETWAYHUB->sendOtp($this->config->item('SMSGETWAYHUB_URL'),$this->config->item('SMSGETWAYHUB_APIKEY'), false, false, $mobile, '', true, $formData);
+					$this->input->set_cookie('mobile', $mobile, 3600*2);
+					$this->session->set_userdata('register', array('mobile' => $mobile, 'form' => 2));
 					return $this->output
 								->set_content_type('application/json')
 								->set_status_header(200)
@@ -113,13 +142,17 @@ class Register extends MX_Controller {
 										'error' => false,
 										'status' => 200,
 										'mobile' => $mobile,
-										'data' => $this->data,
 										'type' => 'success',
 										'message' => 'Verification code has been send in your phone'
 							))); 
 	}
 
 	public function stepTwo() {
+		$mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
+		$form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
+		if($mobile === "" && $form === '') {
+			redirect('/employee/register');
+		}
 
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
@@ -272,62 +305,86 @@ class Register extends MX_Controller {
 						// 							'message' => $this->data,
 						// 					)));
 						// }
-						
-					
-				
-					$this->data = array(
-						'fullname' 		=> 	$this->Register_model->getFullname(),
-						'email' 		=> 	$this->Register_model->getEmail(),
-						'mobile' 		=> 	$this->Register_model->getMobile(),
-						'password' 		=> 	$this->Register_model->getPassword(),
-						'address'		=> 	$this->Register_model->getAddress(),
-						'city'			=>	$this->Register_model->getCity(),
-						'state'			=>	$this->Register_model->getState(),
-						'pincode'		=>	$this->Register_model->getPincode(),
-						'adhar_no'		=>	$this->Register_model->getAdharno(),
-						'user_type' 	=> '2',
-						'active'		=>	1,
-						'document'		=>	$image
-					);
-					/**
-					 * match with User input and mobile otp 
-					 * IF Match
-					 */
-					if($userInputVerificationCode == $verificationDetails->code) {
-						if($this->Register_model->register($this->data)) {
-							$this->SMSGETWAYHUB->destroyExpiredCode($mobile);
-							return $this->output
-										->set_content_type('application/json')
-										->set_status_header(200)
-										->set_output(json_encode(array(
-												'error' => false,
-												'status' => 200,
-												'message' => 'Successfully Registration',
-												'type' => 'success'
-										))); 
+						$password = $password = ($this->input->post('password')) ? $this->input->post('password') : '';
+						if(strlen($password) >= 10) {
+							$this->data = array(
+								'fullname' 		=> 	$this->Register_model->getFullname(),
+								'email' 		=> 	$this->Register_model->getEmail(),
+								'mobile' 		=> 	$this->Register_model->getMobile(),
+								'password' 		=> 	$this->Register_model->getPassword(),
+								'address'		=> 	$this->Register_model->getAddress(),
+								'city'			=>	$this->Register_model->getCity(),
+								'state'			=>	$this->Register_model->getState(),
+								'pincode'		=>	$this->Register_model->getPincode(),
+								'adhar_no'		=>	$this->Register_model->getAdharno(),
+								'user_type' 	=> '2',
+								'active'		=>	1,
+								'document'		=>	$image
+							);
+							/**
+							 * match with User input and mobile otp 
+							 * IF Match
+							 */
+							if($userInputVerificationCode == $verificationDetails->code) {
+								if($this->Register_model->register($this->data)) {
+									$this->SMSGETWAYHUB->destroyExpiredCode($mobile);
+									
+									/**
+									* Destroy register session
+									*/
+									foreach(array_keys($this->session->userdata) as $key) {
+										if($key === 'register') {
+											$this->session->unset_userdata($key);
+										} else {
+											
+										}
+									}
+									return $this->output
+												->set_content_type('application/json')
+												->set_status_header(200)
+												->set_output(json_encode(array(
+														'error' => false,
+														'status' => 200,
+														'message' => 'Successfully Registration',
+														'type' => 'success'
+												))); 
+								} else {
+									return $this->output
+												->set_content_type('application/json')
+												->set_status_header(200)
+												->set_output(json_encode(array(
+														'error' => true,
+														'status' => 200,
+														'message' => 'Somethings went to wrong!',
+														'type' => 'error'
+												))); 
+			
+								}
+							} else {
+								return $this->output
+												->set_content_type('application/json')
+												->set_status_header(200)
+												->set_output(json_encode(array(
+														'error' => true,
+														'status' => 200,
+														'message' => 'Verification code does not match!',
+														'type' => 'error'
+												))); 
+							}
 						} else {
 							return $this->output
-										->set_content_type('application/json')
-										->set_status_header(200)
-										->set_output(json_encode(array(
-												'error' => true,
-												'status' => 200,
-												'message' => 'Somethings went to wrong!',
-												'type' => 'error'
-										))); 
-	
+									->set_content_type('application/json')
+									->set_status_header(200)
+									->set_output(json_encode(array(
+											'error' => true,
+											'status' => 200,
+											'message' => 'Password must be > 10 digit',
+											'type' => 'error'
+			
+									))); 
 						}
-					} else {
-						return $this->output
-										->set_content_type('application/json')
-										->set_status_header(200)
-										->set_output(json_encode(array(
-												'error' => true,
-												'status' => 200,
-												'message' => 'Verification code does not match!',
-												'type' => 'error'
-										))); 
-					}
+				
+					
 				}
 			} else {
 				return $this->output

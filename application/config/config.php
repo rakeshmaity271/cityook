@@ -512,28 +512,34 @@ $config['SMSGETWAYHUB_URL'] = 'www.smsgatewayhub.com/api/mt/SendSMS';
 /**
  * Image upload configuration
  */
-$image_path = realpath(APPPATH . '../uploads/');
+$original_path = realpath(APPPATH . '../uploads/');
 $thumb_path = realpath(APPPATH . '../uploads/thumbs/');
+$config['upload_path'] = realpath(APPPATH . '../uploads/');
+$config['thumb_path'] = $config['upload_path'];
+
 $config['file'] = [ 
     'original' => [
-        'upload_path'       => $image_path,
+        'upload_path'       => $original_path,
         'allowed_types'     => array('gif','png' ,'jpg', 'jpeg', 'pdf'),
         'max_size'          => '2048',
         'encrypt_name'      => TRUE,
         'image_library'     => "gd2",
-        'source_image'      => $image_path
+        'source_image'      => $original_path
     ],
     'resize' => [
         'upload_path'       => $thumb_path,
         'allowed_types'     => array('gif','png' ,'jpg', 'jpeg', 'pdf'),
-        'max_size'          => '2048',
+        'max_size'          => '200',
         'encrypt_name'      => TRUE,
         'image_library'     => "gd2",
         'source_image'      => $thumb_path,
-        'thumb_path'        => $thumb_path ,
+        'new_image'         => $thumb_path,
         'remove_spaces'     => TRUE,
-        'width'             => 75,
-        'height'            =>  150
+        'maintain_ratio'    =>  FALSE,
+        'create_thumb'      =>  FALSE,
+        'quality'           =>  '60%',
+        'width'             => 92,
+        'height'            => 92
     ]
 ];
 
