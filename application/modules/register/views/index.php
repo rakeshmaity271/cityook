@@ -272,7 +272,7 @@ $('#contact-form').validator();
                     })
                     .then((willDelete) => {
                         if (willDelete) {
-                            window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
+                            window.location.href = '<?php echo base_url("/register/step-2");?>';
                         } else {
                             swal("Your imaginary file is safe!");
                         }
