@@ -47,12 +47,12 @@ class Register extends MX_Controller {
 	public function index()
 
 	{
-		$mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
-		$form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
+		// $mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
+		// $form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
 	
-		if($mobile !== "" && $form === 2) {
-			redirect('/employee/register/step-2');
-		} 
+		// if($mobile !== "" && $form === 2) {
+		// 	redirect('/employee/register/step-2');
+		// } 
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
 		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
@@ -148,11 +148,11 @@ class Register extends MX_Controller {
 	}
 
 	public function stepTwo() {
-		$mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
-		$form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
-		if($mobile === "" && $form === '') {
-			redirect('/employee/register');
-		}
+		// $mobile = ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';
+		// $form = ($this->session->userdata('register')['form']) ? $this->session->userdata('register')['form'] : '';
+		// if($mobile === "" && $form === '') {
+		// 	redirect('/employee/register');
+		// }
 
 		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
