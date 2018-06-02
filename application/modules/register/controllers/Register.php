@@ -164,6 +164,15 @@ class Register extends MX_Controller {
 	}
 
 
+//<<<<<<< HEAD
+		
+		//$verificationDetails = $this->SMSGETWAYHUB->getVerificationDetailsMobile($mobile);
+		//print_r($verificationDetails);
+		//$userInputVerificationCode = ($this->input->post('verificationCode')) ? $this->input->post('verificationCode') : '';
+		//$currentTime = time();
+		//$expiredTime = 60;
+//=======
+//>>>>>>> 7387b6149c0979f86c1677f16afd2d9d0825add7
 	
 	public function submit() {
 

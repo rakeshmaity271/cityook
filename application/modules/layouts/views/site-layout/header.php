@@ -61,7 +61,7 @@
 							<?php } else { ?>
 							<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
 							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>
-							<li><a href="<?php echo base_url();?>employee/register/register/" class="material_dropdown_menu_link"> Become A Partner </a></li>
+							<li><a href="<?php echo base_url();?>employee/register/" class="material_dropdown_menu_link"> Become A Partner </a></li>
 							<?php } ?>
 							
 						</ul>
