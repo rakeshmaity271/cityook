@@ -52,7 +52,7 @@ class SMSGETWAYHUB_lib {
 
 
 
-    public function sendOtp($url, $apiKey, $setCountryCode = false, $countryCode = null, $number, $options = array(), $database = false, $formField = array()) {
+    public function sendOtp($url, $apiKey, $setCountryCode = false, $countryCode = null, $number, $options = array(), $database = false, $formField = array(), $forgotPassword = false) {
 
         $this->verificationCode = $this->generateOtp();
 
@@ -162,36 +162,36 @@ class SMSGETWAYHUB_lib {
 
         curl_close($ch);
 
-
+        
 
         if($database === true) {
-
-            $this->CI->db->insert($this->table, array(
-
-                'mobile' => $number,
-
-                'expired_time' => time(),
-
-                'code' => $this->verificationCode,
-                'form_name' => $formField['form_name']
-
+                $this->CI->db->insert($this->table, array(
+                    'mobile' => $number,
+                    'expired_time' => time(),
+                    'code' => $this->verificationCode,
+                    'form_name' => $formField['form_name']
+                ));
+        }
+        //$database === false;
+        if($forgotPassword === true) {
+            //$this->table = $table;
+            $this->CI->db->where('mobile', $number)->update('users', array(
+                'forgotten_password_code' => $this->verificationCode,
+                'forgotten_password_time' => time(),
             ));
-
-           
-
         }
 
-        $database === false;
+        return $data;
 
-        return $this->CI->output
+        // return $this->CI->output
 
-						->set_content_type('application/json')
+		// 				->set_content_type('application/json')
 
-						->set_status_header(200)
+		// 				->set_status_header(200)
 
-						->set_output(json_encode($data						
+		// 				->set_output(json_encode($data						
 
-						)); 
+		// 				)); 
 
     }
 

@@ -195,7 +195,7 @@ class Register extends MX_Controller {
 	
 							))); 
 					
-					redirect('/register');
+					//redirect('/register');
 				} else {
 					$this->Register_model->setFullname(($this->input->post('fullname')) ? $this->input->post('fullname') : '');
 					$this->Register_model->setEmail(($this->input->post('email')) ? $this->input->post('email') : '');

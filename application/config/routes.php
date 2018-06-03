@@ -170,3 +170,11 @@ $route['admin/service/category/delete/(:num)'] = 'admin/category/category/delete
 $route['admin/service/categories'] = 'admin/category/category';
 
 $route['unauthorized'] = 'unauthorized';
+
+/**
+ * Forgot password
+ */
+$route['forgot-password'] = 'forgot_password/index';
+$route['forgot-password/send'] = 'forgot_password/submit';
+$route['reset'] = 'forgot_password/reset_password_form';
+$route['reset-password'] = 'forgot_password/reset_password';
