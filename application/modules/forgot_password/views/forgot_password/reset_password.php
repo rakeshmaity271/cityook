@@ -232,7 +232,7 @@ $('#contact-form').validator();
 
                     title: "success",
 
-                    text: $(data.message).text(),
+                    text: data.message,
 
                     icon: "success",
                     buttons: true,

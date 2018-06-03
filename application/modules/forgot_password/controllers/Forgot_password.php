@@ -211,7 +211,7 @@ class Forgot_password extends MX_Controller
 							'forgotten_password_code' => null
 						), $user->id);
 
-						$message = 'Password has changed successfully';
+						$message = '<p>Password has changed successfully</p>';
 
 						return $this->output
 							->set_content_type('application/json')
@@ -236,7 +236,7 @@ class Forgot_password extends MX_Controller
 									'error' => true,
 									'type' => 'error',
 									'status' => 200,
-									'message' => 'Verification code does not match'
+									'message' => '<p>Verification code does not match</p>'
 							))); 
 		}
 	}
