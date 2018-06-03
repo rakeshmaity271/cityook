@@ -280,7 +280,4 @@ $('#contact-form').validator();
     
 
 });
-
-
-
 </script>

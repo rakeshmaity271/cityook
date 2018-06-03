@@ -39,7 +39,6 @@ class Forgot_password extends MX_Controller
 	public function submit()
 	{
         
-        
 		// setting validation rules by checking whether identity is username or email
 		if ($this->config->item('identity', 'ion_auth') === 'mobile')
 		{

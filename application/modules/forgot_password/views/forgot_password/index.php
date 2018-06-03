@@ -255,8 +255,6 @@ $('#contact-form').validator();
 
               }
 
-             
-
             });
 
             return false;
@@ -264,11 +262,5 @@ $('#contact-form').validator();
         }
 
     });
-
-    
-
 });
-
-
-
 </script>

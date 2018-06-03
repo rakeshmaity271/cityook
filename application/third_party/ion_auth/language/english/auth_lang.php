@@ -135,7 +135,6 @@ $lang['forgot_password_identity_label'] = 'Mobile number';
 $lang['forgot_password_email_identity_label']    = 'Email';
 $lang['forgot_password_email_not_found']         = 'No record of that email address.';
 $lang['forgot_password_identity_not_found']         = 'No record of that mobile number.';
-
 // Reset Password
 $lang['reset_password_heading']                               = 'Change Password';
 $lang['reset_password_new_password_label']                    = 'Password (at least %s characters long):';
