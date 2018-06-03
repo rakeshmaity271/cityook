@@ -71,7 +71,7 @@ class Register extends MX_Controller {
 
 		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
 
-		if(!is_numeric($mobile)) {
+		if(!is_numeric($mobile) && strlen($mobile) !== 10) {
 			return $this->output
 						->set_content_type('application/json')
 						->set_status_header(200)
@@ -306,7 +306,7 @@ class Register extends MX_Controller {
 						// 					)));
 						// }
 						$password = $password = ($this->input->post('password')) ? $this->input->post('password') : '';
-						if(strlen($password) >= 10) {
+						if(strlen($password) >= 8) {
 							$this->data = array(
 								'fullname' 		=> 	$this->Register_model->getFullname(),
 								'email' 		=> 	$this->Register_model->getEmail(),

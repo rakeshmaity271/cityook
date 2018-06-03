@@ -16,13 +16,15 @@ class Category extends MX_Controller {
 
 
         $this->CI = &get_instance();
+        $this->load->database();
+        $this->load->library('ion_auth');
         $this->load->model('Service_model', 'service_model');
 
         $this->load->model('Category_model', 'category_model');
 
         $this->load->library('Flash_lib', NULL, 'flash');
         $this->load->library('Image_lib', NULL, 'Image_lib');
-        //$this->load->library('Commonlib', 'commonlib');
+        
 
         $this->redirect = '/admin/service';
 
@@ -31,7 +33,12 @@ class Category extends MX_Controller {
 
 
     public function index() {
-
+        if (!$this->ion_auth->logged_in()) {
+			redirect('/login', 'refresh');
+		} else if (!$this->ion_auth->isAdmin()) {
+			$this->flash->error('Error', 'You must be an admin to view this page.');
+			redirect('/unauthorized');
+		} else {
         $this->data['head'] 		= Modules::run('layouts/app-layout/head/index');
 
 		$this->data['header'] 	    = Modules::run('layouts/app-layout/header/index');
@@ -51,6 +58,7 @@ class Category extends MX_Controller {
         $this->data['categories'] = $categories;
 
         $this->load->view('/category/index', $this->data);
+        }
 
     }
 

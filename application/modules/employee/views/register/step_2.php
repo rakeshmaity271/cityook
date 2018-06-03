@@ -222,7 +222,7 @@
 
             <label><!-- <input type="checkbox" id="remember_me" name="remember_me"> --><b>Note: Wait For 1 minute to receive the OTP </b></label>
 
-            <a class="float-right" href="<?php echo base_url();?>employee/register">Resend Otp</a>
+            <a class="float-right" href="<?php echo base_url();?>register">Resend Otp</a>
 
         </div> 
 
