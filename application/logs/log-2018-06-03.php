@@ -158,3 +158,83 @@ INFO - 2018-06-03 04:51:43 --> Helper loaded: html_helper
 INFO - 2018-06-03 04:51:43 --> Session: Class initialized using 'files' driver.
 INFO - 2018-06-03 04:51:43 --> Controller Class Initialized
 ERROR - 2018-06-03 04:51:43 --> 404 Page Not Found: /index
+INFO - 2018-06-03 15:15:17 --> Config Class Initialized
+INFO - 2018-06-03 15:15:17 --> Hooks Class Initialized
+DEBUG - 2018-06-03 15:15:17 --> UTF-8 Support Enabled
+INFO - 2018-06-03 15:15:17 --> Utf8 Class Initialized
+INFO - 2018-06-03 15:15:17 --> URI Class Initialized
+INFO - 2018-06-03 15:15:17 --> Router Class Initialized
+INFO - 2018-06-03 15:15:17 --> Output Class Initialized
+INFO - 2018-06-03 15:15:17 --> Security Class Initialized
+DEBUG - 2018-06-03 15:15:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-06-03 15:15:17 --> Input Class Initialized
+INFO - 2018-06-03 15:15:17 --> Language Class Initialized
+INFO - 2018-06-03 15:15:17 --> Language Class Initialized
+INFO - 2018-06-03 15:15:17 --> Config Class Initialized
+INFO - 2018-06-03 15:15:17 --> Loader Class Initialized
+INFO - 2018-06-03 15:15:17 --> Helper loaded: url_helper
+INFO - 2018-06-03 15:15:17 --> Helper loaded: html_helper
+INFO - 2018-06-03 15:15:17 --> Helper loaded: cookie_helper
+INFO - 2018-06-03 15:15:17 --> Session: Class initialized using 'files' driver.
+INFO - 2018-06-03 15:15:17 --> Controller Class Initialized
+ERROR - 2018-06-03 15:15:17 --> 404 Page Not Found: /index
+INFO - 2018-06-03 15:15:19 --> Config Class Initialized
+INFO - 2018-06-03 15:15:19 --> Hooks Class Initialized
+DEBUG - 2018-06-03 15:15:19 --> UTF-8 Support Enabled
+INFO - 2018-06-03 15:15:19 --> Utf8 Class Initialized
+INFO - 2018-06-03 15:15:19 --> URI Class Initialized
+INFO - 2018-06-03 15:15:19 --> Router Class Initialized
+INFO - 2018-06-03 15:15:19 --> Output Class Initialized
+INFO - 2018-06-03 15:15:19 --> Security Class Initialized
+DEBUG - 2018-06-03 15:15:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-06-03 15:15:19 --> Input Class Initialized
+INFO - 2018-06-03 15:15:19 --> Language Class Initialized
+INFO - 2018-06-03 15:15:19 --> Language Class Initialized
+INFO - 2018-06-03 15:15:19 --> Config Class Initialized
+INFO - 2018-06-03 15:15:19 --> Loader Class Initialized
+INFO - 2018-06-03 15:15:19 --> Helper loaded: url_helper
+INFO - 2018-06-03 15:15:19 --> Helper loaded: html_helper
+INFO - 2018-06-03 15:15:19 --> Helper loaded: cookie_helper
+INFO - 2018-06-03 15:15:19 --> Session: Class initialized using 'files' driver.
+INFO - 2018-06-03 15:15:19 --> Controller Class Initialized
+ERROR - 2018-06-03 15:15:19 --> 404 Page Not Found: /index
+INFO - 2018-06-03 15:15:20 --> Config Class Initialized
+INFO - 2018-06-03 15:15:20 --> Hooks Class Initialized
+DEBUG - 2018-06-03 15:15:20 --> UTF-8 Support Enabled
+INFO - 2018-06-03 15:15:20 --> Utf8 Class Initialized
+INFO - 2018-06-03 15:15:20 --> URI Class Initialized
+INFO - 2018-06-03 15:15:20 --> Router Class Initialized
+INFO - 2018-06-03 15:15:20 --> Output Class Initialized
+INFO - 2018-06-03 15:15:20 --> Security Class Initialized
+DEBUG - 2018-06-03 15:15:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-06-03 15:15:20 --> Input Class Initialized
+INFO - 2018-06-03 15:15:20 --> Language Class Initialized
+INFO - 2018-06-03 15:15:20 --> Language Class Initialized
+INFO - 2018-06-03 15:15:20 --> Config Class Initialized
+INFO - 2018-06-03 15:15:20 --> Loader Class Initialized
+INFO - 2018-06-03 15:15:20 --> Helper loaded: url_helper
+INFO - 2018-06-03 15:15:20 --> Helper loaded: html_helper
+INFO - 2018-06-03 15:15:20 --> Helper loaded: cookie_helper
+INFO - 2018-06-03 15:15:20 --> Session: Class initialized using 'files' driver.
+INFO - 2018-06-03 15:15:20 --> Controller Class Initialized
+ERROR - 2018-06-03 15:15:20 --> 404 Page Not Found: /index
+INFO - 2018-06-03 15:15:20 --> Config Class Initialized
+INFO - 2018-06-03 15:15:20 --> Hooks Class Initialized
+DEBUG - 2018-06-03 15:15:20 --> UTF-8 Support Enabled
+INFO - 2018-06-03 15:15:20 --> Utf8 Class Initialized
+INFO - 2018-06-03 15:15:20 --> URI Class Initialized
+INFO - 2018-06-03 15:15:20 --> Router Class Initialized
+INFO - 2018-06-03 15:15:20 --> Output Class Initialized
+INFO - 2018-06-03 15:15:20 --> Security Class Initialized
+DEBUG - 2018-06-03 15:15:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-06-03 15:15:20 --> Input Class Initialized
+INFO - 2018-06-03 15:15:20 --> Language Class Initialized
+INFO - 2018-06-03 15:15:20 --> Language Class Initialized
+INFO - 2018-06-03 15:15:20 --> Config Class Initialized
+INFO - 2018-06-03 15:15:20 --> Loader Class Initialized
+INFO - 2018-06-03 15:15:20 --> Helper loaded: url_helper
+INFO - 2018-06-03 15:15:20 --> Helper loaded: html_helper
+INFO - 2018-06-03 15:15:20 --> Helper loaded: cookie_helper
+INFO - 2018-06-03 15:15:20 --> Session: Class initialized using 'files' driver.
+INFO - 2018-06-03 15:15:20 --> Controller Class Initialized
+ERROR - 2018-06-03 15:15:20 --> 404 Page Not Found: /index
