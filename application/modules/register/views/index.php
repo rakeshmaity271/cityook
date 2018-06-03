@@ -219,10 +219,11 @@ $('#contact-form').validator();
               "method": "POST",
 
               "headers": {
-
-                
-
-              }
+              },
+              beforeSend: function() {
+                // Show full page LoadingOverlay
+                $.LoadingOverlay("show");
+            }
 
             }
 
@@ -234,44 +235,66 @@ $('#contact-form').validator();
 
               if(data.error === false && data.type === 'success') {
 
-                swal({
+               setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
-                    title: "Success",
+                    title: "success",
 
                     text: data.message,
 
                     icon: "success",
+                    buttons: true,
 
-                });
-
-                window.location.href = '<?php echo base_url("/register/step-2");?>';
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/register/step-2");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+                   
+                }, 3000);
 
               } else if(data.error === true && data.type === 'exists_otp') {
-                swal({
+                setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
                     title: "Warning",
 
                     text: data.message,
 
                     icon: "warning",
+                    buttons: true,
 
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
                     });
-
-                    window.location.href = '<?php echo base_url("/register/step-2");?>';
+                   
+                }, 3000);
               }
               
               else {
 
-                   swal({
+                   setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
                     title: "Error",
 
                     text: data.message,
 
                     icon: "error",
-
-                });
-                window.location.href = '<?php echo base_url("/register");?>';
+                    });
+                   
+                }, 3000);
                 return false;
 
               }

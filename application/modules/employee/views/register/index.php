@@ -106,7 +106,7 @@
 
 									<span class="input-group-addon">+91</span>
 
-									<input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Enter your Mobile" required="required" data-error="Code is required."/>
+									<input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter 10 digit mobile number" required="required" data-error="Code is required."/>
 
 								</div>
 
@@ -184,7 +184,7 @@ $(document).ready(function() {
 
 
 
-$('#contact-form').validator();
+ $('#contact-form').validator();
 
 // when the form is submitted
 
@@ -219,60 +219,92 @@ $('#contact-form').validator();
               "method": "POST",
 
               "headers": {
-
-                
-
-              }
+              },
+              beforeSend: function() {
+                // Show full page LoadingOverlay
+                $.LoadingOverlay("show");
+            }
 
             }
 
 
 
             $.ajax(settings).done(function (data) {
-
-              console.log(data);
+                
+             // console.log(data);
 
               if(data.error === false && data.type === 'success') {
+               
+                setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
-                swal({
-
-                    title: "Success",
+                    title: "success",
 
                     text: data.message,
 
                     icon: "success",
+                    buttons: true,
 
-                });
-
-                window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
-
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+                   
+                }, 3000);
+                
+              
               } else if(data.error === true && data.type === 'exists_otp') {
-                swal({
+                setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
                     title: "Warning",
 
                     text: data.message,
 
                     icon: "warning",
+                    buttons: true,
 
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
                     });
-
-                    window.location.href = '<?php echo base_url("/employee/register/step-2");?>';
+                   
+                }, 3000);
               }
               
               else {
 
-                   swal({
+                   setTimeout(function() {
+                    $.LoadingOverlay("hide");
+                    swal({
 
                     title: "Error",
 
                     text: data.message,
 
                     icon: "error",
+                    buttons: true,
 
-                });
-                window.location.href = '<?php echo base_url("/employee/register");?>';
-                return false;
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location.href = '<?php echo base_url("/employee/register");?>';
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+                   
+                }, 3000);
 
               }
 
@@ -293,4 +325,8 @@ $('#contact-form').validator();
 
 
 </script>
-
+<style>
+.swal-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+</style>
