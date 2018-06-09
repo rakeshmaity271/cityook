@@ -73,9 +73,6 @@
 
                       <div class="form-body">
 
-                        <h4 class="form-section"><?php //echo ($categoryInformation) ? $categoryInformation : ''?></h4>
-
-                        
 
                         <div class="row">
 
@@ -91,8 +88,8 @@
 
                             <div class="controls">
 
-                              <input type="text" name="name" value="<?php echo ($service->name) ? $service->name : ''; ?>" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
-                              <input type="hidden" value="<?php echo ($service->id) ? $service->id : ''; ?>" name="id">
+                              <input type="text" name="name" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
+
                             <div class="help-block"></div></div>
 
                            
@@ -149,11 +146,11 @@
 
                               <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
 
-                                  <option value="" >select option</option>
+                                  <option value="">select option</option>
 
-                                  <option value="0" <?php echo ($service->status === '0') ? 'selected' : '';?>>Inactive</option>
+                                  <option value="0">Inactive</option>
 
-                                  <option value="1" <?php echo ($service->status === '1') ? 'selected' : '';?>>Active</option>
+                                  <option value="1">Active</option>
 
                               </select>
 
@@ -177,7 +174,7 @@
 
                             <div class="controls">
 
-                            <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"><?php echo ($service->description) ? $service->description : '';?></textarea>
+                            <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"></textarea>
 
                             <div class="help-block"></div></div>
 

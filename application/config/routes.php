@@ -169,6 +169,18 @@ $route['admin/service/category/delete/(:num)'] = 'admin/category/category/delete
 
 $route['admin/service/categories'] = 'admin/category/category';
 
+// Services
+$route['admin/service/create'] = 'admin/service/service/create';
+
+$route['admin/service/store'] = 'admin/service/service/store';
+
+$route['admin/service/edit/(:num)'] = 'admin/service/service/edit/$1';
+
+$route['admin/service/update'] = 'admin/service/service/update';
+
+$route['admin/service/delete/(:num)'] = 'admin/service/service/delete/$1';
+
+$route['admin/services'] = 'admin/service/service';
 $route['unauthorized'] = 'unauthorized';
 
 /**
