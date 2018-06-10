@@ -72,134 +72,170 @@
                   <?php } ?>
 
                       <div class="form-body">
-
-
                         <div class="row">
-
-                          <div class="col-md-6">
-
-                          <div class="form-group">
-
-                            <h5>Name
-
-                              <span class="required">*</span>
-
-                            </h5>
-
-                            <div class="controls">
-
-                              <input type="text" name="name" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
-
-                            <div class="help-block"></div></div>
-
-                           
-
+                          <div class="col-md-12">
+                                <div class="form-group">
+                                    <h5>Category
+                                      <span class="required">*</span>
+                                    </h5>
+                                    <div class="controls">
+                                        <select name="id_categories" class="select2-language form-control" id="select2-language" required="" data-validation-required-message="This field is required" aria-invalid="false" >
+                                            <option value="">select option</option>
+                                            <?php foreach($categories as $category) { ?>
+                                              <option value="<?php echo ($category->id) ? $category->id : '';?>"><?php echo ($category->name) ? $category->name : '';?></option>
+                                            <?php } ?>
+                                        </select>
+                                      <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Name
+                                    <span class="required">*</span>
+                                  </h5>
+                                  <div class="controls">
+                                      <input type="text" name="name" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
+                                      <div class="help-block"></div>
+                                  </div>
+                                </div>               
+                                <div class="form-group">
+                                  <h5>Description</h5>
+                                    <div class="controls">
+                                      <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <h5>Service Type
+                                      <span class="required">*</span>
+                                    </h5>
+                                    <div class="controls">
+                                        <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
+                                            <option value="">select option</option>
+                                            <option value="deep">Basic</option>
+                                            <option value="basic">Deep</option>
+                                        </select>
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Service Time
+                                  </h5>
+                                  <div class="controls">
+                                      <input type="text" name="service_time" class="form-control">
+                                    <div class="help-block"></div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Number of BHK
+                                    
+                                  </h5>
+                                  <div class="controls">
+                                    <input type="number" name="number_of_bhk" class="form-control">
+                                  <div class="help-block"></div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Number of Service Men
+                                    
+                                  </h5>
+                                  <div class="controls">
+                                    <input type="number" name="no_of_service_men" class="form-control">
+                                  <div class="help-block"></div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Note</h5>
+                                    <div class="controls">
+                                      <textarea name="note" class="form-control" id="note" rows="3" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <h5>Frequency
+                                    </h5>
+                                  <div class="controls">
+                                      <select name="frequency" class="select2-language form-control" id="select2-language" >
+                                          <option value="">select option</option>
+                                          <option value="1">One Time</option>
+                                          <option value="2">Halferly</option>
+                                          <option value="3">Quartly</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Price
+                                    <span class="required">*</span>
+                                  </h5>
+                                  <div class="controls">
+                                    <input type="text" name="price" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
+                                  <div class="help-block"></div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <h5>Package
+                                    </h5>
+                                  <div class="controls">
+                                      <select name="package" class="select2-language form-control" id="select2-language" >
+                                          <option value="">select option</option>
+                                          <option value="Bronze">Bronze</option>
+                                          <option value="Sliver">Sliver</option>
+                                          <option value="Gold">Gold</option>
+                                          <option value="Platinum">Platinum</option>
+                                      </select>
+                                      <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <h5>Video URL
+                                  </h5>
+                                  <div class="controls">
+                                    <input type="text" name="video_url" class="form-control" >
+                                  <div class="help-block"></div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <h5>Status
+                                      <span class="required">*</span>
+                                    </h5>
+                                  <div class="controls">
+                                      <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
+                                          <option value="">select option</option>
+                                          <option value="0">Inactive</option>
+                                          <option value="1">Active</option>
+                                      </select>
+                                      <div class="help-block"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="text-bold-600 font-medium-2">
+                                    Related Service
+                                  </div>
+                                  <div class="controls">
+                                  <select class="select2 form-control" name="related_service[]" multiple="multiple">
+                                    
+                                    <?php foreach ($related_services as $related_service) { ?>
+                                      <option value="<?php echo ($related_service->id) ? $related_service->id : '';?>"><?php echo ($related_service->name) ? $related_service->name : '';?></option>
+                                    <?php } ?>
+                                    
+                                  </select>
+                                  </div>
+                                </div>
+                                <div id="image-preview">
+                                </div>
+                                <div class="form-group">
+                                  <h5>Image
+                                  </h5>
+                                    <div class="controls">
+                                      <div class="custom-file">
+                                        <input type="file" name="file" class="custom-file-input" id="image-upload" >
+                                        <label class="custom-file-label" id="image-label" for="inputGroupFile01">Choose file</label>
+                                      </div>
+                                  </div>
+                                </div>
                           </div>
-
-                          </div>
-
-                          <div class="col-md-6">
-
-                          <div class="form-group">
-
-                            <h5>Image
-
-                              <!-- <span class="required">*</span> -->
-
-                            </h5>
-
-                            <div class="controls">
-
-                              <!-- <input type="file" name="image" class="custom-file-input" required="" data-validation-required-message="This field is required" aria-invalid="false"> -->
-
-                              <div class="custom-file">
-
-                                <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" >
-
-                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-
-                              </div>
-
-                            <!-- <div class="help-block"></div> -->
-
-                          </div>
-
-                          
-
-                          </div>
-
-                          </div>
-
-                          <div class="col-md-6">
-
-                          <div class="form-group">
-
-                            <h5>Status
-
-                              <span class="required">*</span>
-
-                            </h5>
-
-                            <div class="controls">
-
-                              <!-- <input type="text" name="text" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false"> -->
-
-                              <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
-
-                                  <option value="">select option</option>
-
-                                  <option value="0">Inactive</option>
-
-                                  <option value="1">Active</option>
-
-                              </select>
-
-                            <div class="help-block"></div></div>
-
-                            
-
-                          </div>
-
-                          </div>
-
-                          <div class="col-md-6">
-
-                            <div class="form-group">
-
-                            <h5>Description
-
-                              <!-- <span class="required">*</span> -->
-
-                            </h5>
-
-                            <div class="controls">
-
-                            <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"></textarea>
-
-                            <div class="help-block"></div></div>
-
-                            
-
-                          </div>
-
-                          
-
-                          </div>
-
                         </div>
-
-                        
-
-                      
-
                       </div>
 
                       <div class="form-actions right">
-
                       <button type="submit" class="btn btn-success">Submit <i class="fa fa-thumbs-o-up position-right"></i></button>
-
-                      
-
                       </div>
 
                     </form>

@@ -65,32 +65,27 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                 </div>
 
-                <div class="card-content collapse show">
+               <div class="card-content collapse show">
+                            <div class="card-body card-dashboard">
 
-                  <div class="card-body card-dashboard">
-
-                    <table class="table table-striped table-bordered file-export">
+                                <table class="table-striped table-bordered file-export">
 
                       <thead>
 
                         <tr>
-
                           <th><input type="checkbox" id="checkAll" ></th>
-
                           <th>SL</th>
-
-                          <!-- <th>Image</th> -->
-
-                          <th>Name</th>
-
+                          <th>Service Name</th>
+                          <th>Service Type</th>
+                          <th>Number of BHK</th>
+                          <th>Number of Service Men</th>
+                          <th>Frequency</th>
+                          <th>Price</th>
+                          <!-- <th>Package</th> -->
                           <th>Status</th>
-
-                          <!-- <th>Created by</th> -->
-
-                          <th>Last Modified At</th>
-
+                          <!-- <th>Created At</th> -->
+                          <!-- <th>Last Modified At</th> -->
                           <th>Action</th>
-
                         </tr>
 
                       </thead>
@@ -106,10 +101,17 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                           <td><?php echo $i;?></td>
 
                           <td><?php echo ($service->name) ? $service->name : '';?></td>
+                          <td><?php echo ($service->service_type) ? $service->service_type : '';?></td>
+                          <td><?php echo ($service->no_of_bhk) ? $service->no_of_bhk : '';?></td>
+                          <td><?php echo ($service->no_of_service_men) ? $service->no_of_service_men : '';?></td>
+                          <td><?php echo ($service->frequency) ? $service->frequency : '';?></td>
+                          <td><?php echo ($service->price) ? $service->price : '0.00';?></td>
+                          <!-- <td><?php echo ($service->package) ? $service->package : '';?></td> -->
 
                           <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td>
+                          <!-- <td><?php echo ($service->created_at) ? $service->created_at : '';?></td> -->
 
-                          <td><?php echo ($service->updated_at) ? $service->updated_at : '';?></td>
+                          <!-- <td><?php echo ($service->updated_at) ? $service->updated_at : '';?></td> -->
 
                           <td>
 

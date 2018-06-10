@@ -15,6 +15,7 @@ class Service extends MX_Controller {
         $this->load->library('ion_auth');
         $this->load->library('Flash_lib', NULL, 'flash');
         $this->load->model('Service_model', 'service');
+        $this->load->model('Category_model', 'category');
 
     }
 
@@ -35,6 +36,8 @@ class Service extends MX_Controller {
 
         $this->data['form']    = 'Service Information';
         $this->data['action']        = base_url().'admin/service/store';
+        $this->data['categories'] = $this->category->all();
+        $this->data['related_services'] = $this->service->all();
         $this->load->view('/service/create', $this->data);
     }
 
@@ -57,8 +60,20 @@ class Service extends MX_Controller {
     }
 
     public function store() {
-        $this->data['name'] = ($this->input->post('name')) ? $this->input->post('name') : '';
-        $this->data['status'] = ($this->input->post('status')) ? $this->input->post('status') : '0';
+        $this->data['id_categories']        = ($this->input->post('id_categories')) ? $this->input->post('id_categories') : '';
+        $this->data['name']                 = ($this->input->post('name')) ? $this->input->post('name') : '';
+        $this->data['status']               = ($this->input->post('status')) ? $this->input->post('status') : '0';
+        $this->data['description']          = ($this->input->post('description')) ? $this->input->post('description') : '';
+        $this->data['service_type']         = ($this->input->post('service_type')) ? $this->input->post('service_type') : '';
+        $this->data['service_time']         = ($this->input->post('service_time')) ? $this->input->post('service_time') : '';
+        $this->data['no_of_service_men']    = ($this->input->post('no_of_service_men')) ? $this->input->post('no_of_service_men') : '';
+        $this->data['no_of_bhk']            = ($this->input->post('no_of_bhk')) ? $this->input->post('no_of_bhk') : '';
+        $this->data['note']                 = ($this->input->post('note')) ? $this->input->post('note') : '';
+        $this->data['frequency']            = ($this->input->post('frequency')) ? $this->input->post('frequency') : '';
+        $this->data['price']                = ($this->input->post('price')) ? $this->input->post('price') : '';
+        $this->data['package']              = ($this->input->post('package')) ? $this->input->post('package') : '';
+        $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : '';
+        $this->data['slug']                 = $this->service->slug($this->data['name']);
         $this->service->save($this->data);
         $this->flash->success('Success', 'Record added');
         redirect('/admin/services', 'refresh');
@@ -87,7 +102,8 @@ class Service extends MX_Controller {
             $this->data['action']        = base_url().'admin/service/store';
         }
         
-
+        $this->data['categories'] = $this->category->all();
+        $this->data['related_services'] = $this->service->all();
         $this->data['service'] = $this->service->get($id);
 
         $this->load->view('/service/edit', $this->data);

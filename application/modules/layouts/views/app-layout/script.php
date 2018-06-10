@@ -1,7 +1,8 @@
 <!-- BEGIN VENDOR JS-->
 
 <script src="<?php echo base_url('assets/vendors/js/vendors.min.js');?>" type="text/javascript"></script>
-
+<script src="<?php echo base_url('assets/vendors/js/forms/select/select2.full.min.js');?>" type="text/javascript"></script>
+  <script src="<?php echo base_url('assets/js/scripts/forms/select/form-select2.min.js');?>" type="text/javascript"></script>
   <!-- BEGIN VENDOR JS-->
 
   <!-- BEGIN PAGE VENDOR JS-->
@@ -91,3 +92,21 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.3/dist/loadingoverlay.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/js/scripts/image/jquery.uploadPreview.min.js');?>"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  $.uploadPreview({
+    input_field: "#image-upload",
+    preview_box: "#image-preview",
+    label_field: "#image-label"
+  });
+});
+</script>
+<style>
+    table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+</style>
