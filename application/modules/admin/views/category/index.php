@@ -195,8 +195,8 @@ $(document).ready(function() {
     });
 
 
-
-    $('.deleteBtn').on('click', function (e) {
+ 
+ $('.deleteBtn').on('click', function (e) {
       var id = $(this).attr('data-id');
       if (!e.isDefaultPrevented()) {
       var url = "<?php echo base_url();?>admin/service/category/delete/"+ id;
@@ -215,11 +215,13 @@ $(document).ready(function() {
               "headers": {
               },
               beforeSend: function() {
-                // Show full page LoadingOverlay
                 $.LoadingOverlay("show");
             }
 
         }
+
+
+
           $.ajax(settings).done(function (data) {
 
             console.log(data);
@@ -240,7 +242,7 @@ $(document).ready(function() {
                   })
                   .then((willDelete) => {
                       if (willDelete) {
-                          window.location.href = '<?php echo base_url("/admin/service/categories");?>';
+                          window.location.href = '<?php echo base_url("/admin/categories");?>';
                       } else {
                           swal("Your imaginary file is safe!");
                       }

@@ -254,9 +254,9 @@ class Category extends MX_Controller {
         // print_r($category);
         // exit();
         if(count($category) > 0) {
-            $imageName = $category->image;
-            $imageWithFullPath = $this->config->item('file')['original']['upload_path'].$imageName;
-            unlink($imageWithFullPath);
+            // $imageName = $category->image;
+            // $imageWithFullPath = $this->config->item('file')['original']['upload_path'].$imageName;
+            // unlink($imageWithFullPath);
             $this->category_model->delete($id);
 
             return $this->output
