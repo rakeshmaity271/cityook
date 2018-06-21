@@ -20,6 +20,7 @@ class Service_model extends CI_Model
     private $common;
     private $table;
     private $t;
+    
     public function __construct() {
         parent::__construct();
         $this->common = new Common_lib();
@@ -47,5 +48,31 @@ class Service_model extends CI_Model
     public function slug($productName) {
         return $this->common->slugify($productName);
     }
+
+    public function getRelatedServicesByServiceID($serviceID) {
+       
+        $data = array();
+        $related_services = $this->common->rows('related_services', array('where' => array('id_services' => $serviceID), 'columns' => 'related_id_services'));
+        
+        foreach ($related_services as $value) {
+            $data[] = $value->related_id_services;
+        }
+       
+        return $data;
+        //print_r($data);
+
+    }
+    // public function getRelatedServicesByServiceID($serviceID) {
+    //     $options = array(
+    //         'order_by' => array('id', 'DESC'),
+    //         'where' => array('id_services' , $serviceID)
+    //     );
+    //     return $this->common->join($this->table, $cond = array('related_services', 'related_services.id_services = '.$this->table.'.id', 'left', $options));
+    // }
+    public function setRelatedServices($data) {
+        return $this->common->insert('related_services', $data);
+    }
+
+    
 
 }

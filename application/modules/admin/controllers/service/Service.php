@@ -74,7 +74,21 @@ class Service extends MX_Controller {
         $this->data['package']              = ($this->input->post('package')) ? $this->input->post('package') : '';
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : '';
         $this->data['slug']                 = $this->service->slug($this->data['name']);
-        $this->service->save($this->data);
+
+        $this->data['related_services']     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
+
+        $lastInsertedID = $this->service->save($this->data);
+
+        if(isset($this->data['related_services'])) {
+            foreach ($this->data['related_services'] as $value) {
+                $this->service->setRelatedServices(array(
+                    'id_services' => $lastInsertedID,
+                    'related_id_services' => $value
+                ));
+            }
+        }
+        
+        
         $this->flash->success('Success', 'Record added');
         redirect('/admin/services', 'refresh');
 
@@ -103,9 +117,11 @@ class Service extends MX_Controller {
         }
         
         $this->data['categories'] = $this->category->all();
-        $this->data['related_services'] = $this->service->all();
-        $this->data['service'] = $this->service->get($id);
+        $this->data['related_services'] = $this->service->getRelatedServicesByServiceID($id);
 
+        $this->data['services'] = $this->service->all();
+        $this->data['service'] = $this->service->get($id);
+     
         $this->load->view('/service/edit', $this->data);
 
 
@@ -123,6 +139,36 @@ class Service extends MX_Controller {
         $service = $this->service->get($id);
         $this->data['name']             = ($this->input->post('name')) ? $this->input->post('name') : $service->name;
         $this->data['status']           = ($this->input->post('status')) ? $this->input->post('status') : '0';
+        $this->service->update($id, $this->data);
+
+        $this->data['id_categories']        = ($this->input->post('id_categories')) ? $this->input->post('id_categories') : $service->id_categories;
+      
+        $this->data['description']          = ($this->input->post('description')) ? $this->input->post('description') : $service->description;
+        $this->data['service_type']         = ($this->input->post('service_type')) ? $this->input->post('service_type') : $service->service_type;
+        $this->data['service_time']         = ($this->input->post('service_time')) ? $this->input->post('service_time') : $service->service_time;
+        $this->data['no_of_service_men']    = ($this->input->post('no_of_service_men')) ? $this->input->post('no_of_service_men') : $service->no_of_service_men;
+        $this->data['no_of_bhk']            = ($this->input->post('no_of_bhk')) ? $this->input->post('no_of_bhk') : $service->no_of_bhk;
+        $this->data['note']                 = ($this->input->post('note')) ? $this->input->post('note') : $service->note;
+        $this->data['frequency']            = ($this->input->post('frequency')) ? $this->input->post('frequency') : $service->frequency;
+        $this->data['price']                = ($this->input->post('price')) ? $this->input->post('price') : $service->price;
+        $this->data['package']              = ($this->input->post('package')) ? $this->input->post('package') : $service->package;
+        $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : $service->video_url;
+        $this->data['slug']                 = $this->service->slug($this->data['name']);
+
+       
+
+        $related_id_services     = ($this->input->post('related_id_services')) ? $this->input->post('related_id_services') : $this->service->getRelatedServicesByServiceID($id);
+
+        //print_r($this->data['related_id_services']);
+        if(isset($related_id_services)) {
+            foreach ($related_id_services as $value) {
+                $this->service->setRelatedServices(array(
+                    'id_services' => $id,
+                    'related_id_services' => $value
+                ));
+            }
+        }
+
         $this->service->update($id, $this->data);
         $this->flash->success('Success', 'Record added');
         redirect('/admin/services', 'refresh');
