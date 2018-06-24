@@ -75,12 +75,12 @@ class Service extends MX_Controller {
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : '';
         $this->data['slug']                 = $this->service->slug($this->data['name']);
 
-        $this->data['related_services']     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
+        $related_services     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
 
         $lastInsertedID = $this->service->save($this->data);
 
-        if(isset($this->data['related_services'])) {
-            foreach ($this->data['related_services'] as $value) {
+        if(isset($related_services)) {
+            foreach ($related_services as $value) {
                 $this->service->setRelatedServices(array(
                     'id_services' => $lastInsertedID,
                     'related_id_services' => $value

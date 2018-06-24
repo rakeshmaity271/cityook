@@ -73,6 +73,10 @@ class Service_model extends CI_Model
         return $this->common->insert('related_services', $data);
     }
 
+    public function find($options = array()) {
+        return $this->common->find($this->table, $options);
+    }
+
     
 
 }

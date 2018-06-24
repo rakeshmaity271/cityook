@@ -24,6 +24,7 @@ class Common_lib {
     private $limit;
     private $direction;
     private $offset;
+    private $where;
     public function __construct() {
         $this->CI = &get_instance();
         $this->CI->load->database();
@@ -48,6 +49,25 @@ class Common_lib {
         $this->query = $this->CI->db->get();
         $this->row = $this->query->row();
         return $this->row;
+    }
+
+    public function find($table, $id = null, $options = array()) {
+        $where = array();
+        $this->CI->db->select('*');
+        $this->CI->db->from($table);
+        if(isset($options)) {
+            foreach ($options as $key => $value) {
+                $where[$key] = $value;
+            }
+        } else {
+            $where['id'] = $id;
+        }
+
+        $this->CI->db->where($where);
+        $this->query = $this->CI->db->get();
+        //$this->rows = array();
+        $this->rows = $this->query->result();
+        return $this->rows;
     }
 
     public function row($table, $id) {

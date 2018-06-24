@@ -111,5 +111,9 @@ class Category_model extends CI_Model
         $slug = '';
 
     }
+    public function find($options = array()) {
+        return $this->common->find($this->table, $options);
+    }
+
 
 }
