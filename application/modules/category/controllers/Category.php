@@ -21,7 +21,7 @@ class Category extends MX_Controller {
 
 	{
 
-        #
+
         $this->data['categories'] = $this->category->all();
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
