@@ -196,92 +196,70 @@ $(document).ready(function() {
     });
 
 
+ 
+ $('.deleteBtn').on('click', function (e) {
+      var id = $(this).attr('data-id');
+      if (!e.isDefaultPrevented()) {
+      var url = "<?php echo base_url();?>admin/service/category/delete/"+ id;
+            var settings = {
 
-    $('.deleteBtn').on('click', function (e) {
+              "async": true,
 
-        swal({
+              "crossDomain": true,
 
-            title: "Are you sure?",
+              "url": url,
 
-            text: "Once deleted, you will not be able to recover this imaginary file!",
+              "data" : id,
 
-            icon: "warning",
+              "method": "POST",
 
-            buttons: true,
+              "headers": {
+              },
+              beforeSend: function() {
+                $.LoadingOverlay("show");
+            }
 
-            dangerMode: true,
-
-            })
-
-            .then((willDelete) => {
-
-            if (willDelete) {
-
-                e.preventDefault();
-
-        var id = $(this).attr('data-id');
-
-        //var token = $(this).data("token");
-
-        $.ajax(
-
-        {
-
-            url: "<?php echo base_url();?>admin/service/category/delete/"+id,
-
-            type: 'DELETE',
-
-            dataType: "JSON",
-
-            data: {
-
-                "id": id,
-
-                "_method": 'DELETE',
-
-            },
-
-            success: function (data)
-
-            {
-
-                console.log(data);
-
-                if(data.error === false) {
-
-                    swal(data.message, {
-
-                        icon: "success",
-
-                    });
-
-                    window.location.reload();
-
-                }
+        }
 
 
 
-                console.log(data.message);
+          $.ajax(settings).done(function (data) {
 
+            console.log(data);
+
+            if(data.error === false) {
+
+            setTimeout(function() {
+              $.LoadingOverlay("hide");
+                  swal({
+
+                  title: "success",
+
+                  text: data.message,
+
+                  icon: "success",
+                  buttons: true,
+
+                  })
+                  .then((willDelete) => {
+                      if (willDelete) {
+                          window.location.href = '<?php echo base_url("/admin/categories");?>';
+                      } else {
+                          swal("Your imaginary file is safe!");
+                      }
+                  });
                 
+              }, 3000);
 
             }
+          });
 
-        });
+          return false;
 
-            } else {
-
-               // window.location.reload();
-
-            }
-
-      });
-
-        
+      }
 
     });
-
-});
+  });
 
 </script>
 

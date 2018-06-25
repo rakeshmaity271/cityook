@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php echo $head;?>
 <style>
     fieldset 

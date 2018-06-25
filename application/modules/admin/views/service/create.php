@@ -93,8 +93,7 @@
                                     <span class="required">*</span>
                                   </h5>
                                   <div class="controls">
-                                  <input type="text" name="name" value="<?php echo ($service->name) ? $service->name : ''; ?>" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
-                                  <input type="hidden" value="<?php echo ($service->id) ? $service->id : ''; ?>" name="id">
+                                      <input type="text" name="name" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
                                       <div class="help-block"></div>
                                   </div>
                                 </div>               
@@ -127,6 +126,7 @@
                                 </div>
                                 <div class="form-group">
                                   <h5>Number of BHK
+                                    
                                   </h5>
                                   <div class="controls">
                                     <input type="number" name="number_of_bhk" class="form-control">
@@ -198,8 +198,8 @@
                                   <div class="controls">
                                       <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
                                           <option value="">select option</option>
-                                          <option value="0" <?php echo ($service->status === '0') ? 'selected' : '';?>>Inactive</option>
-                                          <option value="1" <?php echo ($service->status === '1') ? 'selected' : '';?>>Active</option>
+                                          <option value="0">Inactive</option>
+                                          <option value="1">Active</option>
                                       </select>
                                       <div class="help-block"></div>
                                     </div>
