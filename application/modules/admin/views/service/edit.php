@@ -82,7 +82,7 @@
                                         <select name="id_categories" class="select2-language form-control" id="select2-language" required="" data-validation-required-message="This field is required" aria-invalid="false" >
                                             <option value="">select option</option>
                                             <?php foreach($categories as $category) { ?>
-                                              <option value="<?php echo ($category->id) ? $category->id : '';?>"><?php echo ($category->name) ? $category->name : '';?></option>
+                                              <option value="<?php echo ($category->id) ? $category->id : '';?>" <?php echo (isset($service->id_categories) && $category->id === $service->id_categories) ? 'selected' : ''?>><?php echo ($category->name) ? $category->name : '';?></option>
                                             <?php } ?>
                                         </select>
                                       <div class="help-block"></div>
@@ -101,7 +101,7 @@
                                 <div class="form-group">
                                   <h5>Description</h5>
                                     <div class="controls">
-                                      <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"></textarea>
+                                      <textarea name="description" class="form-control" id="descTextarea" rows="3" placeholder="Description"><?php echo ($service->description) ? $service->description : '';?></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -109,10 +109,10 @@
                                       <span class="required">*</span>
                                     </h5>
                                     <div class="controls">
-                                        <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
+                                        <select name="service_type" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
                                             <option value="">select option</option>
-                                            <option value="deep">Basic</option>
-                                            <option value="basic">Deep</option>
+                                            <option value="Deep" <?php echo (isset($service->service_type) && $service->service_type === 'Deep') ? 'selected' : ''?>>Basic</option>
+                                            <option value="Basic" <?php echo (isset($service->service_type) && $service->service_type === 'Basic') ? 'selected' : ''?>>Deep</option>
                                         </select>
                                         <div class="help-block"></div>
                                     </div>
@@ -121,7 +121,7 @@
                                   <h5>Service Time
                                   </h5>
                                   <div class="controls">
-                                      <input type="text" name="service_time" class="form-control">
+                                      <input type="text" value="<?php echo ($service->service_time) ? $service->service_time : '';?>" name="service_time" class="form-control">
                                     <div class="help-block"></div>
                                   </div>
                                 </div>
@@ -129,7 +129,7 @@
                                   <h5>Number of BHK
                                   </h5>
                                   <div class="controls">
-                                    <input type="number" name="number_of_bhk" class="form-control">
+                                    <input type="number" name="no_of_bhk" value="<?php echo ($service->no_of_bhk) ? $service->no_of_bhk : '';?>" class="form-control">
                                   <div class="help-block"></div>
                                 </div>
                                 </div>
@@ -138,14 +138,14 @@
                                     
                                   </h5>
                                   <div class="controls">
-                                    <input type="number" name="no_of_service_men" class="form-control">
+                                    <input type="number" value="<?php echo ($service->no_of_service_men) ? $service->no_of_service_men : '';?>" name="no_of_service_men" class="form-control">
                                   <div class="help-block"></div>
                                 </div>
                                 </div>
                                 <div class="form-group">
                                   <h5>Note</h5>
                                     <div class="controls">
-                                      <textarea name="note" class="form-control" id="note" rows="3" placeholder="Description"></textarea>
+                                      <textarea name="note" value="<?php echo ($service->note) ? $service->note : '';?>" class="form-control" id="note" rows="3" placeholder="Note"><?php echo ($service->note) ? $service->note : '';?></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -154,9 +154,9 @@
                                   <div class="controls">
                                       <select name="frequency" class="select2-language form-control" id="select2-language" >
                                           <option value="">select option</option>
-                                          <option value="1">One Time</option>
-                                          <option value="2">Halferly</option>
-                                          <option value="3">Quartly</option>
+                                          <option value="1" <?php echo (isset($service->frequency) && $service->frequency === '1') ? 'selected' : ''?>>One Time</option>
+                                          <option value="2" <?php echo (isset($service->frequency) && $service->frequency === '2') ? 'selected' : ''?>>Halferly</option>
+                                          <option value="3" <?php echo (isset($service->frequency) && $service->frequency === '3') ? 'selected' : ''?>>Quartly</option>
                                       </select>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                     <span class="required">*</span>
                                   </h5>
                                   <div class="controls">
-                                    <input type="text" name="price" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
+                                    <input type="text" name="price" value="<?php echo ($service->price) ? $service->price : '';?>" class="form-control" required="" data-validation-required-message="This field is required" aria-invalid="false">
                                   <div class="help-block"></div>
                                 </div>
                                 </div>
@@ -175,10 +175,10 @@
                                   <div class="controls">
                                       <select name="package" class="select2-language form-control" id="select2-language" >
                                           <option value="">select option</option>
-                                          <option value="Bronze">Bronze</option>
-                                          <option value="Sliver">Sliver</option>
-                                          <option value="Gold">Gold</option>
-                                          <option value="Platinum">Platinum</option>
+                                          <option value="Bronze" <?php echo (isset($service->package) && $service->package === 'Bronze') ? 'selected' : ''?>>Bronze</option>
+                                          <option value="Sliver" <?php echo (isset($service->package) && $service->package === 'Sliver') ? 'selected' : ''?>>Sliver</option>
+                                          <option value="Gold" <?php echo (isset($service->package) && $service->package === 'Gold') ? 'selected' : ''?>>Gold</option>
+                                          <option value="Platinum" <?php echo (isset($service->package) && $service->package === 'Platinum') ? 'selected' : ''?>>Platinum</option>
                                       </select>
                                       <div class="help-block"></div>
                                     </div>
@@ -187,7 +187,7 @@
                                   <h5>Video URL
                                   </h5>
                                   <div class="controls">
-                                    <input type="text" name="video_url" class="form-control" >
+                                    <input type="text" name="video_url" value="<?php echo ($service->video_url) ? $service->video_url : '';?>" class="form-control" >
                                   <div class="help-block"></div>
                                 </div>
                                 </div>
@@ -206,13 +206,14 @@
                                 </div>
                                 <div class="form-group">
                                   <div class="text-bold-600 font-medium-2">
-                                    Related Service
+                                    Related Services
+                                  
                                   </div>
                                   <div class="controls">
-                                  <select class="select2 form-control" name="related_service[]" multiple="multiple">
-                                    
-                                    <?php foreach ($related_services as $related_service) { ?>
-                                      <option value="<?php echo ($related_service->id) ? $related_service->id : '';?>"><?php echo ($related_service->name) ? $related_service->name : '';?></option>
+                                  <select class="select2 form-control" name="related_id_services[]" multiple="multiple">
+                                    <option value="" >select related service</option>
+                                    <?php foreach ($services as $service) { ?>
+                                      <option value="<?php echo ($service->id) ? $service->id : '';?>" <?php echo (isset($service->id) && in_array($service->id, $related_services)) ? 'selected' : ''?>><?php echo ($service->name) ? $service->name : '';?></option>
                                     <?php } ?>
                                     
                                   </select>

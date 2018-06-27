@@ -108,7 +108,7 @@
                                       <span class="required">*</span>
                                     </h5>
                                     <div class="controls">
-                                        <select name="status" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
+                                        <select name="service_type" class="select2-language form-control" id="select2-language" data-validation-required-message="This field is required" >
                                             <option value="">select option</option>
                                             <option value="deep">Basic</option>
                                             <option value="basic">Deep</option>
@@ -129,7 +129,7 @@
                                     
                                   </h5>
                                   <div class="controls">
-                                    <input type="number" name="number_of_bhk" class="form-control">
+                                    <input type="number" name="no_of_bhk" class="form-control">
                                   <div class="help-block"></div>
                                 </div>
                                 </div>

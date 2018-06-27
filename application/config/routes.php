@@ -155,6 +155,7 @@ $route['register/step-2'] = 'register/stepTwo';
 
 $route['register/submit'] = 'register/submit';
 
+$route['login'] = 'login/index';
 // Service Category
 
 $route['admin/service/category/create'] = 'admin/category/category/create';
@@ -190,3 +191,9 @@ $route['forgot-password'] = 'forgot_password/index';
 $route['forgot-password/send'] = 'forgot_password/submit';
 $route['reset'] = 'forgot_password/reset_password_form';
 $route['reset-password'] = 'forgot_password/reset_password';
+
+/**
+* 
+*/
+$route['(:any)'] = 'Service/index/$1';
+$route['(:any)/(:any)'] = 'Service/show/$1';
