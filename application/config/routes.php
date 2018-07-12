@@ -195,5 +195,18 @@ $route['reset-password'] = 'forgot_password/reset_password';
 * 
 */
 //print_r($infinity->getCategories());
-$route['(:any)'] = 'Service/index/$1';
-$route['(:any)/(:any)'] = 'Service/show';
+$categories = [
+	'painting',
+	'car-spa',
+	'pest-control',
+	'repairs',
+	'cleaning',
+	'handyman'
+];
+foreach ($categories as $key => $value) {
+	 $route[$value] = 'Service/index';
+}
+// echo "<pre>";
+// print_r($route);
+
+//$route['(:any)/(:any)'] = 'Service/show';
