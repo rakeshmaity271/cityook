@@ -82,7 +82,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                 <div class="card-header">
 
-                  <h4 class="card-title">Employees List</h4>
+                  <h4 class="card-title">Category List</h4>
 
                  
 
@@ -102,11 +102,11 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <th>SL</th>
 
-                          <th>Image</th>
+                          <!-- <th>Image</th> -->
 
                           <th>Name</th>
 
-                          <th>Status</th>
+                          <!-- <th>Status</th> -->
 
                           <!-- <th>Created by</th> -->
 
@@ -128,11 +128,11 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <td><?php echo $i;?></td>
 
-                          <td><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td>
+                          <!-- <td><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td> -->
 
                           <td><?php echo ($category->name) ? $category->name : '';?></td>
 
-                          <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td>
+                          <!-- <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td> -->
 
                           <td><?php echo ($category->updated_at) ? $category->updated_at : '';?></td>
 

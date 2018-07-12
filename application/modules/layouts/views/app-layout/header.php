@@ -638,7 +638,8 @@
 
               </a>
 
-              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i>Profile</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <!-- <a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i>Profile</a> -->
                 <div class="dropdown-divider"></div>
 
                 <a class="dropdown-item" href="<?php echo base_url();?>logout"><i class="ft-power"></i> Logout</a>

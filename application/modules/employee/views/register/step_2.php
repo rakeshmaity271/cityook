@@ -198,10 +198,27 @@
 
         <!-- <div class="help-block with-errors"></div> -->
 
-    </div> 
+    </div>
+        </div>
+         <div class="row">
 
-	</div>
-    <div class="form-group">
+             <div class="form-group col-lg-6">
+
+                 <label><strong>Upload Profile Picture</strong></label>
+
+                 <div class="help-block with-errors"></div>
+
+             </div>
+             <div class="form-group col-lg-6">
+
+            <input class="form-control" id="profilePicture" name="profilePicture" placeholder="" type="file" required="required" data-error="File is required.">
+
+             <div class="help-block with-errors"></div>
+
+        </div>
+         </div>
+
+        <div class="form-group">
 
         <input name="mobile" value="<?php echo ($this->session->userdata('register')['mobile']) ? $this->session->userdata('register')['mobile'] : '';?>" id="mobile" class="form-control" placeholder="Please enter mobile *" required="required" data-error="Mobile is required." type="text">
 

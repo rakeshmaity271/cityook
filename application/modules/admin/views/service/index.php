@@ -25,7 +25,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
           <a href="<?php echo base_url('/admin/service/create');?>" class="btn btn-primary btn-min-width mr-1 mb-1" ><i class="fa fa-plus"></i> Add Service</a>
 
-          <h3 class="content-header-title mb-0">Category List</h3>
+          <h3 class="content-header-title mb-0">Service List</h3>
 
           <?php if(!empty($this->session->flashdata('message'))) {?>
 
@@ -59,7 +59,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                 <div class="card-header">
 
-                  <h4 class="card-title">Employees List</h4>
+                  <h4 class="card-title">Service List</h4>
 
                  
 
@@ -82,7 +82,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                           <th>Frequency</th>
                           <th>Price</th>
                           <!-- <th>Package</th> -->
-                          <th>Status</th>
+                          <!-- <th>Status</th> -->
                           <!-- <th>Created At</th> -->
                           <!-- <th>Last Modified At</th> -->
                           <th>Action</th>
@@ -108,7 +108,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                           <td><?php echo ($service->price) ? $service->price : '0.00';?></td>
                           <!-- <td><?php echo ($service->package) ? $service->package : '';?></td> -->
 
-                          <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td>
+                          <!-- <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td> -->
                           <!-- <td><?php echo ($service->created_at) ? $service->created_at : '';?></td> -->
 
                           <!-- <td><?php echo ($service->updated_at) ? $service->updated_at : '';?></td> -->

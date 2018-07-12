@@ -226,7 +226,7 @@ class Register extends MX_Controller {
 					foreach($this->config->item('file')['original'] as $key => $value) {
 						$config[$key] = $value;
 						if($key === 'source_image') {
-							$config['source_image'] = $this->config->item('file')['original']['source_image'].'/'.$this->Image_lib->getFilename();
+							$config['source_image'] = $this->config->item('file')['original']['source_image'].'/'.$image;
 						}
 						
 					}
@@ -244,9 +244,44 @@ class Register extends MX_Controller {
 											'message' => 'You did not select a file to upload.',
 											'config' => $config
 									)));
-					} 
-						
-						$this->data = $this->upload->data();
+					}
+
+                    // Employee Image
+                    $profilePicture = strtolower(str_replace(' ', '-', $_FILES['profilePicture']['name']));
+                    if($profilePicture) {
+                        $profileImage = $profilePicture;
+                    } else {
+                        $profileImage = 'no-image.png';
+                    }
+                    $this->Image_lib->setFilename($profilePicture);
+                    $ex = $this->Image_lib->getFileExtension($profilePicture);
+                    $config = array();
+                    foreach($this->config->item('file')['original'] as $key => $value) {
+                        $config[$key] = $value;
+                        if($key === 'source_image') {
+                            $config['source_image'] = $this->config->item('file')['original']['source_image'].'/'.$profileImage;
+                        }
+
+                    }
+
+                    $this->load->library('upload', $config);
+
+                    if(!$this->upload->do_upload('profilePicture')) {
+                        return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                'error' => true,
+                                'status' => 200,
+                                'type' => 'error',
+                                'message' => 'You did not select profile picture to upload.',
+                                'config' => $config
+                            )));
+                    }
+
+                    //close employee image
+
+                    $this->data = $this->upload->data();
 						// return $this->output
 						// 					->set_content_type('application/json')
 						// 					->set_status_header(200)
@@ -319,7 +354,8 @@ class Register extends MX_Controller {
 								'adhar_no'		=>	$this->Register_model->getAdharno(),
 								'user_type' 	=> '2',
 								'active'		=>	1,
-								'document'		=>	$image
+								'document'		=>	$image,
+                                'profile_picture' => $profileImage
 							);
 							/**
 							 * match with User input and mobile otp 

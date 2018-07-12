@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2018 at 08:35 PM
+-- Generation Time: Jul 08, 2018 at 07:26 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -81,6 +81,13 @@ CREATE TABLE `login_attempts` (
   `time` int(11) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `login_attempts`
+--
+
+INSERT INTO `login_attempts` (`id`, `ip_address`, `login`, `time`) VALUES
+(1, '::1', '9073090507', 1531065654);
+
 -- --------------------------------------------------------
 
 --
@@ -94,21 +101,6 @@ CREATE TABLE `otp` (
   `code` int(6) NOT NULL,
   `form_name` enum('1','2') DEFAULT NULL COMMENT '1 = CutomerRegister, 2 = EmployeeRegister'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `otp`
---
-
-INSERT INTO `otp` (`id`, `mobile`, `expired_time`, `code`, `form_name`) VALUES
-(1, '9073090507', '1528027230', 102143, ''),
-(2, '9073090507', '1528027312', 867458, ''),
-(3, '9073090507', '1528027389', 581360, ''),
-(4, '9073090507', '1528027452', 679742, NULL),
-(5, '9073090507', '1528030560', 305574, NULL),
-(6, '9073090507', '1528033053', 771767, NULL),
-(7, '9073090507', '1528033227', 202463, NULL),
-(8, '9073090507', '1528034101', 797434, NULL),
-(9, '9073090507', '1528525305', 650064, NULL);
 
 -- --------------------------------------------------------
 
@@ -180,6 +172,14 @@ CREATE TABLE `services` (
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `id_categories`, `name`, `slug`, `description`, `service_type`, `service_time`, `no_of_bhk`, `no_of_service_men`, `note`, `frequency`, `price`, `package`, `video_url`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'Blog Post', 'blog-post', 'blog post', 'Deep', '2', 2, 2, 'nothing', '1', 200.00, 'Bronze', '', '1', '2018-06-23 17:20:36', NULL, NULL),
+(2, 1, 'An other service', 'an-other-service', 'An other service', 'Basic', '2', 3, 4, 'sgdgsdgs', '2', 300.00, 'Sliver', '', '0', '2018-06-23 17:22:58', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -220,6 +220,7 @@ CREATE TABLE `users` (
   `address` text,
   `adhar_no` int(16) DEFAULT NULL,
   `document` varchar(255) DEFAULT NULL,
+  `profile_picture` varchar(255) DEFAULT NULL,
   `user_type` enum('1','2','3') NOT NULL DEFAULT '3' COMMENT '1 = Admin, 2 = Employee, 3 = Customer',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -230,8 +231,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, '', NULL, '$2y$08$ZHHckar2l8tbK./nWTFfcOIzPWD1eI91uitrGDgVlSLgRYnIFsug6', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, 'zAOtlQjFUrq2FqdxJShKI.', 0, 1529204026, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, '1', '2018-06-03 02:45:50', NULL, NULL);
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `profile_picture`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(3, '', NULL, '$2y$08$MS.ns1VJCmhbm1kp1dXLBeLfjaES0Bm1U5HPqbTYMR9yARiYheO5C', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, NULL, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 700091, 'kolkata', 15415353, 'chrysanthemum.jpg', 'koala.jpg', '2', '2018-07-08 16:21:09', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -327,13 +328,13 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT for table `login_attempts`
 --
 ALTER TABLE `login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `otp`
 --
 ALTER TABLE `otp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `packages`
@@ -351,13 +352,13 @@ ALTER TABLE `related_services`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users_groups`

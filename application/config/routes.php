@@ -3,7 +3,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-
 /*
 
 | -------------------------------------------------------------------------
@@ -104,7 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //$route['default_controller'] = 'Welcome';
 
-$route['404_override'] = '';
+$route['404_override'] = 'pagenotfound/Pagenotfound/index';
 
 $route['translate_uri_dashes'] = FALSE;
 
@@ -195,5 +194,6 @@ $route['reset-password'] = 'forgot_password/reset_password';
 /**
 * 
 */
+//print_r($infinity->getCategories());
 $route['(:any)'] = 'Service/index/$1';
 $route['(:any)/(:any)'] = 'Service/show';
