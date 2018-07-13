@@ -158,18 +158,18 @@
 			<div class="col-lg-2">
 			<div class="btn-group" id="myDropdown">
 			<nav style="">
-			<a href="#">HOME   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+			<a href="<?php echo ($home['link']) ? $home['link'] : '';?>"><?php echo ($home['text']) ? $home['text'] : '';?>   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
 			  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 					CLEANING 
 				<span class="caret"></span>
 			  </a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">CLEANING</a></li>
-				<li><a href="#">Painting</a></li>
-				<li><a href="#">Car-Spa</a></li>
-				<li><a href="#">Plumber</a></li>
-				<li><a href="#">Handyman</a></li>
-				<li><a href="#">Repairs</a></li>
+			  	<?php 
+					if(isset($categories) && count($categories) > 0) { 
+						foreach($categories as $category) { ?>
+							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+					<?php } ?>
+					<?php } ?>
 				<!--<li class="divider"></li>
 				<li><a href="#">Choice..</a></li>-->
 			  </ul>
@@ -178,7 +178,7 @@
 			</div>
 			
 			</div>
-			<div class="col-lg-2">
+			<!-- <div class="col-lg-2">
 			
 			<div class="btn-group" id="myDropdown">
 			<nav style=""> 
@@ -198,7 +198,7 @@
 			</nav>
 			 
 			</div>
-			</div>
+			</div> -->
 			
 		</div>
 	</div>
@@ -316,10 +316,14 @@
 <?php echo $script;?>
 <script>
 	$(document).ready(function(){
-		console.log(123);
-		if($('.slug').prop(":checked")) {
-		  console.log(this.val());
-		}
+		var base_url = '<?php echo base_url();?>';
+		$(".slug") // select the radio by its id
+    .change(function(){ // bind a function to the change event
+        if( $(this).is(":checked") ){ // check if the radio is checked
+            var val = $(this).val(); // retrieve the value
+            window.location.href = base_url + "<?php echo ($this->uri->segment(1)) ? $this->uri->segment(1) : '';?>/"+ val;
+        }
+    });
 	    
 	});
 </script>

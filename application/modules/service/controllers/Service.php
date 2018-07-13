@@ -8,7 +8,7 @@ class Service extends MX_Controller {
 
 
     private $data;
-    private $id_categories;
+    private $categories;
     private $id;
 	public function __construct() {
 
@@ -26,14 +26,23 @@ class Service extends MX_Controller {
 	{
 	    $slug = $this->uri->segment(1);
 
-        $this->id_categories = $this->category->find($options = ['slug' => $slug]);
+        $this->categories = $this->category->find($options = ['slug' => $slug]);
 
         
         //$this->data['image'] = base_url().'uploads/'.$this->id_categories[0]->image;
-        $this->data['description'] = $this->id_categories[0]->description;
-        $this->data['heading'] = $this->id_categories[0]->name;
+        /**
+        * Breadcrumbs
+        */
+        $this->data['home'] = [
+            'link'  => base_url(),
+            'text'  => 'Home'
+        ];
+        
+        $this->data['description'] = $this->categories[0]->description;
+        $this->data['heading'] = $this->categories[0]->name;
 
-        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->id_categories[0]->id]);
+        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
+        $this->data['categories'] = $this->category->all();
 
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
