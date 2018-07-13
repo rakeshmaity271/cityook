@@ -9,6 +9,7 @@ class Service extends MX_Controller {
 
     private $data;
     private $id_categories;
+    private $id;
 	public function __construct() {
 
         parent::__construct();
@@ -23,14 +24,12 @@ class Service extends MX_Controller {
 	public function index($slug)
 
 	{
+	    //$slug = $this->uri->segment(1);
 
         $this->id_categories = $this->category->find($options = ['slug' => $slug]);
-       
-        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->id_categories[0]->slug]);
 
-        //  echo "<pre>";
-        // print_r($this->data['services']);
-        // echo "</pre>";
+
+        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->id_categories[0]->id]);
 
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
@@ -47,15 +46,12 @@ class Service extends MX_Controller {
 
     }
 
-    public function show($slug)
+    public function show()
 
     {
 
-
+        $slug = $this->uri->segment(2);
         $this->data['service'] = $this->service->find($options = ['slug' => $slug]);
-         echo "<pre>";
-        print_r($this->data['service']);
-        echo "</pre>";
 
         $this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
 

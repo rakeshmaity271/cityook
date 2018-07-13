@@ -196,4 +196,4 @@ $route['reset-password'] = 'forgot_password/reset_password';
 * 
 */
 $route['(:any)'] = 'Service/index/$1';
-$route['(:any)/(:any)'] = 'Service/show/$1';
+$route['(:any)/(:any)'] = 'Service/show';

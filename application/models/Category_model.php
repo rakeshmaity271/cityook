@@ -112,7 +112,7 @@ class Category_model extends CI_Model
 
     }
     public function find($options = array()) {
-        return $this->common->find($this->table, $options);
+        return $this->common->find($this->table, '', $options);
     }
 
 

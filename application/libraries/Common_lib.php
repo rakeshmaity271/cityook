@@ -65,6 +65,8 @@ class Common_lib {
 
         $this->CI->db->where($where);
         $this->query = $this->CI->db->get();
+        //print_r($where);
+        //print_r($this->CI->db->last_query());
         //$this->rows = array();
         $this->rows = $this->query->result();
         return $this->rows;
