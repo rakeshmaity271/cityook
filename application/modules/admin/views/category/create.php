@@ -75,8 +75,9 @@
                         
 
                         <div class="row">
+ <div class="col-md-12">
 
-                          <div class="col-md-6">
+                       
 
                           <div class="form-group">
 
@@ -96,9 +97,9 @@
 
                           </div>
 
-                          </div>
+                         
 
-                          <div class="col-md-6">
+                          
 
                           <!-- <div class="form-group">
 
@@ -119,7 +120,7 @@
 
                           </div> -->
 
-                          <div id="image-preview">
+                           <div id="image-preview" style="background-image: url('<?php echo base_url();?>assets/images/no-image.jpg');background-size: cover; background-position: center center;">
                                 </div>
                                 <div class="form-group">
                                   <h5>Image
@@ -132,11 +133,11 @@
                                   </div>
                                 </div>
 
-                          </div>
+                         
 
-                          </div>
+                        
 
-                          <div class="col-md-6">
+                          
 
                           <div class="form-group">
 
@@ -166,9 +167,9 @@
 
                           </div>
 
-                          </div>
+                         
 
-                          <div class="col-md-6">
+                         
 
                             <div class="form-group">
 
@@ -187,11 +188,13 @@
                             
 
                           </div>
+                        </div>
 
                           
 
-                          </div>
+                         
 
+                        </div>
                         </div>
 
                         
@@ -200,12 +203,8 @@
 
                       </div>
 
-                      <div class="form-actions right">
-
+                        <div class="form-actions right">
                       <button type="submit" class="btn btn-success">Submit <i class="fa fa-thumbs-o-up position-right"></i></button>
-
-                      
-
                       </div>
 
                     </form>

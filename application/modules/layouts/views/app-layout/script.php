@@ -83,7 +83,13 @@
 
   <script src="<?php echo base_url('assets/js/scripts/forms/switch.min.js');?>" type="text/javascript"></script>
 
-
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="<?php echo base_url('assets/froala-editor/js/froala_editor.pkgd.min.js');?>"></script>
+ 
+    <!-- Initialize the editor. -->
+    <script> $(function() { $('textarea').froalaEditor({
+      height: 300
+    }) }); </script>
 
    <!-- <script src="{{ url('theme/stack') }}/js/sweetalert.min.js"></script> -->
 

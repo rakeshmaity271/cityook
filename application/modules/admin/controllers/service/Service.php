@@ -61,9 +61,9 @@ class Service extends MX_Controller {
 
     public function store() {
 
-
+        $image = null;
         $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
-		if(isset($filename)) {
+		if($filename) {
             foreach($this->config->item('file')['original'] as $key => $value) {
                 $config[$key] = $value;
             }
@@ -77,7 +77,7 @@ class Service extends MX_Controller {
                 $image = $uploadedData['file_name']; //$this->Image_lib->getFilename();
             }
 		} else {
-			$image = 'no-image.png';
+			$image = 'no-image.jpg';
         }
         
         $this->data['id_categories']        = ($this->input->post('id_categories')) ? $this->input->post('id_categories') : '';
@@ -155,13 +155,13 @@ class Service extends MX_Controller {
     }
 
     public function update() {
-
-        $id = ($this->input->post('id')) ? $this->input->post('id') : $service->name;
+        $image = null;
+        $id = ($this->input->post('id')) ? $this->input->post('id') : '';
         $service = $this->service->get($id);
 
         $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
 
-        if(isset($filename)) {
+        if($filename) {
 
             unlink(FCPATH.'uploads/'.$service->image);
 

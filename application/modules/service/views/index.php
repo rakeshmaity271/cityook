@@ -158,13 +158,13 @@
 			<div class="col-lg-2">
 			<div class="btn-group" id="myDropdown">
 			<nav style="">
-			<a href="<?php echo ($home['link']) ? $home['link'] : '';?>"><?php echo ($home['text']) ? $home['text'] : '';?>   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+			<a href="#">HOME   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
 			  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 					CLEANING 
 				<span class="caret"></span>
 			  </a>
 			  <ul class="dropdown-menu">
-			  	<?php 
+					<?php 
 					if(isset($categories) && count($categories) > 0) { 
 						foreach($categories as $category) { ?>
 							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
@@ -178,7 +178,7 @@
 			</div>
 			
 			</div>
-			<!-- <div class="col-lg-2">
+			<div class="col-lg-2">
 			
 			<div class="btn-group" id="myDropdown">
 			<nav style=""> 
@@ -187,18 +187,18 @@
 				<span class="caret"></span>
 			    </a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">SOFA</a></li>
-				<li><a href="#">ROOM</a></li>
-				<li><a href="#">Car-Spa</a></li>
-				<li><a href="#">Plumber</a></li>
-				<li><a href="#">Handyman</a></li>
-				<li><a href="#">Repairs</a></li>
+					<?php 
+					if(isset($categories) && count($categories) > 0) { 
+						foreach($categories as $category) { ?>
+							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+					<?php } ?>
+					<?php } ?>
 				
 			  </ul>
 			</nav>
 			 
 			</div>
-			</div> -->
+			</div>
 			
 		</div>
 	</div>
@@ -208,95 +208,81 @@
 		<div class="container">
 		<div class="row ">
 		<div class="col-lg-6">
-			<img src="<?php echo base_url();?>assets/cityook/images/florida-plumber.jpg" class="img-responsive"/>
+			<img src="<?php echo (isset($category_cms['image'])) ? $category_cms['image'] : ''?>" class="img-responsive"/>
 			</div>
 			<div class="col-lg-6">
-			<h1 class="webabouth" style=""><?php echo ($heading) ? $heading : '';?></h1>
-			<p class="webaboutp" style=""><?php echo ($description) ? $description : '';?></p>
+			<h1 class="webabouth" style=""><?php echo (isset($category_cms['heading'])) ? $category_cms['heading'] : ''?></h1>
+			<p class="webaboutp" style=""><?php echo (isset($category_cms['content'])) ? $category_cms['content'] : ''?></p>
 			</div>
-			
+		
+		</div>
+		<div class="row" style="padding:30px 20px;">
+		<div class="col-lg-12">
+		<p class="webaboutp">
+			<?php echo (isset($category_cms['middle_section_heading'])) ? $category_cms['middle_section_heading'] : ''?>
+		</p>	
+		</div>
 		</div>
 		<p>&nbsp;</p>
 		<!-- service-->
+		<style>
+		.categeroys > div > div {
+   /* padding: 25px 54px;*/
+   text-align:center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.2s;
+	    padding: 21px 35px;
+		}
+		.categeroys > div:hover > div {
+   /* margin-top: 1px;*/
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+.catp{
+text-align:center;
+}
+.simg{
+width:50px;
+height:50px;
+}
+.categorycon2
+{
+text-align:justify;
+padding:20px 20px;
+font-size:16px;
+
+}
+fieldset{
+   border: 2px solid #FFD650;
+}
+		</style>
 		<div class="row">
-		    <fieldset class="col-md-12">    	
+		    <fieldset class="col-md-12 fieldsetcat" style=" ">    	
 					<legend align="center">Select the Services</legend>
 					    <div class="col-xs-12 col-sm-6 col-md-12">
-				<!-- <h3 class="text-center">Radio Button</h3> -->
-				<div class="frb-group">
-					<!-- <div class="frb frb-default">
-						<input type="radio" id="radio-button-0" name="radio-button" value="0">
-						<label for="radio-button-0">
-							<span class="frb-title">Ac</span>
-					
-							<p><span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span></p>
-						</label>
+							<!-- start services -->
+			<div class="row categeroys">
+				<?php if(isset($services) && count($services) > 0) { ?>
+					<?php foreach ($services as $service) { ?>
+					<div class="col-md-2">
+			    		<div>
+							<a href="#"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
+								<p class="catp"><a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><?php echo (isset($service['service'])) ? $service['service'] : '';?></a></p>
+						</div>
 					</div>
-					<div class="frb frb-primary">
-						<input type="radio" id="radio-button-1" name="radio-button" value="1">
-						<label for="radio-button-1">
-							<span class="frb-title">Laptop</span>
-								<p><span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>	</p>
-						</label>
-					</div>
-					<div class="frb frb-success">
-						<input type="radio" id="radio-button-2" name="radio-button" value="2">
-						<label for="radio-button-2">
-							<span class="frb-title">Water Purifier</span>
-								<p><span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>	</p>
-						</label>
-					</div> -->
-					<?php 
-					if(isset($services) && count($services) > 0) { 
-						foreach($services as $service) { ?>
-					<div class="frb frb-info" id="slugs">
-						<input type="radio" class="slug" id="radio-button-<?php echo ($service->slug) ? $service->slug : ''?>" name="radio-button" value="<?php echo ($service->slug) ? $service->slug : ''?>">
-						<label for="radio-button-<?php echo ($service->slug) ? $service->slug : ''?>">
-							<span class="frb-title"><?php echo ($service->name) ? $service->name : ''?></span>
-								<p><span class="frb-description"><?php echo ($service->description) ? $service->description : ''?></span>	</p>
-						</label>
-					</div>
-				<?php } ?> 
-				<?php } else { ?>
-					<div class="frb frb-info" id="slugs">
-						
-						<label for="radio-button">
-							
-								<p><span class="frb-description">No Service Available</span>	</p>
-						</label>
-					</div>
-				<?php } ?>
-					<!-- <div class="frb frb-warning">
-						<input type="radio" id="radio-button-4" name="radio-button" value="4">
-						<label for="radio-button-4">
-							<span class="frb-title">Washing Machine</span>
-								<p><span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>	</p>
-						</label>
-					</div>
-					<div class="frb frb-danger">
-						<input type="radio" id="radio-button-5" name="radio-button" value="5">
-						<label for="radio-button-5">
-							<span class="frb-title">Fridge</span>
-								<p><span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>	</p>
-						</label>
-					</div> -->
-				</div>
+					<?php }  ?> 
+				<?php } else {
+						echo $this->uri->segment(1).'<legend align="center">This category"s Service not available</legend>';
+					} ?>
+			
 			</div>
-					<!--<div class="row serviceitem">
-					    <div class="col-lg-2">	<img src="<?php echo base_url();?>assets/cityook/images/services/28home.png" class="img-responsive" width="80" height="30"/></div>
-					     <div class="col-lg-10">
-					         <span>home</span>
-					         <p>A healthy home is a happy home. Our cleaning solutions are specifically designed so that every nook and corner of your home shines like new!</p>
-					    </div>
-					</div>
+							
+							<!-- start services-->
+						</div>
 					
-						<div class="row serviceitem">
-					    <div class="col-lg-2">	<img src="<?php echo base_url();?>assets/cityook/images/services/28home.png" class="img-responsive" width="80" height="30"/></div>
-					     <div class="col-lg-10">
-					         <span>home</span>
-					         <p>A healthy home is a happy home. Our cleaning solutions are specifically designed so that every nook and corner of your home shines like new!</p>
-					    </div>
-					</div>-->
 			</fieldset>
 		</div>
 		<!-- service end -->
@@ -310,20 +296,19 @@
 
 		
 </body>
-
 <?php echo $footer;?>
+
+
+<?php //echo $footer;?>
 
 <?php echo $script;?>
 <script>
 	$(document).ready(function(){
-		var base_url = '<?php echo base_url();?>';
-		$(".slug") // select the radio by its id
-    .change(function(){ // bind a function to the change event
-        if( $(this).is(":checked") ){ // check if the radio is checked
-            var val = $(this).val(); // retrieve the value
-            window.location.href = base_url + "<?php echo ($this->uri->segment(1)) ? $this->uri->segment(1) : '';?>/"+ val;
-        }
-    });
+		console.log(123);
+		if($('.slug').prop(":checked")) {
+		  console.log(this.val());
+		}
 	    
 	});
+
 </script>

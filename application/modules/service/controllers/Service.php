@@ -16,6 +16,7 @@ class Service extends MX_Controller {
         $this->load->database();
         $this->load->model('Service_model', 'service');
         $this->load->model('Category_model', 'category');
+        $this->load->model('Catcms_model', 'categorycms');
 
 	}
 
@@ -37,11 +38,50 @@ class Service extends MX_Controller {
             'link'  => base_url(),
             'text'  => 'Home'
         ];
-        
-        $this->data['description'] = $this->categories[0]->description;
-        $this->data['heading'] = $this->categories[0]->name;
 
-        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
+        $categories = [];
+
+        $categorycms = $this->categorycms->find(['id_categories' => $this->categories[0]->id]);
+
+        $this->data['category_cms'] = [];
+
+        if(count($categorycms) > 0) {
+            
+                $this->data['category_cms'] = [
+                    'heading' => ($categorycms[0]->heading) ? $categorycms[0]->heading : '',
+                    'content' => $categorycms[0]->content,
+                    'middle_section_heading' => $categorycms[0]->middle_section_heading,
+                    'image'   => (!file_exists(base_url().'uploads/'.$categorycms[0]->image)) ? base_url().'uploads/'.$categorycms[0]->image : 'no-image.jpg'
+                ];
+            
+        }
+        
+
+        
+        
+       
+        $services = [];
+        $services = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
+        $this->data['services'] = [];
+        if(count($services) > 0) {
+            
+            foreach ($services as $service) {
+                $this->data['services'][] = [
+                    'url'       => base_url().$this->categories[0]->slug.'/'.$service->slug,
+                    'service'   => (isset($service->name)) ? $service->name : '',
+                    'image'     => (!file_exists(base_url().'/uploads/'.$service->image)) ? base_url().'/uploads/'.$service->image : 'no-image.jpg' 
+                ];
+            }
+        }
+
+        
+
+       // printArray($this->data['services']);
+       // exit();
+
+        
+
+        //printArray($this->data['services']);
         $this->data['categories'] = $this->category->all();
 
 

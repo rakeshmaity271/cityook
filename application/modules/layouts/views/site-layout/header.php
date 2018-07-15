@@ -1,5 +1,4 @@
 
-
 <nav class="navbar material_navbar material_navbar_danger" id="header">
 
 		<div class="container-fluid">
@@ -36,9 +35,9 @@
 
 				<ul class="nav navbar-nav navbar-right material_navbar_nav">
 
-				<li><a href="<?php echo ($home['link']) ? $home['link'] : '';?>" class="material_navbar_nav_item" >
+				<li><a href="<?php echo base_url();?>" class="material_navbar_nav_item" >
 
-							<span class="hidden-xs hidden-sm hideName">&nbsp; <?php echo ($home['text']) ? $home['text'] : '';?></span></a></li>
+							<span class="hidden-xs hidden-sm hideName">&nbsp; Home</span></a></li>
 
 					
 
@@ -46,29 +45,33 @@
 
 					<li class="dropdown">
 
-						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><span class="hidden-xs hidden-sm hideName"> | &nbsp; Our Services</span><span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><span class="hidden-xs hidden-sm hideName">  &nbsp; Our Services</span><span class="caret"></span></a>
 
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
-							<?php 
-					if(isset($services) && count($services) > 0) { 
-						foreach($services as $service) { ?>
-							<li><a class="material_dropdown_menu_link" href="<?php echo base_url();?><?php echo ($service->slug) ? $service->slug : '';?>"><?php echo ($service->name) ? $service->name : '';?></a></li>
-					<?php } ?>
-					<?php } ?>
 
-							
+							<li><a href="<?php echo base_url();?>cleaning" class="material_dropdown_menu_link">Cleaning</a></li>
+
+							<li><a href="<?php echo base_url();?>repairs" class="material_dropdown_menu_link">Repairs</a></li>
+
+							<li><a href="<?php echo base_url();?>pest-control" class="material_dropdown_menu_link">Pest-Control</a></li>
+
+							<li><a href="<?php echo base_url();?>car-spa" class="material_dropdown_menu_link">Car-Spa</a></li>
+
+							<li><a href="<?php echo base_url();?>painting" class="material_dropdown_menu_link">Painting</a></li>
+
+							<li><a href="<?php echo base_url();?>handyman" class="material_dropdown_menu_link">Handyman</a></li>
 
 						</ul>
 
 					</li>
 
-					<li><a href="#" class="material_navbar_nav_item">Packages <span class="badge" style="background-color: red">new</span></a></li>
+					<li><a href="#" class="material_navbar_nav_item">Packages <!--<span class="badge" style="background-color: red">new</span>--></a></li>
 
 
 
 					<li><a href="#" class="material_navbar_nav_item" target="_blank">
 
-							<span class="hidden-xs hidden-sm hideName"> | &nbsp; Offers</span></a></li>
+							<span class="hidden-xs hidden-sm hideName">  &nbsp; Offers</span></a></li>
 
 
 
@@ -82,7 +85,7 @@
 
 					<li class="dropdown">
 
-						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><span class="hidden-xs hidden-sm hideName"> | &nbsp; <span itemprop="areaServed">Patna</span></span> <span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><span class="hidden-xs hidden-sm hideName">  &nbsp; <span itemprop="areaServed">Patna</span></span> <span class="caret"></span></a>
 
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
 
@@ -104,7 +107,7 @@
 
 					<li class="dropdown">
 
-						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><!--<i class="material-icons">person</i>--><span class="hidden-xs hidden-sm hideName"> | &nbsp; My Account</span><span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><!--<i class="material-icons">person</i>--><span class="hidden-xs hidden-sm hideName">  &nbsp; My Account</span><span class="caret"></span></a>
 
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
 
@@ -130,7 +133,7 @@
 
 					</li>
 
-					<li><a href="#" class="material_navbar_nav_item callButtonHelplineHeader">| <i class="fa fa-phone"></i><span class="hidden-xs hidden-sm hideName">  &nbsp; 900000000</span></a></li>
+					<li><a href="#" class="material_navbar_nav_item callButtonHelplineHeader"> <i class="fa fa-phone"></i><span class="hidden-xs hidden-sm hideName">  &nbsp; 900000000</span></a></li>
 
 					<li data-dialog="somedialog" class="trigger hidden-xs " onclick="javascript: openCart();" ><a style="cursor: hand; cursor: pointer;" class="cartReviewTrigger"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="cartItemsCount" style="background-color: blue; padding:0px 3px 0px 2px;border-radius:5px 5px;color:yellow;"> 0</span></a>
 
@@ -148,6 +151,5 @@
 
 	
 
-	
 
 	

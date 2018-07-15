@@ -389,6 +389,9 @@ class Common_lib {
                 }
             }
 
+            // printArray($this->cond);
+            // exit();
+
             if(isset($joinType)) {
 
                 $this->joinType = $joinType;
@@ -404,6 +407,7 @@ class Common_lib {
             }
 
         $this->query = $this->CI->db->get();
+        
         $this->rows = $this->query->result();
         return $this->rows;
         

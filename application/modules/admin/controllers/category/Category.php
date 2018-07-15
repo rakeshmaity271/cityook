@@ -1,3 +1,4 @@
+
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -104,7 +105,7 @@ class Category extends MX_Controller {
 
         } 
         $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
-		if(isset($filename)) {
+		if($filename) {
             foreach($this->config->item('file')['original'] as $key => $value) {
                 $config[$key] = $value;
             }
@@ -118,7 +119,7 @@ class Category extends MX_Controller {
                 $image = $uploadedData['file_name']; //$this->Image_lib->getFilename();
             }
 		} else {
-			$image = 'no-image.png';
+			$image = 'no-image.jpg';
 		}
 
 
@@ -196,7 +197,7 @@ class Category extends MX_Controller {
        
         $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
 
-        if(isset($filename)) {
+        if($filename) {
 
             unlink(FCPATH.'uploads/'.$category->image);
 
@@ -271,5 +272,4 @@ class Category extends MX_Controller {
         
 
     }
-
 }
