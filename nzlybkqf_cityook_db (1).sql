@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2018 at 08:35 PM
+-- Generation Time: Jul 12, 2018 at 09:12 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -46,7 +46,12 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `image`, `description`, `created_at`, `updated_at`, `created_by`, `delated_at`, `status`) VALUES
-(1, 'Post to social media', 'post-to-social-media', 'chrysanthemum.jpg', '', NULL, NULL, 0, NULL, '1');
+(2, 'PAINTING', 'painting', 'painting.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2018-07-12 18:28:36', '2018-07-12 14:37:28', 0, NULL, '1'),
+(3, 'CAR-SPA', 'car-spa', 'carspa.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', NULL, NULL, 0, NULL, '1'),
+(4, 'PEST-CONTROL', 'pest-control', 'pestcontrol.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', NULL, NULL, 0, NULL, '1'),
+(5, 'REPAIRS', 'repairs', 'repair.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', NULL, NULL, 0, NULL, '1'),
+(6, 'CLEANING', 'cleaning', 'cleaning.png', '', NULL, NULL, 0, NULL, '1'),
+(7, 'HANDYMAN', 'handyman', 'handyman.png', '', NULL, NULL, 0, NULL, '1');
 
 -- --------------------------------------------------------
 
@@ -94,21 +99,6 @@ CREATE TABLE `otp` (
   `code` int(6) NOT NULL,
   `form_name` enum('1','2') DEFAULT NULL COMMENT '1 = CutomerRegister, 2 = EmployeeRegister'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `otp`
---
-
-INSERT INTO `otp` (`id`, `mobile`, `expired_time`, `code`, `form_name`) VALUES
-(1, '9073090507', '1528027230', 102143, ''),
-(2, '9073090507', '1528027312', 867458, ''),
-(3, '9073090507', '1528027389', 581360, ''),
-(4, '9073090507', '1528027452', 679742, NULL),
-(5, '9073090507', '1528030560', 305574, NULL),
-(6, '9073090507', '1528033053', 771767, NULL),
-(7, '9073090507', '1528033227', 202463, NULL),
-(8, '9073090507', '1528034101', 797434, NULL),
-(9, '9073090507', '1528525305', 650064, NULL);
 
 -- --------------------------------------------------------
 
@@ -180,6 +170,14 @@ CREATE TABLE `services` (
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `id_categories`, `name`, `slug`, `description`, `service_type`, `service_time`, `no_of_bhk`, `no_of_service_men`, `note`, `frequency`, `price`, `package`, `video_url`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(3, 2, 'Fresh Paint', 'fresh-paint', 'Your beautiful home would look a hundred times better with a fresh, new coat of paint! Our professionally trained home service specialists can give your home a brand new look with a dash of colour, as per your core personality and choice. A complete home painting service done by our expert agents ensures quality, trust and reliability. Our agents use premium products and the right methods to ensure the paint is durable for a long period of time. Book a service for your home in Delhi, today!', 'Deep', '30 mins', 1, 2, 'Parts replacement and transportation cost (if applicable) to be settled with service partner directly\r\nExact Scope of service to be determined post inspection\r\nInspection charge would be adjusted against the final bill', '1', 500.00, 'Sliver', '', '1', '2018-07-12 18:32:43', NULL, NULL),
+(4, 2, 'Repaint', 'repaint', 'Give your lovely home a dash of freshness with a quick professional repaint of the walls. If the wall paint is already peeling or showing signs of damage via cracks; getting a thorough repaint will help maintain the overall beauty of your home. Book a service for your home in Delhi and let the home service specialists bring your walls back to life!', 'Basic', '30 mins', 2, 4, 'Parts replacement and transportation cost (if applicable) to be settled with service partner directly\r\nExact Scope of service to be determined post inspection\r\nInspection charge would be adjusted against the final bill', '2', 1000.00, '', '', '1', '2018-07-12 18:35:12', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -220,6 +218,7 @@ CREATE TABLE `users` (
   `address` text,
   `adhar_no` int(16) DEFAULT NULL,
   `document` varchar(255) DEFAULT NULL,
+  `profile_picture` varchar(255) DEFAULT NULL,
   `user_type` enum('1','2','3') NOT NULL DEFAULT '3' COMMENT '1 = Admin, 2 = Employee, 3 = Customer',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -230,8 +229,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, '', NULL, '$2y$08$ZHHckar2l8tbK./nWTFfcOIzPWD1eI91uitrGDgVlSLgRYnIFsug6', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, 'zAOtlQjFUrq2FqdxJShKI.', 0, 1529204026, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, '1', '2018-06-03 02:45:50', NULL, NULL);
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `profile_picture`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(3, '', NULL, '$2y$08$MS.ns1VJCmhbm1kp1dXLBeLfjaES0Bm1U5HPqbTYMR9yARiYheO5C', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, 1531417011, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 700091, 'kolkata', 15415353, 'chrysanthemum.jpg', 'koala.jpg', '1', '2018-07-08 16:21:09', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -315,7 +314,7 @@ ALTER TABLE `users_groups`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `groups`
@@ -327,13 +326,13 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT for table `login_attempts`
 --
 ALTER TABLE `login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `otp`
 --
 ALTER TABLE `otp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `packages`
@@ -351,13 +350,13 @@ ALTER TABLE `related_services`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users_groups`

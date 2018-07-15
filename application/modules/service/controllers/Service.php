@@ -21,13 +21,17 @@ class Service extends MX_Controller {
 
 
 
-	public function index($slug)
+	public function index()
 
 	{
-	    //$slug = $this->uri->segment(1);
+	    $slug = $this->uri->segment(1);
 
         $this->id_categories = $this->category->find($options = ['slug' => $slug]);
 
+        
+        //$this->data['image'] = base_url().'uploads/'.$this->id_categories[0]->image;
+        $this->data['description'] = $this->id_categories[0]->description;
+        $this->data['heading'] = $this->id_categories[0]->name;
 
         $this->data['services'] = $this->service->find($options = ['id_categories' => $this->id_categories[0]->id]);
 

@@ -139,7 +139,7 @@ class Category extends MX_Controller {
                 }
 
                
-               $image = $this->Image_lib->getFilename();
+               $image = $filename; //$this->Image_lib->getFilename();
                 // $this->CI->load->library('image_lib', $resize);
                 // if(!$this->CI->image_lib->resize()) {
                 //     $this->flash->error('Error', 'Resize method not working');
@@ -160,7 +160,7 @@ class Category extends MX_Controller {
 
         $this->data['description']   = ($this->input->post('description')) ? $this->input->post('description') : '';
 
-       $this->data['image'] = $image;
+       $this->data['image'] = $filename;
 
         $this->category_model->save($this->data);
 
@@ -223,6 +223,27 @@ class Category extends MX_Controller {
     public function update($id) {
 
         $category = $this->category_model->getCategoryById($id);
+       
+        $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
+
+        if(isset($filename)) {
+
+            @unlink(base_url().'uploads/'.$category->image);
+
+            foreach($this->config->item('file')['original'] as $key => $value) {
+                $config[$key] = $value;
+            }
+
+            $this->load->library('upload', $config);
+            if(!$this->upload->do_upload('file')) {
+                            
+            } else {
+                $uploadedData = $this->upload->data();
+                $image = $filename;
+            }
+        } else {
+            $image = $category->image;
+        }
 
 
 
@@ -234,11 +255,13 @@ class Category extends MX_Controller {
 
         $this->data['description']  = ($this->input->post('description')) ? $this->input->post('description') : $category->description;
 
-        //$this->data['image']    = $image;
+        $this->data['image']    = $image;
 
         $this->data['updated_at']  = date('Y-m-d H:m:s', time());
 
-       
+       echo "<pre>";
+       print_r($this->data);
+       exit();
 
         $this->category_model->update($this->data, $id);
 
