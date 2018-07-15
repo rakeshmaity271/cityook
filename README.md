@@ -1,2 +1,0 @@
-# cityook
-Service Management System
