@@ -102,7 +102,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <th>SL</th>
 
-                          <!-- <th>Image</th> -->
+                          <th>Image</th>
 
                           <th>Name</th>
 
@@ -128,7 +128,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <td><?php echo $i;?></td>
 
-                          <!-- <td><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td> -->
+                          <td><img height="32" width="32" src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td>
 
                           <td><?php echo ($category->name) ? $category->name : '';?></td>
 
@@ -242,7 +242,7 @@ $(document).ready(function() {
                   })
                   .then((willDelete) => {
                       if (willDelete) {
-                          window.location.href = '<?php echo base_url("/admin/categories");?>';
+                          window.location.href = '<?php echo base_url("/admin/service/categories");?>';
                       } else {
                           swal("Your imaginary file is safe!");
                       }

@@ -60,6 +60,26 @@ class Service extends MX_Controller {
     }
 
     public function store() {
+
+
+        $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
+		if(isset($filename)) {
+            foreach($this->config->item('file')['original'] as $key => $value) {
+                $config[$key] = $value;
+            }
+            $this->load->library('upload', $config);
+            if(!$this->upload->do_upload('file')) {
+                            
+            } else {
+                $uploadedData = $this->upload->data();
+                // printArray($uploadedData);
+                // exit();
+                $image = $uploadedData['file_name']; //$this->Image_lib->getFilename();
+            }
+		} else {
+			$image = 'no-image.png';
+        }
+        
         $this->data['id_categories']        = ($this->input->post('id_categories')) ? $this->input->post('id_categories') : '';
         $this->data['name']                 = ($this->input->post('name')) ? $this->input->post('name') : '';
         $this->data['status']               = ($this->input->post('status')) ? $this->input->post('status') : '0';
@@ -74,6 +94,7 @@ class Service extends MX_Controller {
         $this->data['package']              = ($this->input->post('package')) ? $this->input->post('package') : '';
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : '';
         $this->data['slug']                 = $this->service->slug($this->data['name']);
+        $this->data['image']                =  $image;
 
         $related_services     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
 
@@ -137,6 +158,28 @@ class Service extends MX_Controller {
 
         $id = ($this->input->post('id')) ? $this->input->post('id') : $service->name;
         $service = $this->service->get($id);
+
+        $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
+
+        if(isset($filename)) {
+
+            unlink(FCPATH.'uploads/'.$service->image);
+
+            foreach($this->config->item('file')['original'] as $key => $value) {
+                $config[$key] = $value;
+            }
+
+            $this->load->library('upload', $config);
+            if(!$this->upload->do_upload('file')) {
+                            
+            } else {
+                $uploadedData = $this->upload->data();
+                $image = $uploadedData['file_name'];
+            }
+        } else {
+            $image = $service->image;
+        }
+
         $this->data['name']             = ($this->input->post('name')) ? $this->input->post('name') : $service->name;
         $this->data['status']           = ($this->input->post('status')) ? $this->input->post('status') : '0';
         $this->service->update($id, $this->data);
@@ -154,6 +197,7 @@ class Service extends MX_Controller {
         $this->data['package']              = ($this->input->post('package')) ? $this->input->post('package') : $service->package;
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : $service->video_url;
         $this->data['slug']                 = $this->service->slug($this->data['name']);
+        $this->data['image']                =  $image;
 
        
 

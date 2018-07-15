@@ -100,17 +100,12 @@
 
                           <div class="col-md-6">
 
-                          <div class="form-group">
+                          <!-- <div class="form-group">
 
                             <h5>Image
-
-                              <!-- <span class="required">*</span> -->
-
                             </h5>
 
                             <div class="controls">
-
-                              <!-- <input type="file" name="image" class="custom-file-input" required="" data-validation-required-message="This field is required" aria-invalid="false"> -->
 
                               <div class="custom-file">
 
@@ -120,11 +115,22 @@
 
                               </div>
 
-                            <!-- <div class="help-block"></div> -->
+                         
 
-                          </div>
+                          </div> -->
 
-                          
+                          <div id="image-preview">
+                                </div>
+                                <div class="form-group">
+                                  <h5>Image
+                                  </h5>
+                                    <div class="controls">
+                                      <div class="custom-file">
+                                        <input type="file" name="file" class="custom-file-input" id="image-upload" >
+                                        <label class="custom-file-label" id="image-label" for="inputGroupFile01">Choose file</label>
+                                      </div>
+                                  </div>
+                                </div>
 
                           </div>
 

@@ -178,7 +178,7 @@ $autoload['drivers'] = array();
 
 
 
-$autoload['helper'] = array('url','html', 'cookie');
+$autoload['helper'] = array('url','html', 'cookie', 'cityook_helper');
 
 
 

@@ -103,21 +103,8 @@ class Category extends MX_Controller {
             redirect($this->redirect.'/category/create');
 
         } 
-        // if( ! is_dir($this->config->item('upload_path').'uploads') ) {
-		// 	mkdir($this->config->item('upload_path').'uploads',0777,TRUE); 
-        // }
-        
-        // if( ! is_dir($this->config->item('thumb_path').'thumbs') ) {
-		// 	mkdir($this->config->item('thumb_path').'thumbs',0777,TRUE); 
-		// }
-
         $filename = strtolower(str_replace(' ', '-', $_FILES['file']['name']));
-        // $temp = explode(".", $_FILES["file"]["name"]);
-        // $newfilename = round(microtime(true)) . '.' . end($temp);
-
 		if(isset($filename)) {
-           
-            $this->Image_lib->setFilename($filename);
             foreach($this->config->item('file')['original'] as $key => $value) {
                 $config[$key] = $value;
             }
@@ -126,26 +113,9 @@ class Category extends MX_Controller {
                             
             } else {
                 $uploadedData = $this->upload->data();
-                
-
-                foreach($this->config->item('file')['resize'] as $key => $value) {
-                    $resize[$key] = $value;
-                    if($key === 'source_image') {
-                        $resize['source_image'] = $this->config->item('file')['resize']['source_image'].'/'.$this->Image_lib->getFilename();
-                    }
-                    if($key === 'new_image') {
-                        $resize['new_image'] = $this->config->item('file')['resize']['new_image'].'/'.$this->Image_lib->getFilename();
-                    }
-                }
-
-               
-               $image = $filename; //$this->Image_lib->getFilename();
-                // $this->CI->load->library('image_lib', $resize);
-                // if(!$this->CI->image_lib->resize()) {
-                //     $this->flash->error('Error', 'Resize method not working');
-                //     redirect($this->redirect.'/category/create');
-                // }
-                
+                // printArray($uploadedData);
+                // exit();
+                $image = $uploadedData['file_name']; //$this->Image_lib->getFilename();
             }
 		} else {
 			$image = 'no-image.png';
@@ -160,7 +130,7 @@ class Category extends MX_Controller {
 
         $this->data['description']   = ($this->input->post('description')) ? $this->input->post('description') : '';
 
-       $this->data['image'] = $filename;
+       $this->data['image'] = $image;
 
         $this->category_model->save($this->data);
 
@@ -228,7 +198,7 @@ class Category extends MX_Controller {
 
         if(isset($filename)) {
 
-            unlink(base_url().'uploads/'.$category->image);
+            unlink(FCPATH.'uploads/'.$category->image);
 
             foreach($this->config->item('file')['original'] as $key => $value) {
                 $config[$key] = $value;
@@ -239,13 +209,15 @@ class Category extends MX_Controller {
                             
             } else {
                 $uploadedData = $this->upload->data();
-                $image = $filename;
+                $image = $uploadedData['file_name'];
             }
         } else {
             $image = $category->image;
         }
+        
+        
 
-
+       
 
         $this->data['name']         = ($this->input->post('name')) ? $this->input->post('name') : $category->name;
 
@@ -259,9 +231,7 @@ class Category extends MX_Controller {
 
         $this->data['updated_at']  = date('Y-m-d H:m:s', time());
 
-       echo "<pre>";
-       print_r($this->data);
-       exit();
+    
 
         $this->category_model->update($this->data, $id);
 
