@@ -242,6 +242,8 @@ Sofa,Home,Office,Loft,Carpet,Bathroom,Balcony,Mattress,kitchen,Chair,Window,Frid
 }
 .catp{
 text-align:center;
+font-weight:bold;
+font-size:16px;
 }
 .simg{
 width:50px;
@@ -274,57 +276,57 @@ fieldset{
 					<div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg" width="50" height="50"></a>
-								<p><a href="">Office</a></p>
+								<p class="catp"><a href="">Office</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg" width="50" height="50"></a>
-								<p><a href="">Carpet</a></p>
+								<p class="catp"><a href="">Carpet</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Sofa</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Loft</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Carpet</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Bathroom</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Balcony</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Mattress</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Kitchen</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Chair</a></p>
 						</div>
 					</div><div class="col-md-2">
 			    		<div>
 							<a href="#"><img src="uploads/painting.png" alt="" class=" img-thumbnail simg"></a>
-								<p><a href="">Home</a></p>
+								<p class="catp"><a href="">Window</a></p>
 						</div>
 					</div>
 			

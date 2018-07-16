@@ -40,13 +40,13 @@
                                 
                                 <ul>
  									<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Saloon</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Pandit</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Carpainter</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Painting</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Cleaning</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Marbel & Tiles Fitting</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Bridel & Groom Makeup</a></li>
+                                    
                                     
                                 </ul>
                     
@@ -101,8 +101,8 @@
                                 
                                 <div class="footerp"> 
                                 
-                                <h2 class="title-median">Demo Pvt. Ltd.</h2>
-                                <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@demo.com</a></p>
+                                <h2 class="title-median">Cityook Pvt. Ltd.</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@cityook.com</a></p>
                                 <p><b>Helpline Numbers </b>
 
     <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-9800000000, +91-9000000000  </p>
