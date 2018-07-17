@@ -5,24 +5,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 class Service extends MX_Controller {
-
-
-    private $data;
+	private $data;
     private $id_categories;
     private $id;
 	public function __construct() {
-
-        parent::__construct();
+	parent::__construct();
         $this->load->database();
         $this->load->model('Service_model', 'service');
         $this->load->model('Category_model', 'category');
-
 	}
-
-
-
 	public function index()
-
 	{
 	    $slug = $this->uri->segment(1);
 
