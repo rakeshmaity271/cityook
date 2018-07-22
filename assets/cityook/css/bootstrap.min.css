@@ -5378,7 +5378,7 @@ transition-duration:.35s;
 
 	display:block;
 
-	padding:3px 20px;
+	padding:7px 22px;
 
 	clear:both;
 
@@ -5388,7 +5388,8 @@ transition-duration:.35s;
 
 	color:#333;
 
-	white-space:nowrap
+	white-space:nowrap;
+	 border-bottom: 1px solid #e9e9e9;
 
 }
 

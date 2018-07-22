@@ -17,7 +17,7 @@
         <div class="content-header-left col-md-6 col-12 mb-2">
 
          
-
+<a href="<?php echo base_url('/admin/service/create');?>" class="btn btn-primary btn-min-width mr-1 mb-1" ><i class="fa fa-plus"></i> Add Service</a>
           <h3 class="content-header-title mb-0"><?php echo ($title) ? $title : ''?></h3>
 
           
@@ -219,7 +219,7 @@
                                   </select>
                                   </div>
                                 </div>
-                                <div id="image-preview">
+                                <div id="image-preview" style="background-image: url('<?php echo base_url();?>uploads/<?php echo $service->image;?>');background-size: cover; background-position: center center;">
                                 </div>
                                 <div class="form-group">
                                   <h5>Image
@@ -235,7 +235,7 @@
                         </div>
                       </div>
 
-                      <div class="form-actions right">
+                       <div class="form-actions right">
                       <button type="submit" class="btn btn-success">Submit <i class="fa fa-thumbs-o-up position-right"></i></button>
                       </div>
 

@@ -626,6 +626,7 @@
 	    
 	});
 </script>
+<<<<<<< HEAD
 <!--- tab script start here--->
 	<script>
 	$(document).ready(function() {

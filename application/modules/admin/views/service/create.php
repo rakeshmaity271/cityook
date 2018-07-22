@@ -218,7 +218,7 @@
                                   </select>
                                   </div>
                                 </div>
-                                <div id="image-preview">
+                                <div id="image-preview" style="background-image: url('<?php echo base_url();?>assets/images/no-image.jpg');background-size: cover; background-position: center center;">
                                 </div>
                                 <div class="form-group">
                                   <h5>Image

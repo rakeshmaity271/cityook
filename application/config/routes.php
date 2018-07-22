@@ -169,6 +169,19 @@ $route['admin/service/category/delete/(:num)'] = 'admin/category/category/delete
 
 $route['admin/service/categories'] = 'admin/category/category';
 
+// service category cms
+$route['admin/service/category/cms/create'] = 'admin/category/categorycms/create';
+
+$route['admin/service/category/cms/store'] = 'admin/category/categorycms/store';
+
+$route['admin/service/category/cms/edit/(:num)'] = 'admin/category/categorycms/edit/$1';
+
+$route['admin/service/category/cms/update'] = 'admin/category/categorycms/update';
+
+$route['admin/service/category/cms/delete/(:num)'] = 'admin/category/categorycms/delete/$1';
+
+$route['admin/service/category/cms'] = 'admin/category/categorycms';
+
 // Services
 $route['admin/service/create'] = 'admin/service/service/create';
 
@@ -206,7 +219,3 @@ $categories = [
 foreach ($categories as $key => $value) {
 	 $route[$value] = 'service/index';
 }
-// echo "<pre>";
-// print_r($route);
-
-//$route['(:any)/(:any)'] = 'Service/show';

@@ -102,7 +102,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <th>SL</th>
 
-                          <!-- <th>Image</th> -->
+                          <th>Image</th>
 
                           <th>Name</th>
 
@@ -128,11 +128,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <td><?php echo $i;?></td>
 
-
-                          <td><img src="" alt="Image"></td>
-
-                          <!-- <td><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td> -->
-
+                          <td><img height="32" width="32" src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="Image"></td>
 
                           <td><?php echo ($category->name) ? $category->name : '';?></td>
 
@@ -159,7 +155,6 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                         </tr>
 
                           <?php $i++; } ?>
-						  </tbody>
 
                     </table>
 

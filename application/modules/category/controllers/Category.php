@@ -1,4 +1,3 @@
-
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -22,11 +21,7 @@ class Category extends MX_Controller {
 
 	{
 
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> eb2d3e030b408851ceba7cfccc5da5ddfbe0f322
         $this->data['categories'] = $this->category->all();
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
@@ -45,5 +40,3 @@ class Category extends MX_Controller {
 
 
 }
-
-

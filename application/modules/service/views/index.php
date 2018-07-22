@@ -164,12 +164,12 @@
 				<span class="caret"></span>
 			  </a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">CLEANING</a></li>
-				<li><a href="#">Painting</a></li>
-				<li><a href="#">Car-Spa</a></li>
-				<li><a href="#">Plumber</a></li>
-				<li><a href="#">Handyman</a></li>
-				<li><a href="#">Repairs</a></li>
+					<?php 
+					if(isset($categories) && count($categories) > 0) { 
+						foreach($categories as $category) { ?>
+							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+					<?php } ?>
+					<?php } ?>
 				<!--<li class="divider"></li>
 				<li><a href="#">Choice..</a></li>-->
 			  </ul>
@@ -187,12 +187,12 @@
 				<span class="caret"></span>
 			    </a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">SOFA</a></li>
-				<li><a href="#">ROOM</a></li>
-				<li><a href="#">Car-Spa</a></li>
-				<li><a href="#">Plumber</a></li>
-				<li><a href="#">Handyman</a></li>
-				<li><a href="#">Repairs</a></li>
+					<?php 
+					if(isset($categories) && count($categories) > 0) { 
+						foreach($categories as $category) { ?>
+							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+					<?php } ?>
+					<?php } ?>
 				
 			  </ul>
 			</nav>
@@ -208,23 +208,31 @@
 		<div class="container">
 		<div class="row ">
 		<div class="col-lg-6">
-			<img src="<?php echo base_url();?>assets/cityook/images/florida-plumber.jpg" class="img-responsive"/>
+			<img src="<?php echo (isset($category_cms['image'])) ? $category_cms['image'] : ''?>" class="img-responsive" height="298" width="500"/>
 			</div>
-			<div class="col-lg-6">
-			<h1 class="webabouth" style=""><?php echo ($heading) ? $heading : '';?></h1>
-			<p class="webaboutp" style=""><?php echo ($description) ? $description : '';?></p>
+			<div class="col-lg-6 categoryconp">
+			<h1 class="webabouth" style=""><?php echo (isset($category_cms['heading'])) ? $category_cms['heading'] : ''?></h1>
+			<?php echo (isset($category_cms['content'])) ? $category_cms['content'] : ''?>
 			</div>
 		
 		</div>
 		<div class="row" style="padding:30px 20px;">
-		<div class="col-lg-12">
-		<p class="webaboutp">Cleaning Services in Patna You Can Rely on The one-Stop Shop for all home and office cleaning Services.
-Sofa,Home,Office,Loft,Carpet,Bathroom,Balcony,Mattress,kitchen,Chair,Window,Fridge.</p>	
+		<div class="col-lg-12 ">
+		<p class="webaboutp">
+			<?php echo (isset($category_cms['middle_section_heading'])) ? $category_cms['middle_section_heading'] : ''?>
+		</p>	
 		</div>
 		</div>
 		<p>&nbsp;</p>
 		<!-- service-->
 		<style>
+		.categoryconp p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: ro;
+    line-height: 29px;
+    color: #666666;
+}
 		.categeroys > div > div {
    /* padding: 25px 54px;*/
    text-align:center;
@@ -266,7 +274,8 @@ fieldset{
 					    <div class="col-xs-12 col-sm-6 col-md-12">
 							<!-- start services -->
 			<div class="row categeroys">
-				
+				<?php if(isset($services) && count($services) > 0) { ?>
+					<?php foreach ($services as $service) { ?>
 					<div class="col-md-2">
 			    		<div>
 							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
@@ -323,12 +332,26 @@ fieldset{
 							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
 								<p class="catp"><a href="<?php echo base_url();?>service/show/">Chair</a></p>
 						</div>
-					</div><div class="col-md-2">
+					</div>
+					<div class="col-md-2">
 			    		<div>
 							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-thumbnail simg"></a>
 								<p class="catp"><a href="<?php echo base_url();?>service/show/">Window</a></p>
+
+						
 						</div>
 					</div>
+					<div class="col-md-2">
+			    		<div>
+								<a href="#"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
+								<p class="catp"><a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><?php echo (isset($service['service'])) ? $service['service'] : '';?></a></p>
+
+						</div>
+					</div>
+					<?php }  ?> 
+				<?php } else {
+						echo $this->uri->segment(1).'<legend align="center">This category"s Service not available</legend>';
+					} ?>
 			
 			</div>
 							
@@ -362,4 +385,5 @@ fieldset{
 		}
 	    
 	});
+
 </script>

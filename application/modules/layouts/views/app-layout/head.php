@@ -71,6 +71,10 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/plugins/forms/switch.min.css');?>">
 
   <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert.css');?>"> -->
+
+      <!-- Include Editor style. -->
+    <link href="<?php echo base_url('assets/froala-editor/css/froala_editor.pkgd.min.css');?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url('assets/froala-editor/css/froala_style.min.css');?>" rel="stylesheet" type="text/css" />
   <style type="text/css">
 #image-preview {
   width: 200px;

@@ -1,5 +1,4 @@
 
-
 <nav class="navbar material_navbar material_navbar_danger" id="header">
 
 		<div class="container-fluid">
@@ -152,6 +151,5 @@
 
 	
 
-	
 
 	
