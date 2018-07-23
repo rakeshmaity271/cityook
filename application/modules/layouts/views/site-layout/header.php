@@ -113,9 +113,10 @@
 
 							<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { ?>
 
-							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
+							
 
 							<li><a href="<?php echo base_url();?>my-account" class="material_dropdown_menu_link"> My Account </a></li>
+							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
 
 							<?php } else { ?>
 
