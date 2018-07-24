@@ -196,6 +196,19 @@ $route['admin/service/delete/(:num)'] = 'admin/service/service/delete/$1';
 $route['admin/services'] = 'admin/service/service';
 $route['unauthorized'] = 'unauthorized';
 
+#Postcodes
+$route['admin/postcode/create'] = 'admin/postcode/create';
+
+$route['admin/postcode/store'] = 'admin/postcode/store';
+
+$route['admin/postcode/edit/(:num)'] = 'admin/postcode/edit/$1';
+
+$route['admin/postcode/update'] = 'admin/postcode/update';
+
+$route['admin/postcode/delete/(:num)'] = 'admin/postcode/delete/$1';
+
+$route['admin/postcodes'] = 'admin/postcode';
+
 /**
  * Forgot password
  */
@@ -208,14 +221,21 @@ $route['reset-password'] = 'forgot_password/reset_password';
 * 
 */
 //print_r($infinity->getCategories());
-$categories = [
-	'painting',
-	'car-spa',
-	'pest-control',
-	'repairs',
-	'cleaning',
-	'handyman'
-];
-foreach ($categories as $key => $value) {
-	 $route[$value] = 'service/index';
-}
+// $categories = [
+// 	'painting',
+// 	'car-spa',
+// 	'pest-control',
+// 	'repairs',
+// 	'cleaning',
+// 	'handyman'
+// ];
+// foreach ($categories as $key => $value) {
+// 	 $route[$value] = 'service/index';
+// }
+// require_once( APPPATH .'helpers/cityook_helper.php');
+// print_r(dynamicRoutes());
+
+// $route['(:any)'] = 'service/index';
+// $route['(:any)/(:any)'] = 'service/show';
+$route['([^/]+)/?'] = 'service/index/$1';
+$route['([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';

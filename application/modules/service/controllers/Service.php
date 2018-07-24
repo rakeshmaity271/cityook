@@ -87,15 +87,15 @@ class Service extends MX_Controller {
         $this->load->model('Service_model', 'service');
         $this->load->model('Category_model', 'category');
         $this->load->model('Catcms_model', 'categorycms');
-
+        $this->load->model('Postcode_model', 'postcode');
 	}
 
 
 
-	public function index()
+	public function index($slug)
 
 	{
-	    $slug = $this->uri->segment(1);
+	    //$slug = $this->uri->segment(1);
 
         $this->categories = $this->category->find($options = ['slug' => $slug]);
 
@@ -169,11 +169,11 @@ class Service extends MX_Controller {
 
     }
 
-    public function show()
+    public function show($slug, $slugTwo  = null)
 
     {
 
-        $slug = $this->uri->segment(2);
+        //$slug = $this->uri->segment(2);
         $this->data['service'] = $this->service->find($options = ['slug' => $slug]);
 
         $this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
@@ -188,6 +188,37 @@ class Service extends MX_Controller {
 
         $this->load->view('show', $this->data);
 
+    }
+
+    public function isValidPostCode() {
+        $isAjax = ($this->input->is_ajax_request()) ? true : false;
+        if($isAjax) {
+            $postcode = ($this->input->post('postcode')) ? $this->input->post('postcode') : '';
+            
+            $options = [
+                'postcode' => $postcode
+            ];
+            $postcodes = $this->postcode->isValidPostCode($options);
+
+            if(count($postcodes) > 0) {
+                return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array(
+                        'error' => false,
+                        'status' => 200
+                )));
+            }
+
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array(
+                        'error' => true,
+                        'status' => 404
+                )));
+            
+        }
     }
 
 

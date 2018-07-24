@@ -279,7 +279,7 @@
         <div class="well">
       <div class="tab-content">
         <div class="tab-pane fade in active" id="tab1">
-          	<!-- service description start here --->
+          	<!-- service description start here -->
 				<div class="row" style="padding:0px 20px;">
 				    <div class="col-lg-6">
 				        <h3 style="text-align:center;font-weight:bold;">WHAT WE'LL DO</h3>
@@ -312,7 +312,7 @@
 				        
 				        
 				        
-<div class="card1">
+<div class="card1" id="card1">
 
 <article class="card-body">
 
@@ -613,7 +613,21 @@
 
 
 
-		
+		<!-- set up the modal to start hidden and fade in and out -->
+<div id="myModal" class="modal fade" style="display:none">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- dialog body -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        Hello world!
+      </div>
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary">OK</button></div>
+    </div>
+  </div>
+</div>
+
 </body>
 <?php echo $footer;?>
 <?php echo $script;?>
@@ -626,8 +640,8 @@
 	    
 	});
 </script>
-<<<<<<< HEAD
-<!--- tab script start here--->
+
+<!--- tab script start here-->
 	<script>
 	$(document).ready(function() {
 $(".btn-pref .btn").click(function () {
@@ -725,5 +739,59 @@ $(".btn-pref .btn").click(function () {
 	background:none !important;
 	border: none !important;
 }
+body.noScroll { /* ...or body.dialogShowing */
+  overflow: hidden;
+}
 	</style>
 	<!-- tab end here -->
+	<script>
+	$(document).ready(function() {
+		$('#card1').hide();
+		swal({
+			title: "Check Postcode",
+			text: "Enter postcode",
+			type: "input",
+			showCancelButton: false,
+			confirmButtonColor: "#DD6B55",
+			confirmButtonText: "Search",
+			closeOnConfirm: false,
+			
+  		}, function(input) {
+	
+			if(isNaN(input)) {
+				alert(input + ' Input type not a number');
+				return false;
+			}
+			$.ajax({
+				type: "post",
+				url: "<?php echo base_url();?>service/service/isValidPostCode",
+				data: {
+					'postcode': input
+				},
+				success: function(data) {
+					if(data.error === false) {
+						$('#card1').show();
+						swal.close();
+					}
+				},
+				failure: function(data) {
+					if(data.error === true) {
+						console.log('not found');
+						swal("Error", "Not found", "error");
+					}
+				}
+			})
+			.done(function(data) {
+				if(data.error === true) {
+						console.log('not found');
+						alert(input + " Invalid Postcode");
+						return false;
+					}
+			})
+			.error(function(data) {
+				
+			});
+  		});
+	});
+
+</script>
