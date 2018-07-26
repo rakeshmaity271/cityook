@@ -10,6 +10,8 @@ class Site extends MX_Controller {
 	}
 	public function index()
 	{
+		// echo "<pre>";
+		// print_r(dynamicRoutes());
 		$this->data = array();
 		/**
 		* @description

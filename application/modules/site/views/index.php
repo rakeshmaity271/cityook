@@ -72,7 +72,7 @@
 				<?php foreach ($categories as $category) { ?>
 					<div class="col-md-2">
 			    		<div>
-							<a href="<?php echo base_url();?><?php echo $category->slug;?>"><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="<?php echo $category->name;?>" class="img-circle img-thumbnail simg"></a>
+							<a href="<?php echo base_url().'en/';?><?php echo $category->slug;?>"><img src="<?php echo base_url();?>uploads/<?php echo $category->image;?>" alt="<?php echo $category->name;?>" class="img-circle img-thumbnail simg"></a>
 								<p><a href="<?php echo base_url();?><?php echo $category->slug;?>" class="servicea" title="Enlace"><?php echo $category->name;?></a></p>
 						</div>
 					</div>

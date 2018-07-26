@@ -11,21 +11,21 @@ if(!function_exists('printArray')) {
 
 if(!function_exists('dynamicRoutes')) {
     function dynamicRoutes() {
-        $ci=& get_instance();
-      //  $ci->load->database(); 
-      //$CI->load->model('Category_model', 'category');
-    //   $CI->load->model('Service_model', 'service');
-    //   $categories = [];
-       return $categories = $ci->Category_model->all();
+        $CI=& get_instance();
+        $CI->load->database(); 
+        $CI->load->model('Category_model', 'category');
+        $CI->load->model('Service_model', 'service');
+        $categories = [];
+        $categories = $CI->Category_model->all();
       
-    //   $index = [];
-    //   foreach ($categories as $category) {
-    //       foreach ($CI->service->find($options = ['id_categories' => $category->id]) as $value) {
-    //           $index[] = $category->slug.'/'.$value->slug;
-    //       }
-    //   }
+        $index = [];
+        foreach ($categories as $category) {
+            foreach ($CI->service->find($options = ['id_categories' => $category->id]) as $value) {
+                $index[] = $category->slug.'/'.$value->slug;
+            }
+        }
 
-    //   return $index;
+        return $index;
       
     }
 }

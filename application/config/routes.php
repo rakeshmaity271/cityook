@@ -220,7 +220,7 @@ $route['reset-password'] = 'forgot_password/reset_password';
 /**
 * 
 */
-//print_r($infinity->getCategories());
+//print_r(dynamicRoutes());
 // $categories = [
 // 	'painting',
 // 	'car-spa',
@@ -237,5 +237,5 @@ $route['reset-password'] = 'forgot_password/reset_password';
 
 // $route['(:any)'] = 'service/index';
 // $route['(:any)/(:any)'] = 'service/show';
-$route['([^/]+)/?'] = 'service/index/$1';
-$route['([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
+$route['en/([^/]+)/?'] = 'service/index/$1';
+$route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';

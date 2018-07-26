@@ -137,7 +137,7 @@ class Service extends MX_Controller {
             
             foreach ($services as $service) {
                 $this->data['services'][] = [
-                    'url'       => base_url().$this->categories[0]->slug.'/'.$service->slug,
+                    'url'       => base_url().'en/'.$this->categories[0]->slug.'/'.$service->slug,
                     'service'   => (isset($service->name)) ? $service->name : '',
                     'image'     => (!file_exists(base_url().'/uploads/'.$service->image)) ? base_url().'/uploads/'.$service->image : 'no-image.jpg' 
                 ];
