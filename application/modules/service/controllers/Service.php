@@ -125,6 +125,8 @@ class Service extends MX_Controller {
                 ];
             
         }
+
+        redirect('404');
         
 
         
