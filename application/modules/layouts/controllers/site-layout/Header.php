@@ -28,10 +28,23 @@ class Header extends MX_Controller {
             'link'  => base_url(),
             'text'  => 'Home'
         ];
+        $this->data['numOfCartItems'] = $this->getNumofCartItems();
+		$this->data['cartitems'] = $this->getCartItems();
 		$this->data['services'] = $this->service->all();
 		return $this->load->view('site-layout/header', $this->data);
 
-	}
+    }
+    
+    
+    private function getNumofCartItems() {
+            return ($this->session->userdata('cart_item')) ? 0 : '';
+    }
+        
+    
+    private function getCartItems() {
+            return ($this->session->userdata('cart_item')) ? $this->session->userdata('cart_item') : [];
+    }
+    
 
 }
 

@@ -18,6 +18,7 @@ class Service extends MX_Controller {
         $this->load->model('Service_model', 'service');
         $this->load->model('Category_model', 'category');
         $this->load->model('Catcms_model', 'categorycms');
+        $this->load->model('Servicecms_model', 'servicecms');
         $this->load->model('Postcode_model', 'postcode');
 	}
 
@@ -104,18 +105,59 @@ class Service extends MX_Controller {
     {
 
         $this->categories = $this->category->find($options = ['slug' => $slug]);
+
+        $this->data['service_cms'] = [];
+        $this->data['isBhk'] = false;
+        $this->data['isServiceMen'] = false;
+        $this->data['isFrequency'] = false;
+
         if(count($this->categories) > 0) {
             $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
-            $relatedServices = false;
-
+            $isRelatedServices = false;
+            $servicecms = [];
             if(count($this->data['service']) > 0) {
-                $relatedServices = true;
+              
+                if($this->data['service'][0]->no_of_bhk) {
+                    $this->data['isBhk'] = true;
+                }
+                if($this->data['service'][0]->no_of_service_men) {
+                    $this->data['isServiceMen'] = true;
+                }
+                if($this->data['service'][0]->frequency) {
+                    $this->data['isFrequency'] = true;
+                }
+                $servicecms = $this->servicecms->find(['id_services' => $this->data['service'][0]->id]);
+                // echo "<pre>";
+                // print_r($servicecms);
+                // exit();
+
+                if(count($servicecms) > 0) {
+                    $this->data['service_cms'] = [
+                        'heading' => ($servicecms[0]->heading) ? $servicecms[0]->heading : '',
+                        'content' => $servicecms[0]->content,
+                        'image'   => (!file_exists(base_url().'uploads/'.$servicecms[0]->image)) ? base_url().'uploads/'.$servicecms[0]->image : 'no-image.jpg'
+                    ];
+                } 
+                
+
+                $isRelatedServices = true;
             } else {
                 redirect('404_overwrite');
             }
 
-            if($relatedServices) {
-                $this->data['relatedServices'] = $this->service->getRelatedServices($this->data['service'][0]->id);
+            if($isRelatedServices) {
+                $relatedServices = $this->service->getRelatedServices($this->data['service'][0]->id);
+
+                if(count($relatedServices) > 0) {
+                    foreach ($relatedServices as $relatedService) {
+                        //print_r($relatedService);
+                        $this->data['relatedServices'][] = [
+                            'url'       => base_url().'en/'.$this->categories[0]->slug.'/'.$relatedService[0]->slug,
+                            'service_name'   => (isset($relatedService[0]->name)) ? $relatedService[0]->name : '',
+                            'image'     => (!file_exists(base_url().'/uploads/'.$relatedService[0]->image)) ? base_url().'/uploads/'.$relatedService[0]->image : 'no-image.jpg' 
+                        ];
+                    }
+                }
             }
         } else {
             redirect('404_overwrite');

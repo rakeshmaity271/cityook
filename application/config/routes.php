@@ -193,6 +193,23 @@ $route['admin/service/update'] = 'admin/service/service/update';
 $route['admin/service/delete/(:num)'] = 'admin/service/service/delete/$1';
 
 $route['admin/services'] = 'admin/service/service';
+
+
+// service cms
+$route['admin/service/cms/create'] = 'admin/service/servicecms/create';
+
+$route['admin/service/cms/store'] = 'admin/service/servicecms/store';
+
+$route['admin/service/cms/edit/(:num)'] = 'admin/service/servicecms/edit/$1';
+
+$route['admin/service/cms/update'] = 'admin/service/servicecms/update';
+
+$route['admin/service/cms/delete/(:num)'] = 'admin/service/servicecms/delete/$1';
+
+$route['admin/service/cms'] = 'admin/service/servicecms';
+
+
+
 $route['unauthorized'] = 'unauthorized';
 
 #Postcodes
