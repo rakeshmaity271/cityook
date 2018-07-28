@@ -142,9 +142,6 @@ class Service extends MX_Controller {
                         'image'     => (!file_exists(base_url().'/uploads/'.$service->image)) ? base_url().'/uploads/'.$service->image : 'no-image.jpg' 
                     ];
                 }
-            } else {
-                   
-                redirect('404_overwrite');
             }
         } else {
             redirect('404_overwrite');
