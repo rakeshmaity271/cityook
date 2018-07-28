@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-            <li class="home"> <a title="Go to Home Page" href="index.php">Home</a><span>»</span></li>
+            <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>»</span></li>
             <li><strong>Cart</strong></li>
           </ul>
         </div>
@@ -42,7 +42,26 @@
 <tr>
 <td><p style="font-size: 19px;margin-bottom: 0px;font-weight:600;">roti</p></td>
 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;5</td>
-<td><input type="number" style="width:60px;" data-code="" class="form-control text-center quantity1" value="1"></td>
+<td>
+<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">
+			<div class="input-group number-spinner">
+				<span class="input-group-btn data-dwn">
+					<button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+				</span>
+				<input type="text" class="form-control text-center" value="1" min="-10" max="40">
+				<span class="input-group-btn data-up">
+					<button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+<!--<input type="number" style="width:60px;" data-code="" class="form-control text-center quantity1" value="1">-->
+
+
+
+</td>
 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;5.00</td>
 <td style="width:30px;">
 <a href="#" class="btn btn-danger remove-item" data-code="25"><i class="glyphicon glyphicon-trash"></i></a>
@@ -51,7 +70,24 @@
 <tr>
 <td><p style="font-size: 19px;margin-bottom: 0px;font-weight:600;">roti</p></td>
 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;55</td>
-<td><input type="number" style="width:60px;" data-code="" class="form-control text-center quantity1" value="1"></td>
+<td>
+<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">
+			<div class="input-group number-spinner">
+				<span class="input-group-btn data-dwn">
+					<button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+				</span>
+				<input type="text" class="form-control text-center" value="1" min="-10" max="40">
+				<span class="input-group-btn data-up">
+					<button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+<!--<input type="number" style="width:60px;" data-code="" class="form-control text-center quantity1" value="1">-->
+
+</td>
 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;55.00</td>
 <td style="width:30px;">
 <a href="#" class="btn btn-danger remove-item" data-code="26"><i class="glyphicon glyphicon-trash"></i></a>
@@ -115,4 +151,69 @@
   <?php echo $footer;?>
 <?php echo $script;?>
   
+  <style>
+  /* just for preview */
+.container {
+    /* padding-top: 40px; */  
+}
+
+@media ( max-width: 585px ) {
+    .input-group span.input-group-btn,.input-group input,.input-group button{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .input-group {
+        position: relative;   
+    }
+    .input-group span.data-up{
+        position: absolute;
+        top: 0;
+    }
+    .input-group span.data-dwn{
+        position: absolute;
+        bottom: 0;
+    }
+    .form-control.text-center {
+        margin: 34px 0;
+    }
+    .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+        margin-left:0;
+    }
+
+}
+  </style>
   
+  <script>
+  $(function() {
+    var action;
+    $(".number-spinner button").mousedown(function () {
+        btn = $(this);
+        input = btn.closest('.number-spinner').find('input');
+        btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+    	if (btn.attr('data-dir') == 'up') {
+            action = setInterval(function(){
+                if ( input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max')) ) {
+                    input.val(parseInt(input.val())+1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	} else {
+            action = setInterval(function(){
+                if ( input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min')) ) {
+                    input.val(parseInt(input.val())-1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	}
+    }).mouseup(function(){
+        clearInterval(action);
+    });
+});
+  </script>
