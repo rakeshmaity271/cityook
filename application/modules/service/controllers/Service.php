@@ -124,9 +124,11 @@ class Service extends MX_Controller {
                     'image'   => (!file_exists(base_url().'uploads/'.$categorycms[0]->image)) ? base_url().'uploads/'.$categorycms[0]->image : 'no-image.jpg'
                 ];
             
+        } else {
+            redirect('404_override');
         }
 
-        redirect('404');
+        
         
 
         
@@ -176,8 +178,19 @@ class Service extends MX_Controller {
     {
 
         //$slug = $this->uri->segment(2);
-        $this->data['service'] = $this->service->find($options = ['slug' => $slug]);
+        $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
+        $relatedServices = false;
 
+        if(count($this->data['service']) > 0) {
+            $relatedServices = true;
+        }
+
+        if($relatedServices) {
+            $this->data['relatedServices'] = $this->service->getRelatedServices($this->data['service'][0]->id);
+        }
+
+        // echo "<pre>";
+		// print_r($this->data['relatedServices']);
         $this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
         $this->data['header'] 		= Modules::run('layouts/site-layout/header/index');

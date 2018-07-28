@@ -276,7 +276,7 @@ fieldset{
 			<div class="row categeroys">
 				<?php if(isset($services) && count($services) > 0) { ?>
 					<?php foreach ($services as $service) { ?>
-					<div class="col-md-2">
+					<!-- <div class="col-md-2">
 			    		<div>
 							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
 								<p class="catp"><a href="<?php echo base_url();?>service/show/">Home</a></p>
@@ -340,7 +340,7 @@ fieldset{
 
 						
 						</div>
-					</div>
+					</div> -->
 					<div class="col-md-2">
 			    		<div>
 								<a href="#"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>

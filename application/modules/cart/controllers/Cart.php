@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cartgit extends MX_Controller {
+class Cart extends MX_Controller {
 
 	public function __construct() {
 		parent::__construct();
