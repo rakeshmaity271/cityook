@@ -298,55 +298,29 @@
 				         <p style="font-size:20px;"><strong>Service Time:</strong>  <?php echo ($service[0]->service_time) ? $service[0]->service_time : '';?></p>
 				         <p>&nbsp;</p>
 				         <p style="font-size:20px;"><strong>No. of Servicemen:</strong> <?php echo ($service[0]->no_of_service_men) ? $service[0]->no_of_service_men : '';?> (depending on no. of seats)</p>
-				     </div>
-				     <div class="col-lg-12">
-				         
-				         <h2 style="padding:10px 30px;">Note:-</h2>
-				        <!-- <ul style="list-style-type:disc">
-				            <li class="webaboutp">Any hard/major stains may not immediately be removed</li>
-				            <li class="webaboutp">A periodic cleaning will be required for the same</li>
-				            <li class="webaboutp">Cushion Cleaning would be charged additional</li>
-				            <li class="webaboutp">Customer to provide for electrical connection</li>
-							<li class="webaboutp">Cost inclusive of GST</li>
-				        </ul> -->
-						<?php echo ($service[0]->note) ? $service[0]->note : '';?>
-				        <p>&nbsp;</p>
-				        
-				        
-				        
-<div class="card1" id="card1">
+						 <div class="card1" id="card1">
+						 <div class="form-group">
 
-<article class="card-body">
+							<input class="form-control" id="fullname" name="fullname" placeholder="Date " type="text" required="required" data-error="Fullname is required.">
 
+ 
+						<div class="help-block with-errors"></div>
 
+						</div> 
+						 <div class="form-group">
 
+<!--  <input class="form-control" id="fullname" name="fullname" placeholder="Please enter your Full Name " type="text" required="required" data-error="Fullname is required.">-->
 
+					<select class="form-control">
+						<option>Slect Seats</option>
+						<option>3 seats</option> 
+						<option>4 seats</option> 
+						
+					</select>
+					<div class="help-block with-errors"></div>
 
-
-	 <form action="" method="post">
-	     <div class="row">
-
-	 <div class="col-lg-6">
-
-    <div class="form-group">
-
-      <!--  <input class="form-control" id="fullname" name="fullname" placeholder="Please enter your Full Name " type="text" required="required" data-error="Fullname is required.">-->
-
-        <select class="form-control">
-            <option>Slect Seats</option>
-            <option>3 seats</option> 
-            <option>4 seats</option> 
-            
-        </select>
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	 <div class="col-lg-6">
-
-	<div class="form-group">
+					</div> 
+					<div class="form-group">
 
      <!--   <input  class="form-control" id="email" name="email" placeholder="Please enter Email id" type="email" data-error="Email is required.">-->
       <select class="form-control">
@@ -360,78 +334,28 @@
         <div class="help-block with-errors"></div>
 
     </div> 
-
-	</div>
-
-	</div>
-	
-
-    
-
-    <div class="form-group is-empty">
-          <textarea class="form-control"  required="required" placeholder="Comments...."></textarea>
-
-       <!-- <input class="form-control" name="password" placeholder="******************" type="password" required="">-->
-
-    <span class="material-input"></span></div> <!-- form-group// --> 
-     <div class="row">
-
-	 <div class="col-lg-6">
-
-    <div class="form-group">
-
-      <input class="form-control" id="fullname" name="fullname" placeholder="Date " type="text" required="required" data-error="Fullname is required.">
-
-       <!-- <select class="form-control">
-            <option>Slect Type</option>
-            <option>A</option> 
-            <option>B</option> 
-            
-        </select>-->
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	 <div class="col-lg-6">
-
 	<div class="form-group">
-   <!-- <p style="padding-left:50px;font-size:20px;"><strong>You Pay:-</strong> &nbsp;500Rs.</p>-->
-        <input  class="form-control" id="email" name="email" placeholder="Enter Your Post Code" type="email" data-error="Email is required.">
-     <!-- <select class="form-control">
-            <option>Slect Service Type</option>
-            <option>A</option> 
-            <option>B</option> 
-            
-        </select>-->
-      
 
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	</div>
-
-  
-    <div class="form-group">
-
-        <button type="submit" class="btn btn-primary btn-block" name="login"> Add to Cart  </button>
-
-       
-
-    </div> <!-- form-group// -->                                                           
-
-</form>
-
-</article>
-
-</div> <!-- card.// -->
+<button type="submit" class="btn btn-primary btn-block" name="login"> Add to Cart  </button>
 
 
+
+</div> <!-- form-group// -->     
+</div>				 
+					 
+					 </div>
+				     <div class="col-lg-12">
 				         
+				         <h2 style="padding:10px 30px;">Note:-</h2>
+				        <!-- <ul style="list-style-type:disc">
+				            <li class="webaboutp">Any hard/major stains may not immediately be removed</li>
+				            <li class="webaboutp">A periodic cleaning will be required for the same</li>
+				            <li class="webaboutp">Cushion Cleaning would be charged additional</li>
+				            <li class="webaboutp">Customer to provide for electrical connection</li>
+							<li class="webaboutp">Cost inclusive of GST</li>
+				        </ul> -->
+						<?php echo ($service[0]->note) ? $service[0]->note : '';?>
+				        <p>&nbsp;</p>
 				     </div>
 				    
 				</div>
@@ -748,7 +672,7 @@ body.noScroll { /* ...or body.dialogShowing */
 	<!-- tab end here -->
 	<script>
 	$(document).ready(function() {
-		$('#card1').hide();
+		//$('#card1').hide();
 		swal({
 			title: "Check Postcode",
 			text: "Enter postcode",
