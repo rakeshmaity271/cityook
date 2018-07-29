@@ -239,7 +239,7 @@
 		<!-- service-->
 		<div class="row">
 		    <fieldset class="col-md-12">    	
-					<legend align="center">Select the Services</legend>
+					<!--<legend align="center">Select the Services</legend>-->
 					    <div class="col-xs-12 col-sm-6 col-md-12">
 				<h3 class="text-center">Choose A Service</h3>
 				<!-- tab start here --->
@@ -257,15 +257,15 @@
 
         </div>
     </div>-->
-    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+    <!--<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
         <div class="btn-group" role="group">
             <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-                <div class="hidden-xs">Shampooing</div>
+               <!-- <div class="hidden-xs">Shampooing</div>
             </button>
         </div>
         <div class="btn-group" role="group">
             <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><!--<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>-->
-                <div class="hidden-xs">Leather Sofa Cleaning</div>
+               <!-- <div class="hidden-xs">Leather Sofa Cleaning</div>
             </button>
         </div>
        <!-- <div class="btn-group" role="group">
@@ -274,7 +274,7 @@
                <!-- <div class="hidden-xs"> Repairs</div>
             </button>
         </div>-->
-    </div>
+   <!-- </div>-->
 
         <div class="well">
       <div class="tab-content">
@@ -283,68 +283,44 @@
 				<div class="row" style="padding:0px 20px;">
 				    <div class="col-lg-6">
 				        <h3 style="text-align:center;font-weight:bold;">WHAT WE'LL DO</h3>
-						 <h4 style="padding:10px 30px; font-weight:bold;">Service Includes:-</h4>
-				        <ul style="list-style-type:square">
+						 <!-- <h4 style="padding:10px 30px; font-weight:bold;">Service Includes:-</h4> -->
+				        <!-- <ul style="list-style-type:square">
 				            <li class="webaboutp">Stain Removal</li>
 				            <li class="webaboutp">Cleaning using a special leather cleaning cream</li>
 				           
-				        </ul>
+				        </ul> -->
+						<?php echo ($service[0]->description) ? $service[0]->description : '';?>
 				        
 				        
 				    </div>
 				     <div class="col-lg-6" style="padding:38px 10px;">
 				          <p>&nbsp;</p>
-				         <p style="font-size:20px;"><strong>Service Time:</strong>  1-3 Hours</p>
+				         <p style="font-size:20px;"><strong>Service Time:</strong>  <?php echo ($service[0]->service_time) ? $service[0]->service_time : '';?></p>
 				         <p>&nbsp;</p>
-				         <p style="font-size:20px;"><strong>No. of Servicemen:</strong> 1-3 (depending on no. of seats)</p>
-				     </div>
-				     <div class="col-lg-12">
-				         
-				         <h2 style="padding:10px 30px;">Note:-</h2>
-				        <ul style="list-style-type:disc">
-				            <li class="webaboutp">Any hard/major stains may not immediately be removed</li>
-				            <li class="webaboutp">A periodic cleaning will be required for the same</li>
-				            <li class="webaboutp">Cushion Cleaning would be charged additional</li>
-				            <li class="webaboutp">Customer to provide for electrical connection</li>
-							<li class="webaboutp">Cost inclusive of GST</li>
-				        </ul>
-				        <p>&nbsp;</p>
-				        
-				        
-				        
-<div class="card1" id="card1">
+				         <p style="font-size:20px;"><strong>No. of Servicemen:</strong> <?php echo ($service[0]->no_of_service_men) ? $service[0]->no_of_service_men : '';?> (depending on no. of seats)</p>
+						 <div class="card1" id="card1">
+						 <div class="form-group">
 
-<article class="card-body">
+							<input class="form-control" id="fullname" name="fullname" placeholder="Date " type="text" required="required" data-error="Fullname is required.">
 
+ 
+						<div class="help-block with-errors"></div>
 
+						</div> 
+						 <div class="form-group">
 
+<!--  <input class="form-control" id="fullname" name="fullname" placeholder="Please enter your Full Name " type="text" required="required" data-error="Fullname is required.">-->
 
+					<select class="form-control">
+						<option>Slect Seats</option>
+						<option>3 seats</option> 
+						<option>4 seats</option> 
+						
+					</select>
+					<div class="help-block with-errors"></div>
 
-
-	 <form action="" method="post">
-	     <div class="row">
-
-	 <div class="col-lg-6">
-
-    <div class="form-group">
-
-      <!--  <input class="form-control" id="fullname" name="fullname" placeholder="Please enter your Full Name " type="text" required="required" data-error="Fullname is required.">-->
-
-        <select class="form-control">
-            <option>Slect Seats</option>
-            <option>3 seats</option> 
-            <option>4 seats</option> 
-            
-        </select>
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	 <div class="col-lg-6">
-
-	<div class="form-group">
+					</div> 
+					<div class="form-group">
 
      <!--   <input  class="form-control" id="email" name="email" placeholder="Please enter Email id" type="email" data-error="Email is required.">-->
       <select class="form-control">
@@ -358,90 +334,90 @@
         <div class="help-block with-errors"></div>
 
     </div> 
-
-	</div>
-
-	</div>
-	
-
-    
-
-    <div class="form-group is-empty">
-          <textarea class="form-control"  required="required" placeholder="Comments...."></textarea>
-
-       <!-- <input class="form-control" name="password" placeholder="******************" type="password" required="">-->
-
-    <span class="material-input"></span></div> <!-- form-group// --> 
-     <div class="row">
-
-	 <div class="col-lg-6">
-
-    <div class="form-group">
-
-      <input class="form-control" id="fullname" name="fullname" placeholder="Date " type="text" required="required" data-error="Fullname is required.">
-
-       <!-- <select class="form-control">
-            <option>Slect Type</option>
-            <option>A</option> 
-            <option>B</option> 
-            
-        </select>-->
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	 <div class="col-lg-6">
-
 	<div class="form-group">
-   <!-- <p style="padding-left:50px;font-size:20px;"><strong>You Pay:-</strong> &nbsp;500Rs.</p>-->
-        <input  class="form-control" id="email" name="email" placeholder="Enter Your Post Code" type="email" data-error="Email is required.">
-     <!-- <select class="form-control">
-            <option>Slect Service Type</option>
-            <option>A</option> 
-            <option>B</option> 
-            
-        </select>-->
-      
 
-        <div class="help-block with-errors"></div>
-
-    </div> 
-
-	</div>
-
-	</div>
-
-  
-    <div class="form-group">
-
-        <button type="submit" class="btn btn-primary btn-block" name="login"> Add to Cart  </button>
-
-       
-
-    </div> <!-- form-group// -->                                                           
-
-</form>
-
-</article>
-
-</div> <!-- card.// -->
+<button type="submit" class="btn btn-primary btn-block" name="login"> Add to Cart  </button>
 
 
+
+</div> <!-- form-group// -->     
+</div>				 
+					 
+					 </div>
+				     <div class="col-lg-12">
 				         
+				         <h2 style="padding:10px 30px;">Note:-</h2>
+				        <!-- <ul style="list-style-type:disc">
+				            <li class="webaboutp">Any hard/major stains may not immediately be removed</li>
+				            <li class="webaboutp">A periodic cleaning will be required for the same</li>
+				            <li class="webaboutp">Cushion Cleaning would be charged additional</li>
+				            <li class="webaboutp">Customer to provide for electrical connection</li>
+							<li class="webaboutp">Cost inclusive of GST</li>
+				        </ul> -->
+						<?php echo ($service[0]->note) ? $service[0]->note : '';?>
+				        <p>&nbsp;</p>
 				     </div>
 				    
 				</div>
 				<!--- start form-->
 			<div class="row">
 				<div class="col-lg-12">
+				<!-- start related services -->
+				 <div class="row">
+		<div class="col-md-12">
+		<h2 class="relatedtitle">Our Related Services</h2>
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+		</div>
+	</div>
+				<!-- End related services -->
 			<!-- start testimonial -->
-			<div id="testimonial45" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+			<!--<div id="testimonial45" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
 
 		<div class="testimonial4_header">
 
-			<h4 style="color:#000;font-size:17px;">what People Say about our Sofa Cleaning Service.</h4>
+			<h4 style="color:#000;font-size:17px;">Our Related Services</h4>
 
 		</div>
 
@@ -513,7 +489,7 @@
 
 		</a>
 
-	</div>
+	</div>-->
 			
 				
 			<!--- end testimonial-->
@@ -561,13 +537,13 @@
 						</label>
 					</div> -->
 					<?php 
-					if(isset($services) && count($services) > 0) { 
-						foreach($services as $service) { ?>
+					if(isset($relatedServices) && count($relatedServices) > 0) { 
+						foreach($relatedServices as $relatedService) { ?>
 					<div class="frb frb-info" id="slugs">
-						<input type="radio" class="slug" id="radio-button-<?php echo ($service->slug) ? $service->slug : ''?>" name="radio-button" value="<?php echo ($service->slug) ? $service->slug : ''?>">
-						<label for="radio-button-<?php echo ($service->slug) ? $service->slug : ''?>">
-							<span class="frb-title"><?php echo ($service->name) ? $service->name : ''?></span>
-								<p><span class="frb-description"><?php echo ($service->description) ? $service->description : ''?></span>	</p>
+						<input type="radio" class="slug" id="radio-button-<?php echo ($service[0]->slug) ? $service[0]->slug : ''?>" name="radio-button" value="<?php echo ($service[0]->slug) ? $service[0]->slug : ''?>">
+						<label for="radio-button-<?php echo ($service[0]->slug) ? $service[0]->slug : ''?>">
+							<span class="frb-title"><?php echo ($service[0]->name) ? $service[0]->name : ''?></span>
+								<p><span class="frb-description"><?php echo ($service[0]->description) ? $service[0]->description : ''?></span>	</p>
 						</label>
 					</div>
 				<?php }} ?>
@@ -746,7 +722,7 @@ body.noScroll { /* ...or body.dialogShowing */
 	<!-- tab end here -->
 	<script>
 	$(document).ready(function() {
-		$('#card1').hide();
+		//$('#card1').hide();
 		swal({
 			title: "Check Postcode",
 			text: "Enter postcode",
@@ -795,3 +771,52 @@ body.noScroll { /* ...or body.dialogShowing */
 	});
 
 </script>
+
+<!-- crasoul start css js -->
+<style>
+body{padding-top:20px;}
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+.relatedtitle{
+text-align:center;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $('#Carousel').carousel({
+        interval: 5000
+    })
+});
+</script>
+<!-- ccarsoul end here -->
+
+<!-- https://bootsnipp.com/snippets/featured/simple-carousel-->

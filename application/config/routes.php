@@ -103,7 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'Welcome';
 
 $route['404_override'] = 'pagenotfound/Pagenotfound/index';
-
+// $route['404'] = 'pagenotfound/Pagenotfound/index';
 $route['translate_uri_dashes'] = FALSE;
 
 

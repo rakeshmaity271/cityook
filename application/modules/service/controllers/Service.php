@@ -99,7 +99,8 @@ class Service extends MX_Controller {
 
         $this->categories = $this->category->find($options = ['slug' => $slug]);
 
-        
+        // echo "<pre>";
+        // print_r($this->categories);
         //$this->data['image'] = base_url().'uploads/'.$this->id_categories[0]->image;
         /**
         * Breadcrumbs
@@ -108,10 +109,11 @@ class Service extends MX_Controller {
             'link'  => base_url(),
             'text'  => 'Home'
         ];
-
-        $categories = [];
-
-        $categorycms = $this->categorycms->find(['id_categories' => $this->categories[0]->id]);
+        $categorycms = [];
+        if(count($this->categories) > 0) {
+            $categorycms = $this->categorycms->find(['id_categories' => $this->categories[0]->id]);
+        }
+        
 
         $this->data['category_cms'] = [];
 
@@ -125,23 +127,24 @@ class Service extends MX_Controller {
                 ];
             
         }
-        
-
-        
-        
-       
         $services = [];
-        $services = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
-        $this->data['services'] = [];
-        if(count($services) > 0) {
-            
-            foreach ($services as $service) {
-                $this->data['services'][] = [
-                    'url'       => base_url().'en/'.$this->categories[0]->slug.'/'.$service->slug,
-                    'service'   => (isset($service->name)) ? $service->name : '',
-                    'image'     => (!file_exists(base_url().'/uploads/'.$service->image)) ? base_url().'/uploads/'.$service->image : 'no-image.jpg' 
-                ];
+        if(count($this->categories) > 0) {
+            $services = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
+            $this->data['services'] = [];
+            if(count($services) > 0) {
+                // echo "<pre>";
+                // print_r($services);
+                // exit();
+                foreach ($services as $service) {
+                    $this->data['services'][] = [
+                        'url'       => base_url().'en/'.$this->categories[0]->slug.'/'.$service->slug,
+                        'service'   => (isset($service->name)) ? $service->name : '',
+                        'image'     => (!file_exists(base_url().'/uploads/'.$service->image)) ? base_url().'/uploads/'.$service->image : 'no-image.jpg' 
+                    ];
+                }
             }
+        } else {
+            redirect('404_overwrite');
         }
 
         
@@ -174,8 +177,21 @@ class Service extends MX_Controller {
     {
 
         //$slug = $this->uri->segment(2);
-        $this->data['service'] = $this->service->find($options = ['slug' => $slug]);
+        $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
+        $relatedServices = false;
 
+        if(count($this->data['service']) > 0) {
+            $relatedServices = true;
+        } else {
+            redirect('404_overwrite');
+        }
+
+        if($relatedServices) {
+            $this->data['relatedServices'] = $this->service->getRelatedServices($this->data['service'][0]->id);
+        }
+
+        // echo "<pre>";
+		// print_r($this->data['relatedServices']);
         $this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
 
         $this->data['header'] 		= Modules::run('layouts/site-layout/header/index');

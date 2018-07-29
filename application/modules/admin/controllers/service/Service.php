@@ -95,6 +95,7 @@ class Service extends MX_Controller {
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : '';
         $this->data['slug']                 = $this->service->slug($this->data['name']);
         $this->data['image']                =  $image;
+        $this->data['code']                 =  md5($this->data['id_categories'].'_'.$this->data['slug']);
 
         $related_services     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
 
@@ -198,7 +199,7 @@ class Service extends MX_Controller {
         $this->data['video_url']            = ($this->input->post('video_url')) ? $this->input->post('video_url') : $service->video_url;
         $this->data['slug']                 = $this->service->slug($this->data['name']);
         $this->data['image']                =  $image;
-
+        $this->data['code']                 = $service->code;
        
 
         $related_id_services     = ($this->input->post('related_id_services')) ? $this->input->post('related_id_services') : $this->service->getRelatedServicesByServiceID($id);
