@@ -64,7 +64,7 @@ class Service_model extends CI_Model
         $data = array();
         $related_services = $this->getRelatedServiceIdsByServiceId($serviceID);
         foreach($related_services as $related_service) {
-             $data[] = $this->db->select('s.slug, s.description, s.name')
+             $data[] = $this->db->select('s.slug, s.description, s.name, s.image')
                             ->from('services as s')
                             ->join('related_services as rs', 'rs.related_id_services = s.id')
                             ->where('s.id', $related_service->related_id_services)
@@ -100,6 +100,11 @@ class Service_model extends CI_Model
        
         return $data;
     }
+
+    /** Frontend code start form here */
+    public function getSerivceByCode($code) {
+        return $this->common->find($this->table, '', ['code' => $code]);
+	}
 
 
     

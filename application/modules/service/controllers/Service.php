@@ -1,73 +1,4 @@
 <?php
-/*
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-
-
-class Service extends MX_Controller {
-	private $data;
-    private $id_categories;
-    private $id;
-	public function __construct() {
-	parent::__construct();
-        $this->load->database();
-        $this->load->model('Service_model', 'service');
-        $this->load->model('Category_model', 'category');
-	}
-	public function index()
-	{
-	    $slug = $this->uri->segment(1);
-
-        $this->id_categories = $this->category->find($options = ['slug' => $slug]);
-
-        
-        //$this->data['image'] = base_url().'uploads/'.$this->id_categories[0]->image;
-        $this->data['description'] = $this->id_categories[0]->description;
-        $this->data['heading'] = $this->id_categories[0]->name;
-
-        $this->data['services'] = $this->service->find($options = ['id_categories' => $this->id_categories[0]->id]);
-
-
-		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
-
-		$this->data['header'] 		= Modules::run('layouts/site-layout/header/index');
-
-		$this->data['footer'] 		= Modules::run('layouts/site-layout/footer/index');
-
-		$this->data['script'] 	= Modules::run('layouts/site-layout/script/index');
-
-
-
-		$this->load->view('index', $this->data);
-
-    }
-
-    public function show()
-
-    {
-
-        $slug = $this->uri->segment(2);
-        $this->data['service'] = $this->service->find($options = ['slug' => $slug]);
-
-        $this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
-
-        $this->data['header'] 		= Modules::run('layouts/site-layout/header/index');
-
-        $this->data['footer'] 		= Modules::run('layouts/site-layout/footer/index');
-
-        $this->data['script'] 	= Modules::run('layouts/site-layout/script/index');
-
-
-
-        $this->load->view('show', $this->data);
-
-    }
-
-
-
-}
-
-*/
 
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -87,6 +18,7 @@ class Service extends MX_Controller {
         $this->load->model('Service_model', 'service');
         $this->load->model('Category_model', 'category');
         $this->load->model('Catcms_model', 'categorycms');
+        $this->load->model('Servicecms_model', 'servicecms');
         $this->load->model('Postcode_model', 'postcode');
 	}
 
@@ -95,13 +27,9 @@ class Service extends MX_Controller {
 	public function index($slug)
 
 	{
-	    //$slug = $this->uri->segment(1);
 
         $this->categories = $this->category->find($options = ['slug' => $slug]);
 
-        // echo "<pre>";
-        // print_r($this->categories);
-        //$this->data['image'] = base_url().'uploads/'.$this->id_categories[0]->image;
         /**
         * Breadcrumbs
         */
@@ -176,19 +104,65 @@ class Service extends MX_Controller {
 
     {
 
-        //$slug = $this->uri->segment(2);
-        $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
-        $relatedServices = false;
+        $this->categories = $this->category->find($options = ['slug' => $slug]);
 
-        if(count($this->data['service']) > 0) {
-            $relatedServices = true;
+        $this->data['service_cms'] = [];
+        $this->data['isBhk'] = false;
+        $this->data['isServiceMen'] = false;
+        $this->data['isFrequency'] = false;
+
+        if(count($this->categories) > 0) {
+            $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
+            $isRelatedServices = false;
+            $servicecms = [];
+            if(count($this->data['service']) > 0) {
+              
+                if($this->data['service'][0]->no_of_bhk) {
+                    $this->data['isBhk'] = true;
+                }
+                if($this->data['service'][0]->no_of_service_men) {
+                    $this->data['isServiceMen'] = true;
+                }
+                if($this->data['service'][0]->frequency) {
+                    $this->data['isFrequency'] = true;
+                }
+                $servicecms = $this->servicecms->find(['id_services' => $this->data['service'][0]->id]);
+                // echo "<pre>";
+                // print_r($servicecms);
+                // exit();
+
+                if(count($servicecms) > 0) {
+                    $this->data['service_cms'] = [
+                        'heading' => ($servicecms[0]->heading) ? $servicecms[0]->heading : '',
+                        'content' => $servicecms[0]->content,
+                        'image'   => (!file_exists(base_url().'uploads/'.$servicecms[0]->image)) ? base_url().'uploads/'.$servicecms[0]->image : 'no-image.jpg'
+                    ];
+                } 
+                
+
+                $isRelatedServices = true;
+            } else {
+                redirect('404_overwrite');
+            }
+
+            if($isRelatedServices) {
+                $relatedServices = $this->service->getRelatedServices($this->data['service'][0]->id);
+
+                if(count($relatedServices) > 0) {
+                    foreach ($relatedServices as $relatedService) {
+                        //print_r($relatedService);
+                        $this->data['relatedServices'][] = [
+                            'url'       => base_url().'en/'.$this->categories[0]->slug.'/'.$relatedService[0]->slug,
+                            'service_name'   => (isset($relatedService[0]->name)) ? $relatedService[0]->name : '',
+                            'image'     => (!file_exists(base_url().'/uploads/'.$relatedService[0]->image)) ? base_url().'/uploads/'.$relatedService[0]->image : 'no-image.jpg' 
+                        ];
+                    }
+                }
+            }
         } else {
             redirect('404_overwrite');
         }
-
-        if($relatedServices) {
-            $this->data['relatedServices'] = $this->service->getRelatedServices($this->data['service'][0]->id);
-        }
+        
 
         // echo "<pre>";
 		// print_r($this->data['relatedServices']);

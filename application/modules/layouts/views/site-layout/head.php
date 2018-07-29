@@ -23,7 +23,7 @@ mixpanel.init("YOUR TOKEN");</script><!-- end Mixpanel -->
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/bootstrap.min.css');?>" />
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/style-1.10.min.css');?>" />
 		<link href="<?php echo base_url('assets/cityook/css/owl.carousel.css');?>" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/li-scroller.css');?>" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/li-scroller.css');?>" />		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/addcartcss.css');?>" />
 		<style type="text/css">
 			.bodyContent{
 				padding-top: 70px;

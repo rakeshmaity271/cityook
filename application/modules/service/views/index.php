@@ -343,7 +343,7 @@ fieldset{
 					</div> -->
 					<div class="col-md-2">
 			    		<div>
-								<a href="#"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
+						<a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
 								<p class="catp"><a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><?php echo (isset($service['service'])) ? $service['service'] : '';?></a></p>
 
 						</div>
