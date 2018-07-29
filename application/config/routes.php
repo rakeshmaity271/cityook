@@ -225,6 +225,8 @@ $route['admin/postcode/delete/(:num)'] = 'admin/postcode/delete/$1';
 
 $route['admin/postcodes'] = 'admin/postcode';
 
+
+$route['admin/customers'] = 'admin/customer/customer';
 /**
  * Forgot password
  */

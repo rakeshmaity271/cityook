@@ -77,14 +77,14 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                           <th>SL</th>
                           <th>Service Name</th>
                           <th>Service Type</th>
-                          <th>Number of BHK</th>
+                          <!-- <th>Number of BHK</th>
                           <th>Number of Service Men</th>
-                          <th>Frequency</th>
+                          <th>Frequency</th> -->
                           <th>Price</th>
                           <!-- <th>Package</th> -->
-                          <!-- <th>Status</th> -->
+                          <th>Status</th>
                           <!-- <th>Created At</th> -->
-                          <!-- <th>Last Modified At</th> -->
+                          <th>Last Modified At</th>
                           <th>Action</th>
                         </tr>
 
@@ -102,16 +102,16 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <td><?php echo ($service->name) ? $service->name : '';?></td>
                           <td><?php echo ($service->service_type) ? $service->service_type : '';?></td>
-                          <td><?php echo ($service->no_of_bhk) ? $service->no_of_bhk : '';?></td>
+                          <!-- <td><?php echo ($service->no_of_bhk) ? $service->no_of_bhk : '';?></td>
                           <td><?php echo ($service->no_of_service_men) ? $service->no_of_service_men : '';?></td>
-                          <td><?php echo ($service->frequency) ? $service->frequency : '';?></td>
+                          <td><?php echo ($service->frequency) ? $service->frequency : '';?></td> -->
                           <td><?php echo ($service->price) ? $service->price : '0.00';?></td>
                           <!-- <td><?php echo ($service->package) ? $service->package : '';?></td> -->
 
-                          <!-- <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td> -->
+                          <td><input type="checkbox" id="switchery" data-id="<?php echo ($service->id) ? $service->id : '';?>"  class="switchery" data-size="xs" <?php echo ($service->status === '1') ? 'checked' : '';?>/></td>
                           <!-- <td><?php echo ($service->created_at) ? $service->created_at : '';?></td> -->
 
-                          <!-- <td><?php echo ($service->updated_at) ? $service->updated_at : '';?></td> -->
+                          <td><?php echo ($service->updated_at) ? $service->updated_at : '';?></td>
 
                           <td>
 
@@ -158,78 +158,90 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
 $(document).ready(function() {
 
+  $(".switchery").change(function() {
+      var status = $(this).prop('checked');
+      $.ajax({
+          type:'POST',
+          dataType:'JSON',
+          url:'<?php echo base_url();?>admin/service/service/updateStatus',
+          data:{
+            'status': status,
+            'id': $(this).attr("data-id")
+          },
+          beforeSend: function() {
+                $.LoadingOverlay("show");
+          },
+          success:function(data) {
+            console.log(data);
+            if(data.error === false) {
+              setTimeout(function() {
+              $.LoadingOverlay("hide");
+                  swal({
+                  title: "success",
+                  text: data.message,
+                  icon: "success",
+                  buttons: true,
+                  })
+                  .then((willDelete) => {
+                      if (willDelete) {
+                         location.reload();
+                      } else {
+                          swal("Your service update has been canceled!");
+                      }
+                  });
+                
+              }, 1000);
+            }
+          }
+        });
+  });
+
+
     $('#checkAll').click(function () {    
 
             $(':checkbox.checkItem').prop('checked', this.checked);    
 
     });
-
-
-
     $('.deleteBtn').on('click', function (e) {
       var id = $(this).attr('data-id');
-      if (!e.isDefaultPrevented()) {
-      var url = "<?php echo base_url();?>admin/service/delete/"+ id;
-            var settings = {
-
-              "async": true,
-
-              "crossDomain": true,
-
-              "url": url,
-
-              "data" : id,
-
-              "method": "POST",
-
-              "headers": {
-              },
-              beforeSend: function() {
-                // Show full page LoadingOverlay
-                $.LoadingOverlay("show");
-            }
-
-        }
-
-
-
-          $.ajax(settings).done(function (data) {
-
-            console.log(data);
-
-            if(data.error === false) {
-
-            setTimeout(function() {
-              $.LoadingOverlay("hide");
-                  swal({
-
-                  title: "success",
-
-                  text: data.message,
-
-                  icon: "success",
-                  buttons: true,
-
-                  })
-                  .then((willDelete) => {
-                      if (willDelete) {
-                          window.location.href = '<?php echo base_url("/admin/services");?>';
-                      } else {
-                          swal("Your imaginary file is safe!");
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this service!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+          if (willDelete) {
+                    $.ajax({
+                    type:'POST',
+                    dataType:'JSON',
+                    url:"<?php echo base_url();?>admin/service/delete/"+ id,
+                    beforeSend: function() {
+                          $.LoadingOverlay("show");
+                    },
+                    success:function(data) {
+                      $.LoadingOverlay("hide");
+                      if(data.error === false) {
+                        setTimeout(function() {
+                         swal("Poof! Your service has been deleted!", {
+                            icon: "success",
+                          }).then((willDelete) => {
+                            if (willDelete) {
+                              location.reload();
+                            }
+                          });
+                        
+                        }, 500);
                       }
+                    }
                   });
-                
-              }, 3000);
-
-            }
-          });
-
-          return false;
-
-      }
-
+                    
+        } else {
+          swal("Your service has been canceled!");
+        }
+      });
     });
-  });
+});
 
 </script>
 

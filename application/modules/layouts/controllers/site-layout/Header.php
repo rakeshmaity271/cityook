@@ -41,7 +41,7 @@ class Header extends MX_Controller {
     
     private function getNumofCartItems() {
             $total = 0;
-            return ($this->session->userdata('cart_item')) ? $total += count($this->session->userdata('cart_item')) : 0;
+            return ($this->session->userdata('cart_item')) ? $total += count($this->session->userdata('cart_item')) : $total;
     }
         
     

@@ -54,7 +54,7 @@
                                              <span class="input-group-btn data-dwn">
                                              <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                              </span>
-                                             <input type="text" class="form-control text-center" value="<?php echo ($item['quantity']) ? $item['quantity'] : ''?>" min="-10" max="40">
+                                             <input type="text" class="form-control text-center" value="<?php echo ($item['quantity']) ? $item['quantity'] : ''?>" min="1" max="50">
                                              <span class="input-group-btn data-up">
                                              <button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                              </span>

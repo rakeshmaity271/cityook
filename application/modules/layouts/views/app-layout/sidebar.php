@@ -78,7 +78,7 @@
 		
 		 <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">Customer</span></a>
 			<ul class="menu-content">
-			<li class=""><a class="menu-item" href="<?php echo base_url('admin/user/user');?>">Customer List</a></li>
+			<li class=""><a class="menu-item" href="<?php echo base_url('admin/customers');?>">Customer List</a></li>
 			<!-- <li><a class="menu-item" href="dashboard-fitness.html">Fitness</a> </li> -->
 			</ul>
 		</li>
