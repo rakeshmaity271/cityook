@@ -105,11 +105,22 @@
         <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+       
         <script src="<?php echo base_url('assets/js/cart.js');?>"></script>
+<?php 
+$show = false;
+if($this->uri->segment(3)) {
+    $show = true;
+}
+?>
+<?php 
+if($show) { ?>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css"> 
+<?php } ?>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">  -->
 <script>
 function openCart() {
     window.location.href = "<?php echo base_url();?>cart";

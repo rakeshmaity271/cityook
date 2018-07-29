@@ -43,7 +43,13 @@ function cartAction(action,product_code) {
 				text: data.message,
 				icon: "success",
 				buttons: true,
-				})
+				}).then((willDelete) => {
+					if (willDelete) {
+						location.reload();
+					} else {
+						swal("Your imaginary file is safe!");
+					}
+				});
 			}, 800);
 		}
 		if(data.status === 302) {
