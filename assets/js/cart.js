@@ -37,20 +37,17 @@ function cartAction(action,product_code) {
 		if(data.status === 200) {
 			$.LoadingOverlay("hide");
 			setTimeout(function() {
-			
 				swal({
 				title: "success",
 				text: data.message,
 				icon: "success",
-				buttons: true,
-				}).then((willDelete) => {
-					if (willDelete) {
-						location.reload();
-					} else {
-						swal("Your imaginary file is safe!");
-					}
-				});
+				buttons: false,
+				})
 			}, 800);
+			setTimeout(function() {
+				location.reload();
+			}, 2000);
+			
 		}
 		if(data.status === 302) {
 			$.LoadingOverlay("hide");
@@ -59,9 +56,12 @@ function cartAction(action,product_code) {
 				title: "warning",
 				text: data.message,
 				icon: "warning",
-				buttons: true,
+				buttons: false,
 				})
 			}, 800);
+			setTimeout(function() {
+				location.reload();
+			}, 2000);
 		}
 		
 		//$("#cart-item").html(data);
@@ -74,22 +74,16 @@ function cartAction(action,product_code) {
 				case "remove":
 				if(data.status === 200) {
 					setTimeout(function() {
-						$.LoadingOverlay("hide");
 						swal({
-						title: "Success",
+						title: "success",
 						text: data.message,
-						icon: "Success",
-						buttons: true,
+						icon: "success",
+						buttons: false,
 						})
-						.then((willDelete) => {
-							if (willDelete) {
-								location.reload();
-							} else {
-								swal("Your imaginary file is safe!");
-							}
-						});
-					}, 1000);
-					//location.reload();
+					}, 800);
+					setTimeout(function() {
+						location.reload();
+					}, 2000);
 				}
 				break;
 				case "empty":
