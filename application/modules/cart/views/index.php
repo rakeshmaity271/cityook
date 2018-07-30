@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-            <li class="home"> <a title="Go to Home Page" href="index.php">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+            <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
             <li><strong>Cart</strong></li>
           </ul>
         </div>

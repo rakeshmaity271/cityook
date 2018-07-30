@@ -135,6 +135,7 @@ $route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
 $route['my-account'] = 'customer/customer/customer/account';
 
 $route['order'] = 'order/accountdetail';
+$route['orderdetails'] = 'orderview/detail/';
 
 /**
  * Employee Registration routes
