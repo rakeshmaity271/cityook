@@ -189,14 +189,15 @@ class Service extends MX_Controller {
                 'postcode' => $postcode
             ];
             $postcodes = $this->postcode->isValidPostCode($options);
-
+            
             if(count($postcodes) > 0) {
                 return $this->output
                 ->set_content_type('application/json')
                 ->set_status_header(200)
                 ->set_output(json_encode(array(
                         'error' => false,
-                        'status' => 200
+                        'status' => 200,
+                        'postcode' => $postcodes[0]->postcode
                 )));
             }
 

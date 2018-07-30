@@ -405,11 +405,31 @@
 
 
 <script>
+// swal({
+//   closeOnClickOutside: false,
+//   title: "Check Postcode",
+//   content: {
+//     element: "input",
+//     attributes: {
+//       placeholder: "Type your postcode",
+//       type: "text",
+//     },
+//   },
+// })
+// .then(name => {
+//   if (!name) throw null;
+  
+//     swal(name + ' Input type not a number');
+// 		 swal.close();
+		
+  
+//   //return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+// });
    $(document).ready(function(){
-   	console.log(123);
-   	if($('.slug').prop(":checked")) {
-   	  console.log(this.val());
-   	}
+   	// console.log(123);
+   	// if($('.slug').prop(":checked")) {
+   	//   console.log(this.val());
+   	// }
        
    });
 </script>
@@ -419,8 +439,23 @@
 		
 	<!-- tab end here -->
 	<script>
+  function setCookie(key, value) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+            document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+        }
+
+        function getCookie(key) {
+            var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+            return keyValue ? keyValue[2] : null;
+        }
 	$(document).ready(function() {
-		//$('#card1').hide();
+    $('#card1').hide();
+    if(getCookie('postcode')) {
+      $('#card1').show();
+      return false;
+    }
+		
 		swal({
 			title: "Check Postcode",
 			text: "Enter postcode",
@@ -444,6 +479,8 @@
 				},
 				success: function(data) {
 					if(data.error === false) {
+            console.log(data.postcode);
+            setCookie("postcode", data.postcode);
 						$('#card1').show();
 						swal.close();
 					}
@@ -467,7 +504,48 @@
 			});
   		});
 	});
-
+//   swal({
+//   content: {
+//     element: "input",
+//     closeOnClickOutside: false,
+//     attributes: {
+//       placeholder: "Type your password",
+//       type: "password",
+//     },
+//   },
+// });
+// .then(name => {
+//   if (!name) throw null;
+ 
+//   return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+// })
+// .then(results => {
+//   return results.json();
+// })
+// .then(json => {
+//   const movie = json.results[0];
+ 
+//   if (!movie) {
+//     return swal("No movie was found!");
+//   }
+ 
+//   const name = movie.trackName;
+//   const imageURL = movie.artworkUrl100;
+ 
+//   swal({
+//     title: "Top result:",
+//     text: name,
+//     icon: imageURL,
+//   });
+// })
+// .catch(err => {
+//   if (err) {
+//     swal("Oh noes!", "The AJAX request failed!", "error");
+//   } else {
+//     //swal.stopLoading();
+//     //swal.close();
+//   }
+// });
 </script>
 
 <!-- crasoul start css js -->
@@ -485,11 +563,11 @@ $(document).ready(function() {
 
 <script>
    $(document).ready(function() {
-   $(".btn-pref .btn").click(function () {
-      $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-      // $(".tab").addClass("active"); // instead of this do the below 
-      $(this).removeClass("btn-default").addClass("btn-primary");   
-   });
+  //  $(".btn-pref .btn").click(function () {
+  //     $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+  //     // $(".tab").addClass("active"); // instead of this do the below 
+  //     $(this).removeClass("btn-default").addClass("btn-primary");   
+  //  });
    });
 </script>
 
@@ -531,9 +609,11 @@ $(document).ready(function() {
 
 
 <script src="https://use.fontawesome.com/b4564248e6.js"></script><!-- radio start -->
-
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/addcartcss.css');?>" /> -->
 <!-- radio end -->
 
+<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 
 
