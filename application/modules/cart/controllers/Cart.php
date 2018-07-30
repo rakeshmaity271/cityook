@@ -140,6 +140,8 @@ class Cart extends MX_Controller {
 				if($this->getCartItem()) {
 					foreach($this->getCartItem() as $k => $v) {
 							if($this->getCode() == $k)
+							//echo $_SESSION["cart_item"][$k];
+							
 								unset($_SESSION["cart_item"][$k]);
 								return $this->output
 											->set_content_type('application/json')

@@ -97,12 +97,12 @@ class Service extends MX_Controller {
         $this->data['image']                =  $image;
         $this->data['code']                 =  md5($this->data['id_categories'].'_'.$this->data['slug']);
 
-        $related_services     = ($this->input->post('related_services')) ? $this->input->post('related_services') : '';
+        $related_id_services     = ($this->input->post('related_id_services')) ? $this->input->post('related_id_services') : [];
 
         $lastInsertedID = $this->service->save($this->data);
 
-        if(isset($related_services)) {
-            foreach ($related_services as $value) {
+        if(isset($related_id_services)) {
+            foreach ($related_id_services as $value) {
                 $this->service->setRelatedServices(array(
                     'id_services' => $lastInsertedID,
                     'related_id_services' => $value
@@ -226,6 +226,7 @@ class Service extends MX_Controller {
         // print_r($service);
         // exit();
         $this->service->delete($service->id);
+        $this->service->deleteRelatedServices(['related_id_services' => $service->id]);
         return $this->output
                 ->set_content_type('application/json')
                 ->set_status_header(200)
@@ -235,6 +236,43 @@ class Service extends MX_Controller {
                         'status' => 200
                 )));
 
+    }
+    private function getStatus() {
+        
+        return ($this->input->post('status') === 'true') ? 1 : 0;
+    }
+    private function getId() {
+        return ($this->input->post('id')) ? $this->input->post('id') : '';
+    }
+
+    public function updateStatus() {
+        $isAjax = ($this->input->is_ajax_request()) ?  true : false ;
+        if($isAjax) {
+            $service = $this->service->find(['id' => $this->getId()]);
+            if(count($service) > 0) {
+                $this->data['status'] = "".$this->getStatus()."";
+                
+                $this->service->update($service[0]->id, $this->data);
+                   
+                    return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                    'error' => false,
+                                    'status' => 200,
+                                    'message' => 'Service Successfully Updated'
+                            )));
+               
+            }
+            return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                    'error' => true,
+                                    'status' => 200,
+                                    'message' => 'Not found any record'
+                            )));
+        }
     }
 
 }

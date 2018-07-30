@@ -28,6 +28,16 @@ if(!function_exists('dynamicRoutes')) {
         return $index;
       
     }
+
+
+    if(!function_exists('getImage')) {
+        function getImage($image) {
+            if($image) {
+                return base_url().'uploads/'.$image;
+            }
+            return base_url().'uploads/no-image.jpg';
+        }
+    }
 }
 
 

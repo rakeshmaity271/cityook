@@ -45,6 +45,9 @@ class Service_model extends CI_Model
     public function delete($id) {
         return $this->common->delete($this->table, $id);
     }
+    public function deleteRelatedServices($options) {
+        return $this->common->trash('related_services', $options);
+    }
     public function slug($productName) {
         return $this->common->slugify($productName);
     }

@@ -150,70 +150,46 @@ $(document).ready(function() {
     });
 
 
-
     $('.deleteBtn').on('click', function (e) {
       var id = $(this).attr('data-id');
-      if (!e.isDefaultPrevented()) {
-      var url = "<?php echo base_url();?>admin/service/category/cms/delete/"+ id;
-            var settings = {
-
-              "async": true,
-
-              "crossDomain": true,
-
-              "url": url,
-
-              "data" : id,
-
-              "method": "POST",
-
-              "headers": {
-              },
-              beforeSend: function() {
-                // Show full page LoadingOverlay
-                $.LoadingOverlay("show");
-            }
-
-        }
-
-
-
-          $.ajax(settings).done(function (data) {
-
-            console.log(data);
-
-            if(data.error === false) {
-
-            setTimeout(function() {
-              $.LoadingOverlay("hide");
-                  swal({
-
-                  title: "success",
-
-                  text: data.message,
-
-                  icon: "success",
-                  buttons: true,
-
-                  })
-                  .then((willDelete) => {
-                      if (willDelete) {
-                          window.location.href = '<?php echo base_url("/admin/service/category/cms");?>';
-                      } else {
-                          swal("Your imaginary file is safe!");
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this service!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+          if (willDelete) {
+                    $.ajax({
+                    type:'POST',
+                    dataType:'JSON',
+                    url:"<?php echo base_url();?>admin/service/category/cms/delete/"+ id,
+                    beforeSend: function() {
+                          $.LoadingOverlay("show");
+                    },
+                    success:function(data) {
+                      $.LoadingOverlay("hide");
+                      if(data.error === false) {
+                        setTimeout(function() {
+                         swal("Poof! Your cms has been deleted!", {
+                            icon: "success",
+                          }).then((willDelete) => {
+                            if (willDelete) {
+                              location.reload();
+                            }
+                          });
+                        
+                        }, 500);
                       }
+                    }
                   });
-                
-              }, 3000);
-
-            }
-          });
-
-          return false;
-
-      }
-
+                    
+        } else {
+          swal("Your cms has been canceled!");
+        }
+      });
     });
+    
   });
 
 </script>

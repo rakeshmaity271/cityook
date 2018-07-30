@@ -49,17 +49,17 @@
 
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
 
-							<li><a href="<?php echo base_url();?>cleaning" class="material_dropdown_menu_link">Cleaning</a></li>
+							<li><a href="<?php echo base_url();?>en/cleaning" class="material_dropdown_menu_link">Cleaning</a></li>
 
-							<li><a href="<?php echo base_url();?>repairs" class="material_dropdown_menu_link">Repairs</a></li>
+							<li><a href="<?php echo base_url();?>en/repairs" class="material_dropdown_menu_link">Repairs</a></li>
 
-							<li><a href="<?php echo base_url();?>pest-control" class="material_dropdown_menu_link">Pest-Control</a></li>
+							<li><a href="<?php echo base_url();?>en/pest-control" class="material_dropdown_menu_link">Pest-Control</a></li>
 
-							<li><a href="<?php echo base_url();?>car-spa" class="material_dropdown_menu_link">Car-Spa</a></li>
+							<li><a href="<?php echo base_url();?>en/car-spa" class="material_dropdown_menu_link">Car-Spa</a></li>
 
-							<li><a href="<?php echo base_url();?>painting" class="material_dropdown_menu_link">Painting</a></li>
+							<li><a href="<?php echo base_url();?>en/painting" class="material_dropdown_menu_link">Painting</a></li>
 
-							<li><a href="<?php echo base_url();?>handyman" class="material_dropdown_menu_link">Handyman</a></li>
+							<li><a href="<?php echo base_url();?>en/handyman" class="material_dropdown_menu_link">Handyman</a></li>
 
 						</ul>
 
@@ -139,7 +139,7 @@
 					<li data-dialog="somedialog" class="trigger hidden-xs " onclick="openCart();" ><a style="cursor: hand; cursor: pointer;" class="cartReviewTrigger"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="cartItemsCount" style="background-color: blue; padding:0px 3px 0px 2px;border-radius:5px 5px;color:yellow;">
 					
 					
-					<?php echo ($numOfCartItems) ? $numOfCartItems : ''?>0</span></a>
+					<?php echo ($numOfCartItems) ? $numOfCartItems : 0 ?></span></a>
 
 						
 

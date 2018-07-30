@@ -106,7 +106,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <th>Name</th>
 
-                          <!-- <th>Status</th> -->
+                          <th>Status</th>
 
                           <!-- <th>Created by</th> -->
 
@@ -132,7 +132,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
                           <td><?php echo ($category->name) ? $category->name : '';?></td>
 
-                          <!-- <td><input type="checkbox" id="switcherySize3" class="switchery" data-size="xs" checked/></td> -->
+                          <td><input type="checkbox" id="switchery" data-id="<?php echo ($category->id) ? $category->id : '';?>"  class="switchery" data-size="xs" <?php echo ($category->status === '1') ? 'checked' : '';?>/></td>
 
                           <td><?php echo ($category->updated_at) ? $category->updated_at : '';?></td>
 
@@ -185,9 +185,53 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 <?php echo $footer;?>
 
 <script>
-
+// function updateStatus(id) {
+//   var data;
+//   data = $('#switchery_'+id).value;
+//   console.log(data);
+// }
 $(document).ready(function() {
-
+  
+    $(".switchery").change(function() {
+      var status = $(this).prop('checked');
+      console.log(status);
+      $.ajax({
+          type:'POST',
+          dataType:'JSON',
+          url:'<?php echo base_url();?>admin/category/category/updateStatus',
+          data:{
+            'status': status,
+            'id': $(this).attr("data-id")
+          },
+          beforeSend: function() {
+                $.LoadingOverlay("show");
+            },
+          success:function(data)
+          {
+            console.log(data);
+            
+            if(data.error === false) {
+              setTimeout(function() {
+              $.LoadingOverlay("hide");
+                  swal({
+                  title: "success",
+                  text: data.message,
+                  icon: "success",
+                  buttons: true,
+                  })
+                  .then((willDelete) => {
+                      if (willDelete) {
+                         location.reload();
+                      } else {
+                          swal("Your imaginary file is safe!");
+                      }
+                  });
+                
+              }, 1000);
+            }
+          }
+        });
+    });
     $('#checkAll').click(function () {    
 
             $(':checkbox.checkItem').prop('checked', this.checked);    
@@ -195,69 +239,46 @@ $(document).ready(function() {
     });
 
 
- 
  $('.deleteBtn').on('click', function (e) {
       var id = $(this).attr('data-id');
-      if (!e.isDefaultPrevented()) {
-      var url = "<?php echo base_url();?>admin/service/category/delete/"+ id;
-            var settings = {
-
-              "async": true,
-
-              "crossDomain": true,
-
-              "url": url,
-
-              "data" : id,
-
-              "method": "POST",
-
-              "headers": {
-              },
-              beforeSend: function() {
-                $.LoadingOverlay("show");
-            }
-
-        }
-
-
-
-          $.ajax(settings).done(function (data) {
-
-            console.log(data);
-
-            if(data.error === false) {
-
-            setTimeout(function() {
-              $.LoadingOverlay("hide");
-                  swal({
-
-                  title: "success",
-
-                  text: data.message,
-
-                  icon: "success",
-                  buttons: true,
-
-                  })
-                  .then((willDelete) => {
-                      if (willDelete) {
-                          window.location.href = '<?php echo base_url("/admin/service/categories");?>';
-                      } else {
-                          swal("Your imaginary file is safe!");
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this service!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+          if (willDelete) {
+                    $.ajax({
+                    type:'POST',
+                    dataType:'JSON',
+                    url:"<?php echo base_url();?>admin/service/category/delete/"+ id,
+                    beforeSend: function() {
+                          $.LoadingOverlay("show");
+                    },
+                    success:function(data) {
+                      $.LoadingOverlay("hide");
+                      if(data.error === false) {
+                        setTimeout(function() {
+                         swal("Poof! Your category has been deleted!", {
+                            icon: "success",
+                          }).then((willDelete) => {
+                            if (willDelete) {
+                              location.reload();
+                            }
+                          });
+                        
+                        }, 500);
                       }
+                    }
                   });
-                
-              }, 3000);
-
-            }
-          });
-
-          return false;
-
-      }
-
+                    
+        } else {
+          swal("Your category has been canceled!");
+        }
+      });
     });
+ 
   });
 
 </script>
