@@ -134,6 +134,8 @@ $route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
 
 $route['my-account'] = 'customer/customer/customer/account';
 
+$route['order'] = 'order/accountdetail';
+
 /**
  * Employee Registration routes
  */
@@ -255,3 +257,4 @@ $route['reset-password'] = 'forgot_password/reset_password';
 // $route['(:any)/(:any)'] = 'service/show';
 $route['en/([^/]+)/?'] = 'service/index/$1';
 $route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
+
