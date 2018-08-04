@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2018 at 03:29 PM
+-- Generation Time: Aug 04, 2018 at 07:04 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -280,7 +280,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `profile_picture`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(2, '', NULL, '$2y$08$qe1ywhBXM3adA0l5ZnfbFuxxxwz//R7nJTVTXzifu93UPO0TFPaTy', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, 1532856252, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, NULL, '1', '2018-07-27 22:25:09', NULL, NULL);
+(2, '', NULL, '$2y$08$qe1ywhBXM3adA0l5ZnfbFuxxxwz//R7nJTVTXzifu93UPO0TFPaTy', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, 1532886357, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, NULL, '1', '2018-07-27 22:25:09', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -382,13 +382,13 @@ ALTER TABLE `users_groups`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `category_cms`
 --
 ALTER TABLE `category_cms`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `groups`
@@ -436,7 +436,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `service_cms`
 --
 ALTER TABLE `service_cms`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
