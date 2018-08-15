@@ -18,7 +18,7 @@ class Site extends MX_Controller {
 		* @return object of array()
 		* List of category
 		*/
-		$this->data['categories'] = $this->getCategories();
+		$this->data['categories'] = $this->category->find($options = ['status' => '1']);
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$this->data['header'] 		= Modules::run('layouts/site-layout/header/index');

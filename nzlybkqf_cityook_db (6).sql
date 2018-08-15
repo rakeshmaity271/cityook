@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2018 at 07:04 AM
+-- Generation Time: Aug 16, 2018 at 01:40 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -46,7 +46,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `image`, `description`, `created_at`, `updated_at`, `created_by`, `delated_at`, `status`) VALUES
-(2, 'PAINTING', 'painting', 'painting.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2018-07-29 11:11:05', '2018-07-29 11:11:05', 0, NULL, '1'),
+(2, 'PAINTING', 'painting', 'painting.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2018-08-15 23:39:45', '2018-08-15 23:39:45', 0, NULL, '1'),
 (3, 'CAR-SPA', 'car-spa', 'carspa.png', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2018-07-29 12:12:58', '2018-07-29 12:12:58', 0, NULL, '1');
 
 -- --------------------------------------------------------
@@ -96,6 +96,27 @@ CREATE TABLE `login_attempts` (
   `login` varchar(100) NOT NULL,
   `time` int(11) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id_transactions` int(11) NOT NULL,
+  `id_users` int(11) DEFAULT NULL,
+  `code_services` varchar(255) DEFAULT NULL,
+  `order_datetime` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id_transactions`, `id_users`, `code_services`, `order_datetime`) VALUES
+(1, 0, 'd56a8aa36edf336c68b4f4f5f7e1b2b4', '2018-08-15 23:05:04'),
+(4, 2, 'd56a8aa36edf336c68b4f4f5f7e1b2b4', '2018-08-15 23:21:57');
 
 -- --------------------------------------------------------
 
@@ -204,7 +225,7 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `code`, `id_categories`, `name`, `slug`, `description`, `image`, `service_type`, `service_time`, `no_of_bhk`, `no_of_service_men`, `note`, `frequency`, `price`, `package`, `video_url`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(13, 'd56a8aa36edf336c68b4f4f5f7e1b2b4', 2, 'Repaint', 'repaint', '<p>sfasfsaf</p>', 'a70f95665eb8d245a0f12ae4d336d27c.png', 'Deep', '', 0, 0, '<p>asass</p>', '', 249.00, '', '', '0', '2018-07-29 12:13:31', '2018-07-29 12:13:31', NULL),
+(13, 'd56a8aa36edf336c68b4f4f5f7e1b2b4', 2, 'Repaint', 'repaint', '<p>sfasfsaf</p>', 'a70f95665eb8d245a0f12ae4d336d27c.png', 'Deep', '', 0, 0, '<p>asass</p>', '', 249.00, '', '', '1', '2018-08-15 23:37:32', '2018-08-15 23:37:32', NULL),
 (14, '703153496d45ec79664ae5f312cf70d8', 2, 'Fresh painting', 'fresh-painting', '<p>gfgfgdf</p>', '4d0b94cb11f42147fa6da36f983f9363.png', 'Basic', '', 0, 0, '<p>ddd</p>', '', 249.00, '', '', '1', '2018-07-29 12:03:46', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -242,6 +263,31 @@ CREATE TABLE `service_images` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `transactions`
+--
+
+CREATE TABLE `transactions` (
+  `id` int(11) NOT NULL,
+  `txnid` varchar(255) NOT NULL,
+  `mihpayid` varchar(255) NOT NULL,
+  `amount` float(10,2) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `response` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transactions`
+--
+
+INSERT INTO `transactions` (`id`, `txnid`, `mihpayid`, `amount`, `status`, `response`) VALUES
+(1, '8e84bc4a0621a81f16c3', '127064', 1.00, 'success', '\"orderId: 8e84bc4a0621a81f16c3\\nTransaction Id: 127064\\n\"'),
+(2, '8e84bc4a0621a81f16c3', '127064', 1.00, 'success', '\"orderId: 8e84bc4a0621a81f16c3\\nTransaction Id: 127064\\n\"'),
+(3, '8e84bc4a0621a81f16c3', '127064', 1.00, 'success', '\"orderId: 8e84bc4a0621a81f16c3\\nTransaction Id: 127064\\n\"'),
+(4, 'faa9607e0aecff02c02b', '127075', 1.00, 'success', '\"orderId: faa9607e0aecff02c02b\\nTransaction Id: 127075\\n\"');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -259,6 +305,8 @@ CREATE TABLE `users` (
   `created_on` int(11) UNSIGNED NOT NULL,
   `last_login` int(11) UNSIGNED DEFAULT NULL,
   `active` tinyint(1) UNSIGNED DEFAULT NULL,
+  `firstname` text,
+  `lastname` text,
   `fullname` varchar(255) NOT NULL,
   `mobile` bigint(13) NOT NULL,
   `country` int(11) NOT NULL,
@@ -279,8 +327,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `profile_picture`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(2, '', NULL, '$2y$08$qe1ywhBXM3adA0l5ZnfbFuxxxwz//R7nJTVTXzifu93UPO0TFPaTy', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, 1532886357, 1, 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, NULL, '1', '2018-07-27 22:25:09', NULL, NULL);
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `firstname`, `lastname`, `fullname`, `mobile`, `country`, `state`, `city`, `pincode`, `address`, `adhar_no`, `document`, `profile_picture`, `user_type`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(2, '', NULL, '$2y$08$qe1ywhBXM3adA0l5ZnfbFuxxxwz//R7nJTVTXzifu93UPO0TFPaTy', NULL, 'rakeshmaity271@gmail.com', NULL, NULL, NULL, NULL, 0, 1534369861, 1, 'Rakesh', 'Maity', 'Rakesh Maity', 9073090507, 0, 0, 0, 0, NULL, NULL, NULL, NULL, '1', '2018-07-27 22:25:09', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -356,6 +404,12 @@ ALTER TABLE `services`
 -- Indexes for table `service_cms`
 --
 ALTER TABLE `service_cms`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `transactions`
+--
+ALTER TABLE `transactions`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -437,6 +491,12 @@ ALTER TABLE `services`
 --
 ALTER TABLE `service_cms`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `transactions`
+--
+ALTER TABLE `transactions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`

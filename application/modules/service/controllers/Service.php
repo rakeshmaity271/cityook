@@ -28,7 +28,7 @@ class Service extends MX_Controller {
 
 	{
 
-        $this->categories = $this->category->find($options = ['slug' => $slug]);
+        $this->categories = $this->category->find($options = ['slug' => $slug, 'status' => '1']);
 
         /**
         * Breadcrumbs
@@ -57,7 +57,7 @@ class Service extends MX_Controller {
         }
         $services = [];
         if(count($this->categories) > 0) {
-            $services = $this->service->find($options = ['id_categories' => $this->categories[0]->id]);
+            $services = $this->service->find($options = ['id_categories' => $this->categories[0]->id, 'status' => '1']);
             $this->data['services'] = [];
             if(count($services) > 0) {
                 // echo "<pre>";
@@ -83,7 +83,7 @@ class Service extends MX_Controller {
         
 
         //printArray($this->data['services']);
-        $this->data['categories'] = $this->category->all();
+        $this->data['categories'] = $this->categories;
 
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
@@ -104,7 +104,7 @@ class Service extends MX_Controller {
 
     {
 
-        $this->categories = $this->category->find($options = ['slug' => $slug]);
+        $this->categories = $this->category->find($options = ['slug' => $slug, 'status' => '1']);
 
         $this->data['service_cms'] = [];
         $this->data['isBhk'] = false;
@@ -112,7 +112,7 @@ class Service extends MX_Controller {
         $this->data['isFrequency'] = false;
 
         if(count($this->categories) > 0) {
-            $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo]);
+            $this->data['service'] = $this->service->find($options = ['slug' => $slugTwo, 'status' => '1']);
             $isRelatedServices = false;
             $servicecms = [];
             if(count($this->data['service']) > 0) {
