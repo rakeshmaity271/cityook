@@ -551,3 +551,6 @@ $config['file'] = [
 // $config['maintain_ratio'] = TRUE;
 // $config['width']         = 75;
 // $config['height']       = 50;
+
+$config['pumcp_payu_merchant'] = 'aJWHcza6';
+$config['pumcp_payu_salt'] = '7aTi2xctcB';

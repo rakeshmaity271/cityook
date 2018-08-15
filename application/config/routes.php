@@ -257,3 +257,6 @@ $route['reset-password'] = 'forgot_password/reset_password';
 // $route['(:any)/(:any)'] = 'service/show';
 $route['en/([^/]+)/?'] = 'service/index/$1';
 $route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
+
+
+$route['checkout/success'] = 'payment/checkout/success';

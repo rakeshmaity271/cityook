@@ -15,5 +15,14 @@
         }
     }
 
+    if(!function_exists('href')) {
+        function href($link) {
+            if($link) {
+                 return base_url().$link;
+            }
+           
+        }
+    }
+
 
 
