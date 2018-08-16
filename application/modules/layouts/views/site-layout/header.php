@@ -113,9 +113,10 @@
 
 							<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { ?>
 
-							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
+							
 
 							<li><a href="<?php echo base_url();?>my-account" class="material_dropdown_menu_link"> My Account </a></li>
+							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
 
 							<?php } else { ?>
 
@@ -135,7 +136,10 @@
 
 					<li><a href="#" class="material_navbar_nav_item callButtonHelplineHeader"> <i class="fa fa-phone"></i><span class="hidden-xs hidden-sm hideName">  &nbsp; 900000000</span></a></li>
 
-					<li data-dialog="somedialog" class="trigger hidden-xs " onclick="javascript: openCart();" ><a style="cursor: hand; cursor: pointer;" class="cartReviewTrigger"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="cartItemsCount" style="background-color: blue; padding:0px 3px 0px 2px;border-radius:5px 5px;color:yellow;"> 0</span></a>
+					<li data-dialog="somedialog" class="trigger hidden-xs " onclick="openCart();" ><a style="cursor: hand; cursor: pointer;" class="cartReviewTrigger"><i class="fa fa-shopping-cart"></i>&nbsp;<span class="cartItemsCount" style="background-color: blue; padding:0px 3px 0px 2px;border-radius:5px 5px;color:yellow;">
+					
+					
+					<?php echo ($numOfCartItems) ? $numOfCartItems : 0 ?></span></a>
 
 						
 

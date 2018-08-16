@@ -235,10 +235,9 @@ class Category extends MX_Controller {
     
 
         $this->category_model->update($this->data, $id);
-
+		//var_dump($this->data);
         $this->flash->success('Success', 'Record Updated');
-
-        redirect($this->redirect.'/categories');
+		redirect($this->redirect.'/categories');
 
     }
 
@@ -271,5 +270,52 @@ class Category extends MX_Controller {
         }
         
 
+    }
+
+    private function getStatus() {
+        
+        return ($this->input->post('status') === 'true') ? 1 : 0;
+    }
+    private function getId() {
+        return ($this->input->post('id')) ? $this->input->post('id') : '';
+    }
+
+    public function updateStatus() {
+        $isAjax = ($this->input->is_ajax_request()) ?  true : false ;
+        if($isAjax) {
+            $category = $this->category_model->find(['id' => $this->getId()]);
+            if(count($category) > 0) {
+                $this->data['status'] = "".$this->getStatus()."";
+                
+                if($this->category_model->update($this->data, $category[0]->id)) {
+                   
+                    return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                    'error' => false,
+                                    'status' => 200,
+                                    'message' => 'Category Successfully Updated'
+                            )));
+                }
+                return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                    'error' => false,
+                                    'status' => 200,
+                                    'message' => 'Error'
+                            )));
+            }
+            return $this->output
+                            ->set_content_type('application/json')
+                            ->set_status_header(200)
+                            ->set_output(json_encode(array(
+                                    'data' => $category,
+                                    'error' => true,
+                                    'status' => 200,
+                                    'message' => 'Not found any record'
+                            )));
+        }
     }
 }

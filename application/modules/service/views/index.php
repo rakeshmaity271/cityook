@@ -208,16 +208,16 @@
 		<div class="container">
 		<div class="row ">
 		<div class="col-lg-6">
-			<img src="<?php echo (isset($category_cms['image'])) ? $category_cms['image'] : ''?>" class="img-responsive"/>
+			<img src="<?php echo (isset($category_cms['image'])) ? $category_cms['image'] : ''?>" class="img-responsive" height="298" width="500"/>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 categoryconp">
 			<h1 class="webabouth" style=""><?php echo (isset($category_cms['heading'])) ? $category_cms['heading'] : ''?></h1>
-			<p class="webaboutp" style=""><?php echo (isset($category_cms['content'])) ? $category_cms['content'] : ''?></p>
+			<?php echo (isset($category_cms['content'])) ? $category_cms['content'] : ''?>
 			</div>
 		
 		</div>
 		<div class="row" style="padding:30px 20px;">
-		<div class="col-lg-12">
+		<div class="col-lg-12 ">
 		<p class="webaboutp">
 			<?php echo (isset($category_cms['middle_section_heading'])) ? $category_cms['middle_section_heading'] : ''?>
 		</p>	
@@ -226,6 +226,13 @@
 		<p>&nbsp;</p>
 		<!-- service-->
 		<style>
+		.categoryconp p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: ro;
+    line-height: 29px;
+    color: #666666;
+}
 		.categeroys > div > div {
    /* padding: 25px 54px;*/
    text-align:center;
@@ -243,6 +250,8 @@
 }
 .catp{
 text-align:center;
+font-weight:bold;
+font-size:16px;
 }
 .simg{
 width:50px;
@@ -267,10 +276,76 @@ fieldset{
 			<div class="row categeroys">
 				<?php if(isset($services) && count($services) > 0) { ?>
 					<?php foreach ($services as $service) { ?>
+					<!-- <div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Home</a></p>
+						</div>
+					</div>
 					<div class="col-md-2">
 			    		<div>
-							<a href="#"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg" width="50" height="50"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Office</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg" width="50" height="50"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Carpet</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Sofa</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Loft</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Carpet</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Bathroom</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Balcony</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Mattress</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Kitchen</a></p>
+						</div>
+					</div><div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-circle simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Chair</a></p>
+						</div>
+					</div>
+					<div class="col-md-2">
+			    		<div>
+							<a href="<?php echo base_url();?>service/show/"><img src="uploads/painting.png" alt="" class=" img-thumbnail simg"></a>
+								<p class="catp"><a href="<?php echo base_url();?>service/show/">Window</a></p>
+
+						
+						</div>
+					</div> -->
+					<div class="col-md-2">
+			    		<div>
+						<a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><img src="<?php echo (isset($service['image'])) ? $service['image'] : '';?>" alt="" style="text-align:center;"class="img-circle simg" width="50" height="50"></a>
 								<p class="catp"><a href="<?php echo (isset($service['url'])) ? $service['url'] : '';?>"><?php echo (isset($service['service'])) ? $service['service'] : '';?></a></p>
+
 						</div>
 					</div>
 					<?php }  ?> 

@@ -5,8 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 
-| -------------------------------------------------------------------------
-
+| ------------------------------------------------------------------------
 | URI ROUTING
 
 | -------------------------------------------------------------------------
@@ -104,7 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'Welcome';
 
 $route['404_override'] = 'pagenotfound/Pagenotfound/index';
-
+// $route['404'] = 'pagenotfound/Pagenotfound/index';
 $route['translate_uri_dashes'] = FALSE;
 
 
@@ -194,8 +193,40 @@ $route['admin/service/update'] = 'admin/service/service/update';
 $route['admin/service/delete/(:num)'] = 'admin/service/service/delete/$1';
 
 $route['admin/services'] = 'admin/service/service';
+
+
+// service cms
+$route['admin/service/cms/create'] = 'admin/service/servicecms/create';
+
+$route['admin/service/cms/store'] = 'admin/service/servicecms/store';
+
+$route['admin/service/cms/edit/(:num)'] = 'admin/service/servicecms/edit/$1';
+
+$route['admin/service/cms/update'] = 'admin/service/servicecms/update';
+
+$route['admin/service/cms/delete/(:num)'] = 'admin/service/servicecms/delete/$1';
+
+$route['admin/service/cms'] = 'admin/service/servicecms';
+
+
+
 $route['unauthorized'] = 'unauthorized';
 
+#Postcodes
+$route['admin/postcode/create'] = 'admin/postcode/create';
+
+$route['admin/postcode/store'] = 'admin/postcode/store';
+
+$route['admin/postcode/edit/(:num)'] = 'admin/postcode/edit/$1';
+
+$route['admin/postcode/update'] = 'admin/postcode/update';
+
+$route['admin/postcode/delete/(:num)'] = 'admin/postcode/delete/$1';
+
+$route['admin/postcodes'] = 'admin/postcode';
+
+
+$route['admin/customers'] = 'admin/customer/customer';
 /**
  * Forgot password
  */
@@ -207,15 +238,26 @@ $route['reset-password'] = 'forgot_password/reset_password';
 /**
 * 
 */
-//print_r($infinity->getCategories());
-$categories = [
-	'painting',
-	'car-spa',
-	'pest-control',
-	'repairs',
-	'cleaning',
-	'handyman'
-];
-foreach ($categories as $key => $value) {
-	 $route[$value] = 'service/index';
-}
+//print_r(dynamicRoutes());
+// $categories = [
+// 	'painting',
+// 	'car-spa',
+// 	'pest-control',
+// 	'repairs',
+// 	'cleaning',
+// 	'handyman'
+// ];
+// foreach ($categories as $key => $value) {
+// 	 $route[$value] = 'service/index';
+// }
+// require_once( APPPATH .'helpers/cityook_helper.php');
+// print_r(dynamicRoutes());
+
+// $route['(:any)'] = 'service/index';
+// $route['(:any)/(:any)'] = 'service/show';
+$route['en/([^/]+)/?'] = 'service/index/$1';
+$route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
+
+
+$route['checkout/success'] = 'payment/checkout/success';
+$route['admin/order/transactions'] = 'admin/order/order/transactions';

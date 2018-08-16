@@ -209,7 +209,7 @@
                                     Related Service
                                   </div>
                                   <div class="controls">
-                                  <select class="select2 form-control" name="related_service[]" multiple="multiple">
+                                  <select class="select2 form-control" name="related_id_services[]" multiple="multiple">
                                     
                                     <?php foreach ($related_services as $related_service) { ?>
                                       <option value="<?php echo ($related_service->id) ? $related_service->id : '';?>"><?php echo ($related_service->name) ? $related_service->name : '';?></option>

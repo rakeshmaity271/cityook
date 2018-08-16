@@ -45,22 +45,36 @@ class Service_model extends CI_Model
     public function delete($id) {
         return $this->common->delete($this->table, $id);
     }
+    public function deleteRelatedServices($options) {
+        return $this->common->trash('related_services', $options);
+    }
     public function slug($productName) {
         return $this->common->slugify($productName);
     }
 
-    public function getRelatedServicesByServiceID($serviceID) {
+    public function getRelatedServiceIdsByServiceId($serviceID) {
        
-        $data = array();
+        //$data = array();
         $related_services = $this->common->rows('related_services', array('where' => array('id_services' => $serviceID), 'columns' => 'related_id_services'));
-        
-        foreach ($related_services as $value) {
-            $data[] = $value->related_id_services;
-        }
+        return $related_services;
+        // foreach ($related_services as $value) {
+        //     $data[] = $value->related_id_services;
+        // }
        
+        // return $data;
+    }
+    public function getRelatedServices($serviceID) {
+        $data = array();
+        $related_services = $this->getRelatedServiceIdsByServiceId($serviceID);
+        foreach($related_services as $related_service) {
+             $data[] = $this->db->select('s.slug, s.description, s.name, s.image')
+                            ->from('services as s')
+                            ->join('related_services as rs', 'rs.related_id_services = s.id')
+                            ->where('s.id', $related_service->related_id_services)
+                            ->get()
+                            ->result();
+        }
         return $data;
-        //print_r($data);
-
     }
     // public function getRelatedServicesByServiceID($serviceID) {
     //     $options = array(
@@ -76,6 +90,24 @@ class Service_model extends CI_Model
     public function find($options = array()) {
         return $this->common->find($this->table, '', $options);
     }
+
+
+    /** Admin  */
+    public function getRelatedServicesByServiceID($serviceID) {
+       
+        $data = array();
+        $related_services = $this->common->rows('related_services', array('where' => array('id_services' => $serviceID), 'columns' => 'related_id_services'));
+        foreach ($related_services as $value) {
+            $data[] = $value->related_id_services;
+        }
+       
+        return $data;
+    }
+
+    /** Frontend code start form here */
+    public function getSerivceByCode($code) {
+        return $this->common->find($this->table, '', ['code' => $code]);
+	}
 
 
     

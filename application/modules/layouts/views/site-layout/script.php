@@ -9,7 +9,7 @@
 <script src="<?php echo base_url('assets/cityook/js/owl.carousel.js');?>"></script>
 
 <script src="<?php echo base_url('assets/cityook/js/jquery.li-scroller.1.0.js');?>"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
 <!-- Scripts end -->
 <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.3/dist/loadingoverlay.min.js"></script>
 <script type="text/javascript">
@@ -103,7 +103,35 @@
         <script src="<?php echo base_url('assets/cityook/js/validator.js');?>"></script>
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="<?php echo base_url('assets/js/cart.js');?>"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+       
+      
+<?php /*
+$show = false;
+if($this->uri->segment(3) || $this->uri->segment(1) === 'cart') {
+    $show = true;
+}
+?>
+<?php 
+if($show) { ?>
+<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">  -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/addcartcss.css');?>" />
+<script src="<?php echo base_url('assets/js/cart.js');?>"></script>
+<?php } else { ?>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+<?php } */?>
+<script>
+function openCart() {
+    window.location.href = "<?php echo base_url();?>cart";
+}
+
+</script>
 	</body>
 
 </html>

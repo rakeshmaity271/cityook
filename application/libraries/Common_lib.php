@@ -134,6 +134,19 @@ class Common_lib {
         $this->CI->db->delete($table);
         return true;
     }
+
+    public function trash($table, $options = array()) {
+        $where = array();
+        if(isset($options)) {
+            foreach ($options as $key => $value) {
+                $where[$key] = $value;
+            }
+        }
+
+        $this->CI->db->where($where);
+        $this->CI->db->delete($table);
+        return true;
+    }
     
     // protected function setTable($table) {
     //     return $this->table = $table;

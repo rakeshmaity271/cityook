@@ -8,8 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class User_model extends CI_Model
 {
     protected $table = 'users';
+    private $common;
     public function __construct() {
         $this->load->database();
+        $this->common = new Common_lib();
     }
     public function all() {
 		
@@ -29,4 +31,9 @@ class User_model extends CI_Model
         $this->db->where('id', $id)->update($this->table, $data);
         return true;
     }
+
+    public function get($id) {
+        return $this->common->row($this->table, $id);
+    }
+
 }

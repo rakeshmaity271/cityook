@@ -10,13 +10,15 @@ class Site extends MX_Controller {
 	}
 	public function index()
 	{
+		// echo "<pre>";
+		// print_r(dynamicRoutes());
 		$this->data = array();
 		/**
 		* @description
 		* @return object of array()
 		* List of category
 		*/
-		$this->data['categories'] = $this->getCategories();
+		$this->data['categories'] = $this->category->find($options = ['status' => '1']);
 
 		$this->data['head'] 		= Modules::run('layouts/site-layout/head/index');
 		$this->data['header'] 		= Modules::run('layouts/site-layout/header/index');
