@@ -22,13 +22,23 @@ class Order_model extends CI_Model
     public function save($data) {
         return $this->common->insert($this->table, $data);
     }
-    public function all() {
-        $query =  $this->db->select('category_cms.*, categories.name as category_name')
-                    ->from($this->table)
-                    ->join('categories', 'categories.id = category_cms.id_categories')
-                    ->get();
-        return $query->result();
+    // public function all() {
+    //     $query =  $this->db->select('category_cms.*, categories.name as category_name')
+    //                 ->from($this->table)
+    //                 ->join('categories', 'categories.id = category_cms.id_categories')
+    //                 ->get();
+    //     return $query->result();
 
+    // }
+    public function all() {
+        return $this->common->rows($this->table);
+    }
+
+    public function getTransactions() {
+        return $this->common->rows('transactions');
+    }
+    public function getOrders() {
+        return $this->all();
     }
     public function get($id) {
         return $this->common->row($this->table, $id);
@@ -56,6 +66,14 @@ class Order_model extends CI_Model
         echo $this->db->last_query();
     }
 
+    private function getOrdersByTransactionId($transactionId) {
+        return $this->order->find(['id_transactions' => $transactionId]);
+    }
+
+    public function getTransactionDateById($transactionId) {
+        $transaction =  $this->order->find(['id_transactions' => $transactionId]);
+        return $transaction->transaction_date;
+    }
 
     
 

@@ -18,6 +18,7 @@ class Payment extends MX_Controller {
 		$this->load->library('Payumoney_lib', NULL, 'payumoney');
 		$this->load->library('Cart_lib', NULL, 'cart');
 		$this->load->library('Render', 'render');
+		$this->load->library('ion_auth');
         $this->setConfig();
     }
     private function setConfig() {
@@ -36,25 +37,33 @@ class Payment extends MX_Controller {
         return $this->action;
     }
 	public function index()	{
-        
-		$data['head'] 		= Modules::run('layouts/site-layout/head/index');
-		$data['header'] 	= Modules::run('layouts/site-layout/header/index');
-		$data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
-		$data['script'] 	= Modules::run('layouts/site-layout/script/index');
-        
-        $data = $this->process_payu();
-        $this->load->view('index', $data);
+        if (!$this->ion_auth->logged_in()) {
+			redirect('/login', 'refresh');
+		} else if (!$this->ion_auth->isEmployee()) {
+			$this->flash->error('Error', 'You must be an employee to view this page.');
+			redirect('/unauthorized');
+		} else {
+			$data['head'] 		= Modules::run('layouts/site-layout/head/index');
+			$data['header'] 	= Modules::run('layouts/site-layout/header/index');
+			$data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
+			$data['script'] 	= Modules::run('layouts/site-layout/script/index');
+			
+			$data = $this->process_payu();
+			$this->load->view('index', $data);
 
+		}
+		
     }
     
     private function process_payu() {
         $data['button_confirm'] = 'Confirm';
         $data['merchant']       = $this->config->item('pumcp_payu_merchant');
         $this->load->model('User_model', 'user');
-        $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-        $user                   = $this->user->get($this->session->userdata('user_id'));
-        //printArray($user);
-        
+		$txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+		$userId = $this->session->userdata('user_id');
+		if(isset($userId)) {
+			$user = $this->user->get($this->session->userdata('user_id'));
+		} 
         $data['key']            = $this->config->item('pumcp_payu_merchant');
         $data['action']         = $this->getAction();
         $data['txnid']          = $txnid;
@@ -144,10 +153,9 @@ class Payment extends MX_Controller {
 					if($sentHashString==$this->input->post('hash')){
 						$this->load->model('Order_model', 'order');
 							$id_transactions = $this->order->addTransaction([
-								'txnid' 	=> ($this->input->post('txnid')) ? $this->input->post('txnid') : '',
 								'mihpayid' 	=> ($this->input->post('mihpayid')) ? $this->input->post('mihpayid') : '',
 								'amount' 	=> ($this->input->post('amount')) ? $this->input->post('amount') : '',
-								'status' 	=> 'success',
+								'status' 	=> $this->input->post('status'),
 								'response' 	=> json_encode($message)
 							]);
 
@@ -155,9 +163,11 @@ class Payment extends MX_Controller {
 
 								foreach ($this->cart->cartItems() as $key => $value) {
 									$this->order->addOrderHistory([
+										'order_id' 	=> ($this->input->post('txnid')) ? $this->input->post('txnid') : '',
 										'id_transactions' => $id_transactions,
 										'id_users' => ($this->session->userdata('user_id')) ? $this->session->userdata('user_id') : '',
-										'code_services' => $key
+										'code_services' => $key,
+										'order_date' => $this->order->getTransactionDateById($id_transactions)
 									]);
 								}
 								

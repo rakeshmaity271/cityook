@@ -260,3 +260,4 @@ $route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
 
 
 $route['checkout/success'] = 'payment/checkout/success';
+$route['admin/order/transactions'] = 'admin/order/order/transactions';
