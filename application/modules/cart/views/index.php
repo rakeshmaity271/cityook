@@ -40,8 +40,8 @@
                <!-- Cart Section start Here -->
                <div class="text-left">
                   <div class="col-md-12">
-                     <h3> <span id="cart-items-count">
-                        </span>
+                     <h3 style="text-align:center;"> Cart<!--<span id="cart-items-count">
+                        </span>-->
                      </h3>
                      <div class="table-responsive">
                         <br><br>
@@ -128,7 +128,7 @@
                                     </strong>
                                  </td>
                                  <td>
-                                    <a href="#" class="btn btn-success btn-block">Checkout 
+                                    <a href="#" class="btn btn-success btn-block">Proceed to Checkout 
                                     <i class="glyphicon glyphicon-menu-right">
                                     </i></a>
                                  </td>

@@ -41,7 +41,7 @@
                                 
                                 <ul>
  									<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Saloon</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Salon</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Pandit</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Carpainter</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Painting</a></li>
