@@ -83,7 +83,7 @@
 
                          
 
-                          <td><a href="<?php echo ($transaction->mihpayid) ? base_url().'admin/transaction/'.$transaction->mihpayid : ''?>"><?php echo ($transaction->mihpayid) ? $transaction->mihpayid : ''?></a></td>
+                          <td><a href="<?php echo ($transaction->id) ? base_url().'admin/transaction/'.$transaction->id : ''?>"><?php echo ($transaction->mihpayid) ? $transaction->mihpayid : ''?></a></td>
                           <td><?php echo ($transaction->amount) ? $transaction->amount : ''?></td>
                           <!-- <td><?php echo ($transaction->amount) ? $transaction->mihpayid : ''?></td> -->
                           <td><?php echo ($transaction->status) ? $transaction->status : ''?></td>

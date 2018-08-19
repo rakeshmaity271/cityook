@@ -66,8 +66,8 @@ class Order_model extends CI_Model
         echo $this->db->last_query();
     }
 
-    private function getOrdersByTransactionId($transactionId) {
-        return $this->order->find(['id_transactions' => $transactionId]);
+    public function getOrderByTransactionId($transactionId) {
+        return $this->find(['id_transactions' => $transactionId]);
     }
 
     public function getTransactionDateById($transactionId) {

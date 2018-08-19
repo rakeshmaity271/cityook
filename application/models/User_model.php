@@ -12,6 +12,7 @@ class User_model extends CI_Model
     public function __construct() {
         $this->load->database();
         $this->common = new Common_lib();
+
     }
     public function all() {
 		
@@ -34,6 +35,20 @@ class User_model extends CI_Model
 
     public function get($id) {
         return $this->common->row($this->table, $id);
+    }
+
+    public function getUserFirstnameByUserId($id) {
+        $query = $this->common->row($this->table, $id);
+        return (isset($query->firstname)) ? $query->firstname : '';
+    }
+    public function getUserLastnameByUserId($id) {
+        $query = $this->common->row($this->table, $id);
+        return (isset($query->lastname)) ? $query->lastname : '';
+    }
+
+    public function getUserFullnameByUserId($id) {
+        $query = $this->common->row($this->table, $id);
+        return (isset($query->fullname)) ? $query->fullname : '';
     }
 
 }

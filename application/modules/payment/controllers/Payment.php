@@ -19,6 +19,7 @@ class Payment extends MX_Controller {
 		$this->load->library('Cart_lib', NULL, 'cart');
 		$this->load->library('Render', 'render');
 		$this->load->library('ion_auth');
+		$this->load->library('Flash_lib', NULL, 'flash');
         $this->setConfig();
     }
     private function setConfig() {
@@ -39,8 +40,8 @@ class Payment extends MX_Controller {
 	public function index()	{
         if (!$this->ion_auth->logged_in()) {
 			redirect('/login', 'refresh');
-		} else if (!$this->ion_auth->isEmployee()) {
-			$this->flash->error('Error', 'You must be an employee to view this page.');
+		} else if (!$this->ion_auth->isCustomer()) {
+			$this->flash->error('Error', 'You must be an customer to view this page.');
 			redirect('/unauthorized');
 		} else {
 			$data['head'] 		= Modules::run('layouts/site-layout/head/index');
