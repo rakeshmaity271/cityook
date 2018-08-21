@@ -1,18 +1,37 @@
 <?php echo $head;?>
 <?php echo $header;?>
 <!-- <p><br></p> -->
+
+<div class="maincontentarea" style="padding:68px 0px 0px 0px">
 <div class="breadcrumbs">
-   <div class="container">
+    <div class="container">
       <div class="row">
-         <div class="col-xs-12">
-            <ul>
-               <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>»</span></li>
-               <li><strong>Cart</strong></li>
-            </ul>
-         </div>
+        <div class="col-xs-12">
+          <ul>
+            <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+            <li><strong>Cart</strong></li>
+          </ul>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
+  <style>
+  .breadcrumbs {
+    padding: 7px 0px 0px 0px;
+    margin: auto;
+    font-size: 12px;
+    border-bottom: 1px #e5e5e5 solid;
+	border-top: 1px #e5e5e5 solid;
+}
+.breadcrumbs ul li {
+    list-style-type: none;
+    display: inline;
+}
+  </style>
+
+
 </div>
+
 <section class="main-container col1-layout">
    <div class="main container">
       <div class="row">
@@ -21,8 +40,8 @@
                <!-- Cart Section start Here -->
                <div class="text-left">
                   <div class="col-md-12">
-                     <h3> <span id="cart-items-count">
-                        </span>
+                     <h3 style="text-align:center;"> Cart<!--<span id="cart-items-count">
+                        </span>-->
                      </h3>
                      <div class="table-responsive">
                         <br><br>
@@ -109,7 +128,7 @@
                                     </strong>
                                  </td>
                                  <td>
-                                    <a href="#" class="btn btn-success btn-block">Checkout 
+                                    <a href="<?php echo (isset($link_processToCheckout)) ? $link_processToCheckout : ''?>" class="btn btn-success btn-block"><?php echo (isset($text_processToCheckout)) ? $text_processToCheckout : ''?> 
                                     <i class="glyphicon glyphicon-menu-right">
                                     </i></a>
                                  </td>

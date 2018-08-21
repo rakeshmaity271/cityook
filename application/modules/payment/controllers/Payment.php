@@ -54,9 +54,13 @@ class Payment extends MX_Controller {
 
 		}
 		
-    }
+	}
+	
+	private function getPaymentMethod() {
+		return ($this->input->post('cod')) ? $this->input->post('cod') : 'payumoney';
+	}
     
-    private function process_payu() {
+    public function process_payu() {
         $data['button_confirm'] = 'Confirm';
         $data['merchant']       = $this->config->item('pumcp_payu_merchant');
         $this->load->model('User_model', 'user');
@@ -168,12 +172,21 @@ class Payment extends MX_Controller {
 										'id_transactions' => $id_transactions,
 										'id_users' => ($this->session->userdata('user_id')) ? $this->session->userdata('user_id') : '',
 										'code_services' => $key,
-										'order_date' => $this->order->getTransactionDateById($id_transactions)
+										'order_datetime' => $this->order->getTransactionDateById($id_transactions)
 									]);
 								}
+
+
+
 								
 							}
+
+
 							$this->cart->emptyCart();
+
+//							$this->emptyBillingAddress();
+//							$this->emptyShippingAddress();
+//							$this->emptyItems();
 							
 
 							
@@ -194,6 +207,124 @@ class Payment extends MX_Controller {
 			}
 		}
 	}
+
+
+	// private function sendMail() {
+	// 	$config = Array(
+	// 		'protocol' => 'smtp',
+	// 		'smtp_host' => 'ssl://smtp.googlemail.com',
+	// 		'smtp_port' => 465,
+	// 		'smtp_user' => 'rakeshmaity271@gmail.com', // change it to yours
+	// 		'smtp_pass' => 'xxx', // change it to yours
+	// 		'mailtype' => 'html',
+	// 		'charset' => 'iso-8859-1',
+	// 		'wordwrap' => TRUE
+	// 	  );
+		  
+	// 	$message = '';
+	// 	$this->load->library('email', $config);
+	// 	$this->email->set_newline("\r\n");
+	// 	$this->email->from('xxx@gmail.com'); // change it to yours
+	// 	$this->email->to('rakeshmaity271@gmail.com');// change it to yours
+	// 	$this->email->subject('Resume from JobsBuddy for your Job posting');
+	// 	$this->email->message($this->generateInvoiceTemplate());
+	// 	if($this->email->send()) {
+	// 		echo 'Email sent.';
+	// 	} else {
+	// 		show_error($this->email->print_debugger());
+	// 	}
+		  
+	// }
+
+//	private function getTranactionId() {
+//		return ($this->input->post('txnid')) ? $this->input->post('txnid') : '';
+//	}
+//
+//	private function generateInvoiceTemplate() {
+//
+//
+//		$total = 0;
+//		$html = '<table><caption>A complex table</caption><thead><tr><th colspan="3">Invoice #'.$this->getTranactionId().'</th><th>'.date('y/m/d').'</tr>';
+//		$html .= '<tr>';
+//		$html .= '<td colspan="2"><strong>Billing Address:</strong><br>';
+//
+//		$options['billingAddress'] = $this->session->userdata('htmlTemplateData')['billingAddress'];
+//
+//		if(isset($options['billingAddress'])) {
+//			foreach($options['billingAddress'] as $bill) {
+//				$html .= ''.$bill.'<br>';
+//
+//			}
+//		$html .= '</td>';
+//		}
+//
+//		$html .= '<td colspan="2"><strong>Shipping Address:</strong><br>';
+//
+//		$options['shippingAddress'] = $this->session->userdata('htmlTemplateData')['shippingAddress'];
+//		if(isset($options['shippingAddress']) && count($options['shippingAddress'])) {
+//			foreach($options['shippingAddress'] as $value) {
+//				$html .= ''.$value.'<br>';
+//
+//			}
+//		$html .= '</td>';
+//		}
+//
+//		$html .= '</tr></thead>';
+//
+//		$html .= '<tbody>';
+//
+//		$options['items'] = $this->session->userdata('htmlTemplateData')['items'];
+//
+//		if(isset($options['items']) && count($options['items'])) {
+//			foreach ($options['items'] as $item) {
+//				$html .= '<tr>';
+//					$html .= '<td>'.$item['name'].'</td>';
+//					$html .= '<td>'.$item['quantity'].'</td>';
+//					$html .= '<td>'.$item['price'].'</td>';
+//				$html .= '</tr>';
+//				$total += ($item["price"]*$item["quantity"]);
+//			}
+//		}
+//		$html .= '</tbody>
+//					<tfoot>
+//						<tr>
+//							<th colspan="3">Subtotal</th>
+//							<td> '.$total.'</td>
+//						</tr>
+//						<tr>
+//							<th colspan="2">Tax</th>
+//							<td> 8% </td>
+//							<td>8.80</td>
+//						</tr>
+//						<tr>
+//							<th colspan="3">Grand Total</th>
+//							<td>'.$total.'</td>
+//						</tr>
+//					</tfoot>
+//				</table>';
+//
+//		return $html;
+//
+//	}
+//
+//	private function emptyShippingAddress() {
+//		unset($_SESSION["htmlTemplateData"]['shippingAddress']);
+//	}
+//	private function emptyBillingAddress() {
+//		unset($_SESSION["htmlTemplateData"]['billingAddress']);
+//	}
+//	private function emptyItems() {
+//		unset($_SESSION["htmlTemplateData"]['items']);
+//	}
+
+    public function success() {
+        $data['head'] 		= Modules::run('layouts/site-layout/head/index');
+        $data['header'] 	= Modules::run('layouts/site-layout/header/index');
+        $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
+        $data['script'] 	= Modules::run('layouts/site-layout/script/index');
+        $data['text_success'] 			= 'Your payment was successfully received.';
+        $this->load->view('payment/success', $data);
+    }
 
 }
 

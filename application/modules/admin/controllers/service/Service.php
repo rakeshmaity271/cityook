@@ -99,7 +99,7 @@ class Service extends MX_Controller {
 
         $related_id_services     = ($this->input->post('related_id_services')) ? $this->input->post('related_id_services') : [];
 
-        $lastInsertedID = $this->service->save($this->data);
+        echo $lastInsertedID = $this->service->save($this->data);
 
         if(isset($related_id_services)) {
             foreach ($related_id_services as $value) {
@@ -112,7 +112,7 @@ class Service extends MX_Controller {
         
         
         $this->flash->success('Success', 'Record added');
-        redirect('/admin/services', 'refresh');
+      //  redirect('/admin/services', 'refresh');
 
 
     }

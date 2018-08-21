@@ -134,6 +134,9 @@ $route['employee/profile/(:num)'] = 'employee/employee/employee/profile/$1';
 
 $route['my-account'] = 'customer/customer/customer/account';
 
+$route['order'] = 'order/accountdetail';
+$route['orderdetails'] = 'orderview/detail/';
+
 /**
  * Employee Registration routes
  */
@@ -258,8 +261,10 @@ $route['reset-password'] = 'forgot_password/reset_password';
 $route['en/([^/]+)/?'] = 'service/index/$1';
 $route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
 
+$route['checkout/preview_order'] = 'checkout/checkout/previewOrder';
+$route['checkout/success'] = 'payment/payment/success';
 
-$route['checkout/success'] = 'payment/checkout/success';
+
 $route['admin/transactions'] = 'admin/order/order/transactions';
 $route['admin/transaction/(:num)'] = 'admin/order/order/getOrderByTransactionId/$1';
 

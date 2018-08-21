@@ -11,7 +11,7 @@ class Cart extends MX_Controller {
 		parent::__construct();
 		$this->load->model('Service_model', 'service');
 	}
-	private function getTotal() {
+	public function getTotal() {
 		return ($this->session->userdata('cart_item')) ? $this->total = 0 : '';
 	}
 	public function index() {
@@ -23,7 +23,8 @@ class Cart extends MX_Controller {
 		
 		$this->data['total'] = $this->getTotal();
 		$this->data['items'] = $this->getCartItem();
-
+		$this->data['text_processToCheckout'] = 'Process To Checkout';
+		$this->data['link_processToCheckout'] = base_url().'checkout';
 		
 		$this->load->view('index', $this->data);
 	}
@@ -39,7 +40,7 @@ class Cart extends MX_Controller {
 	private function getSerivceByCode() {
 		return $this->service->getSerivceByCode($this->getCode());
 	}
-	private function getCartItem() {
+	public function getCartItem() {
 		return ($this->session->userdata('cart_item')) ? $this->session->userdata('cart_item') : [];
 	}
 

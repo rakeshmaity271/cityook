@@ -70,6 +70,12 @@ class Order_model extends CI_Model
         return $this->find(['id_transactions' => $transactionId]);
     }
 
+    // public function getProductDetailsFromOrder($transactionId) {
+    //     foreach ($this->getOrderByTransactionId($transactionId) as $key => $value) {
+            
+    //     }
+    // }
+
     public function getTransactionDateById($transactionId) {
         $transaction =  $this->order->find(['id_transactions' => $transactionId]);
         return $transaction->transaction_date;
