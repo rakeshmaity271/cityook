@@ -4,7 +4,7 @@
 <html>
 <head>
 <title><?php echo $title; ?></title>
-<base href="<?php echo $base; ?>" />
+<!-- <base href="<?php echo $base; ?>" /> -->
 </head>
 <body>
 <div style="text-align: center;">

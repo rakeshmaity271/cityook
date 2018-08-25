@@ -10,6 +10,12 @@ class Cart extends MX_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('Service_model', 'service');
+		$this->load->library('ion_auth');
+		$this->load->library('Flash_lib', NULL, 'flash');
+
+		if (!$this->ion_auth->logged_in()) {
+			redirect('/login', 'refresh');
+		}
 	}
 	public function getTotal() {
 		return ($this->session->userdata('cart_item')) ? $this->total = 0 : '';
@@ -30,6 +36,9 @@ class Cart extends MX_Controller {
 	}
 	private function getQuantity() {
 		return ($this->input->post('quantity'))  ? $this->input->post('quantity') : '';
+	}
+	private function getPrice() {
+		return ($this->input->post('price'))  ? $this->input->post('price') : '';
 	}
 	private function getAction() {
 		return ($this->input->post('action'))  ? $this->input->post('action') : '';
@@ -169,6 +178,47 @@ class Cart extends MX_Controller {
 				// 										'message' => 'Your cart is empty'
 				// 								)));
 			break;		
+				
+		}
+	}
+
+	public function cartUpdate() {
+		$this->isAjax = ($this->input->is_ajax_request()) ? true : false;
+		$increment = ($this->input->post('increment')) ? $this->input->post('increment') : '';
+		if($this->isAjax) {
+			printArray($_POST);
+			if($this->getQuantity()) {
+				//$this->item = $this->getItem();
+				
+					if($this->getCartItem()) {
+						if(array_key_exists($this->getCode(), $this->getCartItem())) {
+							foreach($this->getCartItem() as $key => $value) {
+								if($this->getCode() == $key)  {
+									#update quantity
+									if($increment) {
+										$_SESSION["cart_item"][$key]['quantity'] += $this->getQuantity();
+										$_SESSION["cart_item"][$key]['price'] *= $_SESSION["cart_item"][$key]['quantity'];
+									} else {
+										$_SESSION["cart_item"][$key]['quantity'] -= $this->getQuantity();
+										$_SESSION["cart_item"][$key]['price'] -= $this->getPrice();
+									}
+									
+									return $this->output
+												->set_content_type('application/json')
+												->set_status_header(200)
+												->set_output(json_encode(array(
+														'error' => false,
+														'status' => 200,
+														'message' => 'The service has been updated to your cart'
+												))); 
+								} 
+									
+							}
+						}
+					}
+				
+			}
+			
 				
 		}
 	}

@@ -120,12 +120,12 @@ class Payment extends MX_Controller {
 			//$data['heading_title'] 			= sprintf($this->language->get('heading_title'), $order_info['payment_method']);
 			$data['text_response'] 			= 'Response from Payment Gateway:';
 			$data['text_success'] 			= 'Your payment was successfully received.';
-			$data['text_success_wait'] 		= sprintf('<b><span style="color: #FF0000">Please wait...</span></b> whilst we finish processing your order.<br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>.', href("checkout/success"));
+			$data['text_success_wait'] 		= sprintf('<b><span style="color: #FF0000">Please wait...</span></b> whilst we finish processing your order.<br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>.', href("payment/success"));
 			$data['text_failure'] 			= 'Your payment has been failed';
 			$data['text_cancelled'] 		= 'Your payment has been cancelled';
-			$data['text_cancelled_wait'] 	= sprintf('<b><span style="color: #FF0000">Please wait...</span></b><br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>', href("checkout/cart"));
+			$data['text_cancelled_wait'] 	= sprintf('<b><span style="color: #FF0000">Please wait...</span></b><br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>', href("cart"));
 			$data['text_pending'] 			= 'Your payment has been pending';
-			$data['text_failure_wait'] 		= sprintf('<b><span style="color: #FF0000">Please wait...</span></b><br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>', href("checkout/cart"));
+			$data['text_failure_wait'] 		= sprintf('<b><span style="color: #FF0000">Please wait...</span></b><br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>', href("cart"));
 			 
 				$key          		=  	$this->input->post('key');
 				$amount      		= 	$this->input->post('amount');
@@ -190,14 +190,14 @@ class Payment extends MX_Controller {
 							
 
 							
-							$data['continue'] = href("checkout/success");
+							$data['continue'] = href("payment/success");
 							
 							$this->render->_render_page('pumcp_success', $data);
 					}			 
 			 
 			 }else {
 				
-				$data['continue'] = href("checkout/cart");
+				$data['continue'] = href("cart");
 
 		        if($this->input->post('status') && $this->input->post('unmappedstatus') == 'userCancelled') {
 					$this->render->_render_page('pumcp_cancelled', $data);
@@ -322,8 +322,24 @@ class Payment extends MX_Controller {
         $data['header'] 	= Modules::run('layouts/site-layout/header/index');
         $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
         $data['script'] 	= Modules::run('layouts/site-layout/script/index');
-        $data['text_success'] 			= 'Your payment was successfully received.';
+        $data['message'] 			= 'Your payment was successfully received.';
         $this->load->view('payment/success', $data);
+	}
+	public function cod() {
+        $data['head'] 		= Modules::run('layouts/site-layout/head/index');
+        $data['header'] 	= Modules::run('layouts/site-layout/header/index');
+        $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
+        $data['script'] 	= Modules::run('layouts/site-layout/script/index');
+        $data['message'] 			= 'Your order has been successfully complete.';
+        $this->load->view('payment/success', $data);
+	}
+	public function cancel() {
+        $data['head'] 		= Modules::run('layouts/site-layout/head/index');
+        $data['header'] 	= Modules::run('layouts/site-layout/header/index');
+        $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
+        $data['script'] 	= Modules::run('layouts/site-layout/script/index');
+        $data['message'] 			= 'Your order has been canceled.';
+        $this->load->view('payment/cencel', $data);
     }
 
 }
