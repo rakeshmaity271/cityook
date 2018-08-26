@@ -554,3 +554,7 @@ $config['file'] = [
 
 $config['pumcp_payu_merchant'] = 'aJWHcza6';
 $config['pumcp_payu_salt'] = '7aTi2xctcB';
+
+$config['cgst'] = '5';
+$config['igst'] = '5';
+$config['sgst'] = '5';

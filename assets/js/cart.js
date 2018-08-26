@@ -25,7 +25,8 @@ function update(action,product_code,price, increment = true) {
 		data:queryString,
 		type: "POST",
 		success:function(data){
-			console.log(queryString);
+			console.log(data);
+			
 		}
 	});
 }
