@@ -11,6 +11,17 @@ class Checkout extends MX_Controller {
 		parent::__construct();
 		$this->cart = new Cart();
 		$this->payment = new Payment();
+
+		$this->load->library('ion_auth');
+		$this->load->library('Flash_lib', NULL, 'flash');
+
+		if (!$this->ion_auth->logged_in()) {
+			redirect('/login', 'refresh');
+		}
+
+		if(!$this->cart->getCartItem()) {
+			redirect('/', 'refresh');
+		}
 	}
 	
 	public function index() {

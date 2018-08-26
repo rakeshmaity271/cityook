@@ -9,6 +9,30 @@ function cancelEdit(message,id) {
 	$("#message_" + id + " .message-content").html(message);
 	$('#frmAdd').show();
 }
+
+function update(action,product_code,price, increment = true) {
+	var queryString = "";
+	if(action != "") {
+		switch(action) {
+			case "update":
+				queryString = 'action='+action+'&code='+ product_code+'&increment='+increment+'&price='+price+'&quantity='+$("#quantity_"+product_code).val();
+			break;
+		}	 
+	}
+
+	jQuery.ajax({
+		url: "http://localhost/cityook/cart/cart/cartUpdate",
+		data:queryString,
+		type: "POST",
+		success:function(data){
+			console.log(queryString);
+		}
+	});
+}
+
+function deincrement() {
+	
+}
 function cartAction(action,product_code) {
 	var queryString = "";
 	if(action != "") {

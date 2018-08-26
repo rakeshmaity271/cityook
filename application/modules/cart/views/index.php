@@ -71,11 +71,11 @@
                                        <div class="col-xs-3 col-xs-offset-3">
                                           <div class="input-group number-spinner">
                                              <span class="input-group-btn data-dwn">
-                                             <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                             <button class="btn btn-default btn-info" onClick = "update('update','<?php echo $item["code"]; ?>','<?php echo $item["price"];?>',0)" id="<?php echo $item["code"]; ?>" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                                              </span>
-                                             <input type="text" class="form-control text-center" value="<?php echo ($item['quantity']) ? $item['quantity'] : ''?>" min="1" max="50">
+                                             <input type="text" class="form-control text-center" id="quantity_<?php echo $item["code"]; ?>" value="<?php echo ($item['quantity']) ? $item['quantity'] : ''?>" min="1" max="50">
                                              <span class="input-group-btn data-up">
-                                             <button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                             <button class="btn btn-default btn-info" onClick = "update('update','<?php echo $item["code"]; ?>','<?php echo $item["price"];?>',1)" id="<?php echo $item["code"]; ?>" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                                              </span>
                                           </div>
                                        </div>
@@ -185,6 +185,15 @@
   </style>
   
   <script>
+//   $(document).ready(function(){
+//       $('#increment').on('click', function(){
+//           var pcode = $(this).attr('pcode');
+//           var quantity = $('#quantity').val();
+//           console.log(pcode);
+
+//       });
+
+//   });   
   $(function() {
     var action;
     $(".number-spinner button").mousedown(function () {

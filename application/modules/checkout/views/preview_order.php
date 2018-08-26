@@ -657,6 +657,7 @@ label {
                 <ul>
                     <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
                     <li><strong>Checkout</strong></li>
+                    <li><strong>Preview order</strong></li>
                 </ul>
                 </div>
             </div>

@@ -262,9 +262,9 @@ $route['en/([^/]+)/?'] = 'service/index/$1';
 $route['en/([^/]+)/([^/]+)/?'] = 'service/show/$1/$2';
 
 $route['checkout/preview_order'] = 'checkout/checkout/previewOrder';
-$route['checkout/success'] = 'payment/payment/success';
-
-
+$route['payment/success'] = 'payment/payment/success';
+$route['payment/cod'] = 'payment/payment/cod';
+$route['payment/cancel'] = 'payment/payment/cancel';
 $route['admin/transactions'] = 'admin/order/order/transactions';
 $route['admin/transaction/(:num)'] = 'admin/order/order/getOrderByTransactionId/$1';
 
