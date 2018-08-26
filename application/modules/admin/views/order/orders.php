@@ -66,10 +66,13 @@
                       <thead>
 
                         <tr>
-                          <th>Transaction ID</th>
+                          <!-- <th>Transaction ID</th> -->
                           <th>Order ID</th>
+                          <!-- <th>Shipping Address<th> -->
                           <th>Full Name</th>
                           <th>Product Code</th>
+                          <th>Quantity</th>
+                          <th>Amount</th>
                           <th>Order Datetime</th>
                          <!--  <th>Action</th> -->
                         </tr>
@@ -84,15 +87,29 @@
 
                          
 
-                          <td><a href="<?php echo ($or['txnid']) ? base_url().'admin/order/'.$or['txnid'] : ''?>"><?php echo ($or['txnid']) ? $or['txnid'] : ''?></a></td>
+                          <!-- <td><a href="<?php echo ($or['txnid']) ? base_url().'admin/order/'.$or['txnid'] : ''?>"><?php echo ($or['txnid']) ? $or['txnid'] : ''?></a></td> -->
                           <td><?php echo ($or['orderId']) ? $or['orderId'] : ''?></td>
-                         
+                          <!-- <td><?php echo ($or['shipping_address']) ? strip_tags($or['shipping_address']) : ''?></td> -->
                           <td><?php echo ($or['customerName']) ? $or['customerName'] : ''?></td>
                           <td><?php echo ($or['productCode']) ? $or['productCode'] : ''?></td>
+                          <td><?php echo ($or['quantity']) ? $or['quantity'] : ''?></td>
+                          <td><?php echo ($or['amount']) ? $or['amount'] : ''?></td>
                           <td><?php echo ($or['orderDateTime']) ? $or['orderDateTime'] : ''?></td>
-
+                          <?php $total = 0;
+                          $total += $or['amount'];
+                          ?>
                         </tr>
                           <?php $i++; } ?>
+                          <!-- <tr>
+
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total:</td>
+                            <td><?php echo ($total) ? $total : '';?></td>
+                            <td></td>
+
+                        </tr> -->
                     </table>
 
                   </div>

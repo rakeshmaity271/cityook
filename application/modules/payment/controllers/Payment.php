@@ -159,7 +159,7 @@ class Payment extends MX_Controller {
 						$this->load->model('Order_model', 'order');
 							$id_transactions = $this->order->addTransaction([
 								'mihpayid' 	=> ($this->input->post('mihpayid')) ? $this->input->post('mihpayid') : '',
-								'amount' 	=> ($this->input->post('amount')) ? $this->input->post('amount') : '',
+								//'amount' 	=> ($this->input->post('amount')) ? $this->input->post('amount') : '',
 								'status' 	=> $this->input->post('status'),
 								'response' 	=> json_encode($message)
 							]);
@@ -172,7 +172,11 @@ class Payment extends MX_Controller {
 										'id_transactions' => $id_transactions,
 										'id_users' => ($this->session->userdata('user_id')) ? $this->session->userdata('user_id') : '',
 										'code_services' => $key,
-										'order_datetime' => $this->order->getTransactionDateById($id_transactions)
+										'order_type' => '2',
+										'status' => '1',
+										'quantity' => $value['quantity'],
+										'amount' => $value['price']
+										
 									]);
 								}
 
@@ -321,17 +325,51 @@ class Payment extends MX_Controller {
         $data['head'] 		= Modules::run('layouts/site-layout/head/index');
         $data['header'] 	= Modules::run('layouts/site-layout/header/index');
         $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
-        $data['script'] 	= Modules::run('layouts/site-layout/script/index');
+		$data['script'] 	= Modules::run('layouts/site-layout/script/index');
+		
+
+		
         $data['message'] 			= 'Your payment was successfully received.';
         $this->load->view('payment/success', $data);
 	}
 	public function cod() {
-        $data['head'] 		= Modules::run('layouts/site-layout/head/index');
-        $data['header'] 	= Modules::run('layouts/site-layout/header/index');
-        $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
-        $data['script'] 	= Modules::run('layouts/site-layout/script/index');
-        $data['message'] 			= 'Your Order has been Successfully Complete.';
-        $this->load->view('payment/success', $data);
+
+		$data['text_response'] 			= 'Response from Server: ';
+		$data['text_success'] 			= 'Your order has been successfully complete.';
+		$data['text_success_wait'] 		= sprintf('<b><span style="color: #FF0000">Please wait...</span></b> order we finish processing your order.<br>If you are not automatically re-directed in 10 seconds, please click <a href="%s">here</a>.', href("payment/success"));
+		
+		$order_id = ($this->input->post('order_id')) ? $this->input->post('order_id') : '';
+		$shippingAddress = ($this->input->post('shippingAddress')) ? $this->input->post('shippingAddress') : [];
+		$shipAddress = null;
+		foreach ($shippingAddress as $key => $value) {
+			$shipAddress .= $value.'</br>';
+			
+		}
+		$this->load->model('Order_model', 'order');
+		foreach ($this->cart->cartItems() as $key => $value) {
+			$this->order->addOrderHistory([
+				'order_id' 	=> $order_id,
+				'id_users' => ($this->session->userdata('user_id')) ? $this->session->userdata('user_id') : '',
+				'code_services' => $key,
+				'order_type' => '1',
+				'status' => '1',
+				'shipping_address' => $shipAddress,
+				'quantity' => $value['quantity'],
+				'amount' => $value['price']
+			]);
+		}
+
+
+
+
+		$this->cart->emptyCart();
+
+		$data['continue'] = href("payment/success");
+							
+		$this->render->_render_page('pumcp_success', $data);
+
+        // $data['message'] 			= 'Your Order has been Successfully Complete.';
+        // $this->load->view('payment/success', $data);
 	}
 	public function cancel() {
         $data['head'] 		= Modules::run('layouts/site-layout/head/index');

@@ -689,6 +689,8 @@ label {
                         <?php } ?> 
                      <?php } else { ?>
                         <form enctype="multipart/form-data" action="<?php echo base_url().'payment/cod';?>" class="checkout woocommerce-checkout" method="post" name="checkout">
+                        <input type="hidden" value="<?php echo substr(hash('sha256', mt_rand() . microtime()), 0, 20);?>" name="order_id">
+
                      <?php } ?>
 
     <div class="row">
@@ -714,6 +716,11 @@ label {
                     <h3>Shipping Adress</h3>
                     <h2>&nbsp;</h2>
                     <ul>
+                    <input type="hidden" value="<?php echo $shippingAddress['fullname'];?>" name="shippingAddress[]"> 
+                    <input type="hidden" value="<?php echo $shippingAddress['mobile'];?>" name="shippingAddress[]"> 
+                    <input type="hidden" value="<?php echo $shippingAddress['email'];?>" name="shippingAddress[]"> 
+                    <input type="hidden" value="<?php echo $shippingAddress['address'];?>" name="shippingAddress[]"> 
+                    <!-- <input type="hidden" value="" name="shippingAddress['pincode']">  -->
                         <li><strong>Full Name:</strong>&nbsp;<?php echo $shippingAddress['fullname'];?></li>
                         <li><strong>Mobile:</strong>&nbsp;<?php echo $shippingAddress['mobile'];?></li>
                         <li><strong>Email-Id:</strong>&nbsp;<?php echo $shippingAddress['email'];?></li>
@@ -737,6 +744,7 @@ label {
 			<thead>
 				<tr>
 					<th class="product-name">Product</th>
+                    <th class="product-name">Quantity</th>
 					<th class="product-total">Total</th>
 				</tr>
 			</thead>
@@ -744,8 +752,8 @@ label {
             <?php foreach($items as $item) { ?>
 				<tr class="cart_item">
 					<td class="product-name">
-                    <?php echo ($item['name']) ? $item['name'] : ''?>
-						<strong class="product-quantity"><?php echo ($item['quantity']) ? $item['quantity'] : ''?></strong>													</td>
+                    <?php echo ($item['name']) ? $item['name'] : ''?></td>
+					<td>	<strong class="product-quantity"><?php echo ($item['quantity']) ? $item['quantity'] : ''?></strong>	</td>												</td>
 					<td class="product-total">
 						<span class="amount"><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<?php echo ($item['price']) ? $item['price'] : ''?></span>
 					</td>
@@ -757,17 +765,20 @@ label {
 
 				<tr class="cart-subtotal">
 					<th>Subtotal</th>
-					<td><strong><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<span class="amount"><?php echo $total;?></span></strong> </td>
+                    <td></td>
+					<td><strong><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<span class="amount"><?php echo number_format($total,2);?></span></strong> </td>
 				</tr>
 
-				<!-- // <tr class="shipping">
-				// 	<th>Shipping</th>
-				// 	<td data-title="Shipping">Flat Rate: <span class="amount">$300.00</span> <input type="hidden" class="shipping_method" value="international_delivery" id="shipping_method_0" data-index="0" name="shipping_method[0]"></td>
-				// </tr> -->
+				 <tr class="shipping">
+				 	<th>GST(10%)</th>
+                     <td></td>
+				 	<td data-title="Shipping"><span class="amount"><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<?php echo number_format(100,2);?></span> <input type="hidden" class="shipping_method" value="international_delivery" id="shipping_method_0" data-index="0" name="shipping_method[0]"></td>
+				 </tr>
 
 				<tr class="order-total">
 					<th>Total</th>
-					<td><strong><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<span class="amount"><?php echo $total;?></span></strong> </td>
+                    <td></td>
+					<td><strong><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<span class="amount"><?php echo number_format($total,2);?></span></strong> </td>
 				</tr>
 			</tfoot>
 		</table>

@@ -67,7 +67,10 @@ class Order extends MX_Controller {
                 'txnid' => $value->id_transactions,
                 'orderId' => $value->order_id,
                 'customerName' => $this->user->getUserFullnameByUserId($value->id_users),
+                'shipping_address' => $value->shipping_address,
                 'productCode' => $value->code_services,
+                'quantity' => $value->quantity,
+                'amount' => number_format($value->amount,2),
                 'orderDateTime' => $value->order_datetime
             ];
         }
