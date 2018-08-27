@@ -82,16 +82,21 @@
                                     </div>
                                     <!--<input type="number" style="width:60px;" data-code="" class="form-control text-center quantity1" value="1">-->
                                  </td>
-                                 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<?php echo ($item['price']) ? $item['price'] : ''?></td>
+                                 <?php 
+                                 $subtotal = 0;
+                                 $subtotal += ($item["price"]*$item["quantity"]);
+                                 $total += ($item["price"]*$item["quantity"]);
+                                 ?>
+                                 <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<?php echo ($subtotal) ? number_format($subtotal,2) : ''?></td>
                                  <td style="width:30px;">
                                     <a href="javascript:void(0);" title="Move to Trash" onClick="cartAction('remove','<?php echo $item["code"]; ?>')" class="btn btn-danger remove-item btnRemoveAction cart-action" data-code="25"><i class="glyphicon glyphicon-trash"></i></a>
                                  </td>
                               </tr>
-                           <?php $total += ($item["price"]*$item["quantity"]); } ?>
+                           <?php  } ?>
                            
                            </tbody>
                            <tfoot>
-                              <!-- <tr>
+                               <tr>
                                  <td colspan="2"></td>
                                  <td><strong>Total: -</strong></td>
                                  <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;<strong><?php echo "$".$total; ?></strong></td>
@@ -112,12 +117,12 @@
                                     0</strong>
                                  </td>
                                  <td></td>
-                              </tr> -->
+                              </tr> 
                               <tr>
                                  <td colspan="2" style="border:none;"></td>
                                  <td><strong>Total Amount: -</strong></td>
                                  <td><i class="fa fa-inr" aria-hidden="true" style="color:black;"></i>&nbsp;
-                                    <strong><?php echo $total; ?></strong>
+                                    <strong><?php echo number_format($total,2); ?></strong>
                                  </td>
                                  <td></td>
                               </tr>

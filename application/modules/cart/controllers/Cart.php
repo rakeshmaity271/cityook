@@ -13,9 +13,9 @@ class Cart extends MX_Controller {
 		$this->load->library('ion_auth');
 		$this->load->library('Flash_lib', NULL, 'flash');
 
-		if (!$this->ion_auth->logged_in()) {
-			redirect('/login', 'refresh');
-		}
+		// if (!$this->ion_auth->logged_in()) {
+		// 	redirect('/login', 'refresh');
+		// }
 	}
 	public function getTotal() {
 		return ($this->session->userdata('cart_item')) ? $this->total = 0 : '';
@@ -62,6 +62,8 @@ class Cart extends MX_Controller {
 			'code' => $this->getSerivceByCode[0]->code,
 			'quantity' => $this->getQuantity(),
 			'price' => $this->getSerivceByCode[0]->price,
+			'subTotal' => ($this->getSerivceByCode[0]->price * $this->getQuantity()),
+			'total' => ($this->getSerivceByCode[0]->price * $this->getQuantity()),
 			'image' => base_url().'uploads/'.$this->getSerivceByCode[0]->image
 		]);
 		return $this->item;
@@ -186,7 +188,7 @@ class Cart extends MX_Controller {
 		$this->isAjax = ($this->input->is_ajax_request()) ? true : false;
 		$increment = ($this->input->post('increment')) ? $this->input->post('increment') : '';
 		if($this->isAjax) {
-			printArray($_POST);
+			//printArray($_POST);
 			if($this->getQuantity()) {
 				//$this->item = $this->getItem();
 				
@@ -195,13 +197,19 @@ class Cart extends MX_Controller {
 							foreach($this->getCartItem() as $key => $value) {
 								if($this->getCode() == $key)  {
 									#update quantity
-									if($increment) {
-										$_SESSION["cart_item"][$key]['quantity'] += $this->getQuantity();
-										$_SESSION["cart_item"][$key]['price'] *= $_SESSION["cart_item"][$key]['quantity'];
+									if($this->getQuantity() == 0) {
+										unset($_SESSION["cart_item"][$key]);
 									} else {
-										$_SESSION["cart_item"][$key]['quantity'] -= $this->getQuantity();
-										$_SESSION["cart_item"][$key]['price'] -= $this->getPrice();
+										if($increment) {
+										// 1+2
+										$_SESSION["cart_item"][$key]['quantity'] = $this->getQuantity();
+										
+										} else {
+											$_SESSION["cart_item"][$key]['quantity'] -= 1;
+										
+										}
 									}
+									
 									
 									return $this->output
 												->set_content_type('application/json')
