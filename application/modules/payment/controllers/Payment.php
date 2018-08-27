@@ -330,7 +330,7 @@ class Payment extends MX_Controller {
         $data['header'] 	= Modules::run('layouts/site-layout/header/index');
         $data['footer'] 	= Modules::run('layouts/site-layout/footer/index');
         $data['script'] 	= Modules::run('layouts/site-layout/script/index');
-        $data['message'] 			= 'Your order has been successfully complete.';
+        $data['message'] 			= 'Your Order has been Successfully Complete.';
         $this->load->view('payment/success', $data);
 	}
 	public function cancel() {

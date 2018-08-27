@@ -62,18 +62,42 @@
 
 <?php echo $header;?>
 
-<div class="maincontentarea" style="padding:50px 10px;">
-
+<div class="maincontentarea" style="padding:68px 10px;">
+<div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li class="home"> <a title="Go to Home Page" href="#">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+            <li><strong>Order</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+  .breadcrumbs {
+    padding: 7px 0px 0px 0px;
+    margin: auto;
+    font-size: 12px;
+    border-bottom: 1px #e5e5e5 solid;
+	border-top: 1px #e5e5e5 solid;
+}
+.breadcrumbs ul li {
+    list-style-type: none;
+    display: inline;
+}
+  </style>
 
 
 </div>
 
 
 
-<div class="container ">
+<div class="container " style="padding-bottom:70px;">
     <?php if(!empty($message)) {?>
 
-        <h1><?php echo $message;?></h1>
+        <h2 style="text-align:center;color:green;"><?php echo $message;?></h2>
 
     <?php } ?>
 
