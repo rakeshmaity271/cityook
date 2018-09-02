@@ -103,9 +103,9 @@
         <script src="<?php echo base_url('assets/cityook/js/validator.js');?>"></script>
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="<?php echo base_url('assets/js/cart.js');?>"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">-->
        
       
 <?php /*
@@ -132,7 +132,10 @@ function openCart() {
 }
 
 </script>
-	</body>
+<script src="<?php echo base_url('assets/js/cart.js');?>"></script>
+<script src="<?php echo base_url('assets/js/frontend-cityook.js');?>"></script>
 
+
+</body>
 </html>
 

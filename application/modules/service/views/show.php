@@ -141,7 +141,7 @@
                                     <p style="font-size:20px;"><strong>Service Time:</strong>  <?php echo ($service[0]->service_time) ? $service[0]->service_time : ''; ?></p>
                                     <p>&nbsp;</p>
                                     <p style="font-size:20px;"><strong>No. of Servicemen:</strong> <?php echo ($service[0]->no_of_service_men) ? $service[0]->no_of_service_men : ''; ?> (depending on no. of seats)</p>
-                                    <div class="card1" id="card1">
+                                    <div class="card1" id="card1" style="display: none;">
                                        <!-- <div class="input-append date">
                                           <input type="text" class="span2"><span class="add-on"><i class="icon-th"></i></span>
                                        </div> -->
@@ -402,218 +402,80 @@
 
 <?php echo $footer; ?>
 <?php echo $script; ?>
-
-
 <script>
-// swal({
-//   closeOnClickOutside: false,
-//   title: "Check Postcode",
-//   content: {
-//     element: "input",
-//     attributes: {
-//       placeholder: "Type your postcode",
-//       type: "text",
-//     },
-//   },
-// })
-// .then(name => {
-//   if (!name) throw null;
-  
-//     swal(name + ' Input type not a number');
-// 		 swal.close();
-		
-  
-//   //return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
-// });
-   $(document).ready(function(){
-   	// console.log(123);
-   	// if($('.slug').prop(":checked")) {
-   	//   console.log(this.val());
-   	// }
-       
-   });
-</script>
-<!--- tab script start here-->
-
-	
-		
-	<!-- tab end here -->
-	<script>
-  function setCookie(key, value) {
-            var expires = new Date();
-            expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
-            document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
-        }
-
-        function getCookie(key) {
-            var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
-            return keyValue ? keyValue[2] : null;
-        }
-	$(document).ready(function() {
-    $('#card1').hide();
-    if(getCookie('postcode')) {
-      $('#card1').show();
-      return false;
+    function setCookie(key, value) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
     }
-		
-		swal({
-			title: "Check Postcode",
-			text: "Enter postcode",
-			type: "input",
-			showCancelButton: false,
-			confirmButtonColor: "#DD6B55",
-			confirmButtonText: "Search",
-			closeOnConfirm: false,
-			
-  		}, function(input) {
-	
-			if(isNaN(input)) {
-				alert(input + ' Input type not a number');
-				return false;
-			}
-			$.ajax({
-				type: "post",
-				url: "<?php echo base_url();?>service/service/isValidPostCode",
-				data: {
-					'postcode': input
-				},
-				success: function(data) {
-					if(data.error === false) {
-            console.log(data.postcode);
-            setCookie("postcode", data.postcode);
-						$('#card1').show();
-						swal.close();
-					}
-				},
-				failure: function(data) {
-					if(data.error === true) {
-						console.log('not found');
-						swal("Error", "Not found", "error");
-					}
-				}
-			})
-			.done(function(data) {
-				if(data.error === true) {
-						console.log('not found');
-						alert(input + " Invalid Postcode");
-						return false;
-					}
-			})
-			.error(function(data) {
-				
-			});
-  		});
-	});
-//   swal({
-//   content: {
-//     element: "input",
-//     closeOnClickOutside: false,
-//     attributes: {
-//       placeholder: "Type your password",
-//       type: "password",
-//     },
-//   },
-// });
-// .then(name => {
-//   if (!name) throw null;
- 
-//   return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
-// })
-// .then(results => {
-//   return results.json();
-// })
-// .then(json => {
-//   const movie = json.results[0];
- 
-//   if (!movie) {
-//     return swal("No movie was found!");
-//   }
- 
-//   const name = movie.trackName;
-//   const imageURL = movie.artworkUrl100;
- 
-//   swal({
-//     title: "Top result:",
-//     text: name,
-//     icon: imageURL,
-//   });
-// })
-// .catch(err => {
-//   if (err) {
-//     swal("Oh noes!", "The AJAX request failed!", "error");
-//   } else {
-//     //swal.stopLoading();
-//     //swal.close();
-//   }
-// });
-</script>
 
-<!-- crasoul start css js -->
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+    }
 
-<script>
-$(document).ready(function() {
-    $('#Carousel').carousel({
-        interval: 5000
-    })
-});
-</script>
-<!-- ccarsoul end here -->
+    /**
+     * POST CODE validation in service page
+     */
+    $(document).ready(function() {
+        /// e.preventDefault(); //cancel default action
+        // $('#card1').hide();
+        if(getCookie('postcode')) {
+            $('#card1').show();
+            return false;
+        }
 
-<!-- https://bootsnipp.com/snippets/featured/simple-carousel-->
+        swal("Enter postcode", {
+            content: "input",
+            closeOnClickOutside: false,
+        }).then((input) => {
+            if(!input) {
+                swal('Enter Postcode', 'Error', 'error');
+                location.reload(true);
+                //if (!input) throw null;
+            }
+            if(isNaN(input)) {
+                alert(input + ' Input type not a number');
+                //return false;
+                location.reload(true);
+            } else {
+                $.ajax({
+                    type: "post",
+                    url: base_url +  "/service/service/isValidPostCode",
+                    data: {
+                        'postcode': input
+                    },
+                    success: function(data) {
+                        if(data.error === false) {
+                            console.log(data.postcode);
+                            setCookie("postcode", data.postcode);
+                            $('#card1').show();
+                            swal.close();
+                        }
+                    },
+                    failure: function(data) {
+                        if(data.error === true) {
+                            console.log('not found');
+                            swal("Error", "Not found", "error");
+                        }
+                    }
+                })
+                    .done(function(data) {
+                        if(data.error === true) {
+                            console.log('not found');
+                            swal('You entered invalid postcode', 'Error', 'error');
+                            location.reload(true);
+                        }
+                    })
+                    .error(function(data) {
 
-<script>
-   $(document).ready(function() {
-  //  $(".btn-pref .btn").click(function () {
-  //     $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-  //     // $(".tab").addClass("active"); // instead of this do the below 
-  //     $(this).removeClass("btn-default").addClass("btn-primary");   
-  //  });
-   });
-</script>
+                    });
+            }
+        });
 
-<!-- tab end here -->
-
-<!-- crasoul start css js -->
-
-<script>
-   $(document).ready(function() {
-    
-    var owl = $("#owl-demo");
-    //owl.trigger('owl.play',1000);
-    owl.owlCarousel({
-   	 items : 10, //10 items above 1000px browser width
-   	 itemsDesktop : [1000,5], //5 items between 1000px and 901px
-   	 itemsDesktopSmall : [900,3], // betweem 900px and 601px
-   	 itemsTablet: [600,2], //2 items between 600 and 0
-   	 itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option,
-   	 
     });
-   
-    // Custom Navigation Events
-    $(".next").click(function(){
-      owl.trigger('owl.next');
-    })
-    $(".prev").click(function(){
-      owl.trigger('owl.prev');
-    })
-    $(".play").click(function(){
-      owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-    })
-    $(".stop").click(function(){
-      owl.trigger('owl.stop');
-    })
-   
-   });
 </script>
-<!-- ccarsoul end here -->
-
-
 <script src="https://use.fontawesome.com/b4564248e6.js"></script><!-- radio start -->
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/cityook/css/addcartcss.css');?>" /> -->
-<!-- radio end -->
-
-<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
-<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 
 
