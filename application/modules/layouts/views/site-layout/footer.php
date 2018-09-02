@@ -47,8 +47,7 @@
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Painting</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Marbel & Tiles Fitting</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Bridel & Groom Makeup</a></li>
-                                    
-                                    
+
                                 </ul>
                     
 							</li>

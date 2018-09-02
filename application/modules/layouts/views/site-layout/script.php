@@ -133,7 +133,7 @@ function openCart() {
 
 </script>
 <script src="<?php echo base_url('assets/js/cart.js');?>"></script>
-<script src="<?php echo base_url('assets/js/frontend-cityook.js');?>"></script>
+<!--<script src="--><?php //echo base_url('assets/js/frontend-cityook.js');?><!--"></script>-->
 
 
 </body>

@@ -171,6 +171,7 @@ class Register extends MX_Controller {
 	public function submit() {
 		//print_r($_REQUEST);
 		$mobile = ($this->input->post('mobile')) ? $this->input->post('mobile') : '';
+
 		
 		/**
 		 * mobile no verificaiton from otp table
@@ -241,7 +242,7 @@ class Register extends MX_Controller {
 											'error' => true,
 											'status' => 200,
 											'type' => 'error',
-											'message' => 'You did not select a file to upload.',
+											'message' => 'Something went to wrong to upload document!',
 											'config' => $config
 									)));
 					}
@@ -274,7 +275,7 @@ class Register extends MX_Controller {
                                 'error' => true,
                                 'status' => 200,
                                 'type' => 'error',
-                                'message' => 'You did not select profile picture to upload.',
+                                'message' => 'Something went to wrong to upload profile picture!.',
                                 'config' => $config
                             )));
                     }
