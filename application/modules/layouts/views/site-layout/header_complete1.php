@@ -109,48 +109,35 @@
 							</ul>
 
 					</li>
-					<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { 
-					} else {
-					?>
-					<li><a href="<?php echo base_url();?>login" class="material_navbar_nav_item" >
-						<span class="hidden-xs hidden-sm hideName">&nbsp; Login</span></a>
-					</li>
-					<li><a href="<?php echo base_url();?>register" class="material_navbar_nav_item" >
-						<span class="hidden-xs hidden-sm hideName">&nbsp; Register</span></a>
-					</li>
-					<?php }?>		
-						
-<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { ?>						
+
 					<li class="dropdown">
 
 						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: hand; cursor: pointer;"><!--<i class="material-icons">person</i>--><span class="hidden-xs hidden-sm hideName">  &nbsp; My Account</span><span class="caret"></span></a>
 
 						<ul class="dropdown-menu material_dropdown_menu" role="menu">
 
-							
+							<?php if(!empty($this->session->userdata('loggedIn')) && $this->session->userdata('loggedIn') === TRUE) { ?>
 
 							
 
 							<li><a href="<?php echo base_url();?>my-account" class="material_dropdown_menu_link"> My Account </a></li>
 							<li><a href="<?php echo base_url();?>logout" class="material_dropdown_menu_link"> Logout </a></li>
 
-							
+							<?php } else { ?>
 
-							<!--<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
+							<li><a href="<?php echo base_url();?>login" class="material_dropdown_menu_link"> Login </a></li>
 
-							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>-->
+							<li><a href="<?php echo base_url();?>register" class="material_dropdown_menu_link"> Register </a></li>
 
-						<!--	<li><a href="<?php //echo base_url();?>employee/register/" class="material_dropdown_menu_link"> Become A Partner </a></li>-->
+						<!--	<li><a href="<?php echo base_url();?>employee/register/" class="material_dropdown_menu_link"> Become A Partner </a></li>-->
 
-							
+							<?php } ?>
 
 							
 
 						</ul>
 
 					</li>
-					<?php } else { ?>
-					<?php } ?>
 
 				<!--	<li><a href="#" class="material_navbar_nav_item callButtonHelplineHeader"> <i class="fa fa-phone"></i><span class="hidden-xs hidden-sm hideName">  &nbsp; 900000000</span></a></li>-->
 

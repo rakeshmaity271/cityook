@@ -149,7 +149,35 @@
 	<!-- radio end -->
 <?php echo $header;?>
 <body>
+<div class="maincontentarea" style="padding:68px 0px 0px 0px">
+<div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li class="home"> <a title="Go to Home Page" href="<?php echo base_url();?>">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+            <li><strong><?php echo $this->uri->segment('2'); ?></strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+  .breadcrumbs {
+    padding: 7px 0px 0px 0px;
+    margin: auto;
+    font-size: 12px;
+    border-bottom: 1px #e5e5e5 solid;
+	border-top: 1px #e5e5e5 solid;
+}
+.breadcrumbs ul li {
+    list-style-type: none;
+    display: inline;
+}
+  </style>
 
+
+</div>
 <section style=" color:#fff;padding:1px 1px;">
 <p>&nbsp;</p>
 <div class="container-fluid ">
@@ -158,7 +186,7 @@
 			<div class="col-lg-2">
 			<div class="btn-group" id="myDropdown">
 			<nav style="">
-			<a href="#">HOME   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+			<a href="<?php echo base_url();?>">HOME   &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
 			  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 					CLEANING 
 				<span class="caret"></span>
@@ -167,7 +195,7 @@
 					<?php 
 					if(isset($categories) && count($categories) > 0) { 
 						foreach($categories as $category) { ?>
-							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+							<li><a href="<?php echo base_url();?>en/<?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
 					<?php } ?>
 					<?php } ?>
 				<!--<li class="divider"></li>
@@ -190,7 +218,7 @@
 					<?php 
 					if(isset($categories) && count($categories) > 0) { 
 						foreach($categories as $category) { ?>
-							<li><a href="<?php echo base_url();?><?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
+							<li><a href="<?php echo base_url();?>en/<?php echo ($category->slug) ? $category->slug : '';?>"><?php echo ($category->name) ? $category->name : '';?></a></li>
 					<?php } ?>
 					<?php } ?>
 				

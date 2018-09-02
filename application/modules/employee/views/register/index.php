@@ -86,7 +86,7 @@
 
                     <article class="card-body">
 
-                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register New Employee</h4>
+                        <h4 class="card-title mb-4 mt-1 signh4" style="" style="text-align:center;">Register As a Partner</h4>
 
                         <form method="post" role="form" id="contact-form">
 

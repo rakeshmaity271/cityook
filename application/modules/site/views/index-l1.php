@@ -241,14 +241,14 @@
 
 		<div class="row aboutarea">
 
-			<div class="col-lg-5">
+			<div class="col-lg-6">
 
-		<!--	<h3 class="webabouth" style="color:#000;font-weight:bold;">WELCOME TO CITYOOK</h3>-->
+			<h1 class="webabouth" style="">WELCOME TO INFO</h1>
 
-			<p class="webaboutp" style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software Lorem Ipsum.</p>
+			<p class="webaboutp" style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 			</div>
-            <div class="col-lg-1"></div>
+
 			<div class="col-lg-6">
 
 			<img src="assets/cityook/images/florida-plumber.jpg" class="img-responsive"/>
@@ -265,7 +265,7 @@
 
 		<!-- start service area -->
 
-	<!--	<section class="service-section sec-pad" style="0px 20px 0px 20px;">
+		<section class="service-section sec-pad" style="0px 20px 0px 20px;">
 
 		<div class="container">
 
@@ -277,7 +277,7 @@
 
 			</div><!-- /.sec-title -->
 
-		<!--	<div class="row" style="0px 20px 0px 20px;">
+			<div class="row" style="0px 20px 0px 20px;">
 
 				<div class="col-md-4">
 
@@ -291,7 +291,7 @@
 
 						</div><!-- /.text-box -->
 
-					<!--	<div class="icon-box">
+						<div class="icon-box">
 
 							<div class="inner-box">
 
@@ -299,11 +299,11 @@
 
 							</div><!-- /.inner-box -->
 
-					<!--	</div><!-- /.icon-box -->
+						</div><!-- /.icon-box -->
 
-				<!--	</div><!-- /.single-service left-col -->
+					</div><!-- /.single-service left-col -->
 
-				<!--	<div class="single-service left-col">
+					<div class="single-service left-col">
 
 						<div class="text-box">
 
@@ -313,7 +313,7 @@
 
 						</div><!-- /.text-box -->
 
-					<!--	<div class="icon-box">
+						<div class="icon-box">
 
 							<div class="inner-box">
 
@@ -321,11 +321,11 @@
 
 							</div><!-- /.inner-box -->
 
-					<!--	</div><!-- /.icon-box -->
+						</div><!-- /.icon-box -->
 
-				<!--	</div><!-- /.single-service left-col -->
+					</div><!-- /.single-service left-col -->
 
-			<!--		<div class="single-service left-col">
+					<div class="single-service left-col">
 
 						<div class="text-box">
 
@@ -335,7 +335,7 @@
 
 						</div><!-- /.text-box -->
 
-				<!--		<div class="icon-box">
+						<div class="icon-box">
 
 							<div class="inner-box">
 
@@ -343,19 +343,19 @@
 
 							</div><!-- /.inner-box -->
 
-				<!--		</div><!-- /.icon-box -->
+						</div><!-- /.icon-box -->
 
-				<!--	</div><!-- /.single-service left-col -->
+					</div><!-- /.single-service left-col -->
 
-			<!--	</div><!-- /.col-md-4 -->
+				</div><!-- /.col-md-4 -->
 
-			<!--	<div class="col-md-4 text-center">
+				<div class="col-md-4 text-center">
 
 					<img src="assets/cityook/images/service-1.png" alt="Awesome Image" class="img-responsive">
 
 				</div><!-- /.col-md-4 -->
 
-			<!--	<div class="col-md-4">
+				<div class="col-md-4">
 
 					<div class="single-service right-col">
 
@@ -367,9 +367,9 @@
 
 							</div><!-- /.inner-box -->
 
-					<!--	</div><!-- /.icon-box -->
+						</div><!-- /.icon-box -->
 
-					<!--	<div class="text-box">
+						<div class="text-box">
 
 							<h3>Bath Tub</h3>
 
@@ -379,31 +379,7 @@
 
 						
 
-				<!--	</div><!-- /.single-service right-col -->
-
-			<!--		<div class="single-service right-col">
-
-						<div class="icon-box">
-
-							<div class="inner-box">
-
-								<i class="fa fa-cog"></i>
-
-							</div><!-- /.inner-box -->
-
-			<!--			</div><!-- /.icon-box -->
-
-			<!--			<div class="text-box">
-
-							<h3>Repairs</h3>
-
-							<p>Lorem ipsum dolor sit amet constur adip elit sed do eiusmtempor incid dolore magna</p>
-
-						</div><!-- /.text-box -->
-
-						
-
-			<!--		</div>
+					</div><!-- /.single-service right-col -->
 
 					<div class="single-service right-col">
 
@@ -413,9 +389,33 @@
 
 								<i class="fa fa-cog"></i>
 
-							</div>
+							</div><!-- /.inner-box -->
 
-						</div>
+						</div><!-- /.icon-box -->
+
+						<div class="text-box">
+
+							<h3>Repairs</h3>
+
+							<p>Lorem ipsum dolor sit amet constur adip elit sed do eiusmtempor incid dolore magna</p>
+
+						</div><!-- /.text-box -->
+
+						
+
+					</div><!-- /.single-service right-col -->
+
+					<div class="single-service right-col">
+
+						<div class="icon-box">
+
+							<div class="inner-box">
+
+								<i class="fa fa-cog"></i>
+
+							</div><!-- /.inner-box -->
+
+						</div><!-- /.icon-box -->
 
 						<div class="text-box">
 
@@ -423,19 +423,19 @@
 
 							<p>Lorem ipsum dolor sit amet constur adip elit sed do eiusmtempor incid dolore magna</p>
 
-						</div>
+						</div><!-- /.text-box -->
 
 						
 
-					</div>
+					</div><!-- /.single-service right-col -->
 
-				</div>
+				</div><!-- /.col-md-4 -->
 
-			</div>
+			</div><!-- /.row -->
 
-		</div>
+		</div><!-- /.container -->
 
-	</section>-->
+	</section>
 
 		<!-- end service area-->
 
@@ -443,7 +443,7 @@
 
 			<!-- Services section -->
 
-<!--	<section id="what-we-do" >
+	<section id="what-we-do" >
 
 		<div class="container" style="padding:0px 15px 0px 15px;">
 
@@ -569,24 +569,10 @@
 
 		</div>	
 
-	</section>-->
+	</section>
 
-		<!-- Services section  start here partner-->
-		<section class="call-to-action">
-    <div class="container">
-        <div class="row">
-    	    <div class="col-md-8 col-sm-8 text-right m-text-center">
-                <h2 style="font-size: 33px;font-weight: bold;color:#fff;">Ready to Connect Become A Partner? <span>&nbsp;&nbsp;</span></h2>
-            </div>
-             <div class="col-md-4 col-sm-4 m-text-center">
-                <a href="<?php echo base_url();?>employee/register/" class="btn btn-default" style="padding:12px 50px;">Register Now</a> 
-            </div>
-        </div>
-    </div>
-</section>
-		
-		<!-- Services section  End here partner-->
-    
+		<!-- Services section -->
+
 		<!-- contact Section Start-->
 
 		<div class="service-banner ">
@@ -605,9 +591,9 @@
 
                     <h2 class="contt"><i class="fa fa-life-ring" aria-hidden="true"></i> Give Us A Call Anytime 365 Days a Year!</h2>
 
-                    <p class="cont">We are really very happy to announce that we have some great services to offer in your area all around the year! As our mission is to provide best services in town that's why we are some awesome Cityook guys.</p>
+                    <p class="cont">We are really very happy to announce that we have some great services to offer in your area all around the year! As our mission is to provide best services in town that's why we are some awesome Plumbering guys.</p>
 
-                	<div class="call-box "><i class="fa fa-phone"></i> 123-123-1234 &nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> info@cityook.com</div>
+                	<div class="call-box "><i class="fa fa-phone"></i> 123-123-1234 &nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> info@demo.com</div>
 
                 </div><!-- Columns /-->
 
@@ -701,7 +687,7 @@
 
 					<img src="http://via.placeholder.com/100x100" class="img-circle img-responsive" />
 
-					<p>Best Service Provider in Patna.</p>
+					<p>Lorem ipsum dolor sit amet adipiscing elit am nibh unc varius facilisis eros ed erat in in velit quis arcu ornare laoreet urabitur.</p>
 
 					<h4>Sunil Kumar</h4>
 
@@ -767,17 +753,8 @@
 
 				<ul id="areasServed">
 
-				<li><span>Danapur</span>- <a href="#">801503</a> <span> | </span></li>
-				<li><span>Khagaul Road</span>- <a href="#">801503</a> <span> | </span></li>
-				<li><span>Danapur</span>- <a href="#">800000</a> <span> | </span></li>
-				<li><span>Saguna More</span>- <a href="#">801503</a> <span> | </span></li>
-				<li><span>Rps Road</span> - <a href="#">801503</a> <span> | </span></li>
-				<li><span>Dps Road</span> - <a href="#">801503</a> <span> | </span></li>
-				<li><span>Ias Colony</span> - <a href="#">801503</a> <span> | </span></li>
-				<li><span>Rukan Pura</span> - <a href="#">800014</a> <span> | </span></li>
-				<li><span>Jagdeo Path</span> - <a href="#">800014</a> <span> | </span></li>
-				<li><span>Gola Road</span> - <a href="#">801503</a> <span> | </span></li>
-				<li><span>Ashiana Nagar</span> - <a href="#">800025</a> <span> | </span></li>
+				<li><span>Gola Road</span> - <a href="#">800000</a> <span> | </span></li><li><span>Patna</span> - <a href="#">800012</a> <span> | </span></li><li><span>Danapur</span> - <a href="#">800000</a> <span> | </span></li><li><span>Gandhi Maidan</span> - <a href="#">801212</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800012</a> <span> | </span></li><li><span>Patna Junction</span> - <a href="#">800001</a> <span> | </span></li><li><span>Boring Road</span> - <a href="#">110021</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800012</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">801214</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">801112</a> <span> | </span></li><li><span>801101</span> - <a href="#">110070</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">801101</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">801112</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800101</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800010</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">Saguna More</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">Saguna More</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800101</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800101</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800102</a> <span> | </span></li><li><span>Saguna More</span> - <a href="#">800101</a> <span> | </span></li>
+
 				</ul>
 
 			</div>
@@ -809,36 +786,5 @@
 </body>
 
 <?php echo $footer;?>
-<style>
-    .call-to-action {background:#0086d2; padding:40px 0;}
 
-h1{
-    text-transform:uppercase; 
-    color:#fff; 
-    font-family:Arial;
-    font-size:40px;
-    }
-
-.btn {
-    border-radius: 5px;
-    margin: 21px 0 0 0;
-    font-weight:700;
-}
-
-.btn.btn-white {
-    background: #fff;
-    color: #666;
-    border-bottom: 4px solid #ddd;
-}
-
-@media (max-width: 768px) {
-    .m-text-center {text-align:center;}
-    .call-to-action h1{font-size:20px;}
-}
-@media (max-width: 1024px) {
-    .m-text-center {text-align:center;}
-    .call-to-action h1{font-size:25px;}
-}
-    
-</style>
 <?php echo $script;?>

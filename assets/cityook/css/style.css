@@ -8,7 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea);
 .footer1 {
     /*background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;*/
-	background: #3C5998;
+	background: #262626;
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
@@ -125,7 +125,7 @@
 
 
 .footer-bottom {
-    background-color: #15224f;
+    background-color: #000;
     min-height: 30px;
     width: 100%;
 }

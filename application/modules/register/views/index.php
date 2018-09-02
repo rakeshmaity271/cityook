@@ -1,9 +1,5 @@
 ﻿<?php echo $head;?>
-
-
-
-<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">-->
-
+<?php echo $header;?>
 <style>
 
     
@@ -59,12 +55,7 @@
     
 
 </style>
-
-<body>
-
-    <?php echo $header;?>
-
-    <div class="maincontentarea" style="padding:50px 10px;"></div>
+<div class="maincontentarea" style="padding:50px 10px;"></div>
 
     <div class="container ">
 
@@ -166,7 +157,6 @@
 
 <?php echo $footer;?>
 
-</body>
 
 
 

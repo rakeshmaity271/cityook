@@ -113,6 +113,11 @@ $route['translate_uri_dashes'] = FALSE;
 $route['default_controller'] = 'site';
 
 $route['about-us'] = 'about_us';
+$route['contact-us'] = 'contact_us';
+$route['term-conditions'] = 'term_conditions';
+$route['faq'] = 'faq';
+$route['careers'] = 'careers';
+$route['privacy-policy'] = 'privacy_policy';
 
 // $route['register/generate-otp'] = 'register/generateOtp';
 

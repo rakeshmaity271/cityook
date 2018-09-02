@@ -12,14 +12,14 @@
                                 <h1 class="title-widget">Useful links</h1>
                                 
                                 <ul>
-                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Faq</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Enquiry</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Careers</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Privacy & Policy</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Support & Center</a></li>
+                                	<li><a  href="<?php echo base_url();?>about-us/"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a  href="<?php echo base_url();?>contact-us/"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                    <li><a  href="<?php echo base_url();?>term-conditions/"><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
+                                    <li><a  href="<?php echo base_url();?>faq/"><i class="fa fa-angle-double-right"></i> Faqs</a></li>
+                                  <!--  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Enquiry</a></li>-->
+                                    <li><a  href="<?php echo base_url();?>careers/"><i class="fa fa-angle-double-right"></i>  Careers</a></li>
+                                    <li><a  href="<?php echo base_url();?>privacy-policy/"><i class="fa fa-angle-double-right"></i>  Privacy & Policy</a></li>
+                                 <!--   <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Support & Center</a></li>-->
                                 </ul>
                     
 							</li>
@@ -43,7 +43,7 @@
  									<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Cleaning</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Salon</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Pandit</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Carpainter</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Carpenter</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Painting</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Marbel & Tiles Fitting</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Bridel & Groom Makeup</a></li>
@@ -71,14 +71,14 @@
                                 <ul>
 
 
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> Patna</a></li>
- 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Gaya</a></li>
+                <li><a ><i class="fa fa-angle-double-right"></i> Patna</a></li>
+ 				<!--<li><a href="#"><i class="fa fa-angle-double-right"></i> Gaya</a></li>
 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Ara</a></li>
 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Buxar</a></li>
 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Siwan</a></li>
 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Arwal</a></li>
                 <li><a href="#"><i class="fa fa-angle-double-right"></i>  Patna</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i>  Danapur</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i>  Danapur</a></li>-->
 
                                 </ul>
                     
@@ -102,15 +102,16 @@
                                 
                                 <div class="footerp"> 
                                 
-                                <h2 class="title-median">Cityook Pvt. Ltd.</h2>
+                                <h2 class="title-median">Mrook Services Pvt Ltd.</h2>
+								 <p><b>Address: </b>101, Rupaspur,Sahaynagar<br/>Khajpura Patna,Bihar,INDIA-801506</p>
                                 <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@cityook.com</a></p>
                                 <p><b>Helpline Numbers </b>
 
-    <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-9800000000, +91-9000000000  </p>
+    <b style="color:#ffc106;">(10AM to 6PM):</b> <br/> +91-9800000000  </p>
     
-    <p><b>Corp Office / Postal Address</b></p>
-    <p><b>Phone Numbers : </b>900000000, </p>
-    <p> +91-9000000000, 9000000000</p>
+   
+   <!-- <p><b>Phone Numbers : </b>900000000, </p>
+    <p> +91-9000000000, 9000000000</p>-->
                                 </div>
                                 
                                 <div class="social-icons">
@@ -142,7 +143,7 @@
 
 				<div class="copyright">
 
-					© 2018 All rights reserved.
+					Copyright © 2018 All rights reserved.
 
 				</div>
 
