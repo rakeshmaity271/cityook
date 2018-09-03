@@ -26,6 +26,7 @@ function update(action,product_code,price, increment = true) {
 		type: "POST",
 		success:function(data){
 			console.log(data);
+			location.reload(true);
 			
 		}
 	});

@@ -432,6 +432,7 @@
 <?php echo $footer; ?>
 <?php echo $script; ?>
 <script>
+
     function setCookie(key, value) {
         var expires = new Date();
         expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
@@ -447,6 +448,8 @@
      * POST CODE validation in service page
      */
     $(document).ready(function() {
+        var base_url = '<?php echo base_url();?>';
+        //console.log(base_url);
         /// e.preventDefault(); //cancel default action
         // $('#card1').hide();
         if(getCookie('postcode')) {
