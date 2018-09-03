@@ -3,7 +3,36 @@
 ?>
 <?php echo $head; ?>
 <?php echo $header;?>
+<div class="maincontentarea" style="padding:68px 0px 0px 0px">
+<div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li class="home"> <a title="Go to Home Page" href="<?php echo base_url();?>">Home</a><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+            <li><strong><?php echo $this->uri->segment('2'); ?></strong><span>&nbsp;<i class="fa fa-angle-right  "></i></span></li>
+			 <li><strong><?php echo $this->uri->segment('3'); ?></strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+  .breadcrumbs {
+    padding: 7px 0px 0px 0px;
+    margin: auto;
+    font-size: 12px;
+    border-bottom: 1px #e5e5e5 solid;
+	border-top: 1px #e5e5e5 solid;
+}
+.breadcrumbs ul li {
+    list-style-type: none;
+    display: inline;
+}
+  </style>
 
+
+</div>
    <?php //print_r($service); ?>
    <section style=" color:#fff;padding:1px 1px;">
       <p>&nbsp;</p>

@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
-		<title>D</title>
+		<title>Home Services Patna</title>
 
 		<link href="<?php echo base_url('assets/cityook/css/style.css');?>" rel="stylesheet">
 
@@ -302,3 +302,4 @@ mixpanel.init("YOUR TOKEN");</script><!-- end Mixpanel -->
 		
 
 	</head>
+	<body>

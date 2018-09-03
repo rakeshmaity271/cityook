@@ -329,7 +329,8 @@ class Payment extends MX_Controller {
 		
 
 		
-        $data['message'] 			= 'Your payment was successfully received.';
+        //$data['message'] 			= 'Your payment was successfully received.';
+		$data['message'] 			= 'Your order has been successfully complete.';
         $this->load->view('payment/success', $data);
 	}
 	public function cod() {
